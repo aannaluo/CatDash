@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>D3 Project Starter Template</title>
+    <title>Cat Dash</title>
     <meta charset="UTF-8">
     <link rel="icon" href="data:;base64,iVBORwOKGO=" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>    
-    <!-- Add HTML content, SVG drawing area, ... -->
+    <h1 class="page-title">Cat Dash</h1>
+    <div class="dashboard">
+        <section id="description" class="panel"></section>
+        <section id="bubbleMap" class="panel"></section>
+        <section id="radialChart" class="panel"></section>
+        <section id="scatterplot" class="panel"></section>
+    </div>
     
     <!-- D3 bundle -->
     <script src="js/d3.v6.min.js"></script>
+
+    <!-- Dashboard components -->
+    <script src="js/components/description.js"></script>
+    <script src="js/components/bubbleMap.js"></script>
+    <script src="js/components/radialChart.js"></script>
+    <script src="js/components/scatterplot.js"></script>
 
     <!-- Our JS code -->
     <script src="js/main.js"></script>
