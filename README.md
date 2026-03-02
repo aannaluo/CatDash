@@ -6,6 +6,12 @@
 npm install
 ```
 
+## Run (with Hot Reload)
+
+```bash
+npm run dev
+```
+
 ## Linting (Airbnb Style)
 
 ```bash

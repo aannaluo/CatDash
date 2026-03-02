@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server --port=5500 --open=index.html",
+    "start": "live-server --port=5500 --open=index.html",
     "lint": "eslint js/**/*.js",
     "lint:fix": "eslint js/**/*.js --fix"
   },
@@ -19,6 +21,7 @@
   "devDependencies": {
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.32.0"
+    "eslint-plugin-import": "^2.32.0",
+    "live-server": "^1.2.2"
   }
 }
