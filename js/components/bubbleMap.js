@@ -69,11 +69,11 @@ class BubbleMap {
 
       let preyCat;
       // eslint-disable-next-line no-param-reassign
-      if (preyPerMonth <= 2) preyCat = '#00dc96';
+      if (preyPerMonth <= 2) preyCat = '#ffd700';
       // eslint-disable-next-line no-param-reassign
-      else if (preyPerMonth <= 5) preyCat = '#c7c000';
+      else if (preyPerMonth <= 5) preyCat = '#b060eb';
       // eslint-disable-next-line no-param-reassign
-      else preyCat = '#ff9b66';
+      else preyCat = '#5381ff';
 
       L.circle([lat, lon], {
         radius,

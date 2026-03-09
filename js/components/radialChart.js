@@ -50,7 +50,7 @@ class RadialChart {
 
     vis.zScale = d3.scaleOrdinal()
       .domain(['0-2', '3-5', '5+'])
-      .range(['#00dc96', '#c7c000', '#ff9b66']);
+      .range(['#ffd700', '#b060eb', '#5381ff']);
 
     vis.updateVis();
   }
