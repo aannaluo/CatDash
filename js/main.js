@@ -4,3 +4,10 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
     parentElement: '#scatterplot .vis',
   }, data);
 });
+
+d3.json('./data/cat_bubbles_all.json').then((data) => {
+  // eslint-disable-next-line no-unused-vars, no-undef
+  const bubbleMap = new BubbleMap({
+    parentElement: '#bubbleMap',
+  }, data);
+});

@@ -53,3 +53,9 @@ body {
 #splot-header {
 	font-size: 1.2em;
 }
+
+#map-container {
+	height: 100%;
+	width: 100%;
+	border-radius: 4px;
+}

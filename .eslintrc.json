@@ -9,7 +9,8 @@
     "sourceType": "script"
   },
   "globals": {
-    "d3": "readonly"
+    "d3": "readonly",
+    "L": "readonly"
   },
   "rules": {
     "no-console": "off"
