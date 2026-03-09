@@ -88,3 +88,98 @@ body {
 g.legend text {
 	font-size: 10px;
 }
+
+#tooltip {
+	position: absolute;
+	display: none;
+	background-color: white;
+	padding: 8px;
+	box-shadow: 1px 2px 4px #a09f9f;
+	border: 1px solid #c5c5c5;
+	/* ... other tooltip styles ... */
+}
+
+.radio-button {
+	border-radius: 50px;
+	border: 1px solid;
+	width: 10px;
+	height: 10px;
+	translate: transform(0, 50px);
+	margin-top: 3.5px;
+	margin-right: 10px;
+}
+
+.radio-button.Female {
+	background-color: #ff88c4;
+}
+
+.radio-button.Male {
+	background-color: #0095da;
+}
+
+
+.radio-button-label {
+	color: grey;
+	margin: 0px;
+	padding-top: 3px;
+	font-size: 0.8em;
+}
+  
+  .radio-button-label.active {
+	color: black;
+  }
+  
+ .radio-button-group {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+ }
+
+ .icon-group {
+	display: flex;
+	justify-content: flex-end;
+ }
+
+ .icon-label {
+	color: rgb(0, 0, 0);
+	margin: 0px;
+	padding-top: 3px;
+	font-size: 0.8em;
+}
+
+.icon.Neutered {
+	border-radius: 50px;
+	border: 1px solid;
+	width: 10px;
+	height: 10px;
+	translate: transform(0, 50px);
+	margin-top: 3.5px;
+	margin-right: 10px;
+}
+
+.icon.Not-Neutered {
+	border: 1px solid;
+	width:10px; 
+	height:10px;
+	translate: transform(0, 50px);
+	margin-top: 3.5px;
+	margin-right: 10px;
+}
+
+#radio-buttons {
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 10px;
+
+}
+
+#icons {
+	position: relative;
+	top: 10px;
+}
+
+
+

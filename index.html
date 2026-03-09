@@ -9,6 +9,7 @@
 </head>
 <body>    
     <h1 class="page-title">Cat Dash</h1>
+
     <div class="dashboard">
         <section id="description" class="panel"></section>
         <section id="bubbleMap" class="panel"></section>
@@ -16,8 +17,30 @@
             <h4 id="radial-title">Average Distance (m) Travelled Per Hour</h4>
         </section>
         <section id="scatterplot" class="panel vis">
-            <!-- <p id="splot-header">Scatterplot</p> -->
+            <h4 id="radial-title">Home Range (km^2) vs Age</h4>
             <div class="vis">
+                <div id="legend">
+                    <div id="radio-buttons">
+                        <div class="radio-button-group Male">
+                            <div class="radio-button Male"></div>
+                            <p class="radio-button-label Male">Male</p>
+                        </div>
+                        <div class="radio-button-group Female">
+                            <div class="radio-button Female"></div>
+                            <p class="radio-button-label Female">Female</p>
+                        </div>
+                    </div>
+                    <div id="icons">
+                        <div class="icon-group Neutered">
+                            <div class="icon Neutered"></div>
+                            <p class="icon-label Neutered">Neutered</p>
+                        </div>
+                        <div class="icon-group Not-Neutered">
+                            <div class="icon Not-Neutered"></div>
+                            <p class="icon-label Not-Neutered">Not Neutered</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
