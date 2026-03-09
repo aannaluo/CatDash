@@ -59,3 +59,20 @@ body {
 	width: 100%;
 	border-radius: 4px;
 }
+
+#radialChart svg {
+  display: block;
+  margin: 0 auto;
+}
+
+#radial-title {
+	margin-top: 4px;
+	margin-left: 8px;
+	margin-bottom: 0px;
+	font-size: 1.1em;
+}
+
+.hour-label {
+  font-size: 10px;
+  fill: #333;
+}
