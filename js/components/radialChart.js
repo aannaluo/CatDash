@@ -49,8 +49,8 @@ class RadialChart {
       .range([vis.innerRadius, vis.outerRadius]);
 
     vis.zScale = d3.scaleOrdinal()
-      .domain(['0-4', '5-7', '8+'])
-      .range(['#98abc5', '#6b486b', '#ff8c00']);
+      .domain(['0-2', '3-5', '5+'])
+      .range(['#00ca60', '#e8c900', '#ed0016']);
 
     vis.updateVis();
   }
@@ -61,15 +61,17 @@ class RadialChart {
     // Step 1: assign category
     vis.data.forEach((d) => {
       // eslint-disable-next-line no-param-reassign
-      if (d.prey_p_month <= 4) d.preyCategory = '0-4';
+      if (d.prey_p_month <= 2) d.preyCategory = '0-2';
       // eslint-disable-next-line no-param-reassign
-      else if (d.prey_p_month <= 7 && d.prey_p_month > 4) d.preyCategory = '5-7';
+      else if (d.prey_p_month <= 5) d.preyCategory = '3-5';
       // eslint-disable-next-line no-param-reassign
-      else d.preyCategory = '8+';
+      else d.preyCategory = '5+';
     });
 
+    const preyCats = ['0-2', '3-5', '5+'];
+
     // Step 2: nest by hour, then category
-    const nested = d3.rollups(
+    const summary = d3.rollups(
       vis.data,
       (v) => d3.mean(v, (d) => d.avg_distance_p_hour),
       (d) => d.hour,
@@ -78,29 +80,31 @@ class RadialChart {
 
     // Step 3: convert to a structure usable by d3.stack
     // For each hour, create an object: { hour: 0, '0-4': mean, '5-7': mean, '8+': mean }
-    vis.stackedData = nested.map(([hour, catArr]) => {
-      const obj = { hour: +hour };
-      catArr.forEach(([cat, meanVal]) => {
-        obj[cat] = meanVal;
+    vis.stackedData = summary.map(([hour, values]) => {
+      const row = { hour };
+      preyCats.forEach((cat) => {
+        const entry = values.find((v) => v[0] === cat);
+        row[cat] = entry ? entry[1] : 0;
       });
-      // ensure missing categories get 0
-      ['0-4', '5-7', '8+'].forEach((c) => { if (!(c in obj)) obj[c] = 0; });
-      return obj;
+
+      return row;
     });
 
     vis.stack = d3.stack()
-      .keys(['0-4', '5-7', '8+']); // categories
+      .keys(preyCats); // categories
+    // console.log(vis.stack);
 
-    const maxStack = d3.max(vis.stackedData, (d) => ['0-4', '5-7', '8+']
+    console.log(vis.stackedData);
+
+    vis.series = vis.stack(vis.stackedData);
+    // console.log(vis.series);
+
+    const maxStack = d3.max(vis.stackedData, (d) => preyCats
       .reduce((sum, k) => sum + d[k], 0));
 
     vis.yScale.domain([0, maxStack]);
 
-    vis.xScale.domain(vis.data.map((d) => d.hour));
-    // vis.yScale.domain([0, d3.max(vis.data, (d) => d.avg_distance_p_hour)]);
-    // vis.zScale.domain([5, 8]);
-    // vis.zScale.domain([vis.data.map((d) => d.preyCategory)]);
-    // vis.xAx
+    vis.xScale.domain(d3.range(24));
 
     vis.renderVis();
   }
@@ -108,32 +112,14 @@ class RadialChart {
   renderVis() {
     const vis = this;
 
-    // vis.chartArea
-    //   .selectAll('path')
-    //   .data(vis.data)
-    //   .enter()
-    //   .append('path')
-    //   .attr('fill', (d) => vis.zScale(d.category))
-    //   .attr('d', d3.arc()
-    //     .innerRadius(vis.innerRadius)
-    //     .outerRadius((d) => vis.yScale(d.avg_distance_p_hour))
-    //     .startAngle((d) => vis.xScale(d.hour))
-    //     .endAngle((d) => vis.xScale(d.hour) + vis.xScale.bandwidth())
-    //     .padAngle(0.01)
-    //     .padRadius(vis.innerRadius));
-
-    const series = vis.stack(vis.stackedData);
-
     vis.chartArea.selectAll('g.layer')
-      .data(series)
-      .enter()
-      .append('g')
+      .data(vis.series)
+      .join('g')
       .attr('class', 'layer')
-      .attr('fill', (d) => vis.zScale(d.preyCategory)) // color by category
+      .attr('fill', (d) => vis.zScale(d.key)) // color by category
       .selectAll('path')
       .data((d) => d)
-      .enter()
-      .append('path')
+      .join('path')
       .attr('d', d3.arc()
         .innerRadius((d) => vis.yScale(d[0]))
         .outerRadius((d) => vis.yScale(d[1]))
@@ -158,5 +144,48 @@ class RadialChart {
         return Math.sin(angle) * (vis.innerRadius - 10);
       })
       .text((d) => d.hour);
+
+    vis.yTicks = vis.yScale.ticks(3);
+
+    vis.chartArea.selectAll('.y-grid')
+      .data(vis.yTicks)
+      .join('circle')
+      .attr('class', 'y-grid')
+      .attr('fill', 'none')
+      .attr('stroke', '#ccc')
+    //   .attr('stroke-dasharray', '2,2')
+      .attr('r', (d) => vis.yScale(d));
+
+    vis.chartArea.selectAll('.y-axis-label')
+      .data(vis.yTicks)
+      .join('text')
+      .attr('class', 'y-axis-label')
+      .attr('x', 0)
+      .attr('y', (d) => -vis.yScale(d))
+      .attr('dy', '-0.3em')
+      .attr('text-anchor', 'middle')
+      .text((d) => d);
+
+    const preyCats = ['0-2', '3-5', '5+'];
+
+    vis.legend = vis.chartArea.selectAll('g.legend')
+      .data(preyCats)
+      .join('g')
+      .attr('class', 'legend')
+      .attr('transform', (d, i) => `translate(0, ${i * 20 - 20})`);
+
+    vis.legend.append('rect')
+      .attr('x', -vis.innerRadius / 4)
+      .attr('y', -10)
+      .attr('width', 14)
+      .attr('height', 14)
+    //   .attr('padding', 0)
+      .attr('fill', vis.zScale);
+
+    vis.legend.append('text')
+      .attr('x', -vis.innterRadius / 4 + 15)
+      .attr('y', -3)
+      .attr('dy', '0.35em')
+      .text((d) => d);
   }
 }

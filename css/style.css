@@ -76,3 +76,15 @@ body {
   font-size: 10px;
   fill: #333;
 }
+
+.stack-label {
+  font-size: 10px;
+}
+
+.y-axis-label {
+	font-size: 10px;
+}
+
+g.legend text {
+	font-size: 10px;
+}
