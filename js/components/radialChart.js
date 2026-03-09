@@ -126,8 +126,24 @@ class RadialChart {
         .startAngle((d) => vis.xScale(d.data.hour))
         .endAngle((d) => vis.xScale(d.data.hour) + vis.xScale.bandwidth())
         .padAngle(0.01)
-        .padRadius(vis.innerRadius));
-
+        .padRadius(vis.innerRadius))
+      .on('mouseover', (event, d) => {
+        const meanDistance = d[1] - d[0];
+        const category = d.key;
+        const { hour } = d.data;
+        d3.select('#tooltip')
+          .style('display', 'block')
+          .style('left', `${event.pageX + 10}px`)
+          .style('top', `${event.pageY + 10}px`)
+          .html(`
+            <div><strong>Hour:</strong> ${hour}</div>
+            <div><strong>Category:</strong> ${category}</div>
+            <div><strong>Mean distance:</strong> ${meanDistance.toFixed(1)}</div>
+          `);
+      })
+      .on('mouseleave', () => {
+        d3.select('#tooltip').style('display', 'none');
+      });
     // Add hour labels
     vis.chartArea.selectAll('text.hour-label')
       .data(vis.stackedData)
@@ -164,6 +180,8 @@ class RadialChart {
       .attr('y', (d) => -vis.yScale(d))
       .attr('dy', '-0.3em')
       .attr('text-anchor', 'middle')
+      .attr('font-size', '12px')
+      .attr('font-weight', 'bold')
       .text((d) => d);
 
     const preyCats = ['0-2', '3-5', '5+'];
@@ -179,19 +197,21 @@ class RadialChart {
       .attr('y', -10)
       .attr('width', 14)
       .attr('height', 14)
-    //   .attr('padding', 0)
       .attr('fill', vis.zScale);
 
     vis.legend.append('text')
       .attr('x', 2 * vis.innerRadius + 20)
       .attr('y', -3)
       .attr('dy', '0.35em')
+      .attr('font-size', '10px')
       .text((d) => d);
 
     vis.chartArea.append('text')
-      .attr('class', 'legend-title')
+      .attr('class', 'radial-legend-title')
       .attr('x', 2 * vis.innerRadius)
       .attr('y', -50)
+      .attr('font-size', '12px')
+      .attr('padding-bottom', '0px')
       .text('Prey Per Month');
   }
 }
