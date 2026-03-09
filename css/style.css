@@ -6,6 +6,16 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+#description-body {
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+#description-title {
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
 .page-title {
 	margin: 12px 0 0;
 	text-align: center;
@@ -68,7 +78,7 @@ body {
 #radial-title {
 	margin-top: 4px;
 	margin-left: 8px;
-	margin-bottom: 0px;
+	margin-bottom: 8px;
 	font-size: 1.1em;
 }
 
@@ -87,4 +97,9 @@ body {
 
 g.legend text {
 	font-size: 10px;
+}
+
+.legend-title{
+	font-size: 12px;
+	padding-bottom: 0px;
 }

@@ -11,7 +11,7 @@ class RadialChart {
   constructor(_config, _data) {
     this.config = {
       parentElement: _config.parentElement,
-      containerWidth: 400,
+      containerWidth: 650,
       containerHeight: 325,
       margin: {
         top: 20, right: 20, bottom: 20, left: 20,
@@ -50,7 +50,7 @@ class RadialChart {
 
     vis.zScale = d3.scaleOrdinal()
       .domain(['0-2', '3-5', '5+'])
-      .range(['#00ca60', '#e8c900', '#ed0016']);
+      .range(['#00dc96', '#c7c000', '#ff9b66']);
 
     vis.updateVis();
   }
@@ -175,7 +175,7 @@ class RadialChart {
       .attr('transform', (d, i) => `translate(0, ${i * 20 - 20})`);
 
     vis.legend.append('rect')
-      .attr('x', -vis.innerRadius / 4)
+      .attr('x', 2 * vis.innerRadius)
       .attr('y', -10)
       .attr('width', 14)
       .attr('height', 14)
@@ -183,9 +183,15 @@ class RadialChart {
       .attr('fill', vis.zScale);
 
     vis.legend.append('text')
-      .attr('x', -vis.innterRadius / 4 + 15)
+      .attr('x', 2 * vis.innerRadius + 20)
       .attr('y', -3)
       .attr('dy', '0.35em')
       .text((d) => d);
+
+    vis.chartArea.append('text')
+      .attr('class', 'legend-title')
+      .attr('x', 2 * vis.innerRadius)
+      .attr('y', -50)
+      .text('Prey Per Month');
   }
 }
