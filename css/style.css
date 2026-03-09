@@ -92,7 +92,8 @@ body {
 }
 
 .y-axis-label {
-	font-size: 10px;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 g.legend text {
