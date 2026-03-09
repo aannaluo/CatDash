@@ -182,7 +182,7 @@ class RadialChart {
       .attr('text-anchor', 'middle')
       .attr('font-size', '12px')
       .attr('font-weight', 'bold')
-      .text((d) => d);
+      .text((d) => `${d}m`);
 
     const preyCats = ['0-2', '3-5', '5+'];
 
@@ -193,14 +193,14 @@ class RadialChart {
       .attr('transform', (d, i) => `translate(0, ${i * 20 - 20})`);
 
     vis.legend.append('rect')
-      .attr('x', 2 * vis.innerRadius)
+      .attr('x', -3.5 * vis.innerRadius)
       .attr('y', -10)
       .attr('width', 14)
       .attr('height', 14)
       .attr('fill', vis.zScale);
 
     vis.legend.append('text')
-      .attr('x', 2 * vis.innerRadius + 20)
+      .attr('x', -3.5 * vis.innerRadius + 20)
       .attr('y', -3)
       .attr('dy', '0.35em')
       .attr('font-size', '10px')
@@ -208,7 +208,7 @@ class RadialChart {
 
     vis.chartArea.append('text')
       .attr('class', 'radial-legend-title')
-      .attr('x', 2 * vis.innerRadius)
+      .attr('x', -3.5 * vis.innerRadius)
       .attr('y', -50)
       .attr('font-size', '12px')
       .attr('padding-bottom', '0px')
