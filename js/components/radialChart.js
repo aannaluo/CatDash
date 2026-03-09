@@ -126,24 +126,7 @@ class RadialChart {
         .startAngle((d) => vis.xScale(d.data.hour))
         .endAngle((d) => vis.xScale(d.data.hour) + vis.xScale.bandwidth())
         .padAngle(0.01)
-        .padRadius(vis.innerRadius))
-      .on('mouseover', (event, d) => {
-        const meanDistance = d[1] - d[0];
-        const category = d.key;
-        const { hour } = d.data;
-        d3.select('#tooltip')
-          .style('display', 'block')
-          .style('left', `${event.pageX + 10}px`)
-          .style('top', `${event.pageY + 10}px`)
-          .html(`
-            <div><strong>Hour:</strong> ${hour}</div>
-            <div><strong>Category:</strong> ${category}</div>
-            <div><strong>Mean distance:</strong> ${meanDistance.toFixed(1)}</div>
-          `);
-      })
-      .on('mouseleave', () => {
-        d3.select('#tooltip').style('display', 'none');
-      });
+        .padRadius(vis.innerRadius));
     // Add hour labels
     vis.chartArea.selectAll('text.hour-label')
       .data(vis.stackedData)
