@@ -3,5 +3,6 @@
     "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": ["javascript"],
-  "eslint.workingDirectories": [{ "mode": "auto" }]
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "files.eol": "\n"
 }
