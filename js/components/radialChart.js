@@ -11,7 +11,7 @@ class RadialChart {
   constructor(_config, _data) {
     this.config = {
       parentElement: _config.parentElement,
-      containerWidth: 400,
+      containerWidth: 650,
       containerHeight: 325,
       margin: {
         top: 20, right: 20, bottom: 20, left: 20,
@@ -50,7 +50,7 @@ class RadialChart {
 
     vis.zScale = d3.scaleOrdinal()
       .domain(['0-2', '3-5', '5+'])
-      .range(['#00ca60', '#e8c900', '#ed0016']);
+      .range(['#ffd700', '#b060eb', '#5381ff']);
 
     vis.updateVis();
   }
@@ -127,7 +127,6 @@ class RadialChart {
         .endAngle((d) => vis.xScale(d.data.hour) + vis.xScale.bandwidth())
         .padAngle(0.01)
         .padRadius(vis.innerRadius));
-
     // Add hour labels
     vis.chartArea.selectAll('text.hour-label')
       .data(vis.stackedData)
@@ -164,7 +163,9 @@ class RadialChart {
       .attr('y', (d) => -vis.yScale(d))
       .attr('dy', '-0.3em')
       .attr('text-anchor', 'middle')
-      .text((d) => d);
+      .attr('font-size', '12px')
+      .attr('font-weight', 'bold')
+      .text((d) => `${d}m`);
 
     const preyCats = ['0-2', '3-5', '5+'];
 
@@ -175,17 +176,25 @@ class RadialChart {
       .attr('transform', (d, i) => `translate(0, ${i * 20 - 20})`);
 
     vis.legend.append('rect')
-      .attr('x', -vis.innerRadius / 4)
+      .attr('x', -3.5 * vis.innerRadius)
       .attr('y', -10)
       .attr('width', 14)
       .attr('height', 14)
-    //   .attr('padding', 0)
       .attr('fill', vis.zScale);
 
     vis.legend.append('text')
-      .attr('x', -vis.innterRadius / 4 + 15)
+      .attr('x', -3.5 * vis.innerRadius + 20)
       .attr('y', -3)
       .attr('dy', '0.35em')
+      .attr('font-size', '10px')
       .text((d) => d);
+
+    vis.chartArea.append('text')
+      .attr('class', 'radial-legend-title')
+      .attr('x', -3.5 * vis.innerRadius)
+      .attr('y', -50)
+      .attr('font-size', '12px')
+      .attr('padding-bottom', '0px')
+      .text('Prey Per Month');
   }
 }

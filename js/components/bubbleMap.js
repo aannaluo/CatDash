@@ -61,15 +61,24 @@ class BubbleMap {
     // Create circles for each cat
     vis.data.features.forEach((feature) => {
       const { coordinates } = feature.geometry;
+      const { prey_p_month: preyPerMonth } = feature.properties;
       const lon = coordinates[0];
       const lat = coordinates[1];
       const { home_range: homeRange } = feature.properties;
       const radius = vis.radiusScale(homeRange);
 
+      let preyCat;
+      // eslint-disable-next-line no-param-reassign
+      if (preyPerMonth <= 2) preyCat = '#ffd700';
+      // eslint-disable-next-line no-param-reassign
+      else if (preyPerMonth <= 5) preyCat = '#b060eb';
+      // eslint-disable-next-line no-param-reassign
+      else preyCat = '#5381ff';
+
       L.circle([lat, lon], {
         radius,
-        color: '#3388ff',
-        fillColor: '#3388ff',
+        color: preyCat,
+        fillColor: preyCat,
         fillOpacity: 0.4,
         weight: 2,
       }).addTo(vis.map);
