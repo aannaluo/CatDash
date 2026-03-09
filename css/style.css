@@ -6,6 +6,16 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+#description-body {
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+#description-title {
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
 .page-title {
 	margin: 12px 0 0;
 	text-align: center;
@@ -46,6 +56,141 @@ body {
 	border: 1px solid #d9d9d9;
 	border-radius: 8px;
 	background-color: #f7f7f7;
-	padding: 12px;
+	padding: 5px;
 	overflow: auto;
+}
+
+#splot-header {
+	font-size: 1.2em;
+}
+
+#map-container {
+	height: 100%;
+	width: 100%;
+	border-radius: 4px;
+}
+
+#radialChart svg {
+  display: block;
+  margin: 0 auto;
+}
+
+#radial-title {
+	margin-top: 4px;
+	margin-left: 8px;
+	margin-bottom: 8px;
+	font-size: 1.1em;
+}
+
+.hour-label {
+  font-size: 10px;
+  fill: #333;
+}
+
+.stack-label {
+  font-size: 10px;
+}
+
+.y-axis-label {
+	font-size: 10px;
+}
+
+g.legend text {
+	font-size: 10px;
+}
+
+#tooltip {
+	position: absolute;
+	display: none;
+	background-color: white;
+	padding: 8px;
+	box-shadow: 1px 2px 4px #a09f9f;
+	border: 1px solid #c5c5c5;
+	/* ... other tooltip styles ... */
+}
+
+.radio-button {
+	border-radius: 50px;
+	border: 1px solid;
+	width: 10px;
+	height: 10px;
+	translate: transform(0, 50px);
+	margin-top: 3.5px;
+	margin-right: 10px;
+}
+
+.radio-button.Female {
+	background-color: #ff88c4;
+}
+
+.radio-button.Male {
+	background-color: #0095da;
+}
+
+
+.radio-button-label {
+	color: grey;
+	margin: 0px;
+	padding-top: 3px;
+	font-size: 0.8em;
+}
+  
+  .radio-button-label.active {
+	color: black;
+  }
+  
+ .radio-button-group {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+ }
+
+ .icon-group {
+	display: flex;
+	justify-content: flex-end;
+ }
+
+ .icon-label {
+	color: rgb(0, 0, 0);
+	margin: 0px;
+	padding-top: 3px;
+	font-size: 0.8em;
+}
+
+.icon.Neutered {
+	border-radius: 50px;
+	border: 1px solid;
+	width: 10px;
+	height: 10px;
+	translate: transform(0, 50px);
+	margin-top: 3.5px;
+	margin-right: 10px;
+}
+
+.icon.Not-Neutered {
+	border: 1px solid;
+	width:10px; 
+	height:10px;
+	translate: transform(0, 50px);
+	margin-top: 3.5px;
+	margin-right: 10px;
+}
+
+#radio-buttons {
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 10px;
+
+}
+
+#icons {
+	position: relative;
+	top: 10px;
+}
+
+
+
 }
