@@ -1,4 +1,4 @@
-/* global Scatterplot, RadialChart */
+/* global Scatterplot, CatMap, RadialChart */
 /* eslint-disable no-param-reassign */
 
 d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
@@ -34,10 +34,10 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
     },
   );
 });
-d3.json('./data/cat_bubbles_all.json').then((data) => {
+d3.json('./data/cat_bubbles_all.geojson').then((data) => {
   // eslint-disable-next-line no-unused-vars, no-undef
-  const map = new Map({
-    parentElement: '#map',
+  const catMap = new CatMap({
+    parentElement: '#cat-map',
   }, data);
 });
 d3.csv('./data/Distance_Travelled.csv').then((data) => {
