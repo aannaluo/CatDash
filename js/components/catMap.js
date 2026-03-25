@@ -27,6 +27,27 @@ class CatMap {
       zoom: 2,
     });
 
+    // Add recentre to layer button
+    const RecentreControl = L.Control.extend({
+      options: {
+        position: 'topleft',
+      },
+      onAdd() {
+        const btn = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        const recentreBtn = L.DomUtil.create('a', 'leaflet-control-recentre', btn);
+        recentreBtn.href = '#';
+        recentreBtn.title = 'Recentre';
+        recentreBtn.innerHTML = '<strong style="font-size: 18px;">⌖</strong>';
+        L.DomEvent.on(recentreBtn, 'click', (e) => {
+          L.DomEvent.preventDefault(e);
+          vis.recentreMap();
+        });
+        return btn;
+      },
+    });
+
+    vis.map.addControl(new RecentreControl());
+
     // CartoDB Positron (light) tile layer
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -115,10 +136,20 @@ class CatMap {
     // Calculate dynamic bounds for the circle and zoom to fit
     const latOffset = radius / 111000;
     const lonOffset = radius / (111000 * Math.cos(lat * (Math.PI / 180)));
-    const bounds = L.latLngBounds(
+    vis.bounds = L.latLngBounds(
       [lat - latOffset, lon - lonOffset],
       [lat + latOffset, lon + lonOffset],
     );
-    vis.map.fitBounds(bounds, { padding: [50, 50] });
+    vis.map.fitBounds(vis.bounds, { padding: [50, 50] });
+  }
+
+  recentreMap() {
+    const vis = this;
+
+    if (!vis.bounds) {
+      return;
+    }
+
+    vis.map.fitBounds(vis.bounds, { padding: [50, 50] });
   }
 }
