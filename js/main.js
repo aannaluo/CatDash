@@ -35,10 +35,12 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   );
 });
 d3.json('./data/cat_bubbles_all.geojson').then((data) => {
-  // eslint-disable-next-line no-unused-vars, no-undef
-  const catMap = new CatMap({
-    parentElement: '#cat-map',
-  }, data);
+  d3.json('./data/cat_paths_all.geojson').then((pathsData) => {
+    // eslint-disable-next-line no-unused-vars, no-undef
+    const catMap = new CatMap({
+      parentElement: '#cat-map',
+    }, data, pathsData);
+  });
 });
 d3.csv('./data/Distance_Travelled.csv').then((data) => {
   data.forEach((d) => {

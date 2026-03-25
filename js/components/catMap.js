@@ -1,12 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 class CatMap {
-  constructor(_config, _data) {
+  constructor(_config, _data, _pathsData) {
     this.config = {
       parentElement: _config.parentElement,
       minRadius: 50, // meters
       maxRadius: 500, // meters
     };
     this.data = _data;
+    this.pathsData = _pathsData;
     this.selectedCat = 'Abba_Pet Cats United Kingdom';
     this.initVis();
   }
@@ -64,9 +65,9 @@ class CatMap {
       return;
     }
 
-    // Clear existing circles
+    // Clear existing circles and paths
     vis.map.eachLayer((layer) => {
-      if (layer instanceof L.Circle) {
+      if (layer instanceof L.Circle || layer instanceof L.Polyline) {
         vis.map.removeLayer(layer);
       }
     });
@@ -93,6 +94,23 @@ class CatMap {
       fillOpacity: 0.4,
       weight: 2,
     }).addTo(vis.map);
+
+    // Add the cat path if available
+    if (vis.pathsData) {
+      const selectedPath = vis.pathsData.features.find(
+        (feature) => feature.properties['unique-id'] === vis.selectedCat,
+      );
+
+      if (selectedPath) {
+        L.geoJSON(selectedPath, {
+          style: {
+            color: '#ED7A53',
+            weight: 2,
+            opacity: 1,
+          },
+        }).addTo(vis.map);
+      }
+    }
 
     // Calculate dynamic bounds for the circle and zoom to fit
     const latOffset = radius / 111000;
