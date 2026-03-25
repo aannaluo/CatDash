@@ -7,6 +7,7 @@ class CatMap {
       maxRadius: 500, // meters
     };
     this.data = _data;
+    this.selectedCat = 'Abba_Pet Cats United Kingdom';
     this.initVis();
   }
 
@@ -16,11 +17,6 @@ class CatMap {
     // map container
     const parent = d3.select(vis.config.parentElement);
     parent.html('');
-
-    parent.append('h3')
-      .text('Cat Home Ranges')
-      .style('margin', '8px')
-      .style('font-size', '1.1em');
 
     parent.append('div')
       .attr('id', 'map-container');
@@ -57,39 +53,54 @@ class CatMap {
 
   renderVis() {
     const vis = this;
-    const bounds = [];
 
-    // Create circles for each cat
-    vis.data.features.forEach((feature) => {
-      const { coordinates } = feature.geometry;
-      const { prey_p_month: preyPerMonth } = feature.properties;
-      const lon = coordinates[0];
-      const lat = coordinates[1];
-      const { home_range: homeRange } = feature.properties;
-      const radius = vis.radiusScale(homeRange);
+    // Find the selected cat's feature
+    const selectedFeature = vis.data.features.find(
+      (feature) => feature.properties['unique-id'] === vis.selectedCat,
+    );
 
-      let preyCat;
-      // eslint-disable-next-line no-param-reassign
-      if (preyPerMonth <= 2) preyCat = '#ffd700';
-      // eslint-disable-next-line no-param-reassign
-      else if (preyPerMonth <= 5) preyCat = '#b060eb';
-      // eslint-disable-next-line no-param-reassign
-      else preyCat = '#5381ff';
+    if (!selectedFeature) {
+      console.warn(`Cat "${vis.selectedCat}" not found`);
+      return;
+    }
 
-      L.circle([lat, lon], {
-        radius,
-        color: preyCat,
-        fillColor: preyCat,
-        fillOpacity: 0.4,
-        weight: 2,
-      }).addTo(vis.map);
-
-      bounds.push([lat, lon]);
+    // Clear existing circles
+    vis.map.eachLayer((layer) => {
+      if (layer instanceof L.Circle) {
+        vis.map.removeLayer(layer);
+      }
     });
 
-    // Fit map to show all circles
-    if (bounds.length > 0) {
-      vis.map.fitBounds(bounds, { padding: [20, 20] });
+    const { coordinates } = selectedFeature.geometry;
+    const { prey_p_month: preyPerMonth, home_range: homeRange } = selectedFeature.properties;
+    const lon = coordinates[0];
+    const lat = coordinates[1];
+    const radius = vis.radiusScale(homeRange);
+
+    let preyCat;
+    if (preyPerMonth <= 2) {
+      preyCat = '#ffd700';
+    } else if (preyPerMonth <= 5) {
+      preyCat = '#b060eb';
+    } else {
+      preyCat = '#5381ff';
     }
+
+    L.circle([lat, lon], {
+      radius,
+      color: preyCat,
+      fillColor: preyCat,
+      fillOpacity: 0.4,
+      weight: 2,
+    }).addTo(vis.map);
+
+    // Calculate dynamic bounds for the circle and zoom to fit
+    const latOffset = radius / 111000;
+    const lonOffset = radius / (111000 * Math.cos(lat * (Math.PI / 180)));
+    const bounds = L.latLngBounds(
+      [lat - latOffset, lon - lonOffset],
+      [lat + latOffset, lon + lonOffset],
+    );
+    vis.map.fitBounds(bounds, { padding: [50, 50] });
   }
 }
