@@ -1,3 +1,6 @@
+/* global Scatterplot, RadialChart */
+/* eslint-disable no-param-reassign */
+
 d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   // eslint-disable-next-line no-unused-vars, no-undef
   data.forEach((d) => {
@@ -5,9 +8,9 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
     d['Home Range Area (km2)'] = parseFloat(d['Home Range Area (km2)']);
   });
   const splot = new Scatterplot({
-    parentElement: '#scatterplot .vis'
+    parentElement: '#scatterplot .vis',
   }, data);
-  let chosenCategories = [];
+  const chosenCategories = [];
   d3.selectAll('.radio-button-group').on(
     'click',
     (event) => {
@@ -28,13 +31,13 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
         splot.data = data;
       }
       splot.updateVis();
-    }
+    },
   );
 });
 d3.json('./data/cat_bubbles_all.json').then((data) => {
   // eslint-disable-next-line no-unused-vars, no-undef
-  const bubbleMap = new BubbleMap({
-    parentElement: '#bubbleMap',
+  const map = new Map({
+    parentElement: '#map',
   }, data);
 });
 d3.csv('./data/Distance_Travelled.csv').then((data) => {

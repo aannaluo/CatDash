@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-class BubbleMap {
+class Map {
   constructor(_config, _data) {
     this.config = {
       parentElement: _config.parentElement,
@@ -30,10 +30,11 @@ class BubbleMap {
       zoom: 2,
     });
 
-    // OpenStreetMap tile layer
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      maxZoom: 18,
+    // CartoDB Positron (light) tile layer
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 19,
     }).addTo(vis.map);
 
     vis.updateVis();
