@@ -1,3 +1,6 @@
+/* global Scatterplot, CatMap, RadialChart, CatProfile */
+/* eslint-disable no-param-reassign */
+
 d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   // eslint-disable-next-line no-unused-vars, no-undef
 
@@ -64,6 +67,10 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
     data,
   );
 
+  const catProfile = new CatProfile({
+    parentElement: '#cat-profile',
+  }, data);
+
   // const splot = new Scatterplot({
   //   parentElement: '#scatterplot .vis',
   // }, data);
@@ -91,11 +98,14 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   //     },
   //   );
 });
-d3.json('./data/cat_bubbles_all.json').then((data) => {
-  // eslint-disable-next-line no-unused-vars, no-undef
-  const bubbleMap = new BubbleMap({
-    parentElement: '#bubbleMap',
-  }, data);
+
+d3.json('./data/cat_bubbles_all.geojson').then((data) => {
+  d3.json('./data/cat_paths_all.geojson').then((pathsData) => {
+    // eslint-disable-next-line no-unused-vars, no-undef
+    const catMap = new CatMap({
+      parentElement: '#cat-map',
+    }, data, pathsData);
+  });
 });
 d3.csv('./data/Distance_Travelled.csv').then((data) => {
   data.forEach((d) => {

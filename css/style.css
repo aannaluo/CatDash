@@ -47,7 +47,7 @@ body {
 #histogram,
 #cat-profile,
 #radialChart,
-#bubbleMap {
+#cat-map {
 	min-height: 0;
 	border: 1px solid #d9d9d9;
 	border-radius: 8px;
@@ -245,5 +245,68 @@ circle.included:hover {
 
 
 
+
+/* Cat Profile Styling */
+.profile-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	gap: 15px;
+	height: 100%;
+	padding: 10px;
+	align-items: center;
+}
+
+.profile-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding-top: 10px;
+}
+
+.profile-image img {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+.profile-info {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.profile-info h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.profile-info ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.profile-info li {
+	margin-bottom: 8px;
+}
+
+.profile-flag-section {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	height: 100%;
+}
+
+.profile-flag {
+	max-width: 90px;
+	max-height: 70px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}
 
 
