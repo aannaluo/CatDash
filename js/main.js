@@ -46,10 +46,20 @@ d3.csv('./data/Distance_Travelled.csv').then((data) => {
     // eslint-disable-next-line no-param-reassign
     d.prey_p_month = +d.prey_p_month;
   });
-
   // eslint-disable-next-line no-unused-vars, no-undef
   const radial = new RadialChart({
     parentElement: '#radialChart',
   }, data);
   radial.updateVis();
 }).catch((error) => console.error(error));
+
+d3.csv('./data/Distance_heatmap.csv').then((data) => {
+  data.forEach((d) => {
+    d.day_number = +d.day_number;
+    d.distance = +d.distance;
+  });
+  const heatMap = new HeatMap({
+    parentElement: '#heatmap',
+  }, data);
+  heatMap.updateVis();
+});
