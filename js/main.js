@@ -1,7 +1,7 @@
 d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   // eslint-disable-next-line no-unused-vars, no-undef
 
-  const dispatcher = d3.dispatch('selectedPreyCats');
+  const dispatcher = d3.dispatch('selectedPreyCats', 'selectedCat');
 
   data.forEach((d) => {
     d.age = parseFloat(d.age);
@@ -12,16 +12,16 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   const allPreyGroups = d3.groups(data, (d) => d.prey_p_month).map((d) => d[0]);
   const beeOne = new Beeswarm({
     parentElement: '#bee1',
-  }, allPreyGroups, data.filter((d) => d.age < 2));
+  }, allPreyGroups, dispatcher, data.filter((d) => d.age < 2));
   const beeTwo = new Beeswarm({
     parentElement: '#bee2',
-  }, allPreyGroups, data.filter((d) => d.age > 2 && d.age <= 5));
+  }, allPreyGroups, dispatcher, data.filter((d) => d.age > 2 && d.age <= 5));
   const beeThree = new Beeswarm({
     parentElement: '#bee3',
-  }, allPreyGroups, data.filter((d) => d.age > 5 && d.age <= 9));
+  }, allPreyGroups, dispatcher, data.filter((d) => d.age > 5 && d.age <= 9));
   const beeFour = new Beeswarm({
     parentElement: '#bee4',
-  }, allPreyGroups, data.filter((d) => d.age > 9));
+  }, allPreyGroups, dispatcher, data.filter((d) => d.age > 9));
 
   beeOne.updateVis();
   beeTwo.updateVis();
@@ -47,6 +47,14 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
       beeThree.updateVis();
       beeFour.selectedPreyCategories = selectedPreyCategories;
       beeFour.updateVis();
+    }
+  });
+
+  dispatcher.on('selectedCat', (selectedCat) => {
+    if (!selectedCat) {
+
+    } else {
+
     }
   });
 

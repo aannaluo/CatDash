@@ -4,7 +4,7 @@ class Beeswarm {
        * @param {Object}
        * @param {Array}
        */
-  constructor(_config, selectedPreyCategories, _data) {
+  constructor(_config, selectedPreyCategories, dispatcher, _data) {
     this.config = {
       parentElement: _config.parentElement,
       containerWidth: 490,
@@ -15,6 +15,7 @@ class Beeswarm {
       },
     };
     this.data = _data;
+    this.dispatcher = dispatcher;
     this.selectedPreyCategories = selectedPreyCategories;
     this.initVis();
   }
@@ -39,7 +40,7 @@ class Beeswarm {
     vis.xScale = d3.scaleLog()
       .range([0, vis.width]);
 
-          // Set dynamic x domain
+    // Set dynamic x domain
     vis.xScale
       .domain([0.002, 2.239]);
 
@@ -105,6 +106,15 @@ class Beeswarm {
         if (d3.select(this).classed('included')) {
           d3.select('#tooltip')
             .style('display', 'none');
+        }
+      })
+      .on('click', function () {
+        const selected = d3.select(this).classed('selected');
+        d3.select(this).classed('selected', !selected);
+        if (!selected) {
+          const selectedCat = d3.select(this).data()[0]['unique-id'];
+          console.log(selectedCat);
+          vis.dispatcher.call('selectedCat', this, selectedCat);
         }
       });
 
