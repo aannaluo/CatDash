@@ -71,18 +71,18 @@ class Scatterplot {
     vis.yAxisG = vis.chartArea.append('g');
 
     vis.svg.append('text')
-    .attr('transform', `translate(${(vis.width + 50) / 2}, ${vis.height + vis.config.margin.top + 17})`)
-  //   .attr('x', vis.width / 2)
-  //   .attr('y', vis.height + vis.config.margin.top)
-    .text('Age (years)')
-    .attr('font-size', '0.8em');
+      .attr('transform', `translate(${(vis.width + 50) / 2}, ${vis.height + vis.config.margin.top + 17})`)
+    //   .attr('x', vis.width / 2)
+    //   .attr('y', vis.height + vis.config.margin.top)
+      .text('Age (years)')
+      .attr('font-size', '0.8em');
 
     vis.svg.append('text')
-    .attr('transform', 'rotate(-90) translate(-170, 50)')
-  //   .attr('x', vis.width / 2)
-  //   .attr('y', vis.height + vis.config.margin.top)
-    .text('Home Range (km^2)')
-    .attr('font-size', '0.8em');
+      .attr('transform', 'rotate(-90) translate(-170, 50)')
+    //   .attr('x', vis.width / 2)
+    //   .attr('y', vis.height + vis.config.margin.top)
+      .text('Home Range (km^2)')
+      .attr('font-size', '0.8em');
     vis.updateVis();
   }
 
@@ -170,5 +170,5 @@ class Scatterplot {
       });
 
     catGroupNotNeutered.exit().remove();
-    }
+  }
 }

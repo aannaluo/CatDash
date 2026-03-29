@@ -12,16 +12,13 @@ class BubbleMap {
 
   initVis() {
     const vis = this;
-
     // map container
     const parent = d3.select(vis.config.parentElement);
     parent.html('');
-
     parent.append('h3')
       .text('Cat Home Ranges')
       .style('margin', '8px')
       .style('font-size', '1.1em');
-
     parent.append('div')
       .attr('id', 'map-container');
 

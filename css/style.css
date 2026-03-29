@@ -120,11 +120,11 @@ g.legend text {
 }
 
 .radio-button.Female {
-	background-color: #ff88c4;
+	background-color: #bc86a1;
 }
 
 .radio-button.Male {
-	background-color: #0095da;
+	background-color: #4d859f;
 }
 
 
@@ -190,6 +190,59 @@ g.legend text {
 	position: relative;
 	top: 10px;
 }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.cells path {
+  fill: none;
+  stroke: none;
+  /* pointer-events: all; */
+}
+
+circle {
+	fill: rgb(223, 223, 223);
+	stroke: none;
+}
+circle.included.female {
+	fill: #bc86a1;
+}
+
+circle.included.male{
+	fill: #4d859f;
+}
+
+circle.included.unk{
+	fill: orange;
+}
+circle.included:hover {
+  stroke-width: 0.5px;
+  stroke: black;
+}
+
+#tooltip {
+	display: none;
+}
+
+.bar {
+	fill:#d7a4c3
+}
+
+.bar.selected {
+	  fill:  #ec7b09
+}
+
+
+
+
 
 
 
