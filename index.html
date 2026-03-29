@@ -11,8 +11,8 @@
     <div class="dashboard">
         <section id="heatmap"></section>
         <section id="interactive">
-            <section id="scatterplot" class="panel vis">
-                <h4 id="radial-title">Home Range (km^2) vs Age</h4>
+            <section id="bee" class="panel vis">
+                <!-- <h4 id="radial-title">Home Range (km^2) vs Age</h4> -->
                 <div class="vis">
                     <div id="legend">
                         <div id="radio-buttons">
@@ -25,7 +25,7 @@
                                 <p class="radio-button-label Female">Female</p>
                             </div>
                         </div>
-                        <div id="icons">
+                        <!-- <div id="icons">
                             <div class="icon-group Neutered">
                                 <div class="icon Neutered"></div>
                                 <p class="icon-label Neutered">Neutered</p>
@@ -34,31 +34,42 @@
                                 <div class="icon Not-Neutered"></div>
                                 <p class="icon-label Not-Neutered">Not Neutered</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
+                    <div id="bee1"></div>
+                    <div id="bee2"></div>
+                    <div id="bee3"></div>
+                    <div id="bee4"></div>    
+                    <div id="bee5"></div>
+                    <div id="tooltip"></div>
                 </div>
             </section>
-            <section id="histogram"></section>
+            <section id="histogram" class="panel vis">
+                <div id="barchart"></div>
+            </section>
         </section>
         <section id="individual-cat-data">
             <section id="cat-profile"></section>
             <section id="radialChart" class="panel">
                 <h4 id="radial-title">Average Distance (m) Travelled Per Hour</h4>
             </section>
-            <section id="bubbleMap" class="panel"></section>
+            <section id="cat-map" class="panel"></section>
        
         </section>
     </div>
     
     <!-- D3 bundle -->
     <script src="js/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3-voronoi.v1.min.js"></script>
     
     <!-- Leaflet -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <!-- Dashboard components -->
-    <script src="js/components/description.js"></script>
-    <script src="js/components/bubbleMap.js"></script>
+    <script src="js/components/beeswarm.js"></script>
+    <script src="js/components/barchart.js"></script>
+    <script src="js/components/catMap.js"></script>
+    <script src="js/components/catProfile.js"></script>
     <script src="js/components/radialChart.js"></script>
     <script src="js/components/scatterplot.js"></script>
 
