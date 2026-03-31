@@ -61,8 +61,8 @@ class CatProfile {
           <img src="images/cat.png" alt="Cat silhouette">
         </div>
         <div class="profile-info">
+          ${flagImage ? `<img src="${flagImage}" alt="${catData['study-site']}" class="profile-flag">` : ''}
           <h3>${catData['animal-name']}</h3>
-          <br>
           <ul>
             <li>Age: ${CatProfile.formatNumber(catData.age)} years</li>
             <li>Sex: ${catData.sex}</li>
@@ -72,9 +72,6 @@ class CatProfile {
             <li>No. of days Tracked: ${catData.days_tracked} </li>
             <li>Tracked Date Range: ${CatProfile.formatDate(catData.start_date)} - ${CatProfile.formatDate(catData.end_date)} </li>
           </ul>
-        </div>
-        <div class="profile-flag-section">
-          ${flagImage ? `<img src="${flagImage}" alt="${catData['study-site']}" class="profile-flag">` : ''}
         </div>
       </div>
     `;

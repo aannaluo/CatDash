@@ -40,7 +40,7 @@ body {
 }
 
 #individual-cat-data {
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: 1.2fr 1fr 1.5fr;
 }
 
 #scatterplot,
@@ -249,11 +249,9 @@ circle.included:hover {
 /* Cat Profile Styling */
 .profile-container {
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	gap: 15px;
+	grid-template-columns: 0.7fr 2fr;
 	height: 100%;
-	padding: 10px;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .profile-image {
@@ -261,7 +259,6 @@ circle.included:hover {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
-	padding-top: 10px;
 }
 
 .profile-image img {
@@ -276,11 +273,12 @@ circle.included:hover {
 	flex-direction: column;
 	height: 100%;
 	overflow-y: auto;
+	position: relative;
 }
 
 .profile-info h3 {
-	margin-top: 0;
-	margin-bottom: 10px;
+	margin-top: 7px;
+	margin-bottom: 15px;
 }
 
 .profile-info ul {
@@ -291,22 +289,19 @@ circle.included:hover {
 }
 
 .profile-info li {
-	margin-bottom: 8px;
-}
-
-.profile-flag-section {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	height: 100%;
+	margin-bottom: 4px;
 }
 
 .profile-flag {
+	position: absolute;
+	top: 0;
+	right: 0;
 	max-width: 90px;
 	max-height: 70px;
 	width: auto;
 	height: auto;
 	object-fit: contain;
+	margin-right: 10px;
 }
 
 
