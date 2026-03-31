@@ -1,5 +1,5 @@
 class HeatMap {
-  constructor(_config, _data) {
+  constructor(_config, _data, _radialData, dispatcher) {
     this.config = {
       parentElement: _config.parentElement,
       containerWidth: 500,
@@ -9,6 +9,9 @@ class HeatMap {
       },
     };
     this.data = _data;
+    this.radialData = _radialData;
+    this.dispatcher = dispatcher;
+    this.selectedCat = 'Abba_Pet Cats United Kingdom';
     this.initVis();
   }
 
@@ -77,9 +80,11 @@ class HeatMap {
       .style('position', 'absolute')
       .style('background', 'white')
       .style('border', '1px solid #ccc')
-      .style('padding', '8px')
+      .style('padding', '0px')
       .style('pointer-events', 'none')
       .style('font-size', '12px');
+      // .style('width', '200px')
+      // .style('height', '250px');
 
     vis.updateVis();
   }
@@ -101,39 +106,65 @@ class HeatMap {
       .attr('width', vis.xScale.bandwidth())
       .attr('height', vis.yScale.bandwidth())
       .style('fill', (d) => vis.colourScale(d.distance))
+      // .on('mouseover', (event, d) => {
+      //   vis.chartArea.selectAll('rect')
+      //     .filter((r) => r.unique_id === d.unique_id)
+      //     // .raise()
+          // .style('stroke', 'white')
+          // .style('stroke-width', '2px');
+      //   const allDays = vis.data
+      //     .filter((r) => r.unique_id === d.unique_id && r.day_number <= 10)
+      //     .sort((a, b) => a.day_number - b.day_number);
+
+      //   const dayRows = allDays
+      //     .map((r) => `<p>Day ${r.day_number}: ${r.distance.toFixed(2)}m</p>`)
+      //     .join('');
+
+      //   vis.tooltip
+      //     .style('opacity', 1)
+      //     .style('font-family', 'Arial')
+      //     .html(`
+      //       <strong style="font-size: 15px;">${vis.reformatNames(d.unique_id)}</strong><br/>
+      //       ${dayRows}
+      //     `);
+      // })
       .on('mouseover', (event, d) => {
         vis.chartArea.selectAll('rect')
           .filter((r) => r.unique_id === d.unique_id)
-          // .raise()
-          .style('stroke', 'red')
-          .style('stroke-width', '2px');
-        const allDays = vis.data
-          .filter((r) => r.unique_id === d.unique_id && r.day_number <= 10)
-          .sort((a, b) => a.day_number - b.day_number);
+          .style('stroke', 'white')
+          .style('stroke-width', '2px')
+          .classed('hovered', true);
 
-        const dayRows = allDays
-          .map((r) => `<p>Day ${r.day_number}: ${r.distance.toFixed(2)}m</p>`)
-          .join('');
+        const catData = vis.radialData.filter((r) => r.unique_id === d.unique_id);
 
         vis.tooltip
           .style('opacity', 1)
-          .style('font-family', 'Arial')
-          .html(`
-            <strong style="font-size: 15px;">${vis.reformatNames(d.unique_id)}</strong><br/>
-            ${dayRows}
-          `);
+          .html(`<strong style="font-size: 13px; font-family: Arial">${vis.reformatNames(d.unique_id)}</strong>
+           <div id="tooltip-radial"></div>`);
+
+        new RadialChart({ parentElement: '#tooltip-radial' }, catData);
       })
       .on('mousemove', (event) => {
         vis.tooltip
           .style('left', `${event.pageX + 10}px`)
-          .style('top', `${event.pageY - 20}px`);
+          .style('top', `${event.pageY + 20}px`);
       })
       .on('mouseout', () => {
         vis.chartArea.selectAll('rect')
+          .classed('hovered', false)
           .style('stroke', 'none')
           .style('stroke-width', '0px');
-          // .sort((a, b) => vis.yScale(a.unique_id) - vis.yScale(b.unique_id));
+        // .sort((a, b) => vis.yScale(a.unique_id) - vis.yScale(b.unique_id));
         vis.tooltip.style('opacity', 0);
+      })
+      .on('click', () => {
+        const selected = d3.select(this).classed('selected');
+        d3.select(this).classed('selected', !selected);
+        if (!selected) {
+          const selectedCat = d3.select(this).data()[0]['unique-id'];
+          console.log(selectedCat);
+          vis.dispatcher.call('selectedCat', this, selectedCat);
+        }
       });
 
     vis.xAxisG.call(d3.axisTop(vis.xScale));

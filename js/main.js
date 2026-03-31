@@ -57,7 +57,7 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
     if (!selectedCat) {
 
     } else {
-
+      ca
     }
   });
 
@@ -97,6 +97,25 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   //     splot.updateVis();
   //     },
   //   );
+
+  d3.csv('./data/Distance_radial.csv').then((radialData) => {
+    radialData.forEach((d) => {
+      d.avg_distance = +d.avg_distance;
+      d.curr_hour = +d.curr_hour;
+    });
+
+    const radial = new RadialChart({ parentElement: '#radialChart' }, radialData);
+
+    d3.csv('./data/Distance_heatmap.csv').then((heatmapData) => {
+      heatmapData.forEach((d) => {
+        d.day_number = +d.day_number;
+        d.distance = +d.distance;
+      });
+
+      const heatMap = new HeatMap({ parentElement: '#heatmap' }, heatmapData, radialData);
+      heatMap.updateVis();
+    });
+}).catch((error) => console.error(error));
 });
 
 d3.json('./data/cat_bubbles_all.geojson').then((data) => {
@@ -107,29 +126,7 @@ d3.json('./data/cat_bubbles_all.geojson').then((data) => {
     }, data, pathsData);
   });
 });
-d3.csv('./data/Distance_Travelled.csv').then((data) => {
-  data.forEach((d) => {
-    // eslint-disable-next-line no-param-reassign
-    d.avg_distance_p_hour = +d.avg_distance_p_hour;
-    // eslint-disable-next-line no-param-reassign
-    d.hour = +d.hour;
-    // eslint-disable-next-line no-param-reassign
-    d.prey_p_month = +d.prey_p_month;
-  });
-  // eslint-disable-next-line no-unused-vars, no-undef
-  const radial = new RadialChart({
-    parentElement: '#radialChart',
-  }, data);
-  radial.updateVis();
-}).catch((error) => console.error(error));
 
-d3.csv('./data/Distance_heatmap.csv').then((data) => {
-  data.forEach((d) => {
-    d.day_number = +d.day_number;
-    d.distance = +d.distance;
-  });
-  const heatMap = new HeatMap({
-    parentElement: '#heatmap',
-  }, data);
-  heatMap.updateVis();
-});
+
+
+
