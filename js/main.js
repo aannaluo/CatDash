@@ -1,5 +1,9 @@
-/* global Scatterplot, CatMap, RadialChart, CatProfile */
+/* global Scatterplot, CatMap, RadialChart, CatProfile, Title */
 /* eslint-disable no-param-reassign */
+
+const title = new Title({
+  parentElement: '#title',
+});
 
 d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   // eslint-disable-next-line no-unused-vars, no-undef
