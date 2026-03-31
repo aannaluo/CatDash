@@ -3,7 +3,6 @@ class BarChart {
      * Class constructor with initial configuration
      * @param {Object}
      */
-  // Todo: Add or remove parameters from the constructor as needed
   constructor(_config, dispatcher, data) {
     this.config = {
       parentElement: _config.parentElement,
@@ -50,27 +49,18 @@ class BarChart {
       .text('Prey per Month')
       .style('font-weight', 'bold');
 
-    const counts = d3.rollups(vis.data, (v) => v.length, (d) => d.prey_p_month);
-    vis.preyCount = counts.map((d) => {
-      d[0] = +d[0];
-      return d;
-    });
-
-    const bucketGenerator = d3
-      .bin()
-      .value((d) => d.prey_p_month)
-      .domain([0, 28])
-      .thresholds([1, 3, 7, 11]);
-
-    console.log(bucketGenerator(vis.data));
-
     vis.updateVis();
   }
 
   updateVis() {
     const vis = this;
 
-    console.log(vis.preyCount);
+    const counts = d3.rollups(vis.data, (v) => v.length, (d) => d.prey_p_month);
+    vis.preyCount = counts.map((d) => {
+      d[0] = +d[0];
+      return d;
+    });
+
     vis.xScale = d3.scaleBand()
       .domain(d3.range(d3.extent(vis.preyCount, (d) => d[0])[1] + 1))
       .range([0, vis.width])
@@ -96,7 +86,6 @@ class BarChart {
     vis.xAxisG.call(vis.xAxis)
 
     vis.yAxisG.call(vis.yAxis)
-
 
     const bars = vis.chartArea.selectAll('.bar')
       .data(vis.preyCount, (d) => d[0])
