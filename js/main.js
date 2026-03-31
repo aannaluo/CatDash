@@ -45,44 +45,11 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
     parentElement: '#cat-profile',
   }, data);
 
-  dispatcher.on('selectedCat', (selectedCat) => {
-    if (!selectedCat) {
-      catMap.selectedCat = 'Abba_Pet Cats United Kingdom';
-      catMap.updateVis();
-      catProfile.selectedCat = 'Abba_Pet Cats United Kingdom';
-      catProfile.updateVis();
-    } else {
-      catMap.selectedCat = selectedCat;
-      catMap.updateVis();
-      catProfile.selectedCat = selectedCat;
-      catProfile.updateVis();
-    }
-  });
-
   const barChart = new BarChart(
     { parentElement: '#barchart' },
     dispatcher,
     data,
   );
-
-  dispatcher.on('selectedAgeCat', (selectedAgeCat) => {
-    if (!selectedAgeCat) {
-      barChart.data = data;
-      barChart.updateVis();
-    } if (selectedAgeCat === 0) {
-      barChart.data = data.filter((d) => d.age <= 2);
-      barChart.updateVis();
-    } if (selectedAgeCat === 3) {
-      barChart.data = data.filter((d) => d.age > 2 && d.age <= 5);
-      barChart.updateVis();
-    } if (selectedAgeCat === 6) {
-      barChart.data = data.filter((d) => d.age > 5 && d.age <= 8);
-      barChart.updateVis();
-    } if (selectedAgeCat === 9) {
-      barChart.data = data.filter((d) => d.age > 8);
-      barChart.updateVis();
-    }
-  });
 
   d3.csv('./data/Distance_radial.csv').then((radialData) => {
     radialData.forEach((d) => {
@@ -102,4 +69,41 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
       heatMap.updateVis();
     });
   }).catch((error) => console.error(error));
+
+  dispatcher.on('selectedCat', (selectedCat) => {
+    if (!selectedCat) {
+      catMap.selectedCat = 'Abba_Pet Cats United Kingdom';
+      catMap.updateVis();
+      beeAll.selectedCat = 'Abba_Pet Cats United Kingdom';
+      beeAll.updateVis();
+      catProfile.selectedCat = 'Abba_Pet Cats United Kingdom';
+      catProfile.updateVis();
+    } else {
+      catMap.selectedCat = selectedCat;
+      catMap.updateVis();
+      catProfile.selectedCat = selectedCat;
+      catProfile.updateVis();
+      beeAll.selectedCat = selectedCat;
+      beeAll.updateVis();
+    }
+  });
+
+  dispatcher.on('selectedAgeCat', (selectedAgeCat) => {
+    if (!selectedAgeCat) {
+      barChart.data = data;
+      barChart.updateVis();
+    } if (selectedAgeCat === 0) {
+      barChart.data = data.filter((d) => d.age <= 2);
+      barChart.updateVis();
+    } if (selectedAgeCat === 3) {
+      barChart.data = data.filter((d) => d.age > 2 && d.age <= 5);
+      barChart.updateVis();
+    } if (selectedAgeCat === 6) {
+      barChart.data = data.filter((d) => d.age > 5 && d.age <= 8);
+      barChart.updateVis();
+    } if (selectedAgeCat === 9) {
+      barChart.data = data.filter((d) => d.age > 8);
+      barChart.updateVis();
+    }
+  });
 });

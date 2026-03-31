@@ -33,8 +33,8 @@ class HeatMap {
       .append('div')
       .style('height', '850px')// visible height
       .style('overflow-y', 'scroll');
-      // .style('width', '400px')
-      // .style('overflow-w', 'scroll');
+    // .style('width', '400px')
+    // .style('overflow-w', 'scroll');
 
     vis.svg = vis.scrollContainer.append('svg')
       .attr('width', vis.width + vis.config.margin.left + vis.config.margin.right)
@@ -83,8 +83,8 @@ class HeatMap {
       .style('padding', '0px')
       .style('pointer-events', 'none')
       .style('font-size', '12px');
-      // .style('width', '200px')
-      // .style('height', '250px');
+    // .style('width', '200px')
+    // .style('height', '250px');
 
     vis.updateVis();
   }
@@ -110,15 +110,15 @@ class HeatMap {
       //   vis.chartArea.selectAll('rect')
       //     .filter((r) => r.unique_id === d.unique_id)
       //     // .raise()
-          // .style('stroke', 'white')
-          // .style('stroke-width', '2px');
+    // .style('stroke', 'white')
+    // .style('stroke-width', '2px');
       //   const allDays = vis.data
       //     .filter((r) => r.unique_id === d.unique_id && r.day_number <= 10)
       //     .sort((a, b) => a.day_number - b.day_number);
 
-      //   const dayRows = allDays
-      //     .map((r) => `<p>Day ${r.day_number}: ${r.distance.toFixed(2)}m</p>`)
-      //     .join('');
+    //   const dayRows = allDays
+    //     .map((r) => `<p>Day ${r.day_number}: ${r.distance.toFixed(2)}m</p>`)
+    //     .join('');
 
       //   vis.tooltip
       //     .style('opacity', 1)
@@ -157,12 +157,12 @@ class HeatMap {
         // .sort((a, b) => vis.yScale(a.unique_id) - vis.yScale(b.unique_id));
         vis.tooltip.style('opacity', 0);
       })
-      .on('click', () => {
+      .on('click', function () {
         const selected = d3.select(this).classed('selected');
         d3.select(this).classed('selected', !selected);
         if (!selected) {
-          const selectedCat = d3.select(this).data()[0]['unique-id'];
-          console.log(selectedCat);
+          const selectedCat = d3.select(this).data()[0].unique_id;
+          console.log(d3.select(this).data());
           vis.dispatcher.call('selectedCat', this, selectedCat);
         }
       });
@@ -172,7 +172,7 @@ class HeatMap {
 
   reformatNames(d) {
     const countryMap = {
-      'Australia': 'AU',
+      Australia: 'AU',
       'New Zealand': 'NZ',
       'United States': 'US',
       'United Kingdom': 'UK',
