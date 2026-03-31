@@ -130,17 +130,32 @@ class CatMap {
             opacity: 1,
           },
         }).addTo(vis.map);
+
+        // Calculate bounds from path coordinates
+        const pathCoords = selectedPath.geometry.coordinates;
+        if (pathCoords.length > 0) {
+          const bounds = L.latLngBounds(
+            pathCoords.map((coord) => [coord[1], coord[0]]),
+          );
+          vis.bounds = bounds;
+        }
       }
     }
 
     // Calculate dynamic bounds for the circle and zoom to fit
     const latOffset = radius / 111000;
     const lonOffset = radius / (111000 * Math.cos(lat * (Math.PI / 180)));
-    vis.bounds = L.latLngBounds(
+    const circleBounds = L.latLngBounds(
       [lat - latOffset, lon - lonOffset],
       [lat + latOffset, lon + lonOffset],
     );
-    vis.map.fitBounds(vis.bounds, { padding: [50, 50] });
+
+    // Use path bounds if available, otherwise use circle bounds
+    if (!vis.bounds) {
+      vis.bounds = circleBounds;
+    }
+
+    vis.map.fitBounds(vis.bounds, { padding: [20, 20] });
   }
 
   recentreMap() {
@@ -150,6 +165,6 @@ class CatMap {
       return;
     }
 
-    vis.map.fitBounds(vis.bounds, { padding: [50, 50] });
+    vis.map.fitBounds(vis.bounds, { padding: [20, 20] });
   }
 }
