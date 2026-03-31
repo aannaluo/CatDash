@@ -14,7 +14,7 @@ body {
 .dashboard {
 	box-sizing: border-box;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1.7fr 1.2fr 1.5fr;
 	grid-template-rows: 1fr;
 	height: 100%;
 }
