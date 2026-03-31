@@ -1,748 +1,748 @@
-animal-name,home-range,age,sex,neutered,prey_p_month,study-site,unique-id
-Abba,0.014,3.0,Female,Yes,3,UK,Abba_Pet Cats United Kingdom
-Adele,0.0034,0.9,Female,Yes,6,Australia,Adele_Pet Cats Australia
-Ajax2,0.015,3.0,Male,Yes,4,United States,Ajax2_Pet Cats United States
-Albert,0.0109,9.0,Male,Yes,1,Australia,Albert_Pet Cats Australia
-Alfie,0.009,2.0,Male,Yes,4,New Zealand,Alfie_Pet Cats New Zealand
-Alfie,0.091,3.0,Male,Yes,3,UK,Alfie_Pet Cats United Kingdom
-Ali,0.0103,0.7,Female,Yes,5,Australia,Ali_Pet Cats Australia
-Alice,0.034,5.0,Female,Yes,9,New Zealand,Alice_Pet Cats New Zealand
-Allie,0.064,8.0,Female,Yes,2,New Zealand,Allie_Pet Cats New Zealand
-Alrari,0.0145,9.0,Male,Yes,2,Australia,Alrari_Pet Cats Australia
-AmbaRose,0.0053,10.0,Female,Yes,2,Australia,AmbaRose_Pet Cats Australia
-Amelia,0.0036,10.0,Female,Yes,1,Australia,Amelia_Pet Cats Australia
-Anakin,0.0493,2.0,Male,Yes,1,Australia,Anakin_Pet Cats Australia
-Angel,0.0188,3.0,Female,Yes,5,Australia,Angel_Pet Cats Australia
-Annie,0.0097,2.0,Female,Yes,1,Australia,Annie_Pet Cats Australia
-Anubis2,0.017,2.0,Male,Yes,4,United States,Anubis2_Pet Cats United States
-Apples,0.011,10.0,Female,Yes,2,New Zealand,Apples_Pet Cats New Zealand
-Archie,0.014,4.0,Male,Yes,1,New Zealand,Archie_Pet Cats New Zealand
-Ares,0.029,3.0,Male,Yes,0,UK,Ares_Pet Cats United Kingdom
-Ariel,0.0069,1.0,Male,Yes,5,Australia,Ariel_Pet Cats Australia
-Arya,0.007,0.3,Female,Yes,16,New Zealand,Arya_Pet Cats New Zealand
-Ash,0.0437,8.0,Male,Yes,2,Australia,Ash_Pet Cats Australia
-Ash,0.025,8.0,Male,Yes,1,New Zealand,Ash_Pet Cats New Zealand
-Ash2,0.0169,3.0,Male,Yes,8,Australia,Ash2_Pet Cats Australia
-Asher2,0.09,3.0,Male,Yes,8,United States,Asher2_Pet Cats United States
-Asibo2,0.037,2.0,Male,Yes,4,United States,Asibo2_Pet Cats United States
-Astro,0.0528,2.0,Male,Yes,8,Australia,Astro_Pet Cats Australia
-Astryl,0.066,12.0,Female,Yes,2,New Zealand,Astryl_Pet Cats New Zealand
-Athena,0.011,3.0,Female,Yes,3,UK,Athena_Pet Cats United Kingdom
-Atik,0.0134,2.0,Female,Yes,5,Australia,Atik_Pet Cats Australia
-Atticus,0.013,8.0,Male,Yes,1,United States,Atticus_Pet Cats United States
-Ava,0.017,2.0,Female,Yes,2,New Zealand,Ava_Pet Cats New Zealand
-Babs1,0.011,0.8,Female,Yes,15,New Zealand,Babs1_Pet Cats New Zealand
-BabyKitty2,0.044,1.0,Male,No,8,United States,BabyKitty2_Pet Cats United States
-Balu,0.031,7.0,Female,Yes,3,UK,Balu_Pet Cats United Kingdom
-Bambi,0.0069,3.0,Female,Yes,5,Australia,Bambi_Pet Cats Australia
-Bandit,0.0214,3.0,Female,Yes,13,Australia,Bandit_Pet Cats Australia
-Banjo,0.0313,1.0,Male,Yes,5,Australia,Banjo_Pet Cats Australia
-Banjo2,0.0071,9.0,Female,Yes,9,Australia,Banjo2_Pet Cats Australia
-Banjo2,0.012,9.0,Female,Yes,1,United States,Banjo2_Pet Cats United States
-Banzai,0.116,3.0,Male,Yes,1,New Zealand,Banzai_Pet Cats New Zealand
-Barney,0.028,11.0,Male,Yes,0,UK,Barney_Pet Cats United Kingdom
-Basil,0.0293,3.0,Male,Yes,2,Australia,Basil_Pet Cats Australia
-Basil,0.018,9.0,Male,Yes,1,New Zealand,Basil_Pet Cats New Zealand
-BB,0.0087,1.0,Female,Yes,1,Australia,BB_Pet Cats Australia
-Bean2,0.022,3.0,Male,Yes,4,United States,Bean2_Pet Cats United States
-Beanie,0.005,4.0,Male,Yes,0,UK,Beanie_Pet Cats United Kingdom
-Bear,0.055,4.0,Female,Yes,6,New Zealand,Bear_Pet Cats New Zealand
-Bear,0.254,6.0,Male,Yes,3,UK,Bear_Pet Cats United Kingdom
-Beatle2,0.057,7.0,Male,Yes,0,United States,Beatle2_Pet Cats United States
-Bel,0.0583,1.0,Female,Yes,4,Australia,Bel_Pet Cats Australia
-Bel2,0.0053,12.0,Female,Yes,0,Australia,Bel2_Pet Cats Australia
-Bela2,0.112,2.0,Male,Yes,1,United States,Bela2_Pet Cats United States
-Bella,0.045,3.0,Female,Yes,7,UK,Bella_Pet Cats United Kingdom
-Bella2,0.046,5.0,Female,Yes,8,United States,Bella2_Pet Cats United States
-Bella5,0.0064,5.0,Female,Yes,0,Australia,Bella5_Pet Cats Australia
-Bella6,0.0146,8.0,Female,Yes,11,Australia,Bella6_Pet Cats Australia
-BellaBoo,0.1588,2.0,Female,Yes,7,Australia,BellaBoo_Pet Cats Australia
-BellaII,0.057,8.0,Female,Yes,3,New Zealand,BellaII_Pet Cats New Zealand
-BellaIII,0.044,4.0,Female,Yes,2,New Zealand,BellaIII_Pet Cats New Zealand
-Belle,0.0081,4.0,Female,Yes,1,Australia,Belle_Pet Cats Australia
-Beluga,0.051,2.0,Male,Yes,0,United States,Beluga_Pet Cats United States
-Benny,0.0042,7.0,Male,Yes,1,Australia,Benny_Pet Cats Australia
-Benny,0.02,4.0,Male,Yes,8,United States,Benny_Pet Cats United States
-Bentley,0.0233,12.0,Male,Yes,2,Australia,Bentley_Pet Cats Australia
-Bessy,0.0253,8.0,Female,Yes,21,Australia,Bessy_Pet Cats Australia
-Biggles,0.0087,4.0,Male,Yes,1,Australia,Biggles_Pet Cats Australia
-Billy,0.0061,11.0,Male,Yes,0,Australia,Billy_Pet Cats Australia
-BillyWhiskers2,0.037,2.0,Male,Yes,4,United States,BillyWhiskers2_Pet Cats United States
-Binky,0.058,4.0,Male,Yes,0,UK,Binky_Pet Cats United Kingdom
-Bits,0.012,13.0,Female,Yes,3,UK,Bits_Pet Cats United Kingdom
-Blackie,0.028,9.0,Male,Yes,3,New Zealand,Blackie_Pet Cats New Zealand
-Bluey,0.0071,9.0,Male,Yes,0,Australia,Bluey_Pet Cats Australia
-Bo,0.0099,4.0,Male,Yes,2,Australia,Bo_Pet Cats Australia
-Bob,0.0464,7.0,Male,Yes,4,Australia,Bob_Pet Cats Australia
-Bobs,0.059,13.0,Female,Yes,3,UK,Bobs_Pet Cats United Kingdom
-Bongo2,0.062,4.0,Male,Yes,12,United States,Bongo2_Pet Cats United States
-Boo,0.005,4.0,Male,Yes,0,Australia,Boo_Pet Cats Australia
-BooBooKitty,0.002,12.0,Female,Yes,0,United States,BooBooKitty_Pet Cats United States
-Boofy,0.0289,9.0,Male,Yes,1,Australia,Boofy_Pet Cats Australia
-Boots,0.009,3.0,Female,Yes,3,Australia,Boots_Pet Cats Australia
-Boots,0.056,16.0,Female,Yes,0,UK,Boots_Pet Cats United Kingdom
-Boots2,0.0044,14.0,Male,Yes,1,Australia,Boots2_Pet Cats Australia
-Boris2,0.067,2.0,Male,Yes,4,United States,Boris2_Pet Cats United States
-Boz,0.0092,6.0,Male,Yes,0,Australia,Boz_Pet Cats Australia
-Bramble,0.007,3.0,Female,Yes,3,New Zealand,Bramble_Pet Cats New Zealand
-Bruce,0.0164,2.0,Male,Yes,2,Australia,Bruce_Pet Cats Australia
-BruceWillisPussington,0.0133,7.0,Male,Yes,1,Australia,BruceWillisPussington_Pet Cats Australia
-Buddha,0.0247,6.0,Male,Yes,2,Australia,Buddha_Pet Cats Australia
-Buddy,0.0132,2.0,Male,Yes,1,Australia,Buddy_Pet Cats Australia
-Buddy,0.025,7.0,Male,Yes,1,New Zealand,Buddy_Pet Cats New Zealand
-Buddy2,0.0177,4.0,Male,Yes,4,Australia,Buddy2_Pet Cats Australia
-Bugsy,0.0433,5.0,Male,Yes,3,Australia,Bugsy_Pet Cats Australia
-Bumbles,0.023,12.0,Female,Yes,3,UK,Bumbles_Pet Cats United Kingdom
-Bumbles2,0.027,9.0,Male,Yes,12,United States,Bumbles2_Pet Cats United States
-Bungey,0.0074,6.0,Male,Yes,1,Australia,Bungey_Pet Cats Australia
-Buster,0.177,1.0,Male,Yes,5,New Zealand,Buster_Pet Cats New Zealand
-Buzz,0.025,2.0,Male,Yes,6,New Zealand,Buzz_Pet Cats New Zealand
-Caddie,0.0163,6.0,Female,Yes,4,Australia,Caddie_Pet Cats Australia
-CaptainSoldier,0.0369,3.0,Male,Yes,0,Australia,CaptainSoldier_Pet Cats Australia
-Carbonel,0.013,8.0,Male,Yes,0,UK,Carbonel_Pet Cats United Kingdom
-Carina,0.019,2.0,Female,Yes,8,New Zealand,Carina_Pet Cats New Zealand
-Carmello,0.0268,9.0,Male,Yes,0,Australia,Carmello_Pet Cats Australia
-Carrots,0.043,3.0,Male,Yes,17,UK,Carrots_Pet Cats United Kingdom
-Casper,0.0099,8.0,Male,Yes,3,Australia,Casper_Pet Cats Australia
-Casper,0.03,4.0,Male,Yes,7,New Zealand,Casper_Pet Cats New Zealand
-Casper,0.019,6.0,Male,Yes,0,UK,Casper_Pet Cats United Kingdom
-Caspian,0.018,10.0,Male,Yes,11,Australia,Caspian_Pet Cats Australia
-Cat,0.023,6.0,Male,Yes,1,Australia,Cat_Pet Cats Australia
-CatMarshall,0.022,5.0,Female,Yes,0,United States,CatMarshall_Pet Cats United States
-CatnissEverdeen,0.013,1.0,Female,Yes,0,United States,CatnissEverdeen_Pet Cats United States
-Catsby,0.021,5.0,Female,Yes,1,New Zealand,Catsby_Pet Cats New Zealand
-Cayden2,0.024,4.0,Male,Yes,0,United States,Cayden2_Pet Cats United States
-Cedar2,0.006,14.0,Male,Yes,4,United States,Cedar2_Pet Cats United States
-Celine,0.0108,3.0,Unk,Yes,1,Australia,Celine_Pet Cats Australia
-Chanel,0.011,8.0,Female,Yes,4,Australia,Chanel_Pet Cats Australia
-Charlie,0.011,5.0,Male,Yes,2,Australia,Charlie_Pet Cats Australia
-Charlie,0.017,6.0,Male,Yes,3,UK,Charlie_Pet Cats United Kingdom
-Charlie2,0.007,9.0,Male,Yes,3,UK,Charlie2_Pet Cats United Kingdom
-Charlie3,0.0039,12.0,Female,Yes,1,Australia,Charlie3_Pet Cats Australia
-Charlie4,0.026,6.0,Male,Yes,0,Australia,Charlie4_Pet Cats Australia
-Charlie6,0.0252,2.0,Male,Yes,9,Australia,Charlie6_Pet Cats Australia
-CharlieFrank,0.0165,4.0,Male,Yes,0,Australia,CharlieFrank_Pet Cats Australia
-Charlotte,0.0421,5.0,Female,Yes,3,Australia,Charlotte_Pet Cats Australia
-Charlotte2,0.0101,1.0,Female,Yes,2,Australia,Charlotte2_Pet Cats Australia
-Chase,0.0178,1.0,Female,Yes,21,Australia,Chase_Pet Cats Australia
-Cheeky,0.0136,15.0,Male,Yes,1,Australia,Cheeky_Pet Cats Australia
-Chess,0.013,9.0,Female,Yes,1,New Zealand,Chess_Pet Cats New Zealand
-Chester2,0.109,4.0,Male,Yes,4,United States,Chester2_Pet Cats United States
-Chloe,0.013,7.0,Female,Yes,3,UK,Chloe_Pet Cats United Kingdom
-ChuckNorris,0.0136,3.0,Male,Yes,2,Australia,ChuckNorris_Pet Cats Australia
-CJ,0.114,5.0,Male,Yes,0,UK,CJ_Pet Cats United Kingdom
-Clancy,0.0089,9.0,Female,Yes,2,Australia,Clancy_Pet Cats Australia
-Claude,0.007,8.0,Male,Yes,2,Australia,Claude_Pet Cats Australia
-Cleo,0.0175,4.0,Female,Yes,0,Australia,Cleo_Pet Cats Australia
-Cleo2,0.0414,4.0,Female,Yes,3,Australia,Cleo2_Pet Cats Australia
-Climber2,0.04,9.0,Male,Yes,4,United States,Climber2_Pet Cats United States
-Coal,0.044,7.0,Male,Yes,4,United States,Coal_Pet Cats United States
-Coco,0.0066,2.0,Female,Yes,3,Australia,Coco_Pet Cats Australia
-Coco,0.031,7.0,Female,Yes,3,UK,Coco_Pet Cats United Kingdom
-Conan,0.112,13.0,Male,Yes,1,United States,Conan_Pet Cats United States
-Cookie,0.013,3.0,Female,Yes,16,New Zealand,Cookie_Pet Cats New Zealand
-Cornflake,0.043,3.0,Female,Yes,1,New Zealand,Cornflake_Pet Cats New Zealand
-Cosi,0.0223,8.0,Female,Yes,3,Australia,Cosi_Pet Cats Australia
-Crumpet,0.0788,4.0,Female,Yes,3,Australia,Crumpet_Pet Cats Australia
-Cutie-Girl,0.007,2.0,Female,Yes,1,New Zealand,Cutie-Girl_Pet Cats New Zealand
-Daisy2,0.0089,6.0,Female,Yes,5,Australia,Daisy2_Pet Cats Australia
-Dana,0.0103,4.0,Female,Yes,2,Australia,Dana_Pet Cats Australia
-Dana,0.01,8.0,Male,Yes,1,New Zealand,Dana_Pet Cats New Zealand
-Darcy,0.0567,8.0,Male,Yes,4,Australia,Darcy_Pet Cats Australia
-Darcy2,0.0067,8.0,Male,Yes,1,Australia,Darcy2_Pet Cats Australia
-Darkie,0.0125,2.0,Female,Yes,6,Australia,Darkie_Pet Cats Australia
-Dash,0.02,4.0,Male,Yes,2,New Zealand,Dash_Pet Cats New Zealand
-DC,0.0244,6.0,Male,Yes,0,Australia,DC_Pet Cats Australia
-Delilah,0.0211,2.0,Female,Yes,5,Australia,Delilah_Pet Cats Australia
-Delilah2,0.0629,6.0,Female,Yes,6,Australia,Delilah2_Pet Cats Australia
-Delphi,0.041,1.0,Female,Yes,4,New Zealand,Delphi_Pet Cats New Zealand
-DetectiveTeddy,0.0153,8.0,Male,Yes,5,Australia,DetectiveTeddy_Pet Cats Australia
-Dexter,0.039,3.0,Male,Yes,3,UK,Dexter_Pet Cats United Kingdom
-Dexter2,0.585,1.0,Male,Yes,0,UK,Dexter2_Pet Cats United Kingdom
-Dharma,0.0094,17.0,Male,Yes,1,Australia,Dharma_Pet Cats Australia
-Diamond2,0.04,2.0,Female,Yes,16,United States,Diamond2_Pet Cats United States
-Diamonds,0.0115,2.0,Female,Yes,0,Australia,Diamonds_Pet Cats Australia
-Diesel,0.0257,2.0,Male,Yes,1,Australia,Diesel_Pet Cats Australia
-Dingo,0.03,4.0,Male,Yes,11,New Zealand,Dingo_Pet Cats New Zealand
-DonaldFluffypants,0.021,3.0,Male,Yes,4,United States,DonaldFluffypants_Pet Cats United States
-DonCarlos2,0.011,4.0,Male,Yes,8,United States,DonCarlos2_Pet Cats United States
-Dory,0.024,1.0,Female,No,0,UK,Dory_Pet Cats United Kingdom
-Dotti,0.011,7.0,Female,Yes,1,New Zealand,Dotti_Pet Cats New Zealand
-Douglas,0.01,7.0,Male,Yes,1,United States,Douglas_Pet Cats United States
-Drake,0.0462,10.0,Female,Yes,1,Australia,Drake_Pet Cats Australia
-Ebby,0.024,10.0,Female,Yes,3,UK,Ebby_Pet Cats United Kingdom
-Eddie,0.0059,11.0,Male,Yes,0,Australia,Eddie_Pet Cats Australia
-Eesti,0.0104,5.0,Male,Yes,1,Australia,Eesti_Pet Cats Australia
-Eldrick,0.0757,2.0,Male,Yes,11,Australia,Eldrick_Pet Cats Australia
-Elle,0.115,5.0,Female,Yes,0,United States,Elle_Pet Cats United States
-Ellie,0.027,8.0,Female,Yes,1,New Zealand,Ellie_Pet Cats New Zealand
-Elliot,0.189,2.0,Male,Yes,6,New Zealand,Elliot_Pet Cats New Zealand
-Elmo,0.024,12.0,Male,Yes,2,Australia,Elmo_Pet Cats Australia
-Emmy2,0.027,4.0,Female,Yes,0,United States,Emmy2_Pet Cats United States
-Enzo,0.0128,2.1,Male,Yes,2,Australia,Enzo_Pet Cats Australia
-Ernie,0.0448,11.0,Male,Yes,0,Australia,Ernie_Pet Cats Australia
-Ernie,0.026,1.0,Male,Yes,3,UK,Ernie_Pet Cats United Kingdom
-Fairclough,0.008,4.0,Male,Yes,0,UK,Fairclough_Pet Cats United Kingdom
-FantaPants,0.0232,5.0,Male,Yes,2,Australia,FantaPants_Pet Cats Australia
-Felix,0.0107,2.0,Male,Yes,2,Australia,Felix_Pet Cats Australia
-Felix,0.014,7.0,Male,Yes,4,New Zealand,Felix_Pet Cats New Zealand
-Felix,0.017,4.0,Male,Yes,3,UK,Felix_Pet Cats United Kingdom
-Felix3,0.0072,2.0,Male,Yes,4,Australia,Felix3_Pet Cats Australia
-Fergie,0.0236,1.0,Female,Yes,4,Australia,Fergie_Pet Cats Australia
-Fiona2,0.011,1.0,Female,Yes,20,United States,Fiona2_Pet Cats United States
-Fizzgig,0.0496,6.0,Female,Yes,16,Australia,Fizzgig_Pet Cats Australia
-Flanders,0.0168,1.0,Male,Yes,0,Australia,Flanders_Pet Cats Australia
-Flash,0.003,3.0,Female,Yes,3,UK,Flash_Pet Cats United Kingdom
-Fletcher2,0.028,13.0,Male,Yes,4,United States,Fletcher2_Pet Cats United States
-Floss,0.026,1.0,Female,Yes,11,New Zealand,Floss_Pet Cats New Zealand
-Flossie,0.0392,5.0,Female,Yes,3,Australia,Flossie_Pet Cats Australia
-Fonzie,0.021,10.0,Male,Yes,0,UK,Fonzie_Pet Cats United Kingdom
-Frank,0.0261,0.6,Male,No,0,Australia,Frank_Pet Cats Australia
-Frank,0.046,3.0,Male,Yes,12,United States,Frank_Pet Cats United States
-Frank,0.071,4.0,Male,Yes,3,UK,Frank_Pet Cats United Kingdom
-Frank_2,0.04,7.0,Male,Yes,0,UK,Frank_2_Pet Cats United Kingdom
-Franklin,0.052,8.0,Male,Yes,8,United States,Franklin_Pet Cats United States
-Freya,0.021,4.0,Female,Yes,0,UK,Freya_Pet Cats United Kingdom
-Friday,0.011,1.0,Male,Yes,0,UK,Friday_Pet Cats United Kingdom
-Fritz,0.105,7.0,Male,Yes,5,New Zealand,Fritz_Pet Cats New Zealand
-Frizzle,0.0156,3.0,Male,Yes,0,Australia,Frizzle_Pet Cats Australia
-Frosty,0.0375,1.0,Male,Yes,1,Australia,Frosty_Pet Cats Australia
-Furry,0.0076,6.0,Female,Yes,5,Australia,Furry_Pet Cats Australia
-GagglesHieronymus,0.0254,5.0,Male,Yes,0,Australia,GagglesHieronymus_Pet Cats Australia
-Garfield,0.0263,9.0,Male,Yes,1,Australia,Garfield_Pet Cats Australia
-Garry,0.0361,6.0,Male,Yes,3,Australia,Garry_Pet Cats Australia
-Geezer,0.0096,5.0,Male,Yes,0,Australia,Geezer_Pet Cats Australia
-Genie,0.0156,4.0,Female,Yes,2,Australia,Genie_Pet Cats Australia
-George,0.0214,3.0,Male,Yes,3,Australia,George_Pet Cats Australia
-George,0.01,9.0,Male,Yes,1,New Zealand,George_Pet Cats New Zealand
-George2,0.0161,3.0,Male,Yes,7,Australia,George2_Pet Cats Australia
-George2,0.043,1.0,Male,Yes,16,United States,George2_Pet Cats United States
-Georgie,0.0075,9.0,Male,Yes,5,Australia,Georgie_Pet Cats Australia
-Gertie,0.004,2.0,Female,Yes,2,New Zealand,Gertie_Pet Cats New Zealand
-Gianni2,0.029,10.0,Male,Yes,8,United States,Gianni2_Pet Cats United States
-Gigi,0.0138,13.0,Female,Yes,1,Australia,Gigi_Pet Cats Australia
-Gina,0.0323,3.0,Female,Yes,2,Australia,Gina_Pet Cats Australia
-Ginge,0.166,3.0,Male,Yes,17,UK,Ginge_Pet Cats United Kingdom
-Gingernut,0.126,2.0,Male,Yes,11,New Zealand,Gingernut_Pet Cats New Zealand
-GinII,0.013,5.0,Male,Yes,11,New Zealand,GinII_Pet Cats New Zealand
-Gizmo,0.0126,19.0,Male,Yes,0,Australia,Gizmo_Pet Cats Australia
-Goldfinger,0.0089,4.0,Male,Yes,0,Australia,Goldfinger_Pet Cats Australia
-Goliath2,0.07,6.0,Male,Yes,4,United States,Goliath2_Pet Cats United States
-Gracie,0.012,10.0,Female,Yes,4,United States,Gracie_Pet Cats United States
-Gracie,0.01,2.0,Female,Yes,0,UK,Gracie_Pet Cats United Kingdom
-Gracie_2,0.013,6.0,Female,Yes,0,UK,Gracie_2_Pet Cats United Kingdom
-GracieL2,0.025,16.0,Female,Yes,4,United States,GracieL2_Pet Cats United States
-GracieLouFreebush,0.0123,2.0,Female,Yes,6,Australia,GracieLouFreebush_Pet Cats Australia
-Grimm,0.0072,0.6,Male,Yes,0,Australia,Grimm_Pet Cats Australia
-Guinness,0.025,7.0,Male,Yes,3,UK,Guinness_Pet Cats United Kingdom
-Gus,0.0177,3.0,Male,Yes,3,Australia,Gus_Pet Cats Australia
-Gus,0.037,3.0,Male,Yes,3,New Zealand,Gus_Pet Cats New Zealand
-Guss,0.02,8.0,Male,Yes,3,New Zealand,Guss_Pet Cats New Zealand
-Gyhjor,0.0125,8.0,Male,Yes,1,Australia,Gyhjor_Pet Cats Australia
-HaHa,0.0163,2.0,Male,Yes,0,Australia,HaHa_Pet Cats Australia
-Hailey2,0.009,10.0,Female,Yes,8,United States,Hailey2_Pet Cats United States
-Harley2,0.059,5.0,Female,Yes,4,United States,Harley2_Pet Cats United States
-Harry2,0.0357,2.0,Male,Yes,0,Australia,Harry2_Pet Cats Australia
-Harry3,0.0074,4.0,Male,Yes,1,Australia,Harry3_Pet Cats Australia
-Hemingway,0.012,4.0,Male,Yes,1,United States,Hemingway_Pet Cats United States
-Henry,0.0152,1.0,Male,Yes,4,Australia,Henry_Pet Cats Australia
-Henry,0.02,6.0,Male,Yes,2,New Zealand,Henry_Pet Cats New Zealand
-Henry2,0.0198,8.0,Male,Yes,0,Australia,Henry2_Pet Cats Australia
-Herman2,0.019,8.0,Male,Yes,4,United States,Herman2_Pet Cats United States
-Hershey,0.058,7.0,Male,Yes,4,United States,Hershey_Pet Cats United States
-Hestor,0.0115,11.0,Male,Yes,5,Australia,Hestor_Pet Cats Australia
-Holly,0.0176,3.0,Female,Yes,7,Australia,Holly_Pet Cats Australia
-Hunter,0.0202,1.0,Male,Yes,0,Australia,Hunter_Pet Cats Australia
-Imelda,0.0103,1.0,Female,Yes,6,Australia,Imelda_Pet Cats Australia
-Indie,0.027,3.0,Male,Yes,0,UK,Indie_Pet Cats United Kingdom
-Ivory,0.0061,2.0,Female,Yes,2,Australia,Ivory_Pet Cats Australia
-Jack,0.0223,6.0,Male,Yes,5,Australia,Jack_Pet Cats Australia
-Jack2,0.563,5.0,Male,Yes,0,United States,Jack2_Pet Cats United States
-Jago,0.031,2.0,Male,Yes,17,UK,Jago_Pet Cats United Kingdom
-Jago2,0.083,2.0,Male,Yes,0,UK,Jago2_Pet Cats United Kingdom
-Jamie,0.0425,9.0,Male,Yes,3,Australia,Jamie_Pet Cats Australia
-Jams2,0.07,9.0,Male,Yes,4,United States,Jams2_Pet Cats United States
-Jasmine,0.0069,11.0,Female,Yes,1,Australia,Jasmine_Pet Cats Australia
-Jasmine2,0.0133,8.0,Female,Yes,0,Australia,Jasmine2_Pet Cats Australia
-Jasper,0.0097,5.0,Male,Yes,0,Australia,Jasper_Pet Cats Australia
-Jasper,0.02,2.0,Male,Yes,12,UK,Jasper_Pet Cats United Kingdom
-Jasper2,0.0058,2.0,Male,Yes,2,Australia,Jasper2_Pet Cats Australia
-Jasper3,0.0069,1.0,Male,Yes,0,Australia,Jasper3_Pet Cats Australia
-Jasper4,0.0107,2.0,Male,Yes,2,Australia,Jasper4_Pet Cats Australia
-Jax,0.0179,2.0,Male,Yes,6,Australia,Jax_Pet Cats Australia
-Jazzie,0.0111,1.0,Female,Yes,5,Australia,Jazzie_Pet Cats Australia
-Jedda,0.1164,4.0,Female,Yes,7,Australia,Jedda_Pet Cats Australia
-Jello2,0.044,3.0,Male,Yes,4,United States,Jello2_Pet Cats United States
-Jericho,0.0148,12.0,Male,Yes,0,Australia,Jericho_Pet Cats Australia
-Jess,0.115,11.0,Female,Yes,1,New Zealand,Jess_Pet Cats New Zealand
-Jessie,0.006,5.0,Female,Yes,3,UK,Jessie_Pet Cats United Kingdom
-JessieBeau,0.0324,2.0,Male,Yes,19,Australia,JessieBeau_Pet Cats Australia
-Jessy,0.036,11.0,Female,Yes,3,UK,Jessy_Pet Cats United Kingdom
-Jester,0.0218,5.0,Male,Yes,2,Australia,Jester_Pet Cats Australia
-Jetpack,0.049,2.0,Female,Yes,4,United States,Jetpack_Pet Cats United States
-Jezebel,0.027,14.0,Female,Yes,0,UK,Jezebel_Pet Cats United Kingdom
-Jim,0.008,8.0,Female,Yes,3,UK,Jim_Pet Cats United Kingdom
-Jingles,0.073,7.0,Female,Yes,21,New Zealand,Jingles_Pet Cats New Zealand
-Jingles2,0.057,8.0,Male,Yes,28,United States,Jingles2_Pet Cats United States
-Jinx,0.1434,1.0,Female,Yes,7,Australia,Jinx_Pet Cats Australia
-Jinx,0.027,8.0,Male,Yes,1,New Zealand,Jinx_Pet Cats New Zealand
-Jinx2,0.0338,6.0,Female,Yes,10,Australia,Jinx2_Pet Cats Australia
-Jitterbug2,0.047,2.0,Female,Yes,1,United States,Jitterbug2_Pet Cats United States
-Joey,0.0599,5.0,Male,Yes,1,Australia,Joey_Pet Cats Australia
-Joey,0.005,10.0,Male,Yes,4,United States,Joey_Pet Cats United States
-Johnny,0.0221,2.0,Male,Yes,11,Australia,Johnny_Pet Cats Australia
-Jones,0.063,11.0,Male,Yes,0,Australia,Jones_Pet Cats Australia
-Junior2,0.02,6.0,Male,Yes,1,United States,Junior2_Pet Cats United States
-Junipurr,0.0291,8.0,Female,Yes,13,Australia,Junipurr_Pet Cats Australia
-Justice,0.007,9.0,Male,Yes,0,United States,Justice_Pet Cats United States
-Kagin2,0.029,5.0,Male,Yes,4,United States,Kagin2_Pet Cats United States
-Kallie,0.0135,1.0,Female,Yes,5,Australia,Kallie_Pet Cats Australia
-Kamir,0.0048,13.0,Female,Yes,4,Australia,Kamir_Pet Cats Australia
-Kaos,0.06,7.0,Male,Yes,3,New Zealand,Kaos_Pet Cats New Zealand
-KatnissEverdeen,0.016,1.0,Female,Yes,0,United States,KatnissEverdeen_Pet Cats United States
-Katy,0.018,10.0,Female,Yes,1,New Zealand,Katy_Pet Cats New Zealand
-Keegan,0.049,3.0,Male,No,3,UK,Keegan_Pet Cats United Kingdom
-Kenny,0.0107,4.0,Male,Yes,0,Australia,Kenny_Pet Cats Australia
-Keytuyn,0.018,1.0,Male,Yes,5,Australia,Keytuyn_Pet Cats Australia
-KikkiDee,0.0356,8.0,Female,Yes,0,Australia,KikkiDee_Pet Cats Australia
-Kimy,0.042,7.0,Female,Yes,4,New Zealand,Kimy_Pet Cats New Zealand
-Kiri,0.033,0.8,Female,Yes,21,New Zealand,Kiri_Pet Cats New Zealand
-Kitty,0.0954,4.0,Male,Yes,1,Australia,Kitty_Pet Cats Australia
-Kitty2,0.031,5.0,Male,Yes,1,Australia,Kitty2_Pet Cats Australia
-Kitty3,0.0065,1.0,Female,Yes,0,Australia,Kitty3_Pet Cats Australia
-Kitty4,0.091,2.0,Male,No,4,Australia,Kitty4_Pet Cats Australia
-Kitty5,0.0069,2.0,Female,Yes,5,Australia,Kitty5_Pet Cats Australia
-Kitty6,0.0241,5.0,Female,Yes,1,Australia,Kitty6_Pet Cats Australia
-KittysaurusRex,0.116,5.0,Male,Yes,21,New Zealand,KittysaurusRex_Pet Cats New Zealand
-Kramer,0.0109,12.0,Male,Yes,4,Australia,Kramer_Pet Cats Australia
-Lacey,0.028,3.0,Female,Yes,8,United States,Lacey_Pet Cats United States
-Ladybird2,0.044,10.0,Female,Yes,4,United States,Ladybird2_Pet Cats United States
-Ladyboyhawke,0.176,5.0,Female,Yes,3,UK,Ladyboyhawke_Pet Cats United Kingdom
-LadyT,0.008,2.0,Male,Yes,3,UK,LadyT_Pet Cats United Kingdom
-LadyVelvet,0.0042,8.0,Female,Yes,1,Australia,LadyVelvet_Pet Cats Australia
-Laila,0.006,7.0,Female,Yes,1,New Zealand,Laila_Pet Cats New Zealand
-Latte,0.0183,4.0,Female,Yes,3,Australia,Latte_Pet Cats Australia
-Leila,0.0256,8.0,Female,Yes,11,Australia,Leila_Pet Cats Australia
-Lenny,0.035,1.0,Male,Yes,6,New Zealand,Lenny_Pet Cats New Zealand
-Leo,0.0077,2.0,Male,Yes,3,Australia,Leo_Pet Cats Australia
-Leo2,0.0121,10.0,Male,Yes,0,Australia,Leo2_Pet Cats Australia
-Leo3,0.0056,6.0,Male,Yes,3,Australia,Leo3_Pet Cats Australia
-Leo4,0.0262,16.0,Male,Yes,0,Australia,Leo4_Pet Cats Australia
-Lester,0.025,13.0,Male,Yes,1,United States,Lester_Pet Cats United States
-Lexi,0.3546,4.0,Female,Yes,5,Australia,Lexi_Pet Cats Australia
-LibertyBelle,0.0118,2.0,Female,Yes,3,Australia,LibertyBelle_Pet Cats Australia
-Lief,0.0167,3.0,Male,Yes,11,Australia,Lief_Pet Cats Australia
-LighteningBugg,0.042,0.0,Male,Yes,0,UK,LighteningBugg_Pet Cats United Kingdom
-Lightning,0.0218,1.0,Female,Yes,0,Australia,Lightning_Pet Cats Australia
-Lila,0.0256,7.0,Female,Yes,1,Australia,Lila_Pet Cats Australia
-Lilliput,0.0099,3.0,Female,Yes,3,Australia,Lilliput_Pet Cats Australia
-Lilly,0.0096,4.0,Female,Yes,0,Australia,Lilly_Pet Cats Australia
-Lilly,0.026,3.0,Female,Yes,1,New Zealand,Lilly_Pet Cats New Zealand
-Lily,0.0052,3.0,Female,Yes,0,Australia,Lily_Pet Cats Australia
-Lister,0.0424,19.0,Male,Yes,0,Australia,Lister_Pet Cats Australia
-Little2,0.053,8.0,Male,Yes,0,United States,Little2_Pet Cats United States
-Loki,0.0241,8.0,Male,Yes,1,Australia,Loki_Pet Cats Australia
-Loki,0.014,1.0,Male,Yes,2,New Zealand,Loki_Pet Cats New Zealand
-Lola,0.03,10.0,Female,Yes,3,UK,Lola_Pet Cats United Kingdom
-LouieTag,0.113,5.0,Male,Yes,0,United States,LouieTag_Pet Cats United States
-Louis,0.0118,12.0,Male,Yes,0,Australia,Louis_Pet Cats Australia
-Louise,0.0079,4.0,Female,Yes,3,Australia,Louise_Pet Cats Australia
-LouisTheBruiser,0.0058,12.0,Male,Yes,2,Australia,LouisTheBruiser_Pet Cats Australia
-LucarioBlack,0.0198,3.0,Male,Yes,3,Australia,LucarioBlack_Pet Cats Australia
-Lucims,0.0149,15.0,Female,Yes,0,Australia,Lucims_Pet Cats Australia
-Lucky2,0.043,11.0,Female,Yes,0,United States,Lucky2_Pet Cats United States
-Lucy,0.008,5.0,Female,Yes,0,UK,Lucy_Pet Cats United Kingdom
-Lucy2,0.0307,1.0,Female,Yes,0,Australia,Lucy2_Pet Cats Australia
-Lucy3,0.0323,3.0,Female,Yes,6,Australia,Lucy3_Pet Cats Australia
-Luna,0.015,0.0,Female,Yes,0,Australia,Luna_Pet Cats Australia
-Luna,0.008,2.0,Female,Yes,3,New Zealand,Luna_Pet Cats New Zealand
-Luna2,0.035,4.0,Female,Yes,0,United States,Luna2_Pet Cats United States
-Lupe2,0.04,4.0,Male,Yes,12,United States,Lupe2_Pet Cats United States
-Lux,0.009,6.0,Female,Yes,21,New Zealand,Lux_Pet Cats New Zealand
-Mabel,0.017,3.0,Female,Yes,2,New Zealand,Mabel_Pet Cats New Zealand
-Maca,0.0147,10.0,Female,Yes,9,Australia,Maca_Pet Cats Australia
-MacaulayMccat,0.021,6.0,Female,Yes,17,UK,MacaulayMccat_Pet Cats United Kingdom
-Maddie2,0.042,10.0,Female,Yes,1,United States,Maddie2_Pet Cats United States
-Maeve,0.0095,3.0,Female,Yes,0,Australia,Maeve_Pet Cats Australia
-Maggie,0.0328,7.0,Female,Yes,1,Australia,Maggie_Pet Cats Australia
-Maggie,0.015,4.0,Female,Yes,1,New Zealand,Maggie_Pet Cats New Zealand
-Maggie,0.016,3.0,Female,Yes,0,UK,Maggie_Pet Cats United Kingdom
-Magic,0.0377,6.0,Female,Yes,3,Australia,Magic_Pet Cats Australia
-Maisey2,0.083,2.0,Female,Yes,4,United States,Maisey2_Pet Cats United States
-Malachie,0.1007,3.0,Male,Yes,5,Australia,Malachie_Pet Cats Australia
-Mandy,0.013,1.0,Female,Yes,6,Australia,Mandy_Pet Cats Australia
-Mango,0.0223,1.0,Male,Yes,3,Australia,Mango_Pet Cats Australia
-MapleSyrup,0.0138,10.0,Female,Yes,0,Australia,MapleSyrup_Pet Cats Australia
-Marbles,0.0228,7.0,Male,Yes,0,Australia,Marbles_Pet Cats Australia
-Marbles2,0.003,2.0,Female,Yes,0,Australia,Marbles2_Pet Cats Australia
-Marley,0.014,3.0,Male,Yes,2,New Zealand,Marley_Pet Cats New Zealand
-Marley,0.095,1.0,Male,Yes,0,UK,Marley_Pet Cats United Kingdom
-Marmite,0.023,4.0,Female,Yes,2,New Zealand,Marmite_Pet Cats New Zealand
-Martha,0.0291,2.0,Female,Yes,1,Australia,Martha_Pet Cats Australia
-Martha2,0.003,3.0,Female,Yes,5,Australia,Martha2_Pet Cats Australia
-MarthaWayne2,0.022,3.0,Female,Yes,0,United States,MarthaWayne2_Pet Cats United States
-Marty,0.012,2.0,Male,Yes,1,New Zealand,Marty_Pet Cats New Zealand
-Matilda,0.0182,8.0,Female,Yes,1,Australia,Matilda_Pet Cats Australia
-Maverick,0.045,7.0,Male,Yes,3,UK,Maverick_Pet Cats United Kingdom
-Max,0.0214,8.0,Male,Yes,21,Australia,Max_Pet Cats Australia
-Max,0.107,1.0,Male,Yes,2,New Zealand,Max_Pet Cats New Zealand
-Max,2.239,5.0,Male,Yes,3,UK,Max_Pet Cats United Kingdom
-Max2,0.0355,3.0,Male,Yes,2,Australia,Max2_Pet Cats Australia
-Max3,0.0031,2.0,Male,Yes,2,Australia,Max3_Pet Cats Australia
-Maxwell,0.031,6.0,Male,Yes,17,UK,Maxwell_Pet Cats United Kingdom
-Meesha,0.0271,8.0,Female,Yes,0,Australia,Meesha_Pet Cats Australia
-Meggsie,0.0081,6.0,Male,Yes,4,Australia,Meggsie_Pet Cats Australia
-Merlin,0.0182,1.0,Male,Yes,4,Australia,Merlin_Pet Cats Australia
-Merlin,0.121,5.0,Male,Yes,7,UK,Merlin_Pet Cats United Kingdom
-Merlin2,0.005,9.0,Male,Yes,0,Australia,Merlin2_Pet Cats Australia
-Merlot,0.0611,9.0,Male,Yes,8,Australia,Merlot_Pet Cats Australia
-Mia2,0.207,4.0,Female,Yes,4,United States,Mia2_Pet Cats United States
-Mickey,0.008,4.0,Male,Yes,6,Australia,Mickey_Pet Cats Australia
-Midnight,0.0087,11.0,Male,Yes,1,Australia,Midnight_Pet Cats Australia
-Midori,0.0082,7.0,Female,Yes,2,Australia,Midori_Pet Cats Australia
-Mifty,0.054,2.0,Female,Yes,12,UK,Mifty_Pet Cats United Kingdom
-Mika,0.0195,3.0,Female,Yes,1,Australia,Mika_Pet Cats Australia
-Milfred,0.0076,3.0,Male,Yes,7,Australia,Milfred_Pet Cats Australia
-MilkoMcCavity,0.0137,6.0,Male,Yes,0,Australia,MilkoMcCavity_Pet Cats Australia
-Milkshakes,0.026,3.0,Male,Yes,3,New Zealand,Milkshakes_Pet Cats New Zealand
-Millie,0.013,3.0,Female,Yes,7,UK,Millie_Pet Cats United Kingdom
-Millie3,0.0056,7.0,Female,Yes,1,Australia,Millie3_Pet Cats Australia
-MilliGal,0.01,7.0,Female,Yes,5,New Zealand,MilliGal_Pet Cats New Zealand
-Milly,0.0106,4.0,Female,Yes,5,Australia,Milly_Pet Cats Australia
-Milly2,0.0113,11.0,Female,Yes,3,Australia,Milly2_Pet Cats Australia
-Milo,0.0373,0.6,Female,Yes,0,Australia,Milo_Pet Cats Australia
-Milo,0.012,3.0,Male,Yes,8,United States,Milo_Pet Cats United States
-Milo,0.102,10.0,Female,Yes,11,New Zealand,Milo_Pet Cats New Zealand
-Milo2,0.0128,2.0,Male,Yes,16,Australia,Milo2_Pet Cats Australia
-Mimi,0.0085,14.0,Female,Yes,0,Australia,Mimi_Pet Cats Australia
-Mindy2,0.066,5.0,Female,Yes,8,United States,Mindy2_Pet Cats United States
-Minerva,0.008,6.0,Female,Yes,1,New Zealand,Minerva_Pet Cats New Zealand
-Mingo,0.006,5.0,Female,Yes,1,Australia,Mingo_Pet Cats Australia
-Minty,0.0162,3.0,Female,Yes,1,Australia,Minty_Pet Cats Australia
-Missy,0.0051,3.0,Female,Yes,2,Australia,Missy_Pet Cats Australia
-Missy,0.041,3.0,Female,Yes,3,UK,Missy_Pet Cats United Kingdom
-MissyMitz,0.0055,8.0,Female,Yes,2,Australia,MissyMitz_Pet Cats Australia
-MissyMoo,0.0139,8.0,Female,Yes,0,Australia,MissyMoo_Pet Cats Australia
-Misty,0.0389,10.0,Female,Yes,9,Australia,Misty_Pet Cats Australia
-Misty,0.005,3.0,Female,Yes,4,United States,Misty_Pet Cats United States
-Misty2,0.0127,8.0,Female,Yes,17,Australia,Misty2_Pet Cats Australia
-Misu2,0.024,9.0,Male,Yes,4,United States,Misu2_Pet Cats United States
-Mittens,0.0117,5.0,Female,Yes,2,Australia,Mittens_Pet Cats Australia
-Moggy,0.017,11.0,Female,Yes,1,Australia,Moggy_Pet Cats Australia
-Momo,0.0089,2.0,Female,Yes,1,Australia,Momo_Pet Cats Australia
-MonaLisa,0.0411,9.0,Female,Yes,0,Australia,MonaLisa_Pet Cats Australia
-MonMon,0.263,4.0,Female,Yes,3,Australia,MonMon_Pet Cats Australia
-Monty2,0.0159,7.0,Male,Yes,15,Australia,Monty2_Pet Cats Australia
-MontyII,0.04,1.0,Male,Yes,1,New Zealand,MontyII_Pet Cats New Zealand
-Morpheus,0.014,4.0,Male,Yes,3,UK,Morpheus_Pet Cats United Kingdom
-Moscow,0.0098,4.0,Male,Yes,0,Australia,Moscow_Pet Cats Australia
-Moscow,0.01,1.0,Male,Yes,0,UK,Moscow_Pet Cats United Kingdom
-Moses,0.014,2.0,Male,Yes,11,New Zealand,Moses_Pet Cats New Zealand
-Motorcat,0.046,14.0,Female,Yes,1,United States,Motorcat_Pet Cats United States
-Mowdii,0.0074,8.0,Female,Yes,3,Australia,Mowdii_Pet Cats Australia
-MrGray,0.0989,1.0,Male,Yes,5,Australia,MrGray_Pet Cats Australia
-MrLittleCat,0.011,8.0,Male,Yes,3,Australia,MrLittleCat_Pet Cats Australia
-MrLucky,0.084,3.0,Male,Yes,0,United States,MrLucky_Pet Cats United States
-MrThomas,0.0085,10.0,Male,Yes,0,Australia,MrThomas_Pet Cats Australia
-MrWhiskers,0.0032,5.0,Female,Yes,0,Australia,MrWhiskers_Pet Cats Australia
-Muggins,0.0187,0.0,Male,Yes,1,Australia,Muggins_Pet Cats Australia
-Multi,0.0345,0.5,Female,No,0,Australia,Multi_Pet Cats Australia
-Mungo,0.005,7.0,Male,Yes,6,New Zealand,Mungo_Pet Cats New Zealand
-Murphy,0.024,5.0,Male,Yes,2,New Zealand,Murphy_Pet Cats New Zealand
-Muss,0.0276,7.0,Male,Yes,1,Australia,Muss_Pet Cats Australia
-Mynx,0.0068,2.0,Male,Yes,4,Australia,Mynx_Pet Cats Australia
-Mysti,0.1423,18.0,Female,Yes,1,Australia,Mysti_Pet Cats Australia
-Mystic,0.035,2.0,Female,Yes,0,Australia,Mystic_Pet Cats Australia
-Nala,0.032,1.0,Female,Yes,7,New Zealand,Nala_Pet Cats New Zealand
-NalaII,0.034,2.0,Female,Yes,4,New Zealand,NalaII_Pet Cats New Zealand
-Natasha2,0.034,2.0,Female,Yes,0,United States,Natasha2_Pet Cats United States
-NattyBumpo2,0.061,8.0,Female,Yes,12,United States,NattyBumpo2_Pet Cats United States
-Neil,0.023,7.0,Male,Yes,0,UK,Neil_Pet Cats United Kingdom
-Neko,0.061,2.0,Male,Yes,1,New Zealand,Neko_Pet Cats New Zealand
-NekoMei,0.0075,9.0,Female,Yes,0,Australia,NekoMei_Pet Cats Australia
-Nellie,0.0032,4.0,Female,Yes,2,Australia,Nellie_Pet Cats Australia
-Nelson,0.0741,3.0,Male,Yes,5,Australia,Nelson_Pet Cats Australia
-Nelson3,0.0151,7.0,Male,Yes,0,Australia,Nelson3_Pet Cats Australia
-Nettle,0.014,4.0,Female,Yes,7,UK,Nettle_Pet Cats United Kingdom
-Neva,0.006,4.0,Female,Yes,0,UK,Neva_Pet Cats United Kingdom
-Nia,0.014,4.0,Female,Yes,1,United States,Nia_Pet Cats United States
-Nikki2,0.071,8.0,Female,Yes,4,United States,Nikki2_Pet Cats United States
-Niko,0.014,1.0,Male,Yes,21,New Zealand,Niko_Pet Cats New Zealand
-Ninja,0.0181,1.0,Female,Yes,6,Australia,Ninja_Pet Cats Australia
-Nola2Tag,0.026,4.0,Female,Yes,0,United States,Nola2Tag_Pet Cats United States
-Nougie,0.028,12.0,Female,Yes,3,New Zealand,Nougie_Pet Cats New Zealand
-Nugget,0.031,6.0,Female,Yes,1,New Zealand,Nugget_Pet Cats New Zealand
-Oatmeal,0.078,5.0,Male,Yes,0,United States,Oatmeal_Pet Cats United States
-Okie,0.019,1.0,Female,Yes,6,New Zealand,Okie_Pet Cats New Zealand
-Oli,0.0115,1.0,Male,Yes,0,Australia,Oli_Pet Cats Australia
-Oliver2,0.208,7.0,Male,Yes,8,United States,Oliver2_Pet Cats United States
-Ollie,0.0283,5.0,Male,Yes,4,Australia,Ollie_Pet Cats Australia
-Ollie,0.039,2.0,Male,Yes,6,New Zealand,Ollie_Pet Cats New Zealand
-Onyx,0.092,1.0,Female,Yes,21,Australia,Onyx_Pet Cats Australia
-Orange,0.005,4.0,Female,Yes,4,United States,Orange_Pet Cats United States
-Oreo2,0.152,5.0,Male,Yes,8,United States,Oreo2_Pet Cats United States
-Oscar,0.0288,10.0,Male,Yes,1,Australia,Oscar_Pet Cats Australia
-Oscar2,0.0169,7.0,Male,Yes,5,Australia,Oscar2_Pet Cats Australia
-Oscar3,0.0369,8.0,Male,Yes,16,Australia,Oscar3_Pet Cats Australia
-OscarJ,0.035,2.0,Male,Yes,4,United States,OscarJ_Pet Cats United States
-OscarL,0.026,11.0,Male,Yes,4,United States,OscarL_Pet Cats United States
-OscarN,0.02,5.0,Male,Yes,0,United States,OscarN_Pet Cats United States
-Pablo,0.109,3.0,Male,Yes,6,New Zealand,Pablo_Pet Cats New Zealand
-Paloma,0.014,2.0,Female,Yes,1,New Zealand,Paloma_Pet Cats New Zealand
-Panda,0.085,3.0,Female,Yes,1,New Zealand,Panda_Pet Cats New Zealand
-Pants,0.0072,7.0,Male,Yes,4,Australia,Pants_Pet Cats Australia
-Pants,0.01,8.0,Male,Yes,0,UK,Pants_Pet Cats United Kingdom
-Parker,0.07,6.0,Male,Yes,4,United States,Parker_Pet Cats United States
-Patra,0.0278,8.0,Female,Yes,2,Australia,Patra_Pet Cats Australia
-Paul,0.0072,0.4,Male,Yes,0,Australia,Paul_Pet Cats Australia
-Paula,0.0439,4.0,Female,Yes,0,Australia,Paula_Pet Cats Australia
-Peanut,0.037,1.0,Female,Yes,4,United States,Peanut_Pet Cats United States
-PeanutR,0.014,4.0,Male,Yes,8,United States,PeanutR_Pet Cats United States
-Pearl,0.0058,0.0,Female,Yes,0,Australia,Pearl_Pet Cats Australia
-Penelope2,0.042,3.0,Female,Yes,8,United States,Penelope2_Pet Cats United States
-Penny,8.608,1.0,Female,Yes,5,New Zealand,Penny_Pet Cats New Zealand
-Pepper,0.0349,2.0,Male,Yes,2,Australia,Pepper_Pet Cats Australia
-Pepper2,0.0073,10.0,Female,Yes,0,Australia,Pepper2_Pet Cats Australia
-Percy,0.113,9.0,Male,Yes,3,New Zealand,Percy_Pet Cats New Zealand
-Phoenix,0.0402,4.0,Male,Yes,0,Australia,Phoenix_Pet Cats Australia
-Picasso,0.0076,8.0,Female,Yes,2,Australia,Picasso_Pet Cats Australia
-Pickles2,0.08,3.0,Male,Yes,12,United States,Pickles2_Pet Cats United States
-PiggieSue,0.011,0.8,Female,Yes,3,New Zealand,PiggieSue_Pet Cats New Zealand
-Piper2,0.032,1.0,Female,Yes,0,United States,Piper2_Pet Cats United States
-Pippin,0.0681,5.0,Male,Yes,7,Australia,Pippin_Pet Cats Australia
-Pixie,0.0046,5.0,Female,Yes,3,Australia,Pixie_Pet Cats Australia
-Polly,0.0128,4.0,Female,Yes,0,Australia,Polly_Pet Cats Australia
-Polo,0.0079,7.0,Male,Yes,0,Australia,Polo_Pet Cats Australia
-Poly,0.024,4.0,Female,Yes,8,United States,Poly_Pet Cats United States
-Poppet,0.115,10.0,Female,Yes,3,UK,Poppet_Pet Cats United Kingdom
-PoppyIII,0.143,14.0,Female,Yes,2,New Zealand,PoppyIII_Pet Cats New Zealand
-Pringle,0.032,5.0,Female,Yes,1,United States,Pringle_Pet Cats United States
-Puds,0.0081,11.0,Female,Yes,0,Australia,Puds_Pet Cats Australia
-PumpkinKane,0.019,8.0,Female,Yes,12,United States,PumpkinKane_Pet Cats United States
-Purrcy2,0.073,5.0,Male,Yes,8,United States,Purrcy2_Pet Cats United States
-Pushkin,0.045,8.0,Female,Yes,2,New Zealand,Pushkin_Pet Cats New Zealand
-Puss,0.0055,9.0,Female,Yes,1,Australia,Puss_Pet Cats Australia
-Pusskins,0.0628,7.0,Male,Yes,0,Australia,Pusskins_Pet Cats Australia
-Pussums,0.056,5.0,Male,Yes,21,New Zealand,Pussums_Pet Cats New Zealand
-Pussy,0.085,2.0,Male,Yes,3,UK,Pussy_Pet Cats United Kingdom
-Raffy,0.0074,14.0,Male,Yes,6,Australia,Raffy_Pet Cats Australia
-Rafiki,0.2048,1.0,Female,Yes,4,Australia,Rafiki_Pet Cats Australia
-Raizor,0.0455,2.0,Female,Yes,5,Australia,Raizor_Pet Cats Australia
-Ramses,0.0649,6.0,Male,Yes,1,Australia,Ramses_Pet Cats Australia
-Reggie,0.023,8.0,Female,Yes,7,UK,Reggie_Pet Cats United Kingdom
-Reggie2,0.017,13.0,Male,Yes,0,United States,Reggie2_Pet Cats United States
-Remy,0.0761,10.0,Male,Yes,21,Australia,Remy_Pet Cats Australia
-Richie,0.028,3.0,Male,Yes,8,New Zealand,Richie_Pet Cats New Zealand
-Riggs,0.034,1.0,Male,Yes,4,New Zealand,Riggs_Pet Cats New Zealand
-Ringo,0.009,9.0,Male,Yes,1,Australia,Ringo_Pet Cats Australia
-Rio,0.0067,4.0,Female,Yes,0,Australia,Rio_Pet Cats Australia
-Ripley,0.0033,3.0,Female,Yes,4,Australia,Ripley_Pet Cats Australia
-Rocky,0.0239,4.0,Male,Yes,2,Australia,Rocky_Pet Cats Australia
-Rocky,0.038,9.0,Male,Yes,4,United States,Rocky_Pet Cats United States
-Rodger,0.027,5.0,Male,Yes,3,Australia,Rodger_Pet Cats Australia
-Rodney,0.0089,4.0,Male,Yes,2,Australia,Rodney_Pet Cats Australia
-Roger,0.029,0.2,Male,Yes,5,New Zealand,Roger_Pet Cats New Zealand
-Roger,0.012,6.0,Male,Yes,0,UK,Roger_Pet Cats United Kingdom
-Rogue,0.009,6.0,Female,Yes,16,New Zealand,Rogue_Pet Cats New Zealand
-Ronaldo,0.0753,0.6,Male,Yes,3,Australia,Ronaldo_Pet Cats Australia
-Roo,0.0041,5.0,Female,Yes,1,Australia,Roo_Pet Cats Australia
-Rosey,0.0235,6.0,Female,Yes,1,Australia,Rosey_Pet Cats Australia
-Rosie,0.0096,4.0,Female,Yes,3,Australia,Rosie_Pet Cats Australia
-Rosie2,0.0644,11.0,Female,Yes,2,Australia,Rosie2_Pet Cats Australia
-RosieII,0.014,1.0,Female,Yes,8,New Zealand,RosieII_Pet Cats New Zealand
-Roukus2,0.004,6.0,Female,Yes,16,United States,Roukus2_Pet Cats United States
-Roxi,0.0047,2.0,Female,Yes,11,Australia,Roxi_Pet Cats Australia
-Ruby,0.0107,10.0,Female,Yes,3,Australia,Ruby_Pet Cats Australia
-Ruby,0.005,1.0,Female,Yes,3,New Zealand,Ruby_Pet Cats New Zealand
-Ruby3,0.006,9.0,Female,Yes,1,Australia,Ruby3_Pet Cats Australia
-Rudi,0.0213,2.0,Male,Yes,0,Australia,Rudi_Pet Cats Australia
-Rudi2,0.0102,10.0,Female,Yes,0,Australia,Rudi2_Pet Cats Australia
-Rufus,0.0233,6.0,Male,Yes,21,Australia,Rufus_Pet Cats Australia
-Rumpy,0.0101,11.0,Male,Yes,3,Australia,Rumpy_Pet Cats Australia
-Rupert,0.0047,1.0,Male,Yes,0,Australia,Rupert_Pet Cats Australia
-Rupert2,0.0116,3.0,Male,Yes,3,Australia,Rupert2_Pet Cats Australia
-Rupert3,0.0116,10.0,Male,Yes,1,Australia,Rupert3_Pet Cats Australia
-Russel2,0.04,3.0,Male,Yes,1,United States,Russel2_Pet Cats United States
-Rusty,0.0059,15.0,Female,Yes,0,Australia,Rusty_Pet Cats Australia
-Rusty,0.031,4.0,Male,Yes,3,UK,Rusty_Pet Cats United Kingdom
-Saffy,0.0053,2.0,Female,Yes,1,Australia,Saffy_Pet Cats Australia
-Sally,0.0187,4.0,Female,Yes,1,Australia,Sally_Pet Cats Australia
-Samantha,0.032,9.0,Female,Yes,1,New Zealand,Samantha_Pet Cats New Zealand
-Sammi,0.0032,11.0,Female,Yes,0,Australia,Sammi_Pet Cats Australia
-Sammy,0.009,7.0,Male,Yes,6,Australia,Sammy_Pet Cats Australia
-Samson,0.0325,5.0,Male,Yes,1,Australia,Samson_Pet Cats Australia
-Sandman,0.012,3.0,Male,Yes,4,New Zealand,Sandman_Pet Cats New Zealand
-Sandstorm2,0.035,4.0,Female,Yes,4,United States,Sandstorm2_Pet Cats United States
-Santi,0.02,2.0,Female,Yes,3,New Zealand,Santi_Pet Cats New Zealand
-Sasquatch2,0.033,4.0,Male,Yes,1,United States,Sasquatch2_Pet Cats United States
-Sassy,0.0049,6.0,Female,Yes,1,Australia,Sassy_Pet Cats Australia
-Sativa,0.033,5.0,Male,Yes,2,New Zealand,Sativa_Pet Cats New Zealand
-Schnooz,0.0185,8.0,Male,Yes,3,Australia,Schnooz_Pet Cats Australia
-Schrodinger,0.015,4.0,Female,Yes,1,New Zealand,Schrodinger_Pet Cats New Zealand
-Schubie2,0.016,7.0,Female,Yes,0,United States,Schubie2_Pet Cats United States
-Scout,0.0092,8.0,Male,Yes,0,Australia,Scout_Pet Cats Australia
-Scratch,0.0058,14.0,Female,Yes,1,Australia,Scratch_Pet Cats Australia
-Seb,0.011,6.0,Male,Yes,11,New Zealand,Seb_Pet Cats New Zealand
-Seb,0.013,3.0,Male,Yes,3,UK,Seb_Pet Cats United Kingdom
-Selena,0.009,9.0,Female,Yes,1,New Zealand,Selena_Pet Cats New Zealand
-Selkie2,0.035,5.0,Female,Yes,4,United States,Selkie2_Pet Cats United States
-Senor2,0.009,13.0,Male,Yes,4,United States,Senor2_Pet Cats United States
-Seth,0.0089,1.7,Male,Yes,0,Australia,Seth_Pet Cats Australia
-Seth2,0.019,4.0,Male,Yes,0,United States,Seth2_Pet Cats United States
-Shadow,0.0167,8.0,Female,Yes,13,Australia,Shadow_Pet Cats Australia
-Shadow2,0.003,3.0,Male,Yes,4,United States,Shadow2_Pet Cats United States
-Shakespeare2,0.047,4.0,Male,Yes,1,United States,Shakespeare2_Pet Cats United States
-Shan,0.008,3.0,Male,Yes,1,Australia,Shan_Pet Cats Australia
-Sheldon,0.168,7.0,Female,Yes,8,United States,Sheldon_Pet Cats United States
-Shelly,0.0176,6.0,Female,Yes,0,Australia,Shelly_Pet Cats Australia
-Shmiff,0.0073,6.0,Female,Yes,1,Australia,Shmiff_Pet Cats Australia
-Sibelius,0.0844,3.0,Male,Yes,4,Australia,Sibelius_Pet Cats Australia
-Siberia,0.014,8.0,Male,Yes,3,UK,Siberia_Pet Cats United Kingdom
-Sid,0.01,4.0,Female,Yes,17,UK,Sid_Pet Cats United Kingdom
-Simba2,0.0112,0.4,Male,No,0,Australia,Simba2_Pet Cats Australia
-Sissy,0.0069,3.0,Female,Yes,1,Australia,Sissy_Pet Cats Australia
-Skittles,0.021,2.0,Male,Yes,11,Australia,Skittles_Pet Cats Australia
-Skittles,0.027,2.0,Female,Yes,4,New Zealand,Skittles_Pet Cats New Zealand
-Skitty,0.0238,5.0,Male,Yes,6,Australia,Skitty_Pet Cats Australia
-Skoozie,0.0092,6.0,Female,Yes,0,Australia,Skoozie_Pet Cats Australia
-Sky,0.134,6.0,Male,Yes,2,New Zealand,Sky_Pet Cats New Zealand
-Skye,0.005,5.0,Male,Yes,0,UK,Skye_Pet Cats United Kingdom
-SkyII,0.009,2.0,Female,Yes,11,New Zealand,SkyII_Pet Cats New Zealand
-Slasher,0.0129,8.0,Unk,Yes,9,Australia,Slasher_Pet Cats Australia
-Small,0.0228,9.0,Male,Yes,3,Australia,Small_Pet Cats Australia
-Smattie,0.024,6.0,Male,Yes,8,United States,Smattie_Pet Cats United States
-Smokey,0.0118,3.0,Female,Yes,1,Australia,Smokey_Pet Cats Australia
-Smokey2,0.034,3.0,Male,Yes,4,United States,Smokey2_Pet Cats United States
-SmokeyLongnose,0.02,9.0,Female,Yes,0,UK,SmokeyLongnose_Pet Cats United Kingdom
-Smudge,0.0122,9.0,Male,Yes,0,Australia,Smudge_Pet Cats Australia
-Smudge,0.23,4.0,Male,Yes,3,New Zealand,Smudge_Pet Cats New Zealand
-Smudge,0.01,3.0,Male,Yes,3,UK,Smudge_Pet Cats United Kingdom
-Smudge_2,0.066,7.0,Male,Yes,0,UK,Smudge_2_Pet Cats United Kingdom
-Snickerdoodle2,0.024,5.0,Female,Yes,8,United States,Snickerdoodle2_Pet Cats United States
-Snifer,0.018,5.0,Female,Yes,4,New Zealand,Snifer_Pet Cats New Zealand
-Sookie,0.0076,6.0,Female,Yes,21,Australia,Sookie_Pet Cats Australia
-Sooty,0.0109,10.0,Female,Yes,2,Australia,Sooty_Pet Cats Australia
-Sooty,0.007,2.0,Female,Yes,3,New Zealand,Sooty_Pet Cats New Zealand
-Sooty2,0.0204,11.0,Female,Yes,1,Australia,Sooty2_Pet Cats Australia
-Sophia,0.187,3.0,Female,Yes,1,New Zealand,Sophia_Pet Cats New Zealand
-SophiePossum,0.0144,3.0,Female,Yes,0,Australia,SophiePossum_Pet Cats Australia
-Sox2,0.0125,0.4,Female,No,0,Australia,Sox2_Pet Cats Australia
-Soxy,0.0051,14.0,Male,Yes,1,Australia,Soxy_Pet Cats Australia
-Soxy2,0.004,2.0,Male,Yes,0,Australia,Soxy2_Pet Cats Australia
-Sparkle,0.0084,4.0,Female,Yes,5,Australia,Sparkle_Pet Cats Australia
-Sparkles,0.0307,3.0,Female,Yes,3,Australia,Sparkles_Pet Cats Australia
-Sparkles,0.042,4.0,Male,Yes,0,United States,Sparkles_Pet Cats United States
-Sparky,0.025,8.0,Female,Yes,0,UK,Sparky_Pet Cats United Kingdom
-Speckles1,0.055,0.8,Female,Yes,7,New Zealand,Speckles1_Pet Cats New Zealand
-Spencer2,0.439,2.0,Male,Yes,8,United States,Spencer2_Pet Cats United States
-Spike,0.024,4.0,Male,Yes,4,United States,Spike_Pet Cats United States
-Spike,0.116,0.0,Male,Yes,7,UK,Spike_Pet Cats United Kingdom
-Spot,0.017,2.0,Male,Yes,17,UK,Spot_Pet Cats United Kingdom
-Sputnik,0.0196,6.0,Male,Yes,1,Australia,Sputnik_Pet Cats Australia
-Squeaky,0.0966,0.0,Male,No,0,Australia,Squeaky_Pet Cats Australia
-Squiggle,0.0121,2.0,Male,Yes,0,Australia,Squiggle_Pet Cats Australia
-Stanley,0.0123,7.0,Male,Yes,3,Australia,Stanley_Pet Cats Australia
-Starbuck2,0.011,6.0,Male,Yes,1,United States,Starbuck2_Pet Cats United States
-Stealth,0.0129,1.0,Male,Yes,0,Australia,Stealth_Pet Cats Australia
-Stefano,0.0127,2.0,Male,Yes,1,Australia,Stefano_Pet Cats Australia
-Stinky,0.0481,14.0,Female,Yes,0,Australia,Stinky_Pet Cats Australia
-Stitch,0.0279,6.0,Male,Yes,11,Australia,Stitch_Pet Cats Australia
-Striper2,0.008,10.0,Female,Yes,4,United States,Striper2_Pet Cats United States
-Subie,0.021,2.0,Female,Yes,11,New Zealand,Subie_Pet Cats New Zealand
-Sunny,0.0061,15.0,Male,Yes,3,Australia,Sunny_Pet Cats Australia
-Survivor2,0.024,2.0,Male,Yes,4,United States,Survivor2_Pet Cats United States
-Sushi,0.0327,3.0,Female,Yes,0,Australia,Sushi_Pet Cats Australia
-Suss,0.008,4.0,Female,Yes,2,New Zealand,Suss_Pet Cats New Zealand
-Sweetpea,0.019,7.0,Female,Yes,12,United States,Sweetpea_Pet Cats United States
-Sylvester,0.0062,7.0,Male,Yes,0,Australia,Sylvester_Pet Cats Australia
-Sylvester,0.026,7.0,Male,Yes,4,United States,Sylvester_Pet Cats United States
-Sylvester,0.036,7.0,Male,Yes,5,New Zealand,Sylvester_Pet Cats New Zealand
-Sylvia,0.0163,10.0,Female,Yes,3,Australia,Sylvia_Pet Cats Australia
-Tabasco,0.028,11.0,Male,Yes,4,United States,Tabasco_Pet Cats United States
-Tabitha,0.045,1.0,Female,Yes,1,New Zealand,Tabitha_Pet Cats New Zealand
-Tabs,0.012,5.0,Female,Yes,5,New Zealand,Tabs_Pet Cats New Zealand
-Taco,0.012,1.0,Male,Yes,5,New Zealand,Taco_Pet Cats New Zealand
-Tara,0.021,7.0,Female,Yes,2,New Zealand,Tara_Pet Cats New Zealand
-Tara2,0.014,14.0,Female,Yes,1,United States,Tara2_Pet Cats United States
-Tarzan,0.0227,2.0,Male,Yes,11,Australia,Tarzan_Pet Cats Australia
-Tasha,0.0135,9.0,Female,Yes,1,Australia,Tasha_Pet Cats Australia
-Teddy,0.02,9.0,Female,Yes,0,UK,Teddy_Pet Cats United Kingdom
-Tenzing,0.023,3.0,Female,Yes,5,New Zealand,Tenzing_Pet Cats New Zealand
-Terabyte,0.01,1.0,Female,Yes,16,New Zealand,Terabyte_Pet Cats New Zealand
-Tex2,0.023,5.0,Female,Yes,4,United States,Tex2_Pet Cats United States
-Theo,0.0064,6.0,Male,Yes,0,Australia,Theo_Pet Cats Australia
-Theo,0.033,5.0,Male,Yes,1,New Zealand,Theo_Pet Cats New Zealand
-Thomas,0.0196,5.0,Male,Yes,0,Australia,Thomas_Pet Cats Australia
-Thornton,0.0143,2.0,Male,Yes,0,Australia,Thornton_Pet Cats Australia
-Tia,0.0132,10.0,Female,Yes,3,Australia,Tia_Pet Cats Australia
-Tiger,0.025,1.0,Male,Yes,13,New Zealand,Tiger_Pet Cats New Zealand
-Tiger2,0.032,5.0,Male,Yes,4,United States,Tiger2_Pet Cats United States
-Tiger3,0.0073,15.0,Male,Yes,0,Australia,Tiger3_Pet Cats Australia
-Tiger4,0.0075,7.0,Male,Yes,5,Australia,Tiger4_Pet Cats Australia
-Tiger5,0.0795,10.0,Male,Yes,10,Australia,Tiger5_Pet Cats Australia
-Tigga,0.0275,12.0,Male,Yes,3,Australia,Tigga_Pet Cats Australia
-Tigger,0.156,6.0,Male,Yes,11,New Zealand,Tigger_Pet Cats New Zealand
-Tigger,0.007,3.0,Male,Yes,0,UK,Tigger_Pet Cats United Kingdom
-Tiggy,0.0353,2.0,Male,Yes,2,Australia,Tiggy_Pet Cats Australia
-Tilly,0.0187,7.0,Female,Yes,0,Australia,Tilly_Pet Cats Australia
-Tilly,0.011,4.0,Male,Yes,2,New Zealand,Tilly_Pet Cats New Zealand
-Tilly,0.025,5.0,Female,Yes,3,UK,Tilly_Pet Cats United Kingdom
-Tilly2,0.0097,10.0,Female,Yes,6,Australia,Tilly2_Pet Cats Australia
-Tilly3,0.0181,3.0,Female,Yes,7,Australia,Tilly3_Pet Cats Australia
-Timmy,0.0141,3.0,Male,Yes,6,Australia,Timmy_Pet Cats Australia
-Timo,0.0067,5.0,Male,Yes,3,Australia,Timo_Pet Cats Australia
-Tina,0.009,4.0,Female,Yes,1,New Zealand,Tina_Pet Cats New Zealand
-Tippy,0.2145,12.0,Male,No,0,Australia,Tippy_Pet Cats Australia
-Tipsie,0.0061,3.0,Female,Yes,4,Australia,Tipsie_Pet Cats Australia
-Tipsy,0.018,0.0,Female,Yes,0,UK,Tipsy_Pet Cats United Kingdom
-Tobin,0.0107,6.0,Male,Yes,0,Australia,Tobin_Pet Cats Australia
-Toby,0.1904,0.0,Male,Yes,1,Australia,Toby_Pet Cats Australia
-Toby,0.013,6.0,Male,Yes,1,New Zealand,Toby_Pet Cats New Zealand
-Toby2,0.0139,2.0,Male,Yes,0,Australia,Toby2_Pet Cats Australia
-Tom,0.0066,12.0,Male,Yes,5,Australia,Tom_Pet Cats Australia
-Tom,0.265,3.0,Female,Yes,12,UK,Tom_Pet Cats United Kingdom
-Tom2,0.0091,7.0,Male,Yes,1,Australia,Tom2_Pet Cats Australia
-Tommy,0.0201,2.0,Male,Yes,1,Australia,Tommy_Pet Cats Australia
-Tommy,0.012,11.0,Male,Yes,12,UK,Tommy_Pet Cats United Kingdom
-Tonka2,0.032,13.0,Male,Yes,0,United States,Tonka2_Pet Cats United States
-TriceraCat,0.031,4.0,Female,Yes,16,New Zealand,TriceraCat_Pet Cats New Zealand
-Trixie,0.0163,9.0,Unk,Yes,5,Australia,Trixie_Pet Cats Australia
-Truffle,0.0136,3.0,Female,Yes,1,Australia,Truffle_Pet Cats Australia
-Truffles2,0.0076,14.0,Male,Yes,1,Australia,Truffles2_Pet Cats Australia
-Truffula,0.0414,5.0,Female,Yes,3,Australia,Truffula_Pet Cats Australia
-Tui,0.038,2.0,Female,Yes,13,New Zealand,Tui_Pet Cats New Zealand
-Tux,0.0148,6.0,Male,Yes,0,Australia,Tux_Pet Cats Australia
-Twinkle,0.0096,14.0,Male,Yes,2,Australia,Twinkle_Pet Cats Australia
-Tyson,0.009,8.0,Male,Yes,1,New Zealand,Tyson_Pet Cats New Zealand
-Unfriendly,0.0056,10.0,Female,Yes,1,Australia,Unfriendly_Pet Cats Australia
-Uno,0.0114,13.0,Male,Yes,1,Australia,Uno_Pet Cats Australia
-Venom,0.0049,7.0,Male,Yes,4,Australia,Venom_Pet Cats Australia
-Vinnie,0.028,1.0,Male,Yes,2,New Zealand,Vinnie_Pet Cats New Zealand
-VioletMae2,0.04,7.0,Female,Yes,0,United States,VioletMae2_Pet Cats United States
-Wally,0.0294,2.0,Male,Yes,0,Australia,Wally_Pet Cats Australia
-Weasel,0.1323,2.0,Male,Yes,4,Australia,Weasel_Pet Cats Australia
-Whiskey,0.034,5.0,Male,Yes,0,UK,Whiskey_Pet Cats United Kingdom
-Whisky,0.0283,4.0,Female,Yes,4,Australia,Whisky_Pet Cats Australia
-Wiggles,0.05,2.0,Male,Yes,11,Australia,Wiggles_Pet Cats Australia
-Wilfred,0.026,6.0,Male,Yes,0,UK,Wilfred_Pet Cats United Kingdom
-Willy2,0.024,13.0,Male,Yes,8,United States,Willy2_Pet Cats United States
-Winnie,0.011,12.0,Male,Yes,3,UK,Winnie_Pet Cats United Kingdom
-Wizzer,0.0068,12.0,Female,Yes,3,Australia,Wizzer_Pet Cats Australia
-Worf,0.162,8.0,Female,Yes,7,UK,Worf_Pet Cats United Kingdom
-Xander,0.0064,2.0,Male,Yes,3,Australia,Xander_Pet Cats Australia
-Xander,0.026,6.0,Male,Yes,2,New Zealand,Xander_Pet Cats New Zealand
-Yoda,0.025,5.0,Male,Yes,0,Australia,Yoda_Pet Cats Australia
-Yogi,0.3867,1.0,Male,Yes,2,Australia,Yogi_Pet Cats Australia
-Yoriko,0.0117,13.0,Female,Yes,1,Australia,Yoriko_Pet Cats Australia
-Zac,0.0049,2.0,Male,Yes,1,Australia,Zac_Pet Cats Australia
-Zak,0.0116,2.0,Male,Yes,11,Australia,Zak_Pet Cats Australia
-Zelda2,0.037,3.0,Female,Yes,0,United States,Zelda2_Pet Cats United States
-Zeno,0.016,4.0,Female,Yes,1,New Zealand,Zeno_Pet Cats New Zealand
-Zepher,0.0308,4.0,Male,Yes,1,Australia,Zepher_Pet Cats Australia
-Zeus,0.054,1.0,Male,Yes,7,New Zealand,Zeus_Pet Cats New Zealand
-ZeusII,0.024,1.0,Male,Yes,21,New Zealand,ZeusII_Pet Cats New Zealand
-Ziggy,0.036,8.0,Male,Yes,1,United States,Ziggy_Pet Cats United States
-Ziva,0.1738,1.0,Female,Yes,9,Australia,Ziva_Pet Cats Australia
-Zoe,0.0328,7.0,Female,Unk,2,Australia,Zoe_Pet Cats Australia
-Zoey,0.008,5.0,Female,Yes,12,United States,Zoey_Pet Cats United States
-Zulu,0.02,4.0,Female,Yes,11,New Zealand,Zulu_Pet Cats New Zealand
+animal-name,home-range,age,sex,neutered,prey_p_month,study-site,unique-id,days_tracked,start_date,end_date
+Abba,0.014,3.0,Female,Yes,3,UK,Abba_Pet Cats United Kingdom,8,2017-09-25,2017-10-02
+Adele,0.0034,0.9,Female,Yes,6,Australia,Adele_Pet Cats Australia,5,2015-06-09,2015-06-13
+Ajax2,0.015,3.0,Male,Yes,4,United States,Ajax2_Pet Cats United States,9,2014-06-21,2014-06-29
+Albert,0.0109,9.0,Male,Yes,1,Australia,Albert_Pet Cats Australia,5,2015-12-12,2015-12-16
+Alfie,0.009,2.0,Male,Yes,4,New Zealand,Alfie_Pet Cats New Zealand,6,2016-02-11,2016-02-16
+Alfie,0.091,3.0,Male,Yes,3,UK,Alfie_Pet Cats United Kingdom,8,2017-10-23,2017-10-30
+Ali,0.0103,0.7,Female,Yes,5,Australia,Ali_Pet Cats Australia,8,2015-08-19,2015-08-26
+Alice,0.034,5.0,Female,Yes,9,New Zealand,Alice_Pet Cats New Zealand,7,2016-01-14,2016-01-20
+Allie,0.064,8.0,Female,Yes,2,New Zealand,Allie_Pet Cats New Zealand,7,2015-05-04,2015-05-10
+Alrari,0.0145,9.0,Male,Yes,2,Australia,Alrari_Pet Cats Australia,7,2016-05-26,2016-06-01
+AmbaRose,0.0053,10.0,Female,Yes,2,Australia,AmbaRose_Pet Cats Australia,8,2015-09-30,2015-10-07
+Amelia,0.0036,10.0,Female,Yes,1,Australia,Amelia_Pet Cats Australia,7,2015-10-01,2015-10-07
+Anakin,0.0493,2.0,Male,Yes,1,Australia,Anakin_Pet Cats Australia,9,2015-05-01,2015-05-09
+Angel,0.0188,3.0,Female,Yes,5,Australia,Angel_Pet Cats Australia,8,2015-07-22,2015-07-29
+Annie,0.0097,2.0,Female,Yes,1,Australia,Annie_Pet Cats Australia,9,2015-11-13,2015-11-21
+Anubis2,0.017,2.0,Male,Yes,4,United States,Anubis2_Pet Cats United States,6,2014-06-29,2014-07-04
+Apples,0.011,10.0,Female,Yes,2,New Zealand,Apples_Pet Cats New Zealand,7,2015-09-16,2015-09-22
+Archie,0.014,4.0,Male,Yes,1,New Zealand,Archie_Pet Cats New Zealand,8,2016-02-11,2016-02-18
+Ares,0.029,3.0,Male,Yes,0,UK,Ares_Pet Cats United Kingdom,7,2017-06-24,2017-06-30
+Ariel,0.0069,1.0,Male,Yes,5,Australia,Ariel_Pet Cats Australia,10,2016-05-26,2016-06-05
+Arya,0.007,0.3,Female,Yes,16,New Zealand,Arya_Pet Cats New Zealand,8,2015-12-03,2015-12-10
+Ash,0.0437,8.0,Male,Yes,2,Australia,Ash_Pet Cats Australia,7,2015-08-28,2015-09-03
+Ash,0.025,8.0,Male,Yes,1,New Zealand,Ash_Pet Cats New Zealand,7,2015-10-17,2015-10-23
+Ash2,0.0169,3.0,Male,Yes,8,Australia,Ash2_Pet Cats Australia,7,2016-04-22,2016-04-28
+Asher2,0.09,3.0,Male,Yes,8,United States,Asher2_Pet Cats United States,11,2015-03-17,2015-03-28
+Asibo2,0.037,2.0,Male,Yes,4,United States,Asibo2_Pet Cats United States,6,2014-06-29,2014-07-04
+Astro,0.0528,2.0,Male,Yes,8,Australia,Astro_Pet Cats Australia,8,2015-11-20,2015-11-27
+Astryl,0.066,12.0,Female,Yes,2,New Zealand,Astryl_Pet Cats New Zealand,8,2015-12-12,2015-12-19
+Athena,0.011,3.0,Female,Yes,3,UK,Athena_Pet Cats United Kingdom,7,2017-06-24,2017-06-30
+Atik,0.0134,2.0,Female,Yes,5,Australia,Atik_Pet Cats Australia,11,2015-06-05,2015-06-15
+Atticus,0.013,8.0,Male,Yes,1,United States,Atticus_Pet Cats United States,3,2014-12-17,2014-12-19
+Ava,0.017,2.0,Female,Yes,2,New Zealand,Ava_Pet Cats New Zealand,6,2015-04-30,2015-05-05
+Babs1,0.011,0.8,Female,Yes,15,New Zealand,Babs1_Pet Cats New Zealand,7,2015-05-19,2015-05-25
+BabyKitty2,0.044,1.0,Male,No,8,United States,BabyKitty2_Pet Cats United States,13,2015-06-14,2015-06-26
+Balu,0.031,7.0,Female,Yes,3,UK,Balu_Pet Cats United Kingdom,8,2017-09-18,2017-09-25
+Bambi,0.0069,3.0,Female,Yes,5,Australia,Bambi_Pet Cats Australia,8,2016-02-04,2016-02-11
+Bandit,0.0214,3.0,Female,Yes,13,Australia,Bandit_Pet Cats Australia,9,2015-06-13,2015-06-21
+Banjo,0.0313,1.0,Male,Yes,5,Australia,Banjo_Pet Cats Australia,5,2016-02-05,2016-02-09
+Banjo2,0.0071,9.0,Female,Yes,9,Australia,Banjo2_Pet Cats Australia,7,2016-01-21,2016-01-27
+Banjo2,0.012,9.0,Female,Yes,1,United States,Banjo2_Pet Cats United States,10,2014-04-07,2014-04-16
+Banzai,0.116,3.0,Male,Yes,1,New Zealand,Banzai_Pet Cats New Zealand,9,2015-04-10,2015-04-18
+Barney,0.028,11.0,Male,Yes,0,UK,Barney_Pet Cats United Kingdom,8,2017-07-08,2017-07-15
+Basil,0.0293,3.0,Male,Yes,2,Australia,Basil_Pet Cats Australia,7,2015-07-15,2015-07-21
+Basil,0.018,9.0,Male,Yes,1,New Zealand,Basil_Pet Cats New Zealand,8,2015-11-27,2015-12-04
+BB,0.0087,1.0,Female,Yes,1,Australia,BB_Pet Cats Australia,8,2016-02-26,2016-03-04
+Bean2,0.022,3.0,Male,Yes,4,United States,Bean2_Pet Cats United States,6,2014-07-26,2014-08-02
+Beanie,0.005,4.0,Male,Yes,0,UK,Beanie_Pet Cats United Kingdom,8,2017-07-22,2017-07-29
+Bear,0.055,4.0,Female,Yes,6,New Zealand,Bear_Pet Cats New Zealand,8,2016-01-30,2016-02-06
+Bear,0.254,6.0,Male,Yes,3,UK,Bear_Pet Cats United Kingdom,8,2017-07-20,2017-07-27
+Beatle2,0.057,7.0,Male,Yes,0,United States,Beatle2_Pet Cats United States,6,2014-06-06,2014-06-11
+Bel,0.0583,1.0,Female,Yes,4,Australia,Bel_Pet Cats Australia,5,2015-05-15,2015-05-19
+Bel2,0.0053,12.0,Female,Yes,0,Australia,Bel2_Pet Cats Australia,3,2015-12-21,2015-12-23
+Bela2,0.112,2.0,Male,Yes,1,United States,Bela2_Pet Cats United States,12,2015-03-24,2015-04-05
+Bella,0.045,3.0,Female,Yes,7,UK,Bella_Pet Cats United Kingdom,9,2017-07-16,2017-07-24
+Bella2,0.046,5.0,Female,Yes,8,United States,Bella2_Pet Cats United States,13,2015-05-17,2015-05-29
+Bella5,0.0064,5.0,Female,Yes,0,Australia,Bella5_Pet Cats Australia,9,2015-09-02,2015-09-10
+Bella6,0.0146,8.0,Female,Yes,11,Australia,Bella6_Pet Cats Australia,5,2015-10-12,2015-10-16
+BellaBoo,0.1588,2.0,Female,Yes,7,Australia,BellaBoo_Pet Cats Australia,12,2016-05-13,2016-05-24
+BellaII,0.057,8.0,Female,Yes,3,New Zealand,BellaII_Pet Cats New Zealand,11,2015-10-11,2015-10-21
+BellaIII,0.044,4.0,Female,Yes,2,New Zealand,BellaIII_Pet Cats New Zealand,7,2015-11-26,2015-12-02
+Belle,0.0081,4.0,Female,Yes,1,Australia,Belle_Pet Cats Australia,7,2016-06-24,2016-06-30
+Beluga,0.051,2.0,Male,Yes,0,United States,Beluga_Pet Cats United States,6,2014-11-08,2014-11-13
+Benny,0.0042,7.0,Male,Yes,1,Australia,Benny_Pet Cats Australia,9,2015-08-12,2015-08-20
+Benny,0.02,4.0,Male,Yes,8,United States,Benny_Pet Cats United States,8,2015-02-08,2015-02-15
+Bentley,0.0233,12.0,Male,Yes,2,Australia,Bentley_Pet Cats Australia,10,2015-10-09,2015-10-18
+Bessy,0.0253,8.0,Female,Yes,21,Australia,Bessy_Pet Cats Australia,6,2015-09-03,2015-09-08
+Biggles,0.0087,4.0,Male,Yes,1,Australia,Biggles_Pet Cats Australia,7,2016-05-06,2016-05-12
+Billy,0.0061,11.0,Male,Yes,0,Australia,Billy_Pet Cats Australia,8,2015-12-24,2015-12-31
+BillyWhiskers2,0.037,2.0,Male,Yes,4,United States,BillyWhiskers2_Pet Cats United States,12,2015-06-14,2015-06-25
+Binky,0.058,4.0,Male,Yes,0,UK,Binky_Pet Cats United Kingdom,7,2017-07-22,2017-07-28
+Bits,0.012,13.0,Female,Yes,3,UK,Bits_Pet Cats United Kingdom,3,2017-07-29,2017-07-31
+Blackie,0.028,9.0,Male,Yes,3,New Zealand,Blackie_Pet Cats New Zealand,4,2015-04-18,2015-04-21
+Bluey,0.0071,9.0,Male,Yes,0,Australia,Bluey_Pet Cats Australia,8,2015-10-15,2015-10-22
+Bo,0.0099,4.0,Male,Yes,2,Australia,Bo_Pet Cats Australia,8,2015-12-11,2015-12-18
+Bob,0.0464,7.0,Male,Yes,4,Australia,Bob_Pet Cats Australia,8,2015-06-20,2015-06-27
+Bobs,0.059,13.0,Female,Yes,3,UK,Bobs_Pet Cats United Kingdom,8,2017-07-29,2017-08-05
+Bongo2,0.062,4.0,Male,Yes,12,United States,Bongo2_Pet Cats United States,11,2015-04-10,2015-04-20
+Boo,0.005,4.0,Male,Yes,0,Australia,Boo_Pet Cats Australia,9,2015-09-03,2015-09-11
+BooBooKitty,0.002,12.0,Female,Yes,0,United States,BooBooKitty_Pet Cats United States,5,2014-12-09,2014-12-21
+Boofy,0.0289,9.0,Male,Yes,1,Australia,Boofy_Pet Cats Australia,5,2015-08-26,2015-08-30
+Boots,0.009,3.0,Female,Yes,3,Australia,Boots_Pet Cats Australia,11,2015-07-30,2015-08-09
+Boots,0.056,16.0,Female,Yes,0,UK,Boots_Pet Cats United Kingdom,7,2017-08-25,2017-08-31
+Boots2,0.0044,14.0,Male,Yes,1,Australia,Boots2_Pet Cats Australia,11,2015-10-08,2015-10-18
+Boris2,0.067,2.0,Male,Yes,4,United States,Boris2_Pet Cats United States,3,2014-06-06,2014-06-08
+Boz,0.0092,6.0,Male,Yes,0,Australia,Boz_Pet Cats Australia,8,2015-12-24,2015-12-31
+Bramble,0.007,3.0,Female,Yes,3,New Zealand,Bramble_Pet Cats New Zealand,8,2015-10-29,2015-11-05
+Bruce,0.0164,2.0,Male,Yes,2,Australia,Bruce_Pet Cats Australia,8,2015-08-27,2015-09-03
+BruceWillisPussington,0.0133,7.0,Male,Yes,1,Australia,BruceWillisPussington_Pet Cats Australia,8,2015-04-02,2015-04-09
+Buddha,0.0247,6.0,Male,Yes,2,Australia,Buddha_Pet Cats Australia,8,2015-07-30,2015-08-06
+Buddy,0.0132,2.0,Male,Yes,1,Australia,Buddy_Pet Cats Australia,8,2015-03-31,2015-04-08
+Buddy,0.025,7.0,Male,Yes,1,New Zealand,Buddy_Pet Cats New Zealand,8,2016-02-11,2016-02-18
+Buddy2,0.0177,4.0,Male,Yes,4,Australia,Buddy2_Pet Cats Australia,7,2015-09-10,2015-09-16
+Bugsy,0.0433,5.0,Male,Yes,3,Australia,Bugsy_Pet Cats Australia,8,2015-07-03,2015-07-10
+Bumbles,0.023,12.0,Female,Yes,3,UK,Bumbles_Pet Cats United Kingdom,8,2017-07-20,2017-07-27
+Bumbles2,0.027,9.0,Male,Yes,12,United States,Bumbles2_Pet Cats United States,9,2015-03-24,2015-04-08
+Bungey,0.0074,6.0,Male,Yes,1,Australia,Bungey_Pet Cats Australia,6,2015-07-22,2015-07-27
+Buster,0.177,1.0,Male,Yes,5,New Zealand,Buster_Pet Cats New Zealand,7,2016-02-26,2016-03-03
+Buzz,0.025,2.0,Male,Yes,6,New Zealand,Buzz_Pet Cats New Zealand,7,2015-12-03,2015-12-09
+Caddie,0.0163,6.0,Female,Yes,4,Australia,Caddie_Pet Cats Australia,7,2015-12-16,2015-12-22
+CaptainSoldier,0.0369,3.0,Male,Yes,0,Australia,CaptainSoldier_Pet Cats Australia,8,2016-02-04,2016-02-11
+Carbonel,0.013,8.0,Male,Yes,0,UK,Carbonel_Pet Cats United Kingdom,8,2017-07-07,2017-07-14
+Carina,0.019,2.0,Female,Yes,8,New Zealand,Carina_Pet Cats New Zealand,7,2015-09-09,2015-09-15
+Carmello,0.0268,9.0,Male,Yes,0,Australia,Carmello_Pet Cats Australia,8,2016-02-18,2016-02-25
+Carrots,0.043,3.0,Male,Yes,17,UK,Carrots_Pet Cats United Kingdom,8,2017-08-25,2017-09-01
+Casper,0.0099,8.0,Male,Yes,3,Australia,Casper_Pet Cats Australia,7,2015-06-14,2015-06-20
+Casper,0.03,4.0,Male,Yes,7,New Zealand,Casper_Pet Cats New Zealand,6,2015-12-12,2015-12-17
+Casper,0.019,6.0,Male,Yes,0,UK,Casper_Pet Cats United Kingdom,8,2017-10-30,2017-11-06
+Caspian,0.018,10.0,Male,Yes,11,Australia,Caspian_Pet Cats Australia,7,2015-06-19,2015-06-25
+Cat,0.023,6.0,Male,Yes,1,Australia,Cat_Pet Cats Australia,8,2015-07-03,2015-07-10
+CatMarshall,0.022,5.0,Female,Yes,0,United States,CatMarshall_Pet Cats United States,5,2014-07-22,2014-07-26
+CatnissEverdeen,0.013,1.0,Female,Yes,0,United States,CatnissEverdeen_Pet Cats United States,6,2014-06-19,2014-06-24
+Catsby,0.021,5.0,Female,Yes,1,New Zealand,Catsby_Pet Cats New Zealand,6,2015-12-12,2015-12-17
+Cayden2,0.024,4.0,Male,Yes,0,United States,Cayden2_Pet Cats United States,2,2014-08-08,2014-08-09
+Cedar2,0.006,14.0,Male,Yes,4,United States,Cedar2_Pet Cats United States,7,2014-08-16,2014-08-22
+Celine,0.0108,3.0,Unk,Yes,1,Australia,Celine_Pet Cats Australia,8,2015-12-23,2015-12-30
+Chanel,0.011,8.0,Female,Yes,4,Australia,Chanel_Pet Cats Australia,7,2016-01-15,2016-01-21
+Charlie,0.011,5.0,Male,Yes,2,Australia,Charlie_Pet Cats Australia,10,2015-05-16,2015-05-25
+Charlie,0.017,6.0,Male,Yes,3,UK,Charlie_Pet Cats United Kingdom,7,2017-06-28,2017-07-04
+Charlie2,0.007,9.0,Male,Yes,3,UK,Charlie2_Pet Cats United Kingdom,7,2017-07-17,2017-07-23
+Charlie3,0.0039,12.0,Female,Yes,1,Australia,Charlie3_Pet Cats Australia,9,2015-09-30,2015-10-08
+Charlie4,0.026,6.0,Male,Yes,0,Australia,Charlie4_Pet Cats Australia,8,2015-10-08,2015-10-15
+Charlie6,0.0252,2.0,Male,Yes,9,Australia,Charlie6_Pet Cats Australia,10,2016-03-04,2016-03-13
+CharlieFrank,0.0165,4.0,Male,Yes,0,Australia,CharlieFrank_Pet Cats Australia,7,2015-07-22,2015-07-28
+Charlotte,0.0421,5.0,Female,Yes,3,Australia,Charlotte_Pet Cats Australia,7,2015-06-14,2015-06-20
+Charlotte2,0.0101,1.0,Female,Yes,2,Australia,Charlotte2_Pet Cats Australia,6,2016-06-09,2016-06-14
+Chase,0.0178,1.0,Female,Yes,21,Australia,Chase_Pet Cats Australia,6,2015-11-14,2015-11-19
+Cheeky,0.0136,15.0,Male,Yes,1,Australia,Cheeky_Pet Cats Australia,4,2015-09-02,2015-09-05
+Chess,0.013,9.0,Female,Yes,1,New Zealand,Chess_Pet Cats New Zealand,8,2016-02-19,2016-02-26
+Chester2,0.109,4.0,Male,Yes,4,United States,Chester2_Pet Cats United States,12,2015-04-18,2015-04-30
+Chloe,0.013,7.0,Female,Yes,3,UK,Chloe_Pet Cats United Kingdom,7,2017-07-20,2017-07-26
+ChuckNorris,0.0136,3.0,Male,Yes,2,Australia,ChuckNorris_Pet Cats Australia,6,2015-07-29,2015-08-03
+CJ,0.114,5.0,Male,Yes,0,UK,CJ_Pet Cats United Kingdom,6,2017-11-24,2017-11-29
+Clancy,0.0089,9.0,Female,Yes,2,Australia,Clancy_Pet Cats Australia,8,2016-01-21,2016-01-28
+Claude,0.007,8.0,Male,Yes,2,Australia,Claude_Pet Cats Australia,10,2015-12-11,2015-12-20
+Cleo,0.0175,4.0,Female,Yes,0,Australia,Cleo_Pet Cats Australia,7,2015-07-22,2015-07-28
+Cleo2,0.0414,4.0,Female,Yes,3,Australia,Cleo2_Pet Cats Australia,8,2016-05-07,2016-05-14
+Climber2,0.04,9.0,Male,Yes,4,United States,Climber2_Pet Cats United States,12,2015-03-17,2015-03-29
+Coal,0.044,7.0,Male,Yes,4,United States,Coal_Pet Cats United States,12,2014-12-29,2015-01-11
+Coco,0.0066,2.0,Female,Yes,3,Australia,Coco_Pet Cats Australia,9,2016-01-30,2016-02-07
+Coco,0.031,7.0,Female,Yes,3,UK,Coco_Pet Cats United Kingdom,8,2017-06-28,2017-07-05
+Conan,0.112,13.0,Male,Yes,1,United States,Conan_Pet Cats United States,3,2015-02-25,2015-02-28
+Cookie,0.013,3.0,Female,Yes,16,New Zealand,Cookie_Pet Cats New Zealand,8,2015-12-03,2015-12-10
+Cornflake,0.043,3.0,Female,Yes,1,New Zealand,Cornflake_Pet Cats New Zealand,8,2015-09-12,2015-09-19
+Cosi,0.0223,8.0,Female,Yes,3,Australia,Cosi_Pet Cats Australia,11,2015-07-30,2015-08-09
+Crumpet,0.0788,4.0,Female,Yes,3,Australia,Crumpet_Pet Cats Australia,7,2015-04-19,2015-04-25
+Cutie-Girl,0.007,2.0,Female,Yes,1,New Zealand,Cutie-Girl_Pet Cats New Zealand,9,2016-02-19,2016-02-27
+Daisy2,0.0089,6.0,Female,Yes,5,Australia,Daisy2_Pet Cats Australia,5,2015-12-11,2015-12-15
+Dana,0.0103,4.0,Female,Yes,2,Australia,Dana_Pet Cats Australia,8,2016-03-10,2016-03-17
+Dana,0.01,8.0,Male,Yes,1,New Zealand,Dana_Pet Cats New Zealand,6,2015-12-12,2015-12-17
+Darcy,0.0567,8.0,Male,Yes,4,Australia,Darcy_Pet Cats Australia,9,2015-07-01,2015-07-09
+Darcy2,0.0067,8.0,Male,Yes,1,Australia,Darcy2_Pet Cats Australia,6,2015-07-03,2015-07-08
+Darkie,0.0125,2.0,Female,Yes,6,Australia,Darkie_Pet Cats Australia,7,2015-06-13,2015-06-19
+Dash,0.02,4.0,Male,Yes,2,New Zealand,Dash_Pet Cats New Zealand,7,2016-02-19,2016-02-25
+DC,0.0244,6.0,Male,Yes,0,Australia,DC_Pet Cats Australia,11,2015-08-13,2015-08-23
+Delilah,0.0211,2.0,Female,Yes,5,Australia,Delilah_Pet Cats Australia,7,2015-06-06,2015-06-12
+Delilah2,0.0629,6.0,Female,Yes,6,Australia,Delilah2_Pet Cats Australia,7,2016-02-25,2016-03-02
+Delphi,0.041,1.0,Female,Yes,4,New Zealand,Delphi_Pet Cats New Zealand,7,2015-06-30,2015-07-06
+DetectiveTeddy,0.0153,8.0,Male,Yes,5,Australia,DetectiveTeddy_Pet Cats Australia,10,2015-05-30,2015-06-08
+Dexter,0.039,3.0,Male,Yes,3,UK,Dexter_Pet Cats United Kingdom,8,2017-09-17,2017-09-24
+Dexter2,0.585,1.0,Male,Yes,0,UK,Dexter2_Pet Cats United Kingdom,7,2017-09-23,2017-09-29
+Dharma,0.0094,17.0,Male,Yes,1,Australia,Dharma_Pet Cats Australia,8,2015-10-08,2015-10-15
+Diamond2,0.04,2.0,Female,Yes,16,United States,Diamond2_Pet Cats United States,14,2015-06-14,2015-06-27
+Diamonds,0.0115,2.0,Female,Yes,0,Australia,Diamonds_Pet Cats Australia,11,2015-10-09,2015-10-19
+Diesel,0.0257,2.0,Male,Yes,1,Australia,Diesel_Pet Cats Australia,8,2016-02-17,2016-02-24
+Dingo,0.03,4.0,Male,Yes,11,New Zealand,Dingo_Pet Cats New Zealand,8,2016-02-26,2016-03-04
+DonaldFluffypants,0.021,3.0,Male,Yes,4,United States,DonaldFluffypants_Pet Cats United States,5,2014-06-19,2014-06-23
+DonCarlos2,0.011,4.0,Male,Yes,8,United States,DonCarlos2_Pet Cats United States,5,2014-07-19,2014-07-23
+Dory,0.024,1.0,Female,No,0,UK,Dory_Pet Cats United Kingdom,8,2017-08-25,2017-09-01
+Dotti,0.011,7.0,Female,Yes,1,New Zealand,Dotti_Pet Cats New Zealand,10,2015-12-04,2015-12-13
+Douglas,0.01,7.0,Male,Yes,1,United States,Douglas_Pet Cats United States,11,2014-12-31,2015-02-12
+Drake,0.0462,10.0,Female,Yes,1,Australia,Drake_Pet Cats Australia,7,2015-06-06,2015-06-12
+Ebby,0.024,10.0,Female,Yes,3,UK,Ebby_Pet Cats United Kingdom,8,2017-07-20,2017-07-27
+Eddie,0.0059,11.0,Male,Yes,0,Australia,Eddie_Pet Cats Australia,8,2015-07-29,2015-08-05
+Eesti,0.0104,5.0,Male,Yes,1,Australia,Eesti_Pet Cats Australia,11,2016-03-18,2016-03-28
+Eldrick,0.0757,2.0,Male,Yes,11,Australia,Eldrick_Pet Cats Australia,9,2015-07-08,2015-07-16
+Elle,0.115,5.0,Female,Yes,0,United States,Elle_Pet Cats United States,15,2015-02-07,2015-02-23
+Ellie,0.027,8.0,Female,Yes,1,New Zealand,Ellie_Pet Cats New Zealand,7,2015-10-17,2015-10-23
+Elliot,0.189,2.0,Male,Yes,6,New Zealand,Elliot_Pet Cats New Zealand,8,2015-12-04,2015-12-11
+Elmo,0.024,12.0,Male,Yes,2,Australia,Elmo_Pet Cats Australia,11,2016-03-04,2016-03-14
+Emmy2,0.027,4.0,Female,Yes,0,United States,Emmy2_Pet Cats United States,2,2014-08-08,2014-08-09
+Enzo,0.0128,2.1,Male,Yes,2,Australia,Enzo_Pet Cats Australia,6,2016-05-26,2016-05-31
+Ernie,0.0448,11.0,Male,Yes,0,Australia,Ernie_Pet Cats Australia,5,2015-05-14,2015-05-18
+Ernie,0.026,1.0,Male,Yes,3,UK,Ernie_Pet Cats United Kingdom,8,2017-07-28,2017-08-04
+Fairclough,0.008,4.0,Male,Yes,0,UK,Fairclough_Pet Cats United Kingdom,8,2017-09-24,2017-10-01
+FantaPants,0.0232,5.0,Male,Yes,2,Australia,FantaPants_Pet Cats Australia,9,2015-05-15,2015-05-23
+Felix,0.0107,2.0,Male,Yes,2,Australia,Felix_Pet Cats Australia,8,2015-09-02,2015-09-09
+Felix,0.014,7.0,Male,Yes,4,New Zealand,Felix_Pet Cats New Zealand,8,2015-12-12,2015-12-19
+Felix,0.017,4.0,Male,Yes,3,UK,Felix_Pet Cats United Kingdom,5,2017-07-22,2017-07-26
+Felix3,0.0072,2.0,Male,Yes,4,Australia,Felix3_Pet Cats Australia,7,2015-12-17,2015-12-23
+Fergie,0.0236,1.0,Female,Yes,4,Australia,Fergie_Pet Cats Australia,6,2015-06-20,2015-06-25
+Fiona2,0.011,1.0,Female,Yes,20,United States,Fiona2_Pet Cats United States,13,2015-03-10,2015-03-22
+Fizzgig,0.0496,6.0,Female,Yes,16,Australia,Fizzgig_Pet Cats Australia,7,2015-12-17,2015-12-23
+Flanders,0.0168,1.0,Male,Yes,0,Australia,Flanders_Pet Cats Australia,8,2015-09-16,2015-09-23
+Flash,0.003,3.0,Female,Yes,3,UK,Flash_Pet Cats United Kingdom,8,2017-08-28,2017-09-04
+Fletcher2,0.028,13.0,Male,Yes,4,United States,Fletcher2_Pet Cats United States,2,2014-08-08,2014-08-09
+Floss,0.026,1.0,Female,Yes,11,New Zealand,Floss_Pet Cats New Zealand,8,2015-04-21,2015-04-28
+Flossie,0.0392,5.0,Female,Yes,3,Australia,Flossie_Pet Cats Australia,7,2016-04-09,2016-04-15
+Fonzie,0.021,10.0,Male,Yes,0,UK,Fonzie_Pet Cats United Kingdom,8,2017-07-08,2017-07-15
+Frank,0.0261,0.6,Male,No,0,Australia,Frank_Pet Cats Australia,7,2016-03-04,2016-03-10
+Frank,0.046,3.0,Male,Yes,12,United States,Frank_Pet Cats United States,10,2014-12-18,2014-12-27
+Frank,0.071,4.0,Male,Yes,3,UK,Frank_Pet Cats United Kingdom,8,2017-08-25,2017-09-01
+Frank_2,0.04,7.0,Male,Yes,0,UK,Frank_2_Pet Cats United Kingdom,8,2017-08-26,2017-09-02
+Franklin,0.052,8.0,Male,Yes,8,United States,Franklin_Pet Cats United States,11,2015-02-24,2015-03-08
+Freya,0.021,4.0,Female,Yes,0,UK,Freya_Pet Cats United Kingdom,8,2017-08-27,2017-09-03
+Friday,0.011,1.0,Male,Yes,0,UK,Friday_Pet Cats United Kingdom,6,2017-07-02,2017-07-07
+Fritz,0.105,7.0,Male,Yes,5,New Zealand,Fritz_Pet Cats New Zealand,6,2015-04-10,2015-04-15
+Frizzle,0.0156,3.0,Male,Yes,0,Australia,Frizzle_Pet Cats Australia,8,2015-03-31,2015-04-07
+Frosty,0.0375,1.0,Male,Yes,1,Australia,Frosty_Pet Cats Australia,6,2016-05-01,2016-05-06
+Furry,0.0076,6.0,Female,Yes,5,Australia,Furry_Pet Cats Australia,7,2016-04-09,2016-04-15
+GagglesHieronymus,0.0254,5.0,Male,Yes,0,Australia,GagglesHieronymus_Pet Cats Australia,10,2016-04-01,2016-04-10
+Garfield,0.0263,9.0,Male,Yes,1,Australia,Garfield_Pet Cats Australia,6,2016-06-10,2016-06-15
+Garry,0.0361,6.0,Male,Yes,3,Australia,Garry_Pet Cats Australia,6,2016-02-05,2016-02-10
+Geezer,0.0096,5.0,Male,Yes,0,Australia,Geezer_Pet Cats Australia,8,2015-09-09,2015-09-16
+Genie,0.0156,4.0,Female,Yes,2,Australia,Genie_Pet Cats Australia,8,2015-06-05,2015-06-12
+George,0.0214,3.0,Male,Yes,3,Australia,George_Pet Cats Australia,11,2015-07-15,2015-07-25
+George,0.01,9.0,Male,Yes,1,New Zealand,George_Pet Cats New Zealand,6,2015-09-07,2015-09-12
+George2,0.0161,3.0,Male,Yes,7,Australia,George2_Pet Cats Australia,8,2016-04-30,2016-05-07
+George2,0.043,1.0,Male,Yes,16,United States,George2_Pet Cats United States,13,2015-03-10,2015-03-22
+Georgie,0.0075,9.0,Male,Yes,5,Australia,Georgie_Pet Cats Australia,10,2015-10-08,2015-10-17
+Gertie,0.004,2.0,Female,Yes,2,New Zealand,Gertie_Pet Cats New Zealand,7,2015-12-04,2015-12-10
+Gianni2,0.029,10.0,Male,Yes,8,United States,Gianni2_Pet Cats United States,11,2015-03-03,2015-03-14
+Gigi,0.0138,13.0,Female,Yes,1,Australia,Gigi_Pet Cats Australia,9,2016-03-10,2016-03-18
+Gina,0.0323,3.0,Female,Yes,2,Australia,Gina_Pet Cats Australia,4,2016-01-19,2016-01-22
+Ginge,0.166,3.0,Male,Yes,17,UK,Ginge_Pet Cats United Kingdom,9,2017-10-30,2017-11-07
+Gingernut,0.126,2.0,Male,Yes,11,New Zealand,Gingernut_Pet Cats New Zealand,8,2015-03-14,2015-03-21
+GinII,0.013,5.0,Male,Yes,11,New Zealand,GinII_Pet Cats New Zealand,7,2016-02-26,2016-03-03
+Gizmo,0.0126,19.0,Male,Yes,0,Australia,Gizmo_Pet Cats Australia,9,2016-05-13,2016-05-21
+Goldfinger,0.0089,4.0,Male,Yes,0,Australia,Goldfinger_Pet Cats Australia,10,2015-07-29,2015-08-07
+Goliath2,0.07,6.0,Male,Yes,4,United States,Goliath2_Pet Cats United States,7,2014-11-14,2014-11-20
+Gracie,0.012,10.0,Female,Yes,4,United States,Gracie_Pet Cats United States,7,2013-08-17,2013-08-23
+Gracie,0.01,2.0,Female,Yes,0,UK,Gracie_Pet Cats United Kingdom,5,2017-09-07,2017-09-12
+Gracie_2,0.013,6.0,Female,Yes,0,UK,Gracie_2_Pet Cats United Kingdom,6,2017-09-17,2017-09-22
+GracieL2,0.025,16.0,Female,Yes,4,United States,GracieL2_Pet Cats United States,12,2015-05-17,2015-05-28
+GracieLouFreebush,0.0123,2.0,Female,Yes,6,Australia,GracieLouFreebush_Pet Cats Australia,9,2016-05-12,2016-05-20
+Grimm,0.0072,0.6,Male,Yes,0,Australia,Grimm_Pet Cats Australia,8,2015-09-03,2015-09-10
+Guinness,0.025,7.0,Male,Yes,3,UK,Guinness_Pet Cats United Kingdom,6,2017-09-13,2017-09-18
+Gus,0.0177,3.0,Male,Yes,3,Australia,Gus_Pet Cats Australia,6,2015-07-23,2015-07-28
+Gus,0.037,3.0,Male,Yes,3,New Zealand,Gus_Pet Cats New Zealand,8,2016-01-30,2016-02-06
+Guss,0.02,8.0,Male,Yes,3,New Zealand,Guss_Pet Cats New Zealand,6,2016-01-28,2016-02-02
+Gyhjor,0.0125,8.0,Male,Yes,1,Australia,Gyhjor_Pet Cats Australia,6,2016-07-07,2016-07-12
+HaHa,0.0163,2.0,Male,Yes,0,Australia,HaHa_Pet Cats Australia,7,2015-08-14,2015-08-20
+Hailey2,0.009,10.0,Female,Yes,8,United States,Hailey2_Pet Cats United States,4,2014-08-06,2014-08-09
+Harley2,0.059,5.0,Female,Yes,4,United States,Harley2_Pet Cats United States,6,2014-06-06,2014-06-11
+Harry2,0.0357,2.0,Male,Yes,0,Australia,Harry2_Pet Cats Australia,9,2015-09-10,2015-09-18
+Harry3,0.0074,4.0,Male,Yes,1,Australia,Harry3_Pet Cats Australia,8,2015-12-11,2015-12-18
+Hemingway,0.012,4.0,Male,Yes,1,United States,Hemingway_Pet Cats United States,6,2014-11-19,2014-11-24
+Henry,0.0152,1.0,Male,Yes,4,Australia,Henry_Pet Cats Australia,9,2015-06-13,2015-06-21
+Henry,0.02,6.0,Male,Yes,2,New Zealand,Henry_Pet Cats New Zealand,8,2015-09-17,2015-09-24
+Henry2,0.0198,8.0,Male,Yes,0,Australia,Henry2_Pet Cats Australia,7,2016-03-18,2016-03-24
+Herman2,0.019,8.0,Male,Yes,4,United States,Herman2_Pet Cats United States,11,2015-08-14,2015-08-24
+Hershey,0.058,7.0,Male,Yes,4,United States,Hershey_Pet Cats United States,13,2014-11-07,2014-11-20
+Hestor,0.0115,11.0,Male,Yes,5,Australia,Hestor_Pet Cats Australia,7,2016-02-05,2016-02-11
+Holly,0.0176,3.0,Female,Yes,7,Australia,Holly_Pet Cats Australia,6,2015-07-09,2015-07-14
+Hunter,0.0202,1.0,Male,Yes,0,Australia,Hunter_Pet Cats Australia,9,2015-06-13,2015-06-21
+Imelda,0.0103,1.0,Female,Yes,6,Australia,Imelda_Pet Cats Australia,8,2015-10-08,2015-10-15
+Indie,0.027,3.0,Male,Yes,0,UK,Indie_Pet Cats United Kingdom,8,2017-07-09,2017-07-16
+Ivory,0.0061,2.0,Female,Yes,2,Australia,Ivory_Pet Cats Australia,9,2015-09-03,2015-09-11
+Jack,0.0223,6.0,Male,Yes,5,Australia,Jack_Pet Cats Australia,9,2015-07-30,2015-08-07
+Jack2,0.563,5.0,Male,Yes,0,United States,Jack2_Pet Cats United States,8,2014-10-22,2014-10-29
+Jago,0.031,2.0,Male,Yes,17,UK,Jago_Pet Cats United Kingdom,7,2017-06-28,2017-07-04
+Jago2,0.083,2.0,Male,Yes,0,UK,Jago2_Pet Cats United Kingdom,8,2017-08-25,2017-09-01
+Jamie,0.0425,9.0,Male,Yes,3,Australia,Jamie_Pet Cats Australia,9,2015-04-01,2015-04-09
+Jams2,0.07,9.0,Male,Yes,4,United States,Jams2_Pet Cats United States,6,2014-06-12,2014-06-17
+Jasmine,0.0069,11.0,Female,Yes,1,Australia,Jasmine_Pet Cats Australia,2,2015-09-10,2015-09-11
+Jasmine2,0.0133,8.0,Female,Yes,0,Australia,Jasmine2_Pet Cats Australia,6,2016-06-02,2016-06-07
+Jasper,0.0097,5.0,Male,Yes,0,Australia,Jasper_Pet Cats Australia,10,2015-05-16,2015-05-25
+Jasper,0.02,2.0,Male,Yes,12,UK,Jasper_Pet Cats United Kingdom,8,2017-11-18,2017-11-25
+Jasper2,0.0058,2.0,Male,Yes,2,Australia,Jasper2_Pet Cats Australia,9,2015-08-21,2015-08-29
+Jasper3,0.0069,1.0,Male,Yes,0,Australia,Jasper3_Pet Cats Australia,4,2015-11-24,2015-11-27
+Jasper4,0.0107,2.0,Male,Yes,2,Australia,Jasper4_Pet Cats Australia,6,2016-03-25,2016-03-30
+Jax,0.0179,2.0,Male,Yes,6,Australia,Jax_Pet Cats Australia,10,2015-05-15,2015-05-24
+Jazzie,0.0111,1.0,Female,Yes,5,Australia,Jazzie_Pet Cats Australia,6,2015-08-27,2015-09-01
+Jedda,0.1164,4.0,Female,Yes,7,Australia,Jedda_Pet Cats Australia,8,2015-11-28,2015-12-05
+Jello2,0.044,3.0,Male,Yes,4,United States,Jello2_Pet Cats United States,8,2014-05-31,2014-06-07
+Jericho,0.0148,12.0,Male,Yes,0,Australia,Jericho_Pet Cats Australia,4,2015-07-17,2015-07-21
+Jess,0.115,11.0,Female,Yes,1,New Zealand,Jess_Pet Cats New Zealand,7,2015-05-06,2015-05-12
+Jessie,0.006,5.0,Female,Yes,3,UK,Jessie_Pet Cats United Kingdom,9,2017-09-17,2017-10-16
+JessieBeau,0.0324,2.0,Male,Yes,19,Australia,JessieBeau_Pet Cats Australia,7,2015-10-16,2015-10-22
+Jessy,0.036,11.0,Female,Yes,3,UK,Jessy_Pet Cats United Kingdom,1,2017-07-08,2017-07-08
+Jester,0.0218,5.0,Male,Yes,2,Australia,Jester_Pet Cats Australia,6,2015-08-15,2015-08-20
+Jetpack,0.049,2.0,Female,Yes,4,United States,Jetpack_Pet Cats United States,6,2014-06-19,2014-06-24
+Jezebel,0.027,14.0,Female,Yes,0,UK,Jezebel_Pet Cats United Kingdom,8,2017-08-25,2017-09-01
+Jim,0.008,8.0,Female,Yes,3,UK,Jim_Pet Cats United Kingdom,7,2017-09-28,2017-10-04
+Jingles,0.073,7.0,Female,Yes,21,New Zealand,Jingles_Pet Cats New Zealand,7,2015-10-17,2015-10-23
+Jingles2,0.057,8.0,Male,Yes,28,United States,Jingles2_Pet Cats United States,11,2015-04-19,2015-04-29
+Jinx,0.1434,1.0,Female,Yes,7,Australia,Jinx_Pet Cats Australia,8,2015-12-25,2016-01-01
+Jinx,0.027,8.0,Male,Yes,1,New Zealand,Jinx_Pet Cats New Zealand,6,2015-04-30,2015-05-05
+Jinx2,0.0338,6.0,Female,Yes,10,Australia,Jinx2_Pet Cats Australia,8,2016-01-28,2016-02-04
+Jitterbug2,0.047,2.0,Female,Yes,1,United States,Jitterbug2_Pet Cats United States,6,2014-06-19,2014-06-24
+Joey,0.0599,5.0,Male,Yes,1,Australia,Joey_Pet Cats Australia,4,2016-04-18,2016-04-21
+Joey,0.005,10.0,Male,Yes,4,United States,Joey_Pet Cats United States,11,2015-01-25,2015-02-05
+Johnny,0.0221,2.0,Male,Yes,11,Australia,Johnny_Pet Cats Australia,8,2015-06-14,2015-06-21
+Jones,0.063,11.0,Male,Yes,0,Australia,Jones_Pet Cats Australia,11,2016-03-04,2016-03-14
+Junior2,0.02,6.0,Male,Yes,1,United States,Junior2_Pet Cats United States,14,2015-02-24,2015-03-22
+Junipurr,0.0291,8.0,Female,Yes,13,Australia,Junipurr_Pet Cats Australia,7,2016-01-21,2016-01-27
+Justice,0.007,9.0,Male,Yes,0,United States,Justice_Pet Cats United States,11,2015-01-03,2015-01-13
+Kagin2,0.029,5.0,Male,Yes,4,United States,Kagin2_Pet Cats United States,98,2014-07-18,2015-04-18
+Kallie,0.0135,1.0,Female,Yes,5,Australia,Kallie_Pet Cats Australia,10,2015-06-05,2015-06-14
+Kamir,0.0048,13.0,Female,Yes,4,Australia,Kamir_Pet Cats Australia,8,2015-12-16,2015-12-23
+Kaos,0.06,7.0,Male,Yes,3,New Zealand,Kaos_Pet Cats New Zealand,7,2015-08-15,2015-08-21
+KatnissEverdeen,0.016,1.0,Female,Yes,0,United States,KatnissEverdeen_Pet Cats United States,6,2014-06-19,2014-06-24
+Katy,0.018,10.0,Female,Yes,1,New Zealand,Katy_Pet Cats New Zealand,6,2016-01-16,2016-01-21
+Keegan,0.049,3.0,Male,No,3,UK,Keegan_Pet Cats United Kingdom,7,2017-09-24,2017-09-30
+Kenny,0.0107,4.0,Male,Yes,0,Australia,Kenny_Pet Cats Australia,6,2015-10-01,2015-10-06
+Keytuyn,0.018,1.0,Male,Yes,5,Australia,Keytuyn_Pet Cats Australia,13,2016-04-14,2016-04-26
+KikkiDee,0.0356,8.0,Female,Yes,0,Australia,KikkiDee_Pet Cats Australia,7,2015-08-20,2015-08-26
+Kimy,0.042,7.0,Female,Yes,4,New Zealand,Kimy_Pet Cats New Zealand,6,2016-02-19,2016-02-24
+Kiri,0.033,0.8,Female,Yes,21,New Zealand,Kiri_Pet Cats New Zealand,7,2015-05-19,2015-05-25
+Kitty,0.0954,4.0,Male,Yes,1,Australia,Kitty_Pet Cats Australia,7,2015-06-06,2015-06-12
+Kitty2,0.031,5.0,Male,Yes,1,Australia,Kitty2_Pet Cats Australia,9,2015-07-03,2015-07-11
+Kitty3,0.0065,1.0,Female,Yes,0,Australia,Kitty3_Pet Cats Australia,11,2015-08-27,2015-09-06
+Kitty4,0.091,2.0,Male,No,4,Australia,Kitty4_Pet Cats Australia,10,2015-08-28,2015-09-06
+Kitty5,0.0069,2.0,Female,Yes,5,Australia,Kitty5_Pet Cats Australia,9,2015-12-25,2016-01-02
+Kitty6,0.0241,5.0,Female,Yes,1,Australia,Kitty6_Pet Cats Australia,7,2016-02-25,2016-03-02
+KittysaurusRex,0.116,5.0,Male,Yes,21,New Zealand,KittysaurusRex_Pet Cats New Zealand,7,2016-01-01,2016-01-07
+Kramer,0.0109,12.0,Male,Yes,4,Australia,Kramer_Pet Cats Australia,6,2015-06-06,2015-06-11
+Lacey,0.028,3.0,Female,Yes,8,United States,Lacey_Pet Cats United States,16,2013-09-01,2014-10-07
+Ladybird2,0.044,10.0,Female,Yes,4,United States,Ladybird2_Pet Cats United States,13,2015-06-14,2015-06-26
+Ladyboyhawke,0.176,5.0,Female,Yes,3,UK,Ladyboyhawke_Pet Cats United Kingdom,7,2017-07-16,2017-07-22
+LadyT,0.008,2.0,Male,Yes,3,UK,LadyT_Pet Cats United Kingdom,8,2017-07-16,2017-07-23
+LadyVelvet,0.0042,8.0,Female,Yes,1,Australia,LadyVelvet_Pet Cats Australia,9,2015-05-30,2015-06-08
+Laila,0.006,7.0,Female,Yes,1,New Zealand,Laila_Pet Cats New Zealand,8,2016-01-14,2016-01-21
+Latte,0.0183,4.0,Female,Yes,3,Australia,Latte_Pet Cats Australia,9,2015-07-08,2015-07-16
+Leila,0.0256,8.0,Female,Yes,11,Australia,Leila_Pet Cats Australia,6,2016-02-25,2016-03-01
+Lenny,0.035,1.0,Male,Yes,6,New Zealand,Lenny_Pet Cats New Zealand,8,2015-11-26,2015-12-03
+Leo,0.0077,2.0,Male,Yes,3,Australia,Leo_Pet Cats Australia,7,2015-07-16,2015-07-22
+Leo2,0.0121,10.0,Male,Yes,0,Australia,Leo2_Pet Cats Australia,9,2015-08-12,2015-08-20
+Leo3,0.0056,6.0,Male,Yes,3,Australia,Leo3_Pet Cats Australia,8,2015-09-09,2015-09-16
+Leo4,0.0262,16.0,Male,Yes,0,Australia,Leo4_Pet Cats Australia,8,2016-02-25,2016-03-03
+Lester,0.025,13.0,Male,Yes,1,United States,Lester_Pet Cats United States,6,2013-08-21,2013-08-26
+Lexi,0.3546,4.0,Female,Yes,5,Australia,Lexi_Pet Cats Australia,7,2016-05-27,2016-06-02
+LibertyBelle,0.0118,2.0,Female,Yes,3,Australia,LibertyBelle_Pet Cats Australia,5,2015-06-27,2015-07-01
+Lief,0.0167,3.0,Male,Yes,11,Australia,Lief_Pet Cats Australia,5,2015-06-19,2015-06-23
+LighteningBugg,0.042,0.0,Male,Yes,0,UK,LighteningBugg_Pet Cats United Kingdom,6,2017-07-29,2017-08-03
+Lightning,0.0218,1.0,Female,Yes,0,Australia,Lightning_Pet Cats Australia,9,2015-05-16,2015-05-24
+Lila,0.0256,7.0,Female,Yes,1,Australia,Lila_Pet Cats Australia,8,2015-08-28,2015-09-04
+Lilliput,0.0099,3.0,Female,Yes,3,Australia,Lilliput_Pet Cats Australia,9,2015-06-26,2015-07-04
+Lilly,0.0096,4.0,Female,Yes,0,Australia,Lilly_Pet Cats Australia,9,2015-08-12,2015-08-20
+Lilly,0.026,3.0,Female,Yes,1,New Zealand,Lilly_Pet Cats New Zealand,7,2015-11-26,2015-12-02
+Lily,0.0052,3.0,Female,Yes,0,Australia,Lily_Pet Cats Australia,8,2015-09-10,2015-09-17
+Lister,0.0424,19.0,Male,Yes,0,Australia,Lister_Pet Cats Australia,8,2016-06-09,2016-06-16
+Little2,0.053,8.0,Male,Yes,0,United States,Little2_Pet Cats United States,7,2014-06-29,2014-07-05
+Loki,0.0241,8.0,Male,Yes,1,Australia,Loki_Pet Cats Australia,9,2015-11-20,2015-11-28
+Loki,0.014,1.0,Male,Yes,2,New Zealand,Loki_Pet Cats New Zealand,8,2016-02-11,2016-02-18
+Lola,0.03,10.0,Female,Yes,3,UK,Lola_Pet Cats United Kingdom,7,2017-06-24,2017-06-30
+LouieTag,0.113,5.0,Male,Yes,0,United States,LouieTag_Pet Cats United States,15,2015-01-20,2015-02-03
+Louis,0.0118,12.0,Male,Yes,0,Australia,Louis_Pet Cats Australia,9,2015-07-22,2015-07-30
+Louise,0.0079,4.0,Female,Yes,3,Australia,Louise_Pet Cats Australia,10,2015-05-16,2015-05-25
+LouisTheBruiser,0.0058,12.0,Male,Yes,2,Australia,LouisTheBruiser_Pet Cats Australia,8,2016-01-15,2016-01-22
+LucarioBlack,0.0198,3.0,Male,Yes,3,Australia,LucarioBlack_Pet Cats Australia,7,2015-08-27,2015-09-02
+Lucims,0.0149,15.0,Female,Yes,0,Australia,Lucims_Pet Cats Australia,9,2015-06-26,2015-07-04
+Lucky2,0.043,11.0,Female,Yes,0,United States,Lucky2_Pet Cats United States,7,2014-08-17,2014-08-23
+Lucy,0.008,5.0,Female,Yes,0,UK,Lucy_Pet Cats United Kingdom,8,2017-09-29,2017-10-06
+Lucy2,0.0307,1.0,Female,Yes,0,Australia,Lucy2_Pet Cats Australia,9,2015-05-16,2015-05-24
+Lucy3,0.0323,3.0,Female,Yes,6,Australia,Lucy3_Pet Cats Australia,9,2015-06-25,2015-07-03
+Luna,0.015,0.0,Female,Yes,0,Australia,Luna_Pet Cats Australia,5,2016-03-25,2016-03-29
+Luna,0.008,2.0,Female,Yes,3,New Zealand,Luna_Pet Cats New Zealand,18,2015-09-19,2015-12-11
+Luna2,0.035,4.0,Female,Yes,0,United States,Luna2_Pet Cats United States,7,2014-06-29,2014-07-05
+Lupe2,0.04,4.0,Male,Yes,12,United States,Lupe2_Pet Cats United States,12,2015-04-12,2015-04-28
+Lux,0.009,6.0,Female,Yes,21,New Zealand,Lux_Pet Cats New Zealand,6,2016-01-29,2016-02-03
+Mabel,0.017,3.0,Female,Yes,2,New Zealand,Mabel_Pet Cats New Zealand,7,2015-07-08,2015-07-14
+Maca,0.0147,10.0,Female,Yes,9,Australia,Maca_Pet Cats Australia,7,2015-09-03,2015-09-09
+MacaulayMccat,0.021,6.0,Female,Yes,17,UK,MacaulayMccat_Pet Cats United Kingdom,5,2017-09-29,2017-10-26
+Maddie2,0.042,10.0,Female,Yes,1,United States,Maddie2_Pet Cats United States,5,2014-04-14,2014-04-18
+Maeve,0.0095,3.0,Female,Yes,0,Australia,Maeve_Pet Cats Australia,6,2016-06-09,2016-06-14
+Maggie,0.0328,7.0,Female,Yes,1,Australia,Maggie_Pet Cats Australia,8,2015-12-11,2015-12-18
+Maggie,0.015,4.0,Female,Yes,1,New Zealand,Maggie_Pet Cats New Zealand,8,2015-09-09,2015-09-16
+Maggie,0.016,3.0,Female,Yes,0,UK,Maggie_Pet Cats United Kingdom,8,2017-09-25,2017-10-02
+Magic,0.0377,6.0,Female,Yes,3,Australia,Magic_Pet Cats Australia,6,2016-03-10,2016-03-15
+Maisey2,0.083,2.0,Female,Yes,4,United States,Maisey2_Pet Cats United States,8,2015-04-18,2015-04-26
+Malachie,0.1007,3.0,Male,Yes,5,Australia,Malachie_Pet Cats Australia,6,2016-01-18,2016-01-23
+Mandy,0.013,1.0,Female,Yes,6,Australia,Mandy_Pet Cats Australia,6,2015-05-17,2015-05-22
+Mango,0.0223,1.0,Male,Yes,3,Australia,Mango_Pet Cats Australia,7,2015-06-13,2015-06-19
+MapleSyrup,0.0138,10.0,Female,Yes,0,Australia,MapleSyrup_Pet Cats Australia,7,2015-06-19,2015-06-25
+Marbles,0.0228,7.0,Male,Yes,0,Australia,Marbles_Pet Cats Australia,8,2015-06-20,2015-06-27
+Marbles2,0.003,2.0,Female,Yes,0,Australia,Marbles2_Pet Cats Australia,8,2015-09-04,2015-09-11
+Marley,0.014,3.0,Male,Yes,2,New Zealand,Marley_Pet Cats New Zealand,8,2015-09-17,2015-09-24
+Marley,0.095,1.0,Male,Yes,0,UK,Marley_Pet Cats United Kingdom,6,2017-09-10,2017-09-15
+Marmite,0.023,4.0,Female,Yes,2,New Zealand,Marmite_Pet Cats New Zealand,8,2016-03-04,2016-03-11
+Martha,0.0291,2.0,Female,Yes,1,Australia,Martha_Pet Cats Australia,6,2015-06-25,2015-06-30
+Martha2,0.003,3.0,Female,Yes,5,Australia,Martha2_Pet Cats Australia,7,2015-10-08,2015-10-14
+MarthaWayne2,0.022,3.0,Female,Yes,0,United States,MarthaWayne2_Pet Cats United States,7,2014-06-19,2014-06-25
+Marty,0.012,2.0,Male,Yes,1,New Zealand,Marty_Pet Cats New Zealand,5,2016-02-12,2016-02-16
+Matilda,0.0182,8.0,Female,Yes,1,Australia,Matilda_Pet Cats Australia,6,2015-05-15,2015-05-21
+Maverick,0.045,7.0,Male,Yes,3,UK,Maverick_Pet Cats United Kingdom,9,2017-06-25,2017-07-03
+Max,0.0214,8.0,Male,Yes,21,Australia,Max_Pet Cats Australia,5,2015-05-30,2015-06-03
+Max,0.107,1.0,Male,Yes,2,New Zealand,Max_Pet Cats New Zealand,7,2015-07-08,2015-07-14
+Max,2.239,5.0,Male,Yes,3,UK,Max_Pet Cats United Kingdom,7,2017-07-17,2017-07-23
+Max2,0.0355,3.0,Male,Yes,2,Australia,Max2_Pet Cats Australia,7,2015-06-06,2015-06-12
+Max3,0.0031,2.0,Male,Yes,2,Australia,Max3_Pet Cats Australia,8,2015-10-16,2015-10-23
+Maxwell,0.031,6.0,Male,Yes,17,UK,Maxwell_Pet Cats United Kingdom,11,2017-07-29,2017-08-08
+Meesha,0.0271,8.0,Female,Yes,0,Australia,Meesha_Pet Cats Australia,8,2016-04-09,2016-04-16
+Meggsie,0.0081,6.0,Male,Yes,4,Australia,Meggsie_Pet Cats Australia,8,2015-12-22,2015-12-29
+Merlin,0.0182,1.0,Male,Yes,4,Australia,Merlin_Pet Cats Australia,6,2015-08-13,2015-08-18
+Merlin,0.121,5.0,Male,Yes,7,UK,Merlin_Pet Cats United Kingdom,8,2017-07-20,2017-07-27
+Merlin2,0.005,9.0,Male,Yes,0,Australia,Merlin2_Pet Cats Australia,8,2015-09-04,2015-09-11
+Merlot,0.0611,9.0,Male,Yes,8,Australia,Merlot_Pet Cats Australia,8,2015-07-09,2015-07-16
+Mia2,0.207,4.0,Female,Yes,4,United States,Mia2_Pet Cats United States,13,2014-08-11,2014-08-31
+Mickey,0.008,4.0,Male,Yes,6,Australia,Mickey_Pet Cats Australia,8,2015-06-14,2015-06-21
+Midnight,0.0087,11.0,Male,Yes,1,Australia,Midnight_Pet Cats Australia,8,2015-09-10,2015-09-17
+Midori,0.0082,7.0,Female,Yes,2,Australia,Midori_Pet Cats Australia,9,2015-06-13,2015-06-21
+Mifty,0.054,2.0,Female,Yes,12,UK,Mifty_Pet Cats United Kingdom,8,2017-07-13,2017-07-20
+Mika,0.0195,3.0,Female,Yes,1,Australia,Mika_Pet Cats Australia,10,2015-05-31,2015-06-10
+Milfred,0.0076,3.0,Male,Yes,7,Australia,Milfred_Pet Cats Australia,12,2015-07-16,2015-07-27
+MilkoMcCavity,0.0137,6.0,Male,Yes,0,Australia,MilkoMcCavity_Pet Cats Australia,8,2016-02-25,2016-03-03
+Milkshakes,0.026,3.0,Male,Yes,3,New Zealand,Milkshakes_Pet Cats New Zealand,8,2015-09-19,2015-09-26
+Millie,0.013,3.0,Female,Yes,7,UK,Millie_Pet Cats United Kingdom,8,2017-11-20,2017-11-27
+Millie3,0.0056,7.0,Female,Yes,1,Australia,Millie3_Pet Cats Australia,8,2015-10-09,2015-10-16
+MilliGal,0.01,7.0,Female,Yes,5,New Zealand,MilliGal_Pet Cats New Zealand,7,2016-03-10,2016-03-16
+Milly,0.0106,4.0,Female,Yes,5,Australia,Milly_Pet Cats Australia,12,2015-05-30,2015-06-10
+Milly2,0.0113,11.0,Female,Yes,3,Australia,Milly2_Pet Cats Australia,7,2015-06-05,2015-06-11
+Milo,0.0373,0.6,Female,Yes,0,Australia,Milo_Pet Cats Australia,8,2015-06-14,2015-06-21
+Milo,0.012,3.0,Male,Yes,8,United States,Milo_Pet Cats United States,11,2015-01-26,2015-02-05
+Milo,0.102,10.0,Female,Yes,11,New Zealand,Milo_Pet Cats New Zealand,7,2015-10-17,2015-10-23
+Milo2,0.0128,2.0,Male,Yes,16,Australia,Milo2_Pet Cats Australia,7,2015-07-31,2015-08-06
+Mimi,0.0085,14.0,Female,Yes,0,Australia,Mimi_Pet Cats Australia,8,2016-03-04,2016-03-11
+Mindy2,0.066,5.0,Female,Yes,8,United States,Mindy2_Pet Cats United States,43,2015-01-23,2015-06-11
+Minerva,0.008,6.0,Female,Yes,1,New Zealand,Minerva_Pet Cats New Zealand,6,2016-01-16,2016-01-21
+Mingo,0.006,5.0,Female,Yes,1,Australia,Mingo_Pet Cats Australia,8,2015-06-13,2015-06-20
+Minty,0.0162,3.0,Female,Yes,1,Australia,Minty_Pet Cats Australia,7,2015-06-26,2015-07-02
+Missy,0.0051,3.0,Female,Yes,2,Australia,Missy_Pet Cats Australia,2,2016-02-18,2016-02-19
+Missy,0.041,3.0,Female,Yes,3,UK,Missy_Pet Cats United Kingdom,8,2017-09-18,2017-09-25
+MissyMitz,0.0055,8.0,Female,Yes,2,Australia,MissyMitz_Pet Cats Australia,7,2015-10-16,2015-10-22
+MissyMoo,0.0139,8.0,Female,Yes,0,Australia,MissyMoo_Pet Cats Australia,5,2015-06-26,2015-06-30
+Misty,0.0389,10.0,Female,Yes,9,Australia,Misty_Pet Cats Australia,8,2015-04-25,2015-05-02
+Misty,0.005,3.0,Female,Yes,4,United States,Misty_Pet Cats United States,3,2014-11-28,2014-12-01
+Misty2,0.0127,8.0,Female,Yes,17,Australia,Misty2_Pet Cats Australia,8,2015-05-30,2015-06-06
+Misu2,0.024,9.0,Male,Yes,4,United States,Misu2_Pet Cats United States,11,2015-04-20,2015-04-30
+Mittens,0.0117,5.0,Female,Yes,2,Australia,Mittens_Pet Cats Australia,6,2015-08-15,2015-08-20
+Moggy,0.017,11.0,Female,Yes,1,Australia,Moggy_Pet Cats Australia,7,2015-07-21,2015-07-27
+Momo,0.0089,2.0,Female,Yes,1,Australia,Momo_Pet Cats Australia,7,2015-06-26,2015-07-02
+MonaLisa,0.0411,9.0,Female,Yes,0,Australia,MonaLisa_Pet Cats Australia,8,2015-08-26,2015-09-02
+MonMon,0.263,4.0,Female,Yes,3,Australia,MonMon_Pet Cats Australia,8,2015-03-31,2015-04-07
+Monty2,0.0159,7.0,Male,Yes,15,Australia,Monty2_Pet Cats Australia,8,2015-10-09,2015-10-16
+MontyII,0.04,1.0,Male,Yes,1,New Zealand,MontyII_Pet Cats New Zealand,6,2015-08-29,2015-09-03
+Morpheus,0.014,4.0,Male,Yes,3,UK,Morpheus_Pet Cats United Kingdom,9,2017-07-01,2017-07-09
+Moscow,0.0098,4.0,Male,Yes,0,Australia,Moscow_Pet Cats Australia,8,2015-10-16,2015-10-23
+Moscow,0.01,1.0,Male,Yes,0,UK,Moscow_Pet Cats United Kingdom,8,2017-10-23,2017-10-30
+Moses,0.014,2.0,Male,Yes,11,New Zealand,Moses_Pet Cats New Zealand,7,2015-12-04,2015-12-10
+Motorcat,0.046,14.0,Female,Yes,1,United States,Motorcat_Pet Cats United States,8,2013-08-14,2013-08-21
+Mowdii,0.0074,8.0,Female,Yes,3,Australia,Mowdii_Pet Cats Australia,8,2016-03-10,2016-03-17
+MrGray,0.0989,1.0,Male,Yes,5,Australia,MrGray_Pet Cats Australia,7,2016-01-16,2016-01-22
+MrLittleCat,0.011,8.0,Male,Yes,3,Australia,MrLittleCat_Pet Cats Australia,9,2015-08-28,2015-09-05
+MrLucky,0.084,3.0,Male,Yes,0,United States,MrLucky_Pet Cats United States,8,2014-12-09,2014-12-17
+MrThomas,0.0085,10.0,Male,Yes,0,Australia,MrThomas_Pet Cats Australia,9,2015-10-16,2015-10-24
+MrWhiskers,0.0032,5.0,Female,Yes,0,Australia,MrWhiskers_Pet Cats Australia,10,2015-09-04,2015-09-13
+Muggins,0.0187,0.0,Male,Yes,1,Australia,Muggins_Pet Cats Australia,9,2015-06-19,2015-06-27
+Multi,0.0345,0.5,Female,No,0,Australia,Multi_Pet Cats Australia,6,2016-04-09,2016-04-14
+Mungo,0.005,7.0,Male,Yes,6,New Zealand,Mungo_Pet Cats New Zealand,6,2016-02-06,2016-02-11
+Murphy,0.024,5.0,Male,Yes,2,New Zealand,Murphy_Pet Cats New Zealand,4,2015-04-09,2015-04-12
+Muss,0.0276,7.0,Male,Yes,1,Australia,Muss_Pet Cats Australia,8,2015-08-13,2015-08-20
+Mynx,0.0068,2.0,Male,Yes,4,Australia,Mynx_Pet Cats Australia,10,2016-03-11,2016-03-20
+Mysti,0.1423,18.0,Female,Yes,1,Australia,Mysti_Pet Cats Australia,8,2015-05-22,2015-05-29
+Mystic,0.035,2.0,Female,Yes,0,Australia,Mystic_Pet Cats Australia,8,2016-05-05,2016-05-12
+Nala,0.032,1.0,Female,Yes,7,New Zealand,Nala_Pet Cats New Zealand,9,2015-08-15,2015-08-23
+NalaII,0.034,2.0,Female,Yes,4,New Zealand,NalaII_Pet Cats New Zealand,8,2015-12-05,2015-12-12
+Natasha2,0.034,2.0,Female,Yes,0,United States,Natasha2_Pet Cats United States,5,2014-06-06,2014-06-10
+NattyBumpo2,0.061,8.0,Female,Yes,12,United States,NattyBumpo2_Pet Cats United States,7,2015-05-06,2015-05-12
+Neil,0.023,7.0,Male,Yes,0,UK,Neil_Pet Cats United Kingdom,8,2017-09-30,2017-10-07
+Neko,0.061,2.0,Male,Yes,1,New Zealand,Neko_Pet Cats New Zealand,6,2015-04-10,2015-04-15
+NekoMei,0.0075,9.0,Female,Yes,0,Australia,NekoMei_Pet Cats Australia,12,2015-05-30,2015-06-10
+Nellie,0.0032,4.0,Female,Yes,2,Australia,Nellie_Pet Cats Australia,10,2015-06-20,2015-06-29
+Nelson,0.0741,3.0,Male,Yes,5,Australia,Nelson_Pet Cats Australia,7,2015-09-03,2015-09-09
+Nelson3,0.0151,7.0,Male,Yes,0,Australia,Nelson3_Pet Cats Australia,6,2015-12-10,2015-12-15
+Nettle,0.014,4.0,Female,Yes,7,UK,Nettle_Pet Cats United Kingdom,8,2017-07-01,2017-07-08
+Neva,0.006,4.0,Female,Yes,0,UK,Neva_Pet Cats United Kingdom,9,2017-10-23,2017-10-31
+Nia,0.014,4.0,Female,Yes,1,United States,Nia_Pet Cats United States,7,2014-11-10,2014-11-16
+Nikki2,0.071,8.0,Female,Yes,4,United States,Nikki2_Pet Cats United States,12,2015-03-23,2015-04-06
+Niko,0.014,1.0,Male,Yes,21,New Zealand,Niko_Pet Cats New Zealand,6,2015-05-06,2015-05-11
+Ninja,0.0181,1.0,Female,Yes,6,Australia,Ninja_Pet Cats Australia,7,2015-06-20,2015-06-26
+Nola2Tag,0.026,4.0,Female,Yes,0,United States,Nola2Tag_Pet Cats United States,7,2014-07-22,2014-07-28
+Nougie,0.028,12.0,Female,Yes,3,New Zealand,Nougie_Pet Cats New Zealand,7,2015-10-17,2015-10-23
+Nugget,0.031,6.0,Female,Yes,1,New Zealand,Nugget_Pet Cats New Zealand,4,2015-12-12,2015-12-15
+Oatmeal,0.078,5.0,Male,Yes,0,United States,Oatmeal_Pet Cats United States,7,2014-04-25,2014-05-01
+Okie,0.019,1.0,Female,Yes,6,New Zealand,Okie_Pet Cats New Zealand,8,2015-08-15,2015-08-22
+Oli,0.0115,1.0,Male,Yes,0,Australia,Oli_Pet Cats Australia,5,2015-11-24,2015-11-28
+Oliver2,0.208,7.0,Male,Yes,8,United States,Oliver2_Pet Cats United States,9,2015-08-08,2015-08-17
+Ollie,0.0283,5.0,Male,Yes,4,Australia,Ollie_Pet Cats Australia,8,2015-05-16,2015-05-23
+Ollie,0.039,2.0,Male,Yes,6,New Zealand,Ollie_Pet Cats New Zealand,8,2015-10-23,2015-10-30
+Onyx,0.092,1.0,Female,Yes,21,Australia,Onyx_Pet Cats Australia,4,2015-11-14,2015-11-17
+Orange,0.005,4.0,Female,Yes,4,United States,Orange_Pet Cats United States,22,2015-01-01,2015-01-30
+Oreo2,0.152,5.0,Male,Yes,8,United States,Oreo2_Pet Cats United States,6,2015-06-06,2015-06-11
+Oscar,0.0288,10.0,Male,Yes,1,Australia,Oscar_Pet Cats Australia,6,2015-07-16,2015-07-21
+Oscar2,0.0169,7.0,Male,Yes,5,Australia,Oscar2_Pet Cats Australia,9,2015-12-24,2016-01-01
+Oscar3,0.0369,8.0,Male,Yes,16,Australia,Oscar3_Pet Cats Australia,9,2016-02-06,2016-02-14
+OscarJ,0.035,2.0,Male,Yes,4,United States,OscarJ_Pet Cats United States,11,2014-11-28,2014-12-08
+OscarL,0.026,11.0,Male,Yes,4,United States,OscarL_Pet Cats United States,16,2014-11-13,2016-05-15
+OscarN,0.02,5.0,Male,Yes,0,United States,OscarN_Pet Cats United States,6,2014-04-30,2014-05-05
+Pablo,0.109,3.0,Male,Yes,6,New Zealand,Pablo_Pet Cats New Zealand,7,2016-01-14,2016-01-20
+Paloma,0.014,2.0,Female,Yes,1,New Zealand,Paloma_Pet Cats New Zealand,8,2015-12-09,2015-12-16
+Panda,0.085,3.0,Female,Yes,1,New Zealand,Panda_Pet Cats New Zealand,6,2015-04-09,2015-04-14
+Pants,0.0072,7.0,Male,Yes,4,Australia,Pants_Pet Cats Australia,7,2015-08-06,2015-08-12
+Pants,0.01,8.0,Male,Yes,0,UK,Pants_Pet Cats United Kingdom,6,2017-09-28,2017-10-03
+Parker,0.07,6.0,Male,Yes,4,United States,Parker_Pet Cats United States,11,2016-06-11,2016-06-21
+Patra,0.0278,8.0,Female,Yes,2,Australia,Patra_Pet Cats Australia,8,2015-08-05,2015-08-12
+Paul,0.0072,0.4,Male,Yes,0,Australia,Paul_Pet Cats Australia,7,2015-08-14,2015-08-20
+Paula,0.0439,4.0,Female,Yes,0,Australia,Paula_Pet Cats Australia,4,2016-01-16,2016-01-19
+Peanut,0.037,1.0,Female,Yes,4,United States,Peanut_Pet Cats United States,11,2014-12-03,2014-12-13
+PeanutR,0.014,4.0,Male,Yes,8,United States,PeanutR_Pet Cats United States,8,2015-02-08,2015-02-15
+Pearl,0.0058,0.0,Female,Yes,0,Australia,Pearl_Pet Cats Australia,7,2015-06-27,2015-07-03
+Penelope2,0.042,3.0,Female,Yes,8,United States,Penelope2_Pet Cats United States,11,2015-05-15,2015-05-25
+Penny,8.608,1.0,Female,Yes,5,New Zealand,Penny_Pet Cats New Zealand,10,2015-10-15,2015-10-24
+Pepper,0.0349,2.0,Male,Yes,2,Australia,Pepper_Pet Cats Australia,6,2015-07-16,2015-07-21
+Pepper2,0.0073,10.0,Female,Yes,0,Australia,Pepper2_Pet Cats Australia,9,2015-09-30,2015-10-08
+Percy,0.113,9.0,Male,Yes,3,New Zealand,Percy_Pet Cats New Zealand,10,2015-08-08,2015-08-17
+Phoenix,0.0402,4.0,Male,Yes,0,Australia,Phoenix_Pet Cats Australia,9,2015-07-30,2015-08-07
+Picasso,0.0076,8.0,Female,Yes,2,Australia,Picasso_Pet Cats Australia,9,2015-10-01,2015-10-09
+Pickles2,0.08,3.0,Male,Yes,12,United States,Pickles2_Pet Cats United States,11,2015-03-26,2015-04-05
+PiggieSue,0.011,0.8,Female,Yes,3,New Zealand,PiggieSue_Pet Cats New Zealand,6,2015-11-27,2015-12-02
+Piper2,0.032,1.0,Female,Yes,0,United States,Piper2_Pet Cats United States,5,2014-07-22,2014-07-26
+Pippin,0.0681,5.0,Male,Yes,7,Australia,Pippin_Pet Cats Australia,9,2015-04-25,2015-05-03
+Pixie,0.0046,5.0,Female,Yes,3,Australia,Pixie_Pet Cats Australia,8,2015-06-05,2015-06-12
+Polly,0.0128,4.0,Female,Yes,0,Australia,Polly_Pet Cats Australia,6,2015-11-13,2015-11-18
+Polo,0.0079,7.0,Male,Yes,0,Australia,Polo_Pet Cats Australia,4,2016-06-09,2016-06-12
+Poly,0.024,4.0,Female,Yes,8,United States,Poly_Pet Cats United States,11,2014-12-08,2014-12-18
+Poppet,0.115,10.0,Female,Yes,3,UK,Poppet_Pet Cats United Kingdom,7,2017-07-13,2017-07-19
+PoppyIII,0.143,14.0,Female,Yes,2,New Zealand,PoppyIII_Pet Cats New Zealand,8,2015-12-04,2015-12-11
+Pringle,0.032,5.0,Female,Yes,1,United States,Pringle_Pet Cats United States,13,2014-11-08,2014-11-20
+Puds,0.0081,11.0,Female,Yes,0,Australia,Puds_Pet Cats Australia,5,2015-10-16,2015-10-20
+PumpkinKane,0.019,8.0,Female,Yes,12,United States,PumpkinKane_Pet Cats United States,15,2014-11-08,2014-12-18
+Purrcy2,0.073,5.0,Male,Yes,8,United States,Purrcy2_Pet Cats United States,13,2015-03-10,2015-03-22
+Pushkin,0.045,8.0,Female,Yes,2,New Zealand,Pushkin_Pet Cats New Zealand,7,2015-12-03,2015-12-09
+Puss,0.0055,9.0,Female,Yes,1,Australia,Puss_Pet Cats Australia,13,2016-02-12,2016-02-24
+Pusskins,0.0628,7.0,Male,Yes,0,Australia,Pusskins_Pet Cats Australia,7,2015-07-23,2015-07-29
+Pussums,0.056,5.0,Male,Yes,21,New Zealand,Pussums_Pet Cats New Zealand,7,2015-04-17,2015-04-23
+Pussy,0.085,2.0,Male,Yes,3,UK,Pussy_Pet Cats United Kingdom,8,2017-07-13,2017-07-20
+Raffy,0.0074,14.0,Male,Yes,6,Australia,Raffy_Pet Cats Australia,11,2015-10-08,2015-10-18
+Rafiki,0.2048,1.0,Female,Yes,4,Australia,Rafiki_Pet Cats Australia,7,2016-02-18,2016-02-24
+Raizor,0.0455,2.0,Female,Yes,5,Australia,Raizor_Pet Cats Australia,11,2015-05-30,2015-06-09
+Ramses,0.0649,6.0,Male,Yes,1,Australia,Ramses_Pet Cats Australia,8,2015-05-15,2015-05-22
+Reggie,0.023,8.0,Female,Yes,7,UK,Reggie_Pet Cats United Kingdom,8,2017-09-17,2017-09-24
+Reggie2,0.017,13.0,Male,Yes,0,United States,Reggie2_Pet Cats United States,12,2015-03-10,2015-03-22
+Remy,0.0761,10.0,Male,Yes,21,Australia,Remy_Pet Cats Australia,8,2016-03-24,2016-03-31
+Richie,0.028,3.0,Male,Yes,8,New Zealand,Richie_Pet Cats New Zealand,8,2015-09-04,2015-09-11
+Riggs,0.034,1.0,Male,Yes,4,New Zealand,Riggs_Pet Cats New Zealand,9,2015-08-15,2015-08-23
+Ringo,0.009,9.0,Male,Yes,1,Australia,Ringo_Pet Cats Australia,5,2015-06-27,2015-07-01
+Rio,0.0067,4.0,Female,Yes,0,Australia,Rio_Pet Cats Australia,8,2015-06-13,2015-06-20
+Ripley,0.0033,3.0,Female,Yes,4,Australia,Ripley_Pet Cats Australia,10,2015-09-04,2015-09-13
+Rocky,0.0239,4.0,Male,Yes,2,Australia,Rocky_Pet Cats Australia,8,2016-04-29,2016-05-06
+Rocky,0.038,9.0,Male,Yes,4,United States,Rocky_Pet Cats United States,9,2015-01-19,2015-01-27
+Rodger,0.027,5.0,Male,Yes,3,Australia,Rodger_Pet Cats Australia,8,2016-06-02,2016-06-09
+Rodney,0.0089,4.0,Male,Yes,2,Australia,Rodney_Pet Cats Australia,10,2015-06-20,2015-06-29
+Roger,0.029,0.2,Male,Yes,5,New Zealand,Roger_Pet Cats New Zealand,7,2015-10-23,2015-10-29
+Roger,0.012,6.0,Male,Yes,0,UK,Roger_Pet Cats United Kingdom,7,2017-09-17,2017-09-23
+Rogue,0.009,6.0,Female,Yes,16,New Zealand,Rogue_Pet Cats New Zealand,9,2015-11-27,2015-12-05
+Ronaldo,0.0753,0.6,Male,Yes,3,Australia,Ronaldo_Pet Cats Australia,8,2016-02-04,2016-02-11
+Roo,0.0041,5.0,Female,Yes,1,Australia,Roo_Pet Cats Australia,10,2016-04-29,2016-05-08
+Rosey,0.0235,6.0,Female,Yes,1,Australia,Rosey_Pet Cats Australia,7,2016-03-18,2016-03-24
+Rosie,0.0096,4.0,Female,Yes,3,Australia,Rosie_Pet Cats Australia,7,2015-08-21,2015-08-27
+Rosie2,0.0644,11.0,Female,Yes,2,Australia,Rosie2_Pet Cats Australia,7,2015-08-27,2015-09-02
+RosieII,0.014,1.0,Female,Yes,8,New Zealand,RosieII_Pet Cats New Zealand,6,2015-12-12,2015-12-17
+Roukus2,0.004,6.0,Female,Yes,16,United States,Roukus2_Pet Cats United States,36,2014-08-01,2015-02-17
+Roxi,0.0047,2.0,Female,Yes,11,Australia,Roxi_Pet Cats Australia,14,2015-07-01,2015-07-14
+Ruby,0.0107,10.0,Female,Yes,3,Australia,Ruby_Pet Cats Australia,8,2015-05-22,2015-05-29
+Ruby,0.005,1.0,Female,Yes,3,New Zealand,Ruby_Pet Cats New Zealand,6,2016-02-11,2016-02-16
+Ruby3,0.006,9.0,Female,Yes,1,Australia,Ruby3_Pet Cats Australia,7,2015-08-19,2015-08-25
+Rudi,0.0213,2.0,Male,Yes,0,Australia,Rudi_Pet Cats Australia,8,2015-10-09,2015-10-16
+Rudi2,0.0102,10.0,Female,Yes,0,Australia,Rudi2_Pet Cats Australia,7,2016-04-22,2016-04-28
+Rufus,0.0233,6.0,Male,Yes,21,Australia,Rufus_Pet Cats Australia,7,2015-06-19,2015-06-25
+Rumpy,0.0101,11.0,Male,Yes,3,Australia,Rumpy_Pet Cats Australia,8,2015-07-08,2015-07-15
+Rupert,0.0047,1.0,Male,Yes,0,Australia,Rupert_Pet Cats Australia,11,2015-09-10,2015-09-20
+Rupert2,0.0116,3.0,Male,Yes,3,Australia,Rupert2_Pet Cats Australia,7,2015-09-30,2015-10-06
+Rupert3,0.0116,10.0,Male,Yes,1,Australia,Rupert3_Pet Cats Australia,7,2015-12-23,2015-12-29
+Russel2,0.04,3.0,Male,Yes,1,United States,Russel2_Pet Cats United States,6,2014-07-22,2014-07-27
+Rusty,0.0059,15.0,Female,Yes,0,Australia,Rusty_Pet Cats Australia,10,2016-05-13,2016-05-22
+Rusty,0.031,4.0,Male,Yes,3,UK,Rusty_Pet Cats United Kingdom,8,2017-07-09,2017-07-16
+Saffy,0.0053,2.0,Female,Yes,1,Australia,Saffy_Pet Cats Australia,14,2015-05-21,2015-06-03
+Sally,0.0187,4.0,Female,Yes,1,Australia,Sally_Pet Cats Australia,8,2016-02-26,2016-03-04
+Samantha,0.032,9.0,Female,Yes,1,New Zealand,Samantha_Pet Cats New Zealand,6,2015-09-09,2015-09-14
+Sammi,0.0032,11.0,Female,Yes,0,Australia,Sammi_Pet Cats Australia,8,2015-10-01,2015-10-08
+Sammy,0.009,7.0,Male,Yes,6,Australia,Sammy_Pet Cats Australia,7,2015-10-08,2015-10-14
+Samson,0.0325,5.0,Male,Yes,1,Australia,Samson_Pet Cats Australia,6,2016-02-25,2016-03-01
+Sandman,0.012,3.0,Male,Yes,4,New Zealand,Sandman_Pet Cats New Zealand,8,2016-01-28,2016-02-04
+Sandstorm2,0.035,4.0,Female,Yes,4,United States,Sandstorm2_Pet Cats United States,48,2015-08-06,2015-11-05
+Santi,0.02,2.0,Female,Yes,3,New Zealand,Santi_Pet Cats New Zealand,8,2015-12-09,2015-12-16
+Sasquatch2,0.033,4.0,Male,Yes,1,United States,Sasquatch2_Pet Cats United States,5,2014-06-12,2014-06-16
+Sassy,0.0049,6.0,Female,Yes,1,Australia,Sassy_Pet Cats Australia,9,2015-06-13,2015-06-21
+Sativa,0.033,5.0,Male,Yes,2,New Zealand,Sativa_Pet Cats New Zealand,7,2015-12-07,2015-12-13
+Schnooz,0.0185,8.0,Male,Yes,3,Australia,Schnooz_Pet Cats Australia,9,2015-09-30,2015-10-08
+Schrodinger,0.015,4.0,Female,Yes,1,New Zealand,Schrodinger_Pet Cats New Zealand,6,2016-02-12,2016-02-17
+Schubie2,0.016,7.0,Female,Yes,0,United States,Schubie2_Pet Cats United States,24,2014-10-31,2014-12-10
+Scout,0.0092,8.0,Male,Yes,0,Australia,Scout_Pet Cats Australia,6,2015-06-27,2015-07-02
+Scratch,0.0058,14.0,Female,Yes,1,Australia,Scratch_Pet Cats Australia,8,2016-02-17,2016-02-24
+Seb,0.011,6.0,Male,Yes,11,New Zealand,Seb_Pet Cats New Zealand,6,2016-02-19,2016-02-24
+Seb,0.013,3.0,Male,Yes,3,UK,Seb_Pet Cats United Kingdom,7,2017-11-24,2017-11-30
+Selena,0.009,9.0,Female,Yes,1,New Zealand,Selena_Pet Cats New Zealand,6,2016-01-16,2016-01-21
+Selkie2,0.035,5.0,Female,Yes,4,United States,Selkie2_Pet Cats United States,12,2015-03-10,2015-03-22
+Senor2,0.009,13.0,Male,Yes,4,United States,Senor2_Pet Cats United States,4,2015-06-23,2015-06-29
+Seth,0.0089,1.7,Male,Yes,0,Australia,Seth_Pet Cats Australia,10,2016-03-11,2016-03-20
+Seth2,0.019,4.0,Male,Yes,0,United States,Seth2_Pet Cats United States,8,2015-06-14,2015-06-21
+Shadow,0.0167,8.0,Female,Yes,13,Australia,Shadow_Pet Cats Australia,7,2015-08-20,2015-08-26
+Shadow2,0.003,3.0,Male,Yes,4,United States,Shadow2_Pet Cats United States,4,2015-06-22,2015-06-28
+Shakespeare2,0.047,4.0,Male,Yes,1,United States,Shakespeare2_Pet Cats United States,6,2014-06-27,2014-07-02
+Shan,0.008,3.0,Male,Yes,1,Australia,Shan_Pet Cats Australia,8,2015-10-15,2015-10-22
+Sheldon,0.168,7.0,Female,Yes,8,United States,Sheldon_Pet Cats United States,10,2014-12-11,2014-12-20
+Shelly,0.0176,6.0,Female,Yes,0,Australia,Shelly_Pet Cats Australia,7,2015-05-21,2015-05-27
+Shmiff,0.0073,6.0,Female,Yes,1,Australia,Shmiff_Pet Cats Australia,8,2015-12-09,2015-12-16
+Sibelius,0.0844,3.0,Male,Yes,4,Australia,Sibelius_Pet Cats Australia,8,2015-09-11,2015-09-18
+Siberia,0.014,8.0,Male,Yes,3,UK,Siberia_Pet Cats United Kingdom,8,2017-10-09,2017-10-16
+Sid,0.01,4.0,Female,Yes,17,UK,Sid_Pet Cats United Kingdom,8,2017-07-22,2017-07-29
+Simba2,0.0112,0.4,Male,No,0,Australia,Simba2_Pet Cats Australia,7,2016-05-12,2016-05-18
+Sissy,0.0069,3.0,Female,Yes,1,Australia,Sissy_Pet Cats Australia,10,2015-05-16,2015-05-25
+Skittles,0.021,2.0,Male,Yes,11,Australia,Skittles_Pet Cats Australia,8,2015-04-19,2015-04-26
+Skittles,0.027,2.0,Female,Yes,4,New Zealand,Skittles_Pet Cats New Zealand,8,2015-10-14,2015-10-21
+Skitty,0.0238,5.0,Male,Yes,6,Australia,Skitty_Pet Cats Australia,5,2015-06-06,2015-06-10
+Skoozie,0.0092,6.0,Female,Yes,0,Australia,Skoozie_Pet Cats Australia,7,2015-10-17,2015-10-23
+Sky,0.134,6.0,Male,Yes,2,New Zealand,Sky_Pet Cats New Zealand,7,2015-04-14,2015-04-20
+Skye,0.005,5.0,Male,Yes,0,UK,Skye_Pet Cats United Kingdom,8,2017-08-25,2017-09-01
+SkyII,0.009,2.0,Female,Yes,11,New Zealand,SkyII_Pet Cats New Zealand,10,2016-01-22,2016-01-31
+Slasher,0.0129,8.0,Unk,Yes,9,Australia,Slasher_Pet Cats Australia,12,2015-05-30,2015-06-10
+Small,0.0228,9.0,Male,Yes,3,Australia,Small_Pet Cats Australia,6,2016-02-13,2016-02-18
+Smattie,0.024,6.0,Male,Yes,8,United States,Smattie_Pet Cats United States,11,2015-03-03,2015-03-15
+Smokey,0.0118,3.0,Female,Yes,1,Australia,Smokey_Pet Cats Australia,9,2015-06-13,2015-06-21
+Smokey2,0.034,3.0,Male,Yes,4,United States,Smokey2_Pet Cats United States,4,2015-06-22,2015-06-28
+SmokeyLongnose,0.02,9.0,Female,Yes,0,UK,SmokeyLongnose_Pet Cats United Kingdom,8,2017-11-20,2017-11-27
+Smudge,0.0122,9.0,Male,Yes,0,Australia,Smudge_Pet Cats Australia,8,2015-06-27,2015-07-04
+Smudge,0.23,4.0,Male,Yes,3,New Zealand,Smudge_Pet Cats New Zealand,7,2015-04-18,2015-04-24
+Smudge,0.01,3.0,Male,Yes,3,UK,Smudge_Pet Cats United Kingdom,8,2017-08-25,2017-09-01
+Smudge_2,0.066,7.0,Male,Yes,0,UK,Smudge_2_Pet Cats United Kingdom,8,2017-08-25,2017-09-01
+Snickerdoodle2,0.024,5.0,Female,Yes,8,United States,Snickerdoodle2_Pet Cats United States,6,2014-08-08,2014-08-13
+Snifer,0.018,5.0,Female,Yes,4,New Zealand,Snifer_Pet Cats New Zealand,7,2015-10-17,2015-10-23
+Sookie,0.0076,6.0,Female,Yes,21,Australia,Sookie_Pet Cats Australia,9,2015-04-25,2015-05-03
+Sooty,0.0109,10.0,Female,Yes,2,Australia,Sooty_Pet Cats Australia,7,2015-08-21,2015-08-27
+Sooty,0.007,2.0,Female,Yes,3,New Zealand,Sooty_Pet Cats New Zealand,7,2016-03-04,2016-03-10
+Sooty2,0.0204,11.0,Female,Yes,1,Australia,Sooty2_Pet Cats Australia,10,2016-03-11,2016-03-20
+Sophia,0.187,3.0,Female,Yes,1,New Zealand,Sophia_Pet Cats New Zealand,8,2015-07-04,2015-07-11
+SophiePossum,0.0144,3.0,Female,Yes,0,Australia,SophiePossum_Pet Cats Australia,9,2016-04-22,2016-04-30
+Sox2,0.0125,0.4,Female,No,0,Australia,Sox2_Pet Cats Australia,8,2016-03-04,2016-03-11
+Soxy,0.0051,14.0,Male,Yes,1,Australia,Soxy_Pet Cats Australia,13,2015-09-03,2015-09-15
+Soxy2,0.004,2.0,Male,Yes,0,Australia,Soxy2_Pet Cats Australia,13,2015-09-09,2015-09-21
+Sparkle,0.0084,4.0,Female,Yes,5,Australia,Sparkle_Pet Cats Australia,11,2015-07-15,2015-07-25
+Sparkles,0.0307,3.0,Female,Yes,3,Australia,Sparkles_Pet Cats Australia,8,2016-05-07,2016-05-14
+Sparkles,0.042,4.0,Male,Yes,0,United States,Sparkles_Pet Cats United States,7,2016-03-24,2016-03-30
+Sparky,0.025,8.0,Female,Yes,0,UK,Sparky_Pet Cats United Kingdom,8,2017-07-08,2017-07-15
+Speckles1,0.055,0.8,Female,Yes,7,New Zealand,Speckles1_Pet Cats New Zealand,6,2015-04-18,2015-04-23
+Spencer2,0.439,2.0,Male,Yes,8,United States,Spencer2_Pet Cats United States,9,2014-10-14,2014-10-22
+Spike,0.024,4.0,Male,Yes,4,United States,Spike_Pet Cats United States,8,2014-12-31,2015-02-12
+Spike,0.116,0.0,Male,Yes,7,UK,Spike_Pet Cats United Kingdom,8,2017-08-25,2017-09-01
+Spot,0.017,2.0,Male,Yes,17,UK,Spot_Pet Cats United Kingdom,7,2017-08-27,2017-09-02
+Sputnik,0.0196,6.0,Male,Yes,1,Australia,Sputnik_Pet Cats Australia,9,2015-10-01,2015-10-09
+Squeaky,0.0966,0.0,Male,No,0,Australia,Squeaky_Pet Cats Australia,8,2015-10-15,2015-10-22
+Squiggle,0.0121,2.0,Male,Yes,0,Australia,Squiggle_Pet Cats Australia,5,2015-11-24,2015-11-28
+Stanley,0.0123,7.0,Male,Yes,3,Australia,Stanley_Pet Cats Australia,7,2016-02-17,2016-02-23
+Starbuck2,0.011,6.0,Male,Yes,1,United States,Starbuck2_Pet Cats United States,11,2014-10-23,2014-11-02
+Stealth,0.0129,1.0,Male,Yes,0,Australia,Stealth_Pet Cats Australia,8,2016-03-04,2016-03-11
+Stefano,0.0127,2.0,Male,Yes,1,Australia,Stefano_Pet Cats Australia,5,2016-05-20,2016-05-24
+Stinky,0.0481,14.0,Female,Yes,0,Australia,Stinky_Pet Cats Australia,7,2015-08-19,2015-08-25
+Stitch,0.0279,6.0,Male,Yes,11,Australia,Stitch_Pet Cats Australia,7,2015-10-15,2015-10-21
+Striper2,0.008,10.0,Female,Yes,4,United States,Striper2_Pet Cats United States,14,2015-06-14,2015-06-27
+Subie,0.021,2.0,Female,Yes,11,New Zealand,Subie_Pet Cats New Zealand,9,2016-01-22,2016-01-30
+Sunny,0.0061,15.0,Male,Yes,3,Australia,Sunny_Pet Cats Australia,9,2015-09-30,2015-10-08
+Survivor2,0.024,2.0,Male,Yes,4,United States,Survivor2_Pet Cats United States,6,2014-06-06,2014-06-11
+Sushi,0.0327,3.0,Female,Yes,0,Australia,Sushi_Pet Cats Australia,6,2015-06-13,2015-06-18
+Suss,0.008,4.0,Female,Yes,2,New Zealand,Suss_Pet Cats New Zealand,7,2016-02-19,2016-02-25
+Sweetpea,0.019,7.0,Female,Yes,12,United States,Sweetpea_Pet Cats United States,9,2013-08-14,2013-08-22
+Sylvester,0.0062,7.0,Male,Yes,0,Australia,Sylvester_Pet Cats Australia,9,2016-02-26,2016-03-05
+Sylvester,0.026,7.0,Male,Yes,4,United States,Sylvester_Pet Cats United States,11,2015-01-01,2015-01-11
+Sylvester,0.036,7.0,Male,Yes,5,New Zealand,Sylvester_Pet Cats New Zealand,7,2015-08-29,2015-09-04
+Sylvia,0.0163,10.0,Female,Yes,3,Australia,Sylvia_Pet Cats Australia,6,2015-07-16,2015-07-21
+Tabasco,0.028,11.0,Male,Yes,4,United States,Tabasco_Pet Cats United States,12,2014-11-08,2014-11-20
+Tabitha,0.045,1.0,Female,Yes,1,New Zealand,Tabitha_Pet Cats New Zealand,7,2015-04-09,2015-04-15
+Tabs,0.012,5.0,Female,Yes,5,New Zealand,Tabs_Pet Cats New Zealand,6,2016-02-05,2016-02-10
+Taco,0.012,1.0,Male,Yes,5,New Zealand,Taco_Pet Cats New Zealand,9,2015-04-18,2015-04-26
+Tara,0.021,7.0,Female,Yes,2,New Zealand,Tara_Pet Cats New Zealand,8,2015-12-22,2015-12-29
+Tara2,0.014,14.0,Female,Yes,1,United States,Tara2_Pet Cats United States,4,2014-07-19,2014-07-22
+Tarzan,0.0227,2.0,Male,Yes,11,Australia,Tarzan_Pet Cats Australia,4,2016-01-26,2016-01-29
+Tasha,0.0135,9.0,Female,Yes,1,Australia,Tasha_Pet Cats Australia,9,2015-07-29,2015-08-06
+Teddy,0.02,9.0,Female,Yes,0,UK,Teddy_Pet Cats United Kingdom,4,2017-09-10,2017-09-13
+Tenzing,0.023,3.0,Female,Yes,5,New Zealand,Tenzing_Pet Cats New Zealand,6,2015-12-03,2015-12-08
+Terabyte,0.01,1.0,Female,Yes,16,New Zealand,Terabyte_Pet Cats New Zealand,7,2015-11-26,2015-12-02
+Tex2,0.023,5.0,Female,Yes,4,United States,Tex2_Pet Cats United States,4,2014-04-14,2014-04-17
+Theo,0.0064,6.0,Male,Yes,0,Australia,Theo_Pet Cats Australia,8,2015-09-09,2015-09-16
+Theo,0.033,5.0,Male,Yes,1,New Zealand,Theo_Pet Cats New Zealand,5,2015-05-06,2015-05-10
+Thomas,0.0196,5.0,Male,Yes,0,Australia,Thomas_Pet Cats Australia,9,2015-05-22,2015-05-30
+Thornton,0.0143,2.0,Male,Yes,0,Australia,Thornton_Pet Cats Australia,8,2015-07-22,2015-07-29
+Tia,0.0132,10.0,Female,Yes,3,Australia,Tia_Pet Cats Australia,7,2016-03-25,2016-03-31
+Tiger,0.025,1.0,Male,Yes,13,New Zealand,Tiger_Pet Cats New Zealand,8,2015-10-21,2015-10-28
+Tiger2,0.032,5.0,Male,Yes,4,United States,Tiger2_Pet Cats United States,6,2014-04-25,2014-04-30
+Tiger3,0.0073,15.0,Male,Yes,0,Australia,Tiger3_Pet Cats Australia,6,2015-09-02,2015-09-07
+Tiger4,0.0075,7.0,Male,Yes,5,Australia,Tiger4_Pet Cats Australia,11,2015-10-01,2015-10-11
+Tiger5,0.0795,10.0,Male,Yes,10,Australia,Tiger5_Pet Cats Australia,8,2016-01-22,2016-01-29
+Tigga,0.0275,12.0,Male,Yes,3,Australia,Tigga_Pet Cats Australia,8,2015-05-15,2015-05-22
+Tigger,0.156,6.0,Male,Yes,11,New Zealand,Tigger_Pet Cats New Zealand,9,2015-04-18,2015-04-26
+Tigger,0.007,3.0,Male,Yes,0,UK,Tigger_Pet Cats United Kingdom,8,2017-08-25,2017-09-01
+Tiggy,0.0353,2.0,Male,Yes,2,Australia,Tiggy_Pet Cats Australia,6,2015-10-08,2015-10-13
+Tilly,0.0187,7.0,Female,Yes,0,Australia,Tilly_Pet Cats Australia,8,2015-06-26,2015-07-03
+Tilly,0.011,4.0,Male,Yes,2,New Zealand,Tilly_Pet Cats New Zealand,8,2016-02-26,2016-03-04
+Tilly,0.025,5.0,Female,Yes,3,UK,Tilly_Pet Cats United Kingdom,8,2017-09-17,2017-09-24
+Tilly2,0.0097,10.0,Female,Yes,6,Australia,Tilly2_Pet Cats Australia,6,2015-09-03,2015-09-08
+Tilly3,0.0181,3.0,Female,Yes,7,Australia,Tilly3_Pet Cats Australia,7,2016-04-30,2016-05-06
+Timmy,0.0141,3.0,Male,Yes,6,Australia,Timmy_Pet Cats Australia,8,2015-09-16,2015-09-23
+Timo,0.0067,5.0,Male,Yes,3,Australia,Timo_Pet Cats Australia,7,2016-06-02,2016-06-08
+Tina,0.009,4.0,Female,Yes,1,New Zealand,Tina_Pet Cats New Zealand,6,2015-09-12,2015-09-17
+Tippy,0.2145,12.0,Male,No,0,Australia,Tippy_Pet Cats Australia,9,2015-08-13,2015-08-21
+Tipsie,0.0061,3.0,Female,Yes,4,Australia,Tipsie_Pet Cats Australia,7,2015-06-27,2015-07-03
+Tipsy,0.018,0.0,Female,Yes,0,UK,Tipsy_Pet Cats United Kingdom,8,2017-08-28,2017-09-04
+Tobin,0.0107,6.0,Male,Yes,0,Australia,Tobin_Pet Cats Australia,8,2015-09-30,2015-10-07
+Toby,0.1904,0.0,Male,Yes,1,Australia,Toby_Pet Cats Australia,8,2015-04-24,2015-05-01
+Toby,0.013,6.0,Male,Yes,1,New Zealand,Toby_Pet Cats New Zealand,6,2016-02-27,2016-03-03
+Toby2,0.0139,2.0,Male,Yes,0,Australia,Toby2_Pet Cats Australia,8,2015-06-13,2015-06-20
+Tom,0.0066,12.0,Male,Yes,5,Australia,Tom_Pet Cats Australia,9,2015-06-13,2015-06-21
+Tom,0.265,3.0,Female,Yes,12,UK,Tom_Pet Cats United Kingdom,9,2017-07-16,2017-07-24
+Tom2,0.0091,7.0,Male,Yes,1,Australia,Tom2_Pet Cats Australia,8,2016-02-17,2016-02-24
+Tommy,0.0201,2.0,Male,Yes,1,Australia,Tommy_Pet Cats Australia,8,2015-10-16,2015-10-23
+Tommy,0.012,11.0,Male,Yes,12,UK,Tommy_Pet Cats United Kingdom,8,2017-06-03,2017-06-10
+Tonka2,0.032,13.0,Male,Yes,0,United States,Tonka2_Pet Cats United States,6,2014-04-30,2014-05-05
+TriceraCat,0.031,4.0,Female,Yes,16,New Zealand,TriceraCat_Pet Cats New Zealand,8,2015-12-30,2016-01-06
+Trixie,0.0163,9.0,Unk,Yes,5,Australia,Trixie_Pet Cats Australia,8,2016-04-14,2016-04-21
+Truffle,0.0136,3.0,Female,Yes,1,Australia,Truffle_Pet Cats Australia,8,2016-02-18,2016-02-25
+Truffles2,0.0076,14.0,Male,Yes,1,Australia,Truffles2_Pet Cats Australia,7,2015-12-24,2015-12-30
+Truffula,0.0414,5.0,Female,Yes,3,Australia,Truffula_Pet Cats Australia,9,2015-08-27,2015-09-04
+Tui,0.038,2.0,Female,Yes,13,New Zealand,Tui_Pet Cats New Zealand,7,2016-02-13,2016-02-19
+Tux,0.0148,6.0,Male,Yes,0,Australia,Tux_Pet Cats Australia,8,2015-09-04,2015-09-11
+Twinkle,0.0096,14.0,Male,Yes,2,Australia,Twinkle_Pet Cats Australia,6,2016-01-30,2016-02-04
+Tyson,0.009,8.0,Male,Yes,1,New Zealand,Tyson_Pet Cats New Zealand,5,2015-07-04,2015-07-08
+Unfriendly,0.0056,10.0,Female,Yes,1,Australia,Unfriendly_Pet Cats Australia,8,2015-10-15,2015-10-22
+Uno,0.0114,13.0,Male,Yes,1,Australia,Uno_Pet Cats Australia,8,2015-06-20,2015-06-27
+Venom,0.0049,7.0,Male,Yes,4,Australia,Venom_Pet Cats Australia,8,2016-03-10,2016-03-17
+Vinnie,0.028,1.0,Male,Yes,2,New Zealand,Vinnie_Pet Cats New Zealand,8,2016-01-29,2016-02-05
+VioletMae2,0.04,7.0,Female,Yes,0,United States,VioletMae2_Pet Cats United States,5,2014-06-19,2014-06-23
+Wally,0.0294,2.0,Male,Yes,0,Australia,Wally_Pet Cats Australia,6,2015-05-14,2015-05-19
+Weasel,0.1323,2.0,Male,Yes,4,Australia,Weasel_Pet Cats Australia,11,2016-05-13,2016-05-23
+Whiskey,0.034,5.0,Male,Yes,0,UK,Whiskey_Pet Cats United Kingdom,8,2017-07-09,2017-07-16
+Whisky,0.0283,4.0,Female,Yes,4,Australia,Whisky_Pet Cats Australia,9,2016-01-30,2016-02-07
+Wiggles,0.05,2.0,Male,Yes,11,Australia,Wiggles_Pet Cats Australia,14,2016-03-10,2016-03-23
+Wilfred,0.026,6.0,Male,Yes,0,UK,Wilfred_Pet Cats United Kingdom,8,2017-07-13,2017-07-20
+Willy2,0.024,13.0,Male,Yes,8,United States,Willy2_Pet Cats United States,11,2015-09-27,2015-10-07
+Winnie,0.011,12.0,Male,Yes,3,UK,Winnie_Pet Cats United Kingdom,8,2017-07-16,2017-07-23
+Wizzer,0.0068,12.0,Female,Yes,3,Australia,Wizzer_Pet Cats Australia,8,2015-06-14,2015-06-21
+Worf,0.162,8.0,Female,Yes,7,UK,Worf_Pet Cats United Kingdom,6,2017-09-25,2017-09-30
+Xander,0.0064,2.0,Male,Yes,3,Australia,Xander_Pet Cats Australia,9,2015-08-01,2015-08-09
+Xander,0.026,6.0,Male,Yes,2,New Zealand,Xander_Pet Cats New Zealand,8,2015-12-22,2015-12-29
+Yoda,0.025,5.0,Male,Yes,0,Australia,Yoda_Pet Cats Australia,8,2015-07-30,2015-08-06
+Yogi,0.3867,1.0,Male,Yes,2,Australia,Yogi_Pet Cats Australia,9,2016-02-06,2016-02-14
+Yoriko,0.0117,13.0,Female,Yes,1,Australia,Yoriko_Pet Cats Australia,10,2015-10-09,2015-10-18
+Zac,0.0049,2.0,Male,Yes,1,Australia,Zac_Pet Cats Australia,9,2015-11-13,2015-11-21
+Zak,0.0116,2.0,Male,Yes,11,Australia,Zak_Pet Cats Australia,12,2015-07-01,2015-07-12
+Zelda2,0.037,3.0,Female,Yes,0,United States,Zelda2_Pet Cats United States,10,2014-07-03,2014-07-12
+Zeno,0.016,4.0,Female,Yes,1,New Zealand,Zeno_Pet Cats New Zealand,7,2016-01-29,2016-02-04
+Zepher,0.0308,4.0,Male,Yes,1,Australia,Zepher_Pet Cats Australia,6,2016-05-20,2016-05-25
+Zeus,0.054,1.0,Male,Yes,7,New Zealand,Zeus_Pet Cats New Zealand,6,2015-06-30,2015-07-05
+ZeusII,0.024,1.0,Male,Yes,21,New Zealand,ZeusII_Pet Cats New Zealand,8,2016-01-14,2016-01-21
+Ziggy,0.036,8.0,Male,Yes,1,United States,Ziggy_Pet Cats United States,11,2016-05-26,2016-07-25
+Ziva,0.1738,1.0,Female,Yes,9,Australia,Ziva_Pet Cats Australia,6,2015-10-09,2015-10-14
+Zoe,0.0328,7.0,Female,Unk,2,Australia,Zoe_Pet Cats Australia,8,2015-09-30,2015-10-07
+Zoey,0.008,5.0,Female,Yes,12,United States,Zoey_Pet Cats United States,6,2015-01-07,2015-02-12
+Zulu,0.02,4.0,Female,Yes,11,New Zealand,Zulu_Pet Cats New Zealand,7,2015-11-26,2015-12-02

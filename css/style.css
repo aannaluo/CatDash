@@ -14,7 +14,7 @@ body {
 .dashboard {
 	box-sizing: border-box;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 2.1fr 1.3fr 1fr;
 	grid-template-rows: 1fr;
 	height: 100%;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 #individual-cat-data {
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: 1.3fr 0.8fr 1.5fr;
 }
 
 #scatterplot,
@@ -58,7 +58,6 @@ body {
 	border: 1px solid #d9d9d9;
 	border-radius: 8px;
 	background-color: #f7f7f7;
-	padding: 5px;
 	overflow: auto;
 }
 
@@ -193,6 +192,38 @@ g.legend text {
 	top: 10px;
 }
 
+/* Title Styling */
+#title {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 10px;
+}
+
+.title-container {
+	width: 100%;
+}
+
+.title-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.title-content h1 {
+	margin: 0;
+	font-size: 55px
+}
+
+.random-cat-button {
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 0.9em;
+}
+
 .axis path,
 .axis line {
   fill: none;
@@ -256,11 +287,9 @@ g.legend text {
 /* Cat Profile Styling */
 .profile-container {
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	gap: 15px;
+	grid-template-columns: 0.7fr 2fr;
 	height: 100%;
-	padding: 10px;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .profile-image {
@@ -268,7 +297,6 @@ g.legend text {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
-	padding-top: 10px;
 }
 
 .profile-image img {
@@ -283,11 +311,12 @@ g.legend text {
 	flex-direction: column;
 	height: 100%;
 	overflow-y: auto;
+	position: relative;
 }
 
 .profile-info h3 {
-	margin-top: 0;
-	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 12px;
 }
 
 .profile-info ul {
@@ -295,25 +324,23 @@ g.legend text {
 	padding: 0;
 	margin: 0;
 	font-size: 0.9em;
+	padding-left: 4px;
 }
 
 .profile-info li {
-	margin-bottom: 8px;
-}
-
-.profile-flag-section {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	height: 100%;
+	margin-bottom: 4px;
 }
 
 .profile-flag {
+	position: absolute;
+	top: 0;
+	right: 0;
 	max-width: 90px;
 	max-height: 70px;
 	width: auto;
 	height: auto;
 	object-fit: contain;
+	margin-right: 10px;
 }
 
 

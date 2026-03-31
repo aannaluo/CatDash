@@ -1,7 +1,11 @@
-/* global Scatterplot, CatMap, RadialChart, CatProfile */
+/* global Scatterplot, CatMap, RadialChart, CatProfile, Title */
 /* eslint-disable no-param-reassign */
 
 let catMap;
+
+const title = new Title({
+  parentElement: '#title',
+});
 
 d3.json('./data/cat_bubbles_all.geojson').then((data) => {
   d3.json('./data/cat_paths_all.geojson').then((pathsData) => {
