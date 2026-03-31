@@ -2,7 +2,7 @@ class HeatMap {
   constructor(_config, _data, _radialData, dispatcher) {
     this.config = {
       parentElement: _config.parentElement,
-      containerWidth: 500,
+      containerWidth: 450,
       containerHeight: 700,
       margin: {
         top: 20, right: 20, bottom: 20, left: 20,

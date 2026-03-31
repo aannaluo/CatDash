@@ -14,7 +14,7 @@ body {
 .dashboard {
 	box-sizing: border-box;
 	display: grid;
-	grid-template-columns: 1.7fr 1.2fr 1.5fr;
+	grid-template-columns: 2.1fr 1.3fr 1fr;
 	grid-template-rows: 1fr;
 	height: 100%;
 }
@@ -58,7 +58,6 @@ body {
 	border: 1px solid #d9d9d9;
 	border-radius: 8px;
 	background-color: #f7f7f7;
-	padding: 5px;
 	overflow: auto;
 }
 
