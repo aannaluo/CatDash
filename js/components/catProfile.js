@@ -66,11 +66,10 @@ class CatProfile {
           <ul>
             <li>Age: ${CatProfile.formatNumber(catData.age)} years</li>
             <li>Sex: ${catData.sex}</li>
-            <li>Neutered: ${catData.neutered}</li>
             <li>Home Range: ${CatProfile.formatNumber(catData['home-range'])} km²</li>
             <li>Prey per Month: ${CatProfile.formatNumber(catData.prey_p_month)}</li>
             <li>No. of days Tracked: ${catData.days_tracked} </li>
-            <li>Tracked Date Range: ${CatProfile.formatDate(catData.start_date)} - ${CatProfile.formatDate(catData.end_date)} </li>
+            <li>Dates Tracked: ${CatProfile.formatDate(catData.start_date)} - ${CatProfile.formatDate(catData.end_date)} </li>
           </ul>
         </div>
       </div>
