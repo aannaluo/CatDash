@@ -28,7 +28,7 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   });
 
   const allPreyGroups = d3.groups(data, (d) => d.prey_p_month).map((d) => d[0]);
-  const initialCat = 'Adele_Pet Cats Australia'
+  const initialCat = 'Abba_Pet Cats United Kingdom';
 
   const beeAll = new Beeswarm({
     parentElement: '#bee1',
@@ -72,7 +72,9 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
         d.distance = +d.distance;
       });
 
-      heatMap = new HeatMap({ parentElement: '#heatmap' }, heatmapData, radialData, dispatcher, initialCat);
+      const filteredTenDaysData = d3.filter(heatmapData, (d) => d.day_number <= 10);
+
+      heatMap = new HeatMap({ parentElement: '#heatmap' }, filteredTenDaysData, radialData, data, dispatcher, initialCat);
       heatMap.updateVis();
     });
   }).catch((error) => console.error(error));

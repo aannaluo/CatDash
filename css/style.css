@@ -343,6 +343,22 @@ g.legend text {
 	margin-right: 10px;
 }
 
+.heatmap-axis path, line {
+  stroke: none;
+}
+
+.heatmap-axis text {
+	font-weight: bold;
+	font-size: 10px;
+}
+
+#sort-select-heatmap {
+	font-size: 12px;
+}
 
 
-
+#heatmap-sort {
+	padding-left: 6px;
+	font-size: 12px;
+	padding-top: 6px;
+}

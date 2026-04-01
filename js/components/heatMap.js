@@ -1,15 +1,16 @@
 class HeatMap {
-  constructor(_config, _data, _radialData, dispatcher, selectedCat) {
+  constructor(_config, _data, _radialData, _catData, dispatcher, selectedCat) {
     this.config = {
       parentElement: _config.parentElement,
       containerWidth: 450,
       containerHeight: 700,
       margin: {
-        top: 20, right: 20, bottom: 20, left: 20,
+        top: 30, right: 20, bottom: 20, left: 20,
       },
     };
     this.data = _data;
     this.radialData = _radialData;
+    this.catData = _catData;
     this.dispatcher = dispatcher;
     this.selectedCat = selectedCat;
     this.initVis();
@@ -17,6 +18,8 @@ class HeatMap {
 
   initVis() {
     const vis = this;
+
+    console.log(vis.parentElement);
 
     const rowHeight = 5; // pixels per cat
     vis.config.containerHeight = [...new Set(vis.data.map((d) => d.unique_id))].length * rowHeight
@@ -31,7 +34,7 @@ class HeatMap {
 
     vis.scrollContainer = d3.select(vis.config.parentElement)
       .append('div')
-      .style('height', '850px')// visible height
+      .style('height', '650px')// visible height
       .style('overflow-y', 'scroll');
     // .style('width', '400px')
     // .style('overflow-w', 'scroll');
@@ -50,29 +53,23 @@ class HeatMap {
     vis.xScale = d3.scaleBand()
       .range([0, vis.width])
       .domain(d3.range(1, 11))
-      .padding(0.01);
-
-    const totalDistanceByAnimal = d3.rollup(
-      vis.data.filter((d) => d.day_number <= 10),
-      (v) => d3.sum(v, (d) => d.distance),
-      (d) => d.unique_id,
-    );
-
-    const sortedIds = [...new Set(vis.data.map((d) => d.unique_id))]
-      .sort((a, b) => (totalDistanceByAnimal.get(b) ?? 0) - (totalDistanceByAnimal.get(a) ?? 0));
+      .padding(0.1);
 
     vis.yScale = d3.scaleBand()
       .range([0, vis.height])
-      .padding(0.15)
-      .domain(sortedIds);
+      .padding(0.15);
 
-    vis.xAxisG = vis.chartArea.append('g');
+    vis.xAxis = d3.axisTop(vis.xScale);
+
+    vis.xAxisG = vis.chartArea.append('g')
+      .attr('class', 'heatmap-axis x-axis');
     //   .attr('transform', `translate(0, 0)`);
 
     vis.yAxisG = vis.chartArea.append('g');
 
     vis.colourScale = d3.scaleLinear()
-      .range(['#fae9e9', '#840000'])
+      // .range(['#fae9e9', '#840000'])
+      .range(['#DEECFB', '#203451'])
       .domain(d3.extent(vis.data, (d) => d.distance));
 
     vis.tooltip = d3.select('body').append('div')
@@ -87,13 +84,77 @@ class HeatMap {
     // .style('width', '200px')
     // .style('height', '250px');
 
+    vis.sortBy = d3.select('#sort-select-heatmap').property('value');
+
+    d3.select('#sort-select-heatmap').on('change', function() {
+      vis.sortBy = this.value;
+      vis.updateVis();
+    });
+
     vis.updateVis();
   }
 
   updateVis() {
     const vis = this;
 
+    const totDist = d3.rollup(
+      vis.data,
+      (v) => d3.sum(v, (d) => d.distance),
+      (d) => d.unique_id,
+    );
+
+    const avgDist = d3.rollup(
+      vis.data,
+      (v) => d3.mean(v, (d) => d.distance),
+      (d) => d.unique_id,
+    );
+
+    const homeRangeMap = new Map(vis.catData.map((d) => [d['unique-id'], d['home-range']]));
+
+    const rangeDist = d3.rollup(
+      vis.data,
+      (v) => d3.max(v, (d) => d.distance) - d3.min(v, (d) => d.distance),
+      (d) => d.unique_id,
+    );
+
+    const sortedIds = [...new Set(vis.data.map((d) => d.unique_id))]
+
+    switch (vis.sortBy) {
+      case 'tot-dist-dsc':
+        sortedIds.sort((a, b) => (totDist.get(b) ?? 0) - (totDist.get(a) ?? 0));
+        break;
+      case 'tot-dist-asc':
+        sortedIds.sort((a, b) => (totDist.get(a) ?? 0) - (totDist.get(b) ?? 0));
+        break;
+      case 'avg-dist-dsc':
+        sortedIds.sort((a, b) => (avgDist.get(b) ?? 0) - (avgDist.get(a) ?? 0));
+        break;
+      case 'avg-dist-asc':
+        sortedIds.sort((a, b) => (avgDist.get(a) ?? 0) - (avgDist.get(b) ?? 0));
+        break;
+      case 'alphabetical':
+        sortedIds.sort((a, b) => a.localeCompare(b));
+        break;
+      case 'homerange-desc':
+        sortedIds.sort((a, b) => (homeRangeMap.get(b) ?? 0) - (homeRangeMap.get(a) ?? 0));
+        break;
+      default:
+        break;
+    }
+
+    vis.yScale.domain(sortedIds);
+
     vis.renderVis();
+  }
+
+  reformatNames(d) {
+    const countryMap = {
+      Australia: 'AU',
+      'New Zealand': 'NZ',
+      'United States': 'US',
+      'United Kingdom': 'UK',
+    };
+    return d.replace(/_Pet Cats (\w+ ?\w+)/, (match, country) => ` ${countryMap[country] || country}`);
   }
 
   renderVis() {
@@ -110,28 +171,6 @@ class HeatMap {
       .classed('selected', (d) => vis.selectedCat === d.unique_id)
       .style('stroke', (d) => (vis.selectedCat === d.unique_id ? 'black' : 'none'))
       .style('stroke-width', (d) => (vis.selectedCat === d.unique_id ? '2px' : '0px'))
-      // .on('mouseover', (event, d) => {
-      //   vis.chartArea.selectAll('rect')
-      //     .filter((r) => r.unique_id === d.unique_id)
-      //     // .raise()
-    // .style('stroke', 'white')
-    // .style('stroke-width', '2px');
-      //   const allDays = vis.data
-      //     .filter((r) => r.unique_id === d.unique_id && r.day_number <= 10)
-      //     .sort((a, b) => a.day_number - b.day_number);
-
-    //   const dayRows = allDays
-    //     .map((r) => `<p>Day ${r.day_number}: ${r.distance.toFixed(2)}m</p>`)
-    //     .join('');
-
-      //   vis.tooltip
-      //     .style('opacity', 1)
-      //     .style('font-family', 'Arial')
-      //     .html(`
-      //       <strong style="font-size: 15px;">${vis.reformatNames(d.unique_id)}</strong><br/>
-      //       ${dayRows}
-      //     `);
-      // })
       .on('mouseover', (event, d) => {
         vis.chartArea.selectAll('rect')
           .filter((r) => r.unique_id === d.unique_id)
@@ -180,22 +219,19 @@ class HeatMap {
         }
       });
 
-    vis.xAxisG.call(d3.axisTop(vis.xScale));
+    vis.xAxisG.call(vis.xAxis);
 
-    if (vis.selectedCat) {
-      const yPos = vis.yScale(vis.selectedCat);
-      vis.scrollContainer.node().scrollTop = yPos - 300;
-      // 425 centres it in the 850px visible height
+    if (vis.selectedCat && vis.yScale(vis.selectedCat) !== undefined) {
+      d3.select(vis.scrollContainer.node())
+        .transition()
+        .duration(750)
+        .ease(d3.easeCubicInOut)
+        .tween('scroll', () => {
+          const start = vis.scrollContainer.node().scrollTop;
+          const end = vis.yScale(vis.selectedCat) - 300;
+          const i = d3.interpolateNumber(start, end);
+          return (t) => { vis.scrollContainer.node().scrollTop = i(t); };
+        });
     }
-  }
-
-  reformatNames(d) {
-    const countryMap = {
-      Australia: 'AU',
-      'New Zealand': 'NZ',
-      'United States': 'US',
-      'United Kingdom': 'UK',
-    };
-    return d.replace(/_Pet Cats (\w+ ?\w+)/, (match, country) => ` ${countryMap[country] || country}`);
   }
 }

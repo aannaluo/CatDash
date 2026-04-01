@@ -79,7 +79,7 @@ class RadialChart {
       .selectAll('path.bar')
       .data(vis.data, (d) => d.curr_hour)
       .join('path')
-      .attr('class', 'bar')
+      .attr('class', 'radial-bar')
       .attr('fill', '#69b3a2')
       .attr('d', d3.arc()
         .innerRadius(vis.innerRadius)
