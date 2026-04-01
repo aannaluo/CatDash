@@ -94,24 +94,15 @@ class CatMap {
     });
 
     const { coordinates } = selectedFeature.geometry;
-    const { prey_p_month: preyPerMonth, home_range: homeRange } = selectedFeature.properties;
+    const { home_range: homeRange } = selectedFeature.properties;
     const lon = coordinates[0];
     const lat = coordinates[1];
     const radius = vis.radiusScale(homeRange);
 
-    let preyCat;
-    if (preyPerMonth <= 2) {
-      preyCat = '#ffd700';
-    } else if (preyPerMonth <= 5) {
-      preyCat = '#b060eb';
-    } else {
-      preyCat = '#5381ff';
-    }
-
     L.circle([lat, lon], {
       radius,
-      color: preyCat,
-      fillColor: preyCat,
+      color: '#b060eb',
+      fillColor: '#b060eb',
       fillOpacity: 0.4,
       weight: 2,
     }).addTo(vis.map);
