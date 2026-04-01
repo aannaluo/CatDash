@@ -1,5 +1,5 @@
 class HeatMap {
-  constructor(_config, _data, _radialData, dispatcher) {
+  constructor(_config, _data, _radialData, dispatcher, selectedCat) {
     this.config = {
       parentElement: _config.parentElement,
       containerWidth: 450,
@@ -11,7 +11,7 @@ class HeatMap {
     this.data = _data;
     this.radialData = _radialData;
     this.dispatcher = dispatcher;
-    this.selectedCat = 'Abba_Pet Cats United Kingdom';
+    this.selectedCat = selectedCat;
     this.initVis();
   }
 
@@ -63,6 +63,7 @@ class HeatMap {
 
     vis.yScale = d3.scaleBand()
       .range([0, vis.height])
+      .padding(0.15)
       .domain(sortedIds);
 
     vis.xAxisG = vis.chartArea.append('g');
@@ -106,6 +107,9 @@ class HeatMap {
       .attr('width', vis.xScale.bandwidth())
       .attr('height', vis.yScale.bandwidth())
       .style('fill', (d) => vis.colourScale(d.distance))
+      .classed('selected', (d) => vis.selectedCat === d.unique_id)
+      .style('stroke', (d) => (vis.selectedCat === d.unique_id ? 'black' : 'none'))
+      .style('stroke-width', (d) => (vis.selectedCat === d.unique_id ? '2px' : '0px'))
       // .on('mouseover', (event, d) => {
       //   vis.chartArea.selectAll('rect')
       //     .filter((r) => r.unique_id === d.unique_id)
@@ -131,8 +135,8 @@ class HeatMap {
       .on('mouseover', (event, d) => {
         vis.chartArea.selectAll('rect')
           .filter((r) => r.unique_id === d.unique_id)
-          .style('stroke', 'white')
-          .style('stroke-width', '2px')
+          .style('stroke', '#490000')
+          .style('stroke-width', '1px')
           .classed('hovered', true);
 
         const catData = vis.radialData.filter((r) => r.unique_id === d.unique_id);
@@ -151,23 +155,38 @@ class HeatMap {
       })
       .on('mouseout', () => {
         vis.chartArea.selectAll('rect')
+          .filter(function() { return !d3.select(this).classed('selected'); })
           .classed('hovered', false)
           .style('stroke', 'none')
           .style('stroke-width', '0px');
-        // .sort((a, b) => vis.yScale(a.unique_id) - vis.yScale(b.unique_id));
         vis.tooltip.style('opacity', 0);
       })
-      .on('click', function () {
-        const selected = d3.select(this).classed('selected');
-        d3.select(this).classed('selected', !selected);
-        if (!selected) {
-          const selectedCat = d3.select(this).data()[0].unique_id;
-          console.log(d3.select(this).data());
-          vis.dispatcher.call('selectedCat', this, selectedCat);
+      .on('click', function(event, d) {
+        const isSelected = d3.select(this).classed('selected');
+
+        vis.chartArea.selectAll('rect')
+          .classed('selected', false)
+          .style('stroke', 'none')
+          .style('stroke-width', '0px');
+
+        if (!isSelected) {
+          vis.chartArea.selectAll('rect')
+            .filter((r) => r.unique_id === d.unique_id)
+            .classed('selected', true)
+            .style('stroke', 'black')
+            .style('stroke-width', '2px');
+
+          vis.dispatcher.call('selectedCat', this, d.unique_id);
         }
       });
 
     vis.xAxisG.call(d3.axisTop(vis.xScale));
+
+    if (vis.selectedCat) {
+      const yPos = vis.yScale(vis.selectedCat);
+      vis.scrollContainer.node().scrollTop = yPos - 300;
+      // 425 centres it in the 850px visible height
+    }
   }
 
   reformatNames(d) {
