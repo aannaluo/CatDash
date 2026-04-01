@@ -35,10 +35,11 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   });
 
   const allPreyGroups = d3.groups(data, (d) => d.prey_p_month).map((d) => d[0]);
+  const initialCat = 'Abba_Pet Cats United Kingdom';
 
   const beeAll = new Beeswarm({
     parentElement: '#bee1',
-  }, allPreyGroups, dispatcher, 'Adele_Pet Cats Australia', data);
+  }, allPreyGroups, dispatcher, initialCat, data);
 
   beeAll.updateVis();
 
@@ -82,6 +83,8 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
     binData(data),
   );
 
+  let heatMap;
+
   d3.csv('./data/Distance_radial.csv').then((radialData) => {
     radialData.forEach((d) => {
       d.avg_distance = +d.avg_distance;
@@ -96,7 +99,9 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
         d.distance = +d.distance;
       });
 
-      const heatMap = new HeatMap({ parentElement: '#heatmap' }, heatmapData, radialData, dispatcher);
+      const filteredTenDaysData = d3.filter(heatmapData, (d) => d.day_number <= 10);
+
+      heatMap = new HeatMap({ parentElement: '#heatmap' }, filteredTenDaysData, radialData, data, dispatcher, initialCat);
       heatMap.updateVis();
     });
   }).catch((error) => console.error(error));
@@ -109,6 +114,8 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
       beeAll.updateVis();
       catProfile.selectedCat = 'Abba_Pet Cats United Kingdom';
       catProfile.updateVis();
+      heatMap.selectedCat = 'Abba_Pet Cats United Kingdom';
+      heatMap.updateVis();
     } else {
       catMap.selectedCat = selectedCat;
       catMap.updateVis();
@@ -116,6 +123,8 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
       catProfile.updateVis();
       beeAll.selectedCat = selectedCat;
       beeAll.updateVis();
+      heatMap.selectedCat = selectedCat;
+      heatMap.updateVis();
     }
   });
 
