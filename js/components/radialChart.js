@@ -67,7 +67,7 @@ class RadialChart {
     //   return;
     // }
 
-    vis.yScale.domain([0, d3.max(vis.data, (d) => d.avg_distance)]);
+    vis.yScale.domain([0, d3.max(vis.data, (d) => d.distance)]);
 
     vis.renderVis();
   }
@@ -83,7 +83,7 @@ class RadialChart {
       .attr('fill', '#69b3a2')
       .attr('d', d3.arc()
         .innerRadius(vis.innerRadius)
-        .outerRadius((d) => vis.yScale(d.avg_distance))
+        .outerRadius((d) => vis.yScale(d.distance))
         .startAngle((d) => vis.xScale(d.curr_hour))
         .endAngle((d) => vis.xScale(d.curr_hour) + vis.xScale.bandwidth())
         .padAngle(0.01)
