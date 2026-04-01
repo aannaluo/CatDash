@@ -4,20 +4,21 @@ class Beeswarm {
        * @param {Object}
        * @param {Array}
        */
-  constructor(_config, selectedPreyCategories, dispatcher, selectedCat, _data) {
+  constructor(_config, allPreyGroups, dispatcher, selectedCat, _data) {
     this.config = {
       parentElement: _config.parentElement,
       containerWidth: 600,
-      containerHeight: 600,
+      containerHeight: 550,
       tooltipPadding: 15,
       margin: {
-        top: 30, right: 30, bottom: 30, left: 90,
+        top: 60, right: 20, bottom: 30, left: 70,
       },
     };
     this.data = _data;
     this.selectedCat = selectedCat;
     this.dispatcher = dispatcher;
-    this.selectedPreyCategories = selectedPreyCategories;
+    this.allPreyGroups = allPreyGroups;
+    this.selectedPreyCategories = allPreyGroups;
     this.initVis();
   }
 
@@ -42,7 +43,7 @@ class Beeswarm {
       .range([0, vis.width])
       .domain(d3.extent(vis.data, (d) => d['home-range']));
 
-    vis.getBin = (d) => {
+    vis.getAgeBin = (d) => {
       if (d <= 2) {
         return 0;
       } if (d <= 5) {
@@ -66,11 +67,11 @@ class Beeswarm {
     vis.yScale = d3.scaleBand()
       .range([0, vis.height - 50])
       .domain([0, 3, 6, 9])
-      .paddingInner(0.5);
+      .paddingInner(0.55);
 
     vis.simulation = d3.forceSimulation(vis.data)
       .force('x', d3.forceX((d) => vis.xScale(d['home-range'])))
-      .force('y', d3.forceY((d) => vis.yScale(vis.getBin(d.age)) + (vis.yScale.bandwidth() / 2)))
+      .force('y', d3.forceY((d) => vis.yScale(vis.getAgeBin(d.age)) + (vis.yScale.bandwidth() / 2)))
       .force('collide', d3.forceCollide(5))
       .stop();
 
@@ -80,9 +81,23 @@ class Beeswarm {
 
     vis.xAxisG = vis.chartArea.append('g')
       .attr('transform', `translate(0, ${vis.height - 20})`);
-    vis.yAxisG = vis.chartArea.append('g');
+    vis.yAxisG = vis.chartArea.append('g')
+      .attr('transform', 'translate(-0.5, 0)');
 
     vis.selectedBins = [0, 3, 6, 9];
+
+    vis.svg.append('text')
+      .text('Home Range Area (km\u00B2)')
+      .style('font-size', '12px')
+      .style('font-weight', 'bold')
+      .attr('transform', `translate(${vis.width - 45}, ${vis.config.containerHeight - 13})`);
+
+    vis.svg.append('text')
+      .text('Age')
+      .style('font-size', '12px')
+      .style('font-weight', 'bold')
+      .attr('transform', `translate(${vis.config.margin.left - 50}, 40)`);
+    vis.shapeScale = d3.scaleOrdinal().domain(['Yes', 'No']).range(d3.symbols);
   }
 
   /**
@@ -90,12 +105,16 @@ class Beeswarm {
        */
   updateVis() {
     const vis = this;
-    console.log(vis.selectedPreyCategories);
-
-    vis.xAxis = d3.axisBottom(vis.xScale);
+    vis.xAxis = d3.axisBottom(vis.xScale)
+      .tickFormat(d3.format('.2f'))
+      .tickValues([0.00, 0.01, 0.1, 1.0, 8.0])
+      .tickSizeOuter(0);
 
     vis.yAxis = d3.axisLeft(vis.yScale)
-      .tickFormat((d, i) => ['0-2 years', '3-5 years', '6-8 years', '9+ years'][i]);
+      .tickFormat((d, i) => ['0-2 years', '3-5 years', '6-8 years', '9+ years'][i])
+      .tickSizeOuter(0)
+      .tickSize(-vis.width);
+
     vis.renderVis();
   }
 
@@ -105,49 +124,58 @@ class Beeswarm {
   renderVis() {
     const vis = this;
 
-    vis.yAxisG.call(vis.yAxis)
-      .select('.domain').remove();
-
     vis.xAxisG.call(vis.xAxis);
+
+    const yAxisCall = vis.yAxisG.call(vis.yAxis);
+    yAxisCall.select('.domain').attr('d', `M0.5,0.5V${(vis.height - 20).toString()}.5`);
+    yAxisCall.selectAll('.tick').classed('y-axis', true);
 
     vis.yAxisG.selectAll('.tick text')
       .on('click', function (d) {
         const selected = d3.select(this).classed('selected');
         d3.selectAll('.tick text').classed('selected', false);
         d3.select(this).classed('selected', !selected);
+        vis.selectedPreyCategories = vis.allPreyGroups;
         if (!selected) {
-          console.log(d.target.textContent);
           const bin = vis.getBinFromLabel(d.target.textContent);
-          console.log(bin);
           vis.selectedBins = [bin];
-          d3.selectAll('circle').classed('included', (d) => vis.getBin(d.age) === bin);
-          d3.selectAll('circle').classed('selected', (d) => {
-            if (vis.getBin(d.age) === bin && vis.selectedCat === d['unique-id']) {
+          d3.selectAll('.point').classed('included', (d) => vis.getAgeBin(d.age) === bin);
+          d3.selectAll('.point').classed('selected', (d) => {
+            if (vis.getAgeBin(d.age) === bin && vis.selectedCat === d['unique-id']) {
               return true;
+            } if (vis.selectedCat === d['unique-id']) {
+              vis.selectedCat = 'none';
+              return false;
             }
-            vis.selectedCat = 'none';
             return false;
           });
           vis.dispatcher.call('selectedAgeCat', this, bin);
         } else {
-          d3.selectAll('circle').classed('included', true);
-          vis.selectedBins = [0, 3, 6, 9];
+          d3.selectAll('.point').classed('included', true);
+          vis.selectedBins = vis.allPreyGroups;
           vis.dispatcher.call('selectedAgeCat', this, null);
         }
       });
 
-    const cells = vis.chartArea.selectAll('circle')
+    const cells = vis.chartArea.selectAll('.point')
       .data(vis.data)
-      .join('circle')
+      .join('path')
       .classed('point', true)
-      .classed('included', (d) => vis.selectedPreyCategories.includes(d.prey_p_month) && vis.selectedBins.includes(vis.getBin(d.age)))
-      .classed('selected', (d) => vis.selectedCat === d['unique-id'])
+      .classed('included', (d) => vis.selectedPreyCategories.includes(d.prey_p_month) && vis.selectedBins.includes(vis.getAgeBin(d.age)))
+      .classed('selected', (d) => {
+        if (vis.selectedCat === d['unique-id'] && vis.selectedPreyCategories.includes(d.prey_p_month)) {
+          return true;
+        } if (vis.selectedCat === d['unique-id']) {
+          vis.selectedCat = 'none';
+          return false;
+        }
+        return false;
+      })
       .classed('male', ((d) => d.sex === 'Male'))
       .classed('female', ((d) => d.sex === 'Female'))
       .classed('unk', ((d) => d.sex === 'Unk'))
-      .attr('r', 3.75)
-      .attr('cx', (d) => d.x)
-      .attr('cy', (d) => d.y)
+      .attr('transform', (d) => `translate(${d.x},${d.y})`)
+      .attr('d', d3.symbol(d3.symbolCircle).size(50))
       .on('mouseover', function (event, d) {
         if (d3.select(this).classed('included')) {
           d3.select('#tooltip')
@@ -164,10 +192,12 @@ class Beeswarm {
         }
       })
       .on('click', function () {
-        d3.selectAll('circle').classed('selected', false);
-        d3.select(this).classed('selected', true);
-        vis.selectedCat = d3.select(this).data()[0]['unique-id'];
-        vis.dispatcher.call('selectedCat', this, vis.selectedCat);
+        if (d3.select(this).classed('included')) {
+          d3.selectAll('.point').classed('selected', false);
+          d3.select(this).classed('selected', true);
+          vis.selectedCat = d3.select(this).data()[0]['unique-id'];
+          vis.dispatcher.call('selectedCat', this, vis.selectedCat);
+        }
       });
   }
 }

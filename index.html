@@ -9,13 +9,12 @@
 </head>
 <body>    
     <div class="dashboard">
-        <section id="heatmap"></section>
         <section id="interactive">
             <section id="bee" class="panel vis">
                 <!-- <h4 id="radial-title">Home Range (km^2) vs Age</h4> -->
                 <div class="vis">
                     <div id="legend">
-                        <div id="radio-buttons">
+                        <!-- <div id="radio-buttons">
                             <div class="radio-button-group Male">
                                 <div class="radio-button Male"></div>
                                 <p class="radio-button-label Male">Male</p>
@@ -24,7 +23,7 @@
                                 <div class="radio-button Female"></div>
                                 <p class="radio-button-label Female">Female</p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- <div id="icons">
                             <div class="icon-group Neutered">
                                 <div class="icon Neutered"></div>
@@ -53,13 +52,11 @@
             </section>
         </section>
         <section id="individual-cat-data">
+            <section id="title"></section>
             <section id="cat-profile"></section>
-            <section id="radialChart" class="panel">
-                <h4 id="radial-title">Average Distance (m) Travelled Per Hour</h4>
-            </section>
             <section id="cat-map" class="panel"></section>
-       
         </section>
+         <section id="heatmap"></section>
     </div>
     
     <!-- D3 bundle -->
@@ -74,6 +71,7 @@
     <script src="js/components/barchart.js"></script>
     <script src="js/components/catMap.js"></script>
     <script src="js/components/catProfile.js"></script>
+     <script src="js/components/title.js"></script>
     <script src="js/components/radialChart.js"></script>
     <script src="js/components/heatMap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
