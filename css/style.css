@@ -233,6 +233,15 @@ g.legend text {
 	border-radius: 4px;
 	cursor: pointer;
 	font-size: 0.9em;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.button-icon {
+	width: 16px;
+	height: 16px;
+	object-fit: contain;
 }
 
 .axis path,
@@ -341,8 +350,8 @@ g.legend text {
 }
 
 .profile-image img {
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 90%;
+	max-height: 90%;
 	width: auto;
 	height: auto;
 }
@@ -376,8 +385,8 @@ g.legend text {
 	position: absolute;
 	top: 0;
 	right: 0;
-	max-width: 90px;
-	max-height: 70px;
+	max-width: 70px;
+	max-height: 50px;
 	width: auto;
 	height: auto;
 	object-fit: contain;
