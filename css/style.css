@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Cattie';
+	src: url('../fonts/Cattie-Regular.ttf') format('truetype');
+}
+
 html,
 body {
 	margin: 0;
@@ -217,7 +222,9 @@ g.legend text {
 
 .title-content h1 {
 	margin: 0;
-	font-size: 55px
+	font-size: 75px;
+	font-family: 'Cattie', Arial, sans-serif;
+	font-weight: normal;
 }
 
 .random-cat-button {
@@ -226,6 +233,15 @@ g.legend text {
 	border-radius: 4px;
 	cursor: pointer;
 	font-size: 0.9em;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.button-icon {
+	width: 16px;
+	height: 16px;
+	object-fit: contain;
 }
 
 .axis path,
@@ -334,8 +350,8 @@ g.legend text {
 }
 
 .profile-image img {
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 90%;
+	max-height: 90%;
 	width: auto;
 	height: auto;
 }
@@ -369,12 +385,34 @@ g.legend text {
 	position: absolute;
 	top: 0;
 	right: 0;
-	max-width: 90px;
-	max-height: 70px;
+	max-width: 70px;
+	max-height: 50px;
 	width: auto;
 	height: auto;
 	object-fit: contain;
 	margin-right: 10px;
+}
+
+/* Path toggle styling */
+.path-toggle-label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 10px;
+	background-color: white;
+	font-size: 0.85em;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 4px;
+}
+
+.path-toggle-label input[type="checkbox"] {
+	cursor: pointer;
+	margin: 0;
+}
+
+.path-toggle-label span {
+	white-space: nowrap;
 }
 
 .heatmap-axis path, line {
