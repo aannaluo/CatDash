@@ -9,10 +9,12 @@ const title = new Title({
 
 d3.json('./data/cat_bubbles_all.geojson').then((data) => {
   d3.json('./data/cat_paths_all.geojson').then((pathsData) => {
-    // eslint-disable-next-line no-unused-vars, no-undef
-    catMap = new CatMap({
-      parentElement: '#cat-map',
-    }, data, pathsData);
+    d3.json('./data/cat_paths_10_days.geojson').then((paths10DayData) => {
+      // eslint-disable-next-line no-unused-vars, no-undef
+      catMap = new CatMap({
+        parentElement: '#cat-map',
+      }, data, pathsData, paths10DayData);
+    });
   });
 });
 
@@ -20,6 +22,13 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   // eslint-disable-next-line no-unused-vars, no-undef
 
   const dispatcher = d3.dispatch('selectedPreyCats', 'selectedCat', 'selectedAgeCat');
+  
+  d3.select('#random-cat-btn')
+    .on('click', () => {
+      const index = Math.floor(Math.random() * data.length);
+      const selectedCat = data[index];
+      dispatcher.call('selectedCat', selectedCat, selectedCat['unique-id']);
+  });
 
   data.forEach((d) => {
     d.age = parseFloat(d.age);
@@ -36,12 +45,25 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
 
   beeAll.updateVis();
 
+  function getPreyCats(bins) {
+    let allPreyCats = [];
+    bins.forEach((b) => {
+      if (b[0] == 20) {
+        allPreyCats = allPreyCats.concat(d3.range(b[0], b[1] + 1));
+      } else {
+        allPreyCats = allPreyCats.concat(d3.range(b[0], b[1]));
+      }
+    });
+    return allPreyCats;
+  }
+
   dispatcher.on('selectedPreyCats', (selectedPreyCategories) => {
     if (selectedPreyCategories.length === 0) {
       beeAll.selectedPreyCategories = allPreyGroups;
       beeAll.updateVis();
     } else {
-      beeAll.selectedPreyCategories = selectedPreyCategories;
+      beeAll.selectedPreyCategories = getPreyCats(selectedPreyCategories);
+      console.log(beeAll.selectedPreyCategories);
       beeAll.updateVis();
     }
   });
@@ -50,10 +72,17 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
     parentElement: '#cat-profile',
   }, data);
 
+  // bin data for barChart
+
+  function binData(bData) {
+    const binGenerator = d3.bin().value((d) => d.prey_p_month).thresholds([1, 5, 10, 20, 30]);
+    return binGenerator(bData);
+  }
+
   const barChart = new BarChart(
     { parentElement: '#barchart' },
     dispatcher,
-    data,
+    binData(data),
   );
 
   let heatMap;
@@ -103,19 +132,19 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
 
   dispatcher.on('selectedAgeCat', (selectedAgeCat) => {
     if (!selectedAgeCat) {
-      barChart.data = data;
+      barChart.data = binData(data);
       barChart.updateVis();
     } if (selectedAgeCat === 0) {
-      barChart.data = data.filter((d) => d.age <= 2);
+      barChart.data = binData(data.filter((d) => d.age <= 2));
       barChart.updateVis();
     } if (selectedAgeCat === 3) {
-      barChart.data = data.filter((d) => d.age > 2 && d.age <= 5);
+      barChart.data = binData(data.filter((d) => d.age > 2 && d.age <= 5));
       barChart.updateVis();
     } if (selectedAgeCat === 6) {
-      barChart.data = data.filter((d) => d.age > 5 && d.age <= 8);
+      barChart.data = binData(data.filter((d) => d.age > 5 && d.age <= 8));
       barChart.updateVis();
     } if (selectedAgeCat === 9) {
-      barChart.data = data.filter((d) => d.age > 8);
+      barChart.data = binData(data.filter((d) => d.age > 8));
       barChart.updateVis();
     }
   });

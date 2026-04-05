@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Cattie';
+	src: url('../fonts/Cattie-Regular.ttf') format('truetype');
+}
+
 html,
 body {
 	margin: 0;
@@ -59,6 +64,10 @@ body {
 	border-radius: 8px;
 	background-color: #f7f7f7;
 	overflow: auto;
+}
+
+#bee.panel {
+	overflow: hidden;
 }
 
 #splot-header {
@@ -213,7 +222,9 @@ g.legend text {
 
 .title-content h1 {
 	margin: 0;
-	font-size: 55px
+	font-size: 75px;
+	font-family: 'Cattie', Arial, sans-serif;
+	font-weight: normal;
 }
 
 .random-cat-button {
@@ -222,6 +233,15 @@ g.legend text {
 	border-radius: 4px;
 	cursor: pointer;
 	font-size: 0.9em;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.button-icon {
+	width: 16px;
+	height: 16px;
+	object-fit: contain;
 }
 
 .axis path,
@@ -241,6 +261,32 @@ g.legend text {
   /* pointer-events: all; */
 }
 
+.domain {
+	stroke: rgb(227, 227, 227);
+}
+
+.tick line{
+	stroke: rgb(227, 227, 227);
+}
+
+.tick text{
+	color: rgb(65, 65, 65);
+	caret-color: transparent;
+	cursor: default;
+}
+
+#bee .tick.y-axis text:hover{
+	color: rgb(26, 25, 25);
+	font-weight: 700;
+	cursor: pointer;
+}
+
+#bee .tick.y-axis text.selected {
+	font-weight: bold;
+	cursor: pointer;
+
+}
+
 .point {
 	fill: rgb(223, 223, 223);
 	stroke: none;
@@ -254,7 +300,7 @@ g.legend text {
 }
 
 .point.included.unk{
-	fill: rgb(104, 42, 204);
+	fill: rgb(191, 167, 230);
 }
 .point.included:hover {
   stroke-width: 0.5px;
@@ -271,17 +317,21 @@ g.legend text {
 	display: none;
 }
 
-.bar {
-	fill:#d7a4c3
+#histogram .bar {
+	fill: #d6d594;
 }
 
-.bar.selected {
-	  fill:  #ec7b09
+#histogram .bar:hover {
+	stroke: rgb(70, 70, 70);
+	stroke-width: 0.5px;
 }
 
-.tick text.selected {
-	font-weight: bold;
+#histogram .bar.selected {
+	fill: #d1cf76;
+	stroke: rgb(70, 70, 70);
+	stroke-width: 0.5px;
 }
+
 
 
 /* Cat Profile Styling */
@@ -300,8 +350,8 @@ g.legend text {
 }
 
 .profile-image img {
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 90%;
+	max-height: 90%;
 	width: auto;
 	height: auto;
 }
@@ -335,12 +385,34 @@ g.legend text {
 	position: absolute;
 	top: 0;
 	right: 0;
-	max-width: 90px;
-	max-height: 70px;
+	max-width: 70px;
+	max-height: 50px;
 	width: auto;
 	height: auto;
 	object-fit: contain;
 	margin-right: 10px;
+}
+
+/* Path toggle styling */
+.path-toggle-label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 10px;
+	background-color: white;
+	font-size: 0.85em;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 4px;
+}
+
+.path-toggle-label input[type="checkbox"] {
+	cursor: pointer;
+	margin: 0;
+}
+
+.path-toggle-label span {
+	white-space: nowrap;
 }
 
 .heatmap-axis path, line {

@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 class CatMap {
-  constructor(_config, _data, _pathsData) {
+  constructor(_config, _data, _pathsData, _paths10Data) {
     this.config = {
       parentElement: _config.parentElement,
       minRadius: 50, // meters
@@ -8,7 +8,9 @@ class CatMap {
     };
     this.data = _data;
     this.pathsData = _pathsData;
+    this.paths10DayData = _paths10Data;
     this.selectedCat = 'Abba_Pet Cats United Kingdom';
+    this.showFirst10Days = true;
     this.initVis();
   }
 
@@ -47,6 +49,32 @@ class CatMap {
     });
 
     vis.map.addControl(new RecentreControl());
+
+    const PathToggleControl = L.Control.extend({
+      options: {
+        position: 'topright',
+      },
+      onAdd() {
+        const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        const toggleLabel = L.DomUtil.create('label', 'path-toggle-label', container);
+        const checkbox = L.DomUtil.create('input', '', toggleLabel);
+        checkbox.type = 'checkbox';
+        checkbox.id = 'path-toggle';
+        checkbox.checked = true;
+
+        const labelText = L.DomUtil.create('span', '', toggleLabel);
+        labelText.textContent = ' First 10 Days only';
+
+        L.DomEvent.on(checkbox, 'change', (e) => {
+          vis.showFirst10Days = e.target.checked;
+          vis.renderVis();
+        });
+
+        return container;
+      },
+    });
+
+    vis.map.addControl(new PathToggleControl());
 
     // CartoDB Positron (light) tile layer
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -93,54 +121,49 @@ class CatMap {
       }
     });
 
+    // Add the cat path if available
+    if (vis.pathsData) {
+      const pathDataToUse = vis.showFirst10Days ? vis.paths10DayData : vis.pathsData;
+
+      if (pathDataToUse) {
+        const selectedPath = pathDataToUse.features.find(
+          (feature) => feature.properties['unique-id'] === vis.selectedCat,
+        );
+
+        if (selectedPath) {
+          L.geoJSON(selectedPath, {
+            style: {
+              color: '#ED7A53',
+              weight: 2,
+              opacity: 1,
+            },
+          }).addTo(vis.map);
+
+          // Calculate bounds from path coordinates
+          const pathCoords = selectedPath.geometry.coordinates;
+          if (pathCoords.length > 0) {
+            const bounds = L.latLngBounds(
+              pathCoords.map((coord) => [coord[1], coord[0]]),
+            );
+            vis.bounds = bounds;
+          }
+        }
+      }
+    }
+
     const { coordinates } = selectedFeature.geometry;
-    const { prey_p_month: preyPerMonth, home_range: homeRange } = selectedFeature.properties;
+    const { home_range: homeRange } = selectedFeature.properties;
     const lon = coordinates[0];
     const lat = coordinates[1];
     const radius = vis.radiusScale(homeRange);
 
-    let preyCat;
-    if (preyPerMonth <= 2) {
-      preyCat = '#ffd700';
-    } else if (preyPerMonth <= 5) {
-      preyCat = '#b060eb';
-    } else {
-      preyCat = '#5381ff';
-    }
-
     L.circle([lat, lon], {
       radius,
-      color: preyCat,
-      fillColor: preyCat,
+      color: '#b060eb',
+      fillColor: '#b060eb',
       fillOpacity: 0.4,
       weight: 2,
     }).addTo(vis.map);
-
-    // Add the cat path if available
-    if (vis.pathsData) {
-      const selectedPath = vis.pathsData.features.find(
-        (feature) => feature.properties['unique-id'] === vis.selectedCat,
-      );
-
-      if (selectedPath) {
-        L.geoJSON(selectedPath, {
-          style: {
-            color: '#ED7A53',
-            weight: 2,
-            opacity: 1,
-          },
-        }).addTo(vis.map);
-
-        // Calculate bounds from path coordinates
-        const pathCoords = selectedPath.geometry.coordinates;
-        if (pathCoords.length > 0) {
-          const bounds = L.latLngBounds(
-            pathCoords.map((coord) => [coord[1], coord[0]]),
-          );
-          vis.bounds = bounds;
-        }
-      }
-    }
 
     // Calculate dynamic bounds for the circle and zoom to fit
     const latOffset = radius / 111000;

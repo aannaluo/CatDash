@@ -18,7 +18,7 @@ class Title {
         <div class="title-content">
           <h1>Cat Dash</h1>
           <p>bla bla bla</p>
-          <button id="random-cat-btn" class="random-cat-button">Random Cat</button>
+          <button id="random-cat-btn" class="random-cat-button"><img src="images/shuffle.png" alt="shuffle" class="button-icon"> Random Cat!</button>
         </div>
       `);
   }
