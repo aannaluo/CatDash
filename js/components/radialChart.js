@@ -41,7 +41,7 @@ class RadialChart {
     vis.chartArea = vis.svg.append('g')
       .attr(
         'transform',
-        `translate(${vis.config.containerWidth / 2},${vis.config.containerHeight / 2 })`,
+        `translate(${vis.config.containerWidth / 2},${vis.config.containerHeight / 2})`,
       );
 
     vis.xScale = d3.scaleBand()

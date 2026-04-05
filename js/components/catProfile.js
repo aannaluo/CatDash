@@ -55,24 +55,40 @@ class CatProfile {
     const container = d3.select(vis.config.parentElement).node();
     const flagImage = CatProfile.getFlagImage(catData['study-site']);
 
+    // container.innerHTML = `
+    //   <div class="profile-container">
+    //     <div class="profile-image">
+    //       <img src="images/cat.png" alt="Cat silhouette">
+    //     </div>
+    //     <div class="profile-info">
+    //       ${flagImage ? `<img src="${flagImage}" alt="${catData['study-site']}" class="profile-flag">` : ''}
+    //       <h3>${catData['animal-name']}</h3>
+    //       <ul>
+    //         <li>Age: ${CatProfile.formatNumber(catData.age)} years</li>
+    //         <li>Sex: ${catData.sex}</li>
+    //         <li>Home Range: ${CatProfile.formatNumber(catData['home-range'])} km²</li>
+    //         <li>Prey per Month: ${CatProfile.formatNumber(catData.prey_p_month)}</li>
+    //         <li>No. of days Tracked: ${catData.days_tracked} </li>
+    //         <li>Dates Tracked: ${CatProfile.formatDate(catData.start_date)} - ${CatProfile.formatDate(catData.end_date)} </li>
+    //       </ul>
+    //     </div>
+    //   </div>
+    // `;
+
     container.innerHTML = `
-      <div class="profile-container">
-        <div class="profile-image">
-          <img src="images/cat.png" alt="Cat silhouette">
-        </div>
-        <div class="profile-info">
-          ${flagImage ? `<img src="${flagImage}" alt="${catData['study-site']}" class="profile-flag">` : ''}
-          <h3>${catData['animal-name']}</h3>
-          <ul>
-            <li>Age: ${CatProfile.formatNumber(catData.age)} years</li>
-            <li>Sex: ${catData.sex}</li>
-            <li>Home Range: ${CatProfile.formatNumber(catData['home-range'])} km²</li>
-            <li>Prey per Month: ${CatProfile.formatNumber(catData.prey_p_month)}</li>
-            <li>No. of days Tracked: ${catData.days_tracked} </li>
-            <li>Dates Tracked: ${CatProfile.formatDate(catData.start_date)} - ${CatProfile.formatDate(catData.end_date)} </li>
-          </ul>
-        </div>
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center">
+      <h5 class="mb-0" style="color: #C88A38;">${catData['animal-name']}</h5>
+      <span style="color: #C88A38;">${CatProfile.formatNumber(catData.age)} years . ${catData.sex}</span>
+    </div>
+      <div class="card-body profile-info" style="color: #C88A38;">
+        <ul>
+          <li>Prey per Month: ${CatProfile.formatNumber(catData.prey_p_month)}</li>
+          <li>Home Range: ${CatProfile.formatNumber(catData['home-range'])} km²</li>
+          <li>Days Tracked: ${catData.days_tracked} </li>
+        </ul>
       </div>
+    </div>
     `;
   }
 }

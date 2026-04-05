@@ -2,8 +2,8 @@ class HeatMap {
   constructor(_config, _data, _radialData, _catData, dispatcher, selectedCat) {
     this.config = {
       parentElement: _config.parentElement,
-      containerWidth: 450,
-      containerHeight: 700,
+      // containerWidth: 450,
+      // containerHeight: 700,
       margin: {
         top: 30, right: 20, bottom: 20, left: 20,
       },
@@ -19,38 +19,30 @@ class HeatMap {
   initVis() {
     const vis = this;
 
-    console.log(vis.parentElement);
-
     const parent = d3.select(vis.config.parentElement).node();
     const { width, height } = parent.getBoundingClientRect();
-    vis.config.containerWidth = width;
-    vis.scrollingWidth = height;
 
-    const rowHeight = 5; // pixels per cat
-    vis.config.containerHeight = [...new Set(vis.data.map((d) => d.unique_id))].length * rowHeight
-        + vis.config.margin.top + vis.config.margin.bottom;
+    vis.width = width - vis.config.margin.left - vis.config.margin.right;
 
-    // const rowWidth = 5; // pixels per cat
-    // vis.config.containerWidth = [...new Set(vis.data.map((d) => d.day_number))].length * rowWidth
-    //     + vis.config.margin.left + vis.config.margin.right;
+    const rowHeight = 5;
+    const numCats = [...new Set(vis.data.map((d) => d.unique_id))].length;
+    const svgHeight = numCats * rowHeight + vis.config.margin.top + vis.config.margin.bottom;
 
-    vis.width = vis.config.containerWidth - vis.config.margin.left - vis.config.margin.right;
-    vis.height = vis.config.containerHeight - vis.config.margin.top - vis.config.margin.bottom;
+    vis.height = svgHeight - vis.config.margin.top - vis.config.margin.bottom;
+
+    // vis.scrollContainer = d3.select(vis.config.parentElement)
+    //   .append('div')
+    //   .style('height', `${height - 150}px`)
+    //   .style('overflow-y', 'scroll');
 
     vis.scrollContainer = d3.select(vis.config.parentElement)
       .append('div')
-      .style('height', '800px')// visible height
+      .style('height', '85%')
       .style('overflow-y', 'scroll');
-    // .style('width', '400px')
-    // .style('overflow-w', 'scroll');
 
     vis.svg = vis.scrollContainer.append('svg')
-      .attr('width', vis.width + vis.config.margin.left + vis.config.margin.right)
-      .attr('height', vis.height + vis.config.margin.top + vis.config.margin.bottom);
-
-    // vis.svg = d3.select(vis.config.parentElement).append('svg')
-    //   .attr('width', vis.width + vis.config.margin.left + vis.config.margin.right)
-    //   .attr('height', vis.height + vis.config.margin.top + vis.config.margin.bottom);
+      .attr('width', vis.width)
+      .attr('height', svgHeight);
 
     vis.chartArea = vis.svg.append('g')
       .attr('transform', `translate(${vis.config.margin.left},${vis.config.margin.top})`);
@@ -68,12 +60,10 @@ class HeatMap {
 
     vis.xAxisG = vis.chartArea.append('g')
       .attr('class', 'heatmap-axis x-axis');
-    //   .attr('transform', `translate(0, 0)`);
 
     vis.yAxisG = vis.chartArea.append('g');
 
     vis.colourScale = d3.scaleLinear()
-      // .range(['#fae9e9', '#840000'])
       .range(['#DEECFB', '#203451'])
       .domain(d3.extent(vis.data, (d) => d.distance));
 
@@ -86,12 +76,10 @@ class HeatMap {
       .style('padding', '0px')
       .style('pointer-events', 'none')
       .style('font-size', '12px');
-    // .style('width', '200px')
-    // .style('height', '250px');
 
     vis.sortBy = d3.select('#sort-select-heatmap').property('value');
 
-    d3.select('#sort-select-heatmap').on('change', function() {
+    d3.select('#sort-select-heatmap').on('change', function () {
       vis.sortBy = this.value;
       vis.updateVis();
     });
@@ -159,7 +147,8 @@ class HeatMap {
       'United States': 'US',
       'United Kingdom': 'UK',
     };
-    return d.replace(/_Pet Cats (\w+ ?\w+)/, (match, country) => ` ${countryMap[country] || country}`);
+    // return d.replace(/_Pet Cats (\w+ ?\w+)/, (match, country) => ` ${countryMap[country] || country}`);
+    return d.replace(/_Pet Cats (\w+ ?\w+)/, "");
   }
 
   renderVis() {
@@ -189,15 +178,31 @@ class HeatMap {
           .style('opacity', 1)
           .style('padding-top', '5px')
           .style('padding-left', '5px')
-          .html(`<strong style="font-size: 13px; font-family: Arial">${vis.reformatNames(d.unique_id)}</strong>
-           <div id="tooltip-radial"></div>`);
-
+          .html(`
+            <strong style="display: block; padding: 2px 10px;">Total Distance Travelled Per Hour</strong>
+           <div id="tooltip-radial"></div>
+           <strong style="display: block; padding: 2px 10px;">${vis.reformatNames(d.unique_id)}<strong>`);
+        // <h3>${vis.reformatNames(d.unique_id)}</h3>
         new RadialChart({ parentElement: '#tooltip-radial' }, catData);
       })
       .on('mousemove', (event) => {
+        const tooltipNode = vis.tooltip.node();
+        const tooltipHeight = tooltipNode.offsetHeight;
+        const tooltipWidth = tooltipNode.offsetWidth;
+        const pageHeight = window.innerHeight;
+        const pageWidth = window.innerWidth;
+
+        const left = event.pageX + 10 + tooltipWidth > pageWidth
+          ? event.pageX - tooltipWidth - 10
+          : event.pageX + 10;
+
+        const top = event.pageY + 20 + tooltipHeight > pageHeight
+          ? event.pageY - tooltipHeight - 10
+          : event.pageY + 20;
+
         vis.tooltip
-          .style('left', `${event.pageX + 10}px`)
-          .style('top', `${event.pageY + 20}px`);
+          .style('left', `${left}px`)
+          .style('top', `${top}px`);
       })
       .on('mouseout', () => {
         vis.chartArea.selectAll('rect')
