@@ -7,6 +7,7 @@
      <link rel="icon", href="./images/cat-icon.png">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>    
     <div class="dashboard">
@@ -60,7 +61,7 @@
          <section id="heatmap">
             <div id="heatmap-sort">
             <label id="sort-select-label" for="sort-select-heatmap">Sort by: </label>
-            <select id="sort-select-heatmap">
+            <select class="form-select form-select-sm" aria-label="Small select example" id="sort-select-heatmap">
                 <option value="alphabetical" selected>Alphabetical</option>
                 <option value="tot-dist-dsc">Total Distance: High to Low</option>
                 <option value="tot-dist-asc">Total Distance: Low to High</option>
@@ -89,6 +90,7 @@
     <script src="js/components/radialChart.js"></script>
     <script src="js/components/heatMap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     <!-- Our JS code -->
     <script src="js/main.js"></script>

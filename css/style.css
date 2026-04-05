@@ -358,7 +358,18 @@ g.legend text {
 
 
 #heatmap-sort {
-	padding-left: 6px;
-	font-size: 12px;
-	padding-top: 6px;
+    padding-left: 6px;
+    font-size: 12px;
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#sort-select-label {
+    white-space: nowrap;
+}
+
+#sort-select-heatmap {
+    width: auto; /* prevents it from stretching to fill remaining space */
 }

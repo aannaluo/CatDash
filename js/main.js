@@ -60,7 +60,7 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
 
   d3.csv('./data/Distance_radial.csv').then((radialData) => {
     radialData.forEach((d) => {
-      d.avg_distance = +d.avg_distance;
+      d.distance = +d.distance;
       d.curr_hour = +d.curr_hour;
     });
 

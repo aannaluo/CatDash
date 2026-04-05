@@ -21,6 +21,11 @@ class HeatMap {
 
     console.log(vis.parentElement);
 
+    const parent = d3.select(vis.config.parentElement).node();
+    const { width, height } = parent.getBoundingClientRect();
+    vis.config.containerWidth = width;
+    vis.scrollingWidth = height;
+
     const rowHeight = 5; // pixels per cat
     vis.config.containerHeight = [...new Set(vis.data.map((d) => d.unique_id))].length * rowHeight
         + vis.config.margin.top + vis.config.margin.bottom;
@@ -34,7 +39,7 @@ class HeatMap {
 
     vis.scrollContainer = d3.select(vis.config.parentElement)
       .append('div')
-      .style('height', '650px')// visible height
+      .style('height', '800px')// visible height
       .style('overflow-y', 'scroll');
     // .style('width', '400px')
     // .style('overflow-w', 'scroll');
@@ -182,6 +187,8 @@ class HeatMap {
 
         vis.tooltip
           .style('opacity', 1)
+          .style('padding-top', '5px')
+          .style('padding-left', '5px')
           .html(`<strong style="font-size: 13px; font-family: Arial">${vis.reformatNames(d.unique_id)}</strong>
            <div id="tooltip-radial"></div>`);
 
