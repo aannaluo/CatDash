@@ -36,7 +36,7 @@ class RadialChart {
     vis.svg = d3.select(vis.config.parentElement).append('svg')
       .attr('width', vis.config.containerWidth)
       .attr('height', vis.config.containerHeight);
-      // .style('overflow', 'visible');
+    // .style('overflow', 'visible');
 
     vis.chartArea = vis.svg.append('g')
       .attr(
@@ -90,7 +90,7 @@ class RadialChart {
       .data(vis.data, (d) => d.curr_hour)
       .join('path')
       .attr('class', 'radial-bar')
-      .attr('fill', '#69b3a2')
+      .attr('fill', '#EEC084')
       .attr('d', d3.arc()
         .innerRadius(vis.innerRadius)
         .outerRadius((d) => vis.yScale(d.distance))
@@ -108,7 +108,7 @@ class RadialChart {
       .attr('alignment-baseline', 'middle')
       .attr('x', (d) => {
         const angle = vis.xScale(d.curr_hour) + vis.xScale.bandwidth() / 2 - Math.PI / 2;
-        return Math.cos(angle) * (vis.innerRadius + 15); // slightly inside inner radius
+        return Math.cos(angle) * (vis.innerRadius + 15);
       })
       .attr('y', (d) => {
         const angle = vis.xScale(d.curr_hour) + vis.xScale.bandwidth() / 2 - Math.PI / 2;
@@ -130,7 +130,7 @@ class RadialChart {
       .attr('r', (d) => vis.yScale(d));
 
     vis.chartArea.selectAll('.y-axis-label')
-      .data(vis.yTicks)
+      .data(vis.yTicks.filter((d) => d !== 0)) // add this filter
       .join('text')
       .attr('class', 'y-axis-label')
       .attr('x', 0)
@@ -139,6 +139,6 @@ class RadialChart {
       .attr('text-anchor', 'middle')
       .attr('font-size', '12px')
       .attr('font-weight', 'bold')
-      .text((d) => `${d}m`);
+      .text((d) => `${d / 1000}km`);
   }
 }

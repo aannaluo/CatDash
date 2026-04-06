@@ -64,7 +64,7 @@ class HeatMap {
     vis.yAxisG = vis.chartArea.append('g');
 
     vis.colourScale = d3.scaleLinear()
-      .range(['#DEECFB', '#203451'])
+      .range(['#FFF0DD', '#854E06'])
       .domain(d3.extent(vis.data, (d) => d.distance));
 
     vis.tooltip = d3.select('body').append('div')
@@ -83,6 +83,12 @@ class HeatMap {
       vis.sortBy = this.value;
       vis.updateVis();
     });
+
+    const [minVal, maxVal] = d3.extent(vis.data, (d) => d.distance);
+    d3.select('#heatmap-legend-min').text(d3.format('.1f')(minVal));
+    d3.select('#heatmap-legend-max').text(d3.format('.1f')(maxVal));
+    d3.select('#heatmap-legend-gradient')
+      .style('background', 'linear-gradient(to right, #FFF0DD, #854E06)');
 
     vis.updateVis();
   }
@@ -103,12 +109,6 @@ class HeatMap {
     );
 
     const homeRangeMap = new Map(vis.catData.map((d) => [d['unique-id'], d['home-range']]));
-
-    const rangeDist = d3.rollup(
-      vis.data,
-      (v) => d3.max(v, (d) => d.distance) - d3.min(v, (d) => d.distance),
-      (d) => d.unique_id,
-    );
 
     const sortedIds = [...new Set(vis.data.map((d) => d.unique_id))]
 

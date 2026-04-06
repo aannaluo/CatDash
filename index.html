@@ -88,15 +88,23 @@
         </section>
          <section id="heatmap">
             <h5 class="heatmap-title">Distance Travelled Per Day by Cat</h5>
-            <div id="heatmap-sort">
-            <label class="heatmap-sort-label" id="sort-select-label" for="sort-select-heatmap">Sort by: </label>
-            <select class="form-select form-select-sm" aria-label="Small select example" id="sort-select-heatmap">
-                <option value="alphabetical" selected>Alphabetical</option>
-                <option value="tot-dist-dsc">Total Distance: High to Low</option>
-                <option value="tot-dist-asc">Total Distance: Low to High</option>
-                <option value="homerange-desc">Homerange: High to Low</option>
-            </select>
-            </div>
+            <div id="heatmap-controls">
+                <div id="heatmap-sort">
+                    <label class="heatmap-sort-label" id="sort-select-label" for="sort-select-heatmap">Sort by: </label>
+                    <select class="form-select form-select-sm" aria-label="Small select example" id="sort-select-heatmap">
+                        <option value="alphabetical" selected>Alphabetical</option>
+                        <option value="tot-dist-dsc">Distance: High to Low</option>
+                        <option value="tot-dist-asc">Distance: Low to High</option>
+                        <option value="homerange-desc">Homerange: High to Low</option>
+                    </select>
+                </div>
+                <div id="heatmap-legend">
+                    <span class="heatmap-legend-label" id="heatmap-legend-min">0</span>
+                    <div id="heatmap-legend-gradient"></div>
+                    <span class="heatmap-legend-label" id="heatmap-legend-max">0</span>
+                    <span class="heatmap-legend-unit">km</span>
+                </div>
+                </div>
             <!-- <div id="heatmap"></div> -->
          </section>
     </div>

@@ -401,24 +401,31 @@ g.legend text {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	padding-left: 4px;
 }
 
 .profile-info li {
-	margin-bottom: 4px;
+	margin-bottom: 2px;
 }
 
 .profile-flag {
-	position: absolute;
-	top: 0;
-	right: 0;
-	max-width: 70px;
-	max-height: 50px;
-	width: auto;
-	height: auto;
-	object-fit: contain;
-	margin-right: 10px;
+	/* position: absolute; */
+	/* top: 0; */
+	/* right: 0; */
+	/* max-width: 100px; */
+	/* max-height: 100px; */
+	/* width: auto; */
+	/* height: auto; */
+	/* object-fit: cover; */
+	/* margin-right: 10px; */
+	/* flex-shrink: 0; */
+	margin: 0;
+	padding: 0;
+	width: 100px;
+	height: 100px;
+
+	/* style="width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; margin-left: auto;" */
 }
 
 /* Path toggle styling */
@@ -465,6 +472,7 @@ g.legend text {
     display: flex;
     align-items: center;
     gap: 8px;
+  	width: fit-content;
 }
 
 #sort-select-label {
@@ -502,4 +510,36 @@ g.legend text {
 	font-family: 'Life Savers';
 	font-weight: 800;
 	color: #5D4A30;
+}
+
+
+
+#heatmap-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#heatmap-legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+#heatmap-legend-gradient {
+  width: 70px;
+  height: 12px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.heatmap-legend-label {
+  color: #555;
+  min-width: 28px;
+  text-align: center;
+}
+
+.heatmap-legend-unit {
+  color: #555;
 }
