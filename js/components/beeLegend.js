@@ -1,14 +1,14 @@
 function renderGenderLegend() {
   const svg = d3.select('#bee #gender-legend')
     .append('svg')
-    .attr('width', '150px')
+    .attr('width', '90px')
     .attr('height', '100px')
     .attr('transform', 'translate(470, 300)');
 
   svg.append('rect')
     .attr('width', '100%')
     .attr('height', '100%')
-    .style('fill', '#f7f7f7');
+    .style('fill', 'white');
 
   svg.append('text')
     .text('Gender')
@@ -58,14 +58,14 @@ function renderGenderLegend() {
 function renderNeuterLegend() {
   const svg = d3.select('#bee #neutered-legend')
     .append('svg')
-    .attr('width', '150px')
+    .attr('width', '100px')
     .attr('height', '100px')
     .attr('transform', 'translate(470, 400)');
 
   svg.append('rect')
     .attr('width', '100%')
     .attr('height', '100%')
-    .style('fill', '#f7f7f7');
+    .style('fill', 'white');
 
   svg.append('text')
     .text('Neutered Status')

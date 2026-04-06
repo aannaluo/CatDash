@@ -6,13 +6,13 @@ class LineChart {
   constructor(_config, dispatcher, selectedCat, data) {
     this.config = {
       parentElement: _config.parentElement,
-      containerWidth: 600,
-      containerHeight: 250,
+      containerWidth: 350,
+      containerHeight: 170,
       margin: {
-        top: 40,
-        right: 30,
+        top: 30,
+        right: 20,
         bottom: 30,
-        left: 60,
+        left: 55,
       },
     };
     this.selectedCat = selectedCat;
@@ -58,7 +58,7 @@ class LineChart {
       .text('Distance from start point (km)')
       .style('font-size', '12px')
       .style('font-weight', 'bold')
-      .attr('transform', `translate(${vis.config.margin.left - 50}, 30)`);
+      .attr('transform', `translate(${vis.config.margin.left - 50}, 20)`);
 
     vis.updateVis();
   }
@@ -69,14 +69,17 @@ class LineChart {
     vis.selectedCatData = vis.data.filter((d) => d.unique_id === vis.selectedCat);
     console.log(d3.max(vis.selectedCatData, (d) => parseFloat(d.dist_from_start)));
 
-    const uniqueDays = new Set(vis.selectedCatData.map((d) => d3.timeDay.floor(d.timestamp).getTime())).size;
+    const uniqueDays = d3.timeDay.range(d3.extent(vis.selectedCatData, (d) => d.timestamp)[0], d3.extent(vis.selectedCatData, (d) => d.timestamp)[1]).length;
+    console.log(uniqueDays);
     const tickInterval = () => {
-      if (uniqueDays > 10 && uniqueDays <= 20) {
+      if (uniqueDays > 8 && uniqueDays <= 20) {
         return d3.timeDay.every(2);
       } if (uniqueDays > 20 && uniqueDays <= 50) {
-        return d3.timeDay.every(5);
-      } if (uniqueDays > 50) {
+        return d3.timeDay.every(36);
+      } if (uniqueDays > 50 && uniqueDays <= 100) {
         return d3.timeDay.every(50);
+      } if (uniqueDays > 100) {
+        return d3.timeDay.every(100);
       }
       return d3.timeDay.every(1);
     };
