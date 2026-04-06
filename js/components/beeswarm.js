@@ -11,7 +11,7 @@ class Beeswarm {
       containerHeight: 550,
       tooltipPadding: 15,
       margin: {
-        top: 60, right: 20, bottom: 30, left: 70,
+        top: 30, right: 20, bottom: 30, left: 70,
       },
     };
     this.data = _data;
@@ -96,7 +96,7 @@ class Beeswarm {
       .text('Age')
       .style('font-size', '12px')
       .style('font-weight', 'bold')
-      .attr('transform', `translate(${vis.config.margin.left - 50}, 40)`);
+      .attr('transform', `translate(${vis.config.margin.left - 50},30)`);
     vis.shapeScale = d3.scaleOrdinal().domain(['Yes', 'No']).range(d3.symbols);
   }
 

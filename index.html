@@ -9,11 +9,37 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>    
     <div class="dashboard">
         <section id="interactive">
+            <!-- Button trigger modal -->
+             <section id="info-button">
+            <!-- Button trigger modal -->
+            <button type="button" class="info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            i
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-dialog">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
             <section id="bee" class="panel vis">
                 <!-- <h4 id="radial-title">Home Range (km^2) vs Age</h4> -->
                 <div class="vis">
@@ -68,8 +94,6 @@
                 <option value="alphabetical" selected>Alphabetical</option>
                 <option value="tot-dist-dsc">Total Distance: High to Low</option>
                 <option value="tot-dist-asc">Total Distance: Low to High</option>
-                <option value="avg-dist-dsc">Avg Distance: High to Low</option>
-                <option value="avg-dist-asc">Avg Distance: Low to High</option>
                 <option value="homerange-desc">Homerange: High to Low</option>
             </select>
             </div>

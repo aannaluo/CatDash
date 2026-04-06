@@ -40,11 +40,11 @@ body {
 }
 
 #interactive {
-	grid-template-rows: 2fr 1fr;
+	grid-template-rows: 0.25fr 2fr 1fr;
 }
 
 #individual-cat-data {
-	grid-template-rows: 0.5fr 0.4fr 0.5fr 0.5fr;
+	grid-template-rows: 0.3fr 0.4fr 0.6fr 0.5fr;
 }
 
 #bee,
@@ -489,4 +489,17 @@ g.legend text {
 .button-icon {
     width: 30px;
     height: 20px;
+}
+
+.info-btn {
+	background-color: #EEC084;
+	border: 1px solid #5D4A30;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-family: 'Life Savers';
+	font-weight: 800;
+	color: #5D4A30;
 }

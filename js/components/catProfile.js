@@ -37,10 +37,10 @@ class CatProfile {
 
   static getFlagImage(studySite) {
     const flagMap = {
-      UK: 'images/uk.png',
-      'United States': 'images/usa.png',
-      Australia: 'images/australia.png',
-      'New Zealand': 'images/new_zealand.png',
+      UK: 'images/UK_cat.png',
+      'United States': 'images/US_cat.png',
+      Australia: 'images/AU_cat.png',
+      'New Zealand': 'images/NZ_cat.png',
     };
     return flagMap[studySite] || null;
   }
@@ -76,19 +76,22 @@ class CatProfile {
     // `;
 
     container.innerHTML = `
-    <div class="card">
-      <div class="card-header d-flex justify-content-between align-items-center">
-      <h5 class="mb-0" style="color: #C88A38;">${catData['animal-name']}</h5>
-      <span style="color: #C88A38;">${CatProfile.formatNumber(catData.age)} years . ${catData.sex}</span>
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h5 class="mb-0" style="color: #C88A38;">${catData['animal-name']}</h5>
+    <span style="color: #C88A38;">${CatProfile.formatNumber(catData.age)} years . ${catData.sex}</span>
+  </div>
+  <div class="card-body profile-info" style="color: #C88A38;">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <ul style="margin: 0; flex: 1;">
+        <li>Prey per Month: ${CatProfile.formatNumber(catData.prey_p_month)}</li>
+        <li>Home Range: ${CatProfile.formatNumber(catData['home-range'])} km²</li>
+        <li>Days Tracked: ${catData.days_tracked}</li>
+      </ul>
+      ${flagImage ? `<img src="${flagImage}" alt="${catData['study-site']}" class="profile-flag" style="width: 80px; height: 80px; object-fit: cover; margin-top: 12px;">` : ''}
     </div>
-      <div class="card-body profile-info" style="color: #C88A38;">
-        <ul>
-          <li>Prey per Month: ${CatProfile.formatNumber(catData.prey_p_month)}</li>
-          <li>Home Range: ${CatProfile.formatNumber(catData['home-range'])} km²</li>
-          <li>Days Tracked: ${catData.days_tracked} </li>
-        </ul>
-      </div>
-    </div>
+  </div>
+</div>
     `;
   }
 }
