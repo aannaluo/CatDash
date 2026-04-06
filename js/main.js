@@ -4,6 +4,7 @@
 let catMap;
 
 renderGenderLegend();
+renderNeuterLegend();
 
 const title = new Title({
   parentElement: '#title',
