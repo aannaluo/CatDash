@@ -44,7 +44,7 @@ body {
 }
 
 #individual-cat-data {
-	grid-template-rows: 0.2fr 0.4fr 0.6fr 0.5fr 0.5fr;
+	grid-template-rows: 0.7fr 0.7fr 1.2fr 1fr 0.5fr;
 }
 
 #bee,
@@ -342,7 +342,7 @@ g.legend text {
 
 
 #histogram .bar {
-	fill: #d6d594;
+	fill: #dcad6f;
 }
 
 #histogram .bar:hover {
@@ -351,7 +351,7 @@ g.legend text {
 }
 
 #histogram .bar.selected {
-	fill: #d1cf76;
+	fill: #b57520;
 	stroke: rgb(70, 70, 70);
 	stroke-width: 0.5px;
 }

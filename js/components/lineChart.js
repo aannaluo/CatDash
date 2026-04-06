@@ -6,10 +6,10 @@ class LineChart {
   constructor(_config, dispatcher, selectedCat, data) {
     this.config = {
       parentElement: _config.parentElement,
-      containerWidth: 350,
-      containerHeight: 170,
+      containerWidth: 400,
+      containerHeight: 200,
       margin: {
-        top: 30,
+        top: 40,
         right: 20,
         bottom: 30,
         left: 55,
@@ -58,7 +58,7 @@ class LineChart {
       .text('Distance from start point (km)')
       .style('font-size', '12px')
       .style('font-weight', 'bold')
-      .attr('transform', `translate(${vis.config.margin.left - 50}, 20)`);
+      .attr('transform', `translate(${vis.config.margin.left - 40}, 30)`);
 
     vis.updateVis();
   }
