@@ -7,11 +7,11 @@ class Beeswarm {
   constructor(_config, allPreyGroups, dispatcher, selectedCat, _data) {
     this.config = {
       parentElement: _config.parentElement,
-      containerWidth: 600,
-      containerHeight: 550,
-      tooltipPadding: 15,
+      containerWidth: 550,
+      containerHeight: 490,
+      tooltipPadding: 10,
       margin: {
-        top: 80, right: 20, bottom: 30, left: 70,
+        top: 30, right: 20, bottom: 20, left: 70,
       },
     };
     this.data = _data;
@@ -33,7 +33,7 @@ class Beeswarm {
     vis.svg = d3.select(vis.config.parentElement).append('svg')
       .attr('width', vis.config.containerWidth)
       .attr('height', vis.config.containerHeight)
-      .attr('class', 'line-chart');
+      .attr('class', 'beeswarm');
 
     // Append chart container (svg size - margins)
     vis.chartArea = vis.svg.append('g')
@@ -91,13 +91,13 @@ class Beeswarm {
       .text('Home Range Area (km\u00B2)')
       .style('font-size', '12px')
       .style('font-weight', 'bold')
-      .attr('transform', `translate(${vis.width - 45}, ${vis.config.containerHeight - 13})`);
+      .attr('transform', `translate(${vis.width - 65}, ${vis.config.containerHeight - 5})`);
 
     vis.svg.append('text')
       .text('Age')
       .style('font-size', '12px')
       .style('font-weight', 'bold')
-      .attr('transform', `translate(${vis.config.margin.left - 50}, 70)`);
+      .attr('transform', `translate(${vis.config.margin.left - 50}, 20)`);
 
     vis.getShape = d3.scaleOrdinal(
       vis.data.map((d) => d.neutered),
@@ -187,7 +187,7 @@ class Beeswarm {
             .style('display', 'block')
             .style('left', `${event.pageX + vis.config.tooltipPadding}px`)
             .style('top', `${event.pageY + vis.config.tooltipPadding}px`)
-            .html(`<div class="tooltip-label">${d['animal-name']}</div><div>Location: ${d['study-site']}</div><div>Home Range: ${d['home-range']}</div>`);
+            .html(`<div class="tooltip-label"><div id='animal-name'>${d['animal-name']}</div>, ${d['study-site']}</div><div>Home Range: ${d['home-range']}km<sup>2</sup></div><div>Prey per month: ${d.prey_p_month}</div>`);
         }
       })
       .on('mouseout', function () {

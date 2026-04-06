@@ -6,13 +6,13 @@ class BarChart {
   constructor(_config, dispatcher, data) {
     this.config = {
       parentElement: _config.parentElement,
-      containerWidth: 600,
+      containerWidth: 550,
       containerHeight: 250,
       margin: {
-        top: 50,
-        right: 30,
-        bottom: 20,
-        left: 30,
+        top: 30,
+        right: 20,
+        bottom: 30,
+        left: 70,
       },
     };
     this.dispatcher = dispatcher;
@@ -53,7 +53,7 @@ class BarChart {
       .text('Prey caught per month')
       .style('font-size', '13px')
       .style('font-weight', 'bold')
-      .attr('transform', `translate(${vis.width/2-vis.config.margin.left-20}, 30)`);
+      .attr('transform', `translate(${vis.width/2-vis.config.margin.left+70}, 10)`);
 
 
     vis.updateVis();

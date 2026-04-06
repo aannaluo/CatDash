@@ -15,54 +15,48 @@
     <div class="dashboard">
         <section id="interactive">
             <!-- Button trigger modal -->
-             <section id="info-button">
-            <!-- Button trigger modal -->
-            <button type="button" class="info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            i
-            </button>
+            <section id="info-button">
+                <!-- Button trigger modal -->
+                <button type="button" class="info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                i
+                </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-dialog">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
                 </div>
-                <div class="modal-dialog">
-                    ...
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-                </div>
-            </div>
-            </div>
-        </section>
+            </section>
             <section id="bee" class="panel vis">
                 <!-- <h4 id="radial-title">Home Range (km^2) vs Age</h4> -->
-                <div class="vis">
-                    <div id="gender-legend" class="legend"></div>
-                    <div id="neutered-legend" class="legend"></div>
-                    <div id="bee1"></div>
-                    <div id="bee2"></div>
-                    <div id="bee3"></div>
-                    <div id="bee4"></div>    
-                    <div id="bee5"></div>
-                    <div id="tooltip"></div>
-                    <p></p>
-                </div>
+                <div id="tooltip"></div>
+                <div id="gender-legend" class="legend"></div>
+                <div id="neutered-legend" class="legend"></div>
+                <div id="bee-chart"></div>
+                <p></p>
             </section>
             <section id="histogram" class="panel vis">
                 <div id="barchart"></div>
-                <div id="line-chart"></div>
             </section>
         </section>
         <section id="individual-cat-data">
             <section id="title"></section>
             <section id="cat-profile"></section>
             <section id="cat-map" class="panel"></section>
+            <section id="line-chart-container"></section>
         </section>
          <section id="heatmap">
             <p class="heatmap-title">Distance Travelled Per Day by Cat</p>
@@ -97,7 +91,7 @@
     <!-- Dashboard components -->
     <script src="js/components/lineChart.js"></script>
     <script src="js/components/beeswarm.js"></script>
-    <script src="js/components/legend.js"></script>
+    <script src="js/components/beeLegend.js"></script>
     <script src="js/components/barchart.js"></script>
     <script src="js/components/catMap.js"></script>
     <script src="js/components/catProfile.js"></script>
