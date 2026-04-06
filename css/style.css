@@ -396,7 +396,7 @@ g.legend text {
 /* Cat Profile Styling */
 .profile-container {
 	display: grid;
-	grid-template-columns: 0.7fr 2fr;
+	grid-template-columns: 0.7fr 0.7fr;
 	height: 100%;
 	align-items: flex-start;
 }
@@ -409,8 +409,8 @@ g.legend text {
 }
 
 .profile-image img {
-	max-width: 90%;
-	max-height: 90%;
+	max-width: 80%;
+	max-height: 80%;
 	width: auto;
 	height: auto;
 }
@@ -426,38 +426,27 @@ g.legend text {
 
 .profile-info h3 {
 	margin-top: 10px;
-	margin-bottom: 12px;
+	/* margin-bottom: 12px; */
 }
 
 .profile-info ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	font-size: 0.8em;
-	padding-left: 4px;
+	font-size: 0.7em;
+	padding-left: 0px;
 }
 
 .profile-info li {
-	margin-bottom: 2px;
+	/* margin-bottom: 2px; */
 }
 
 .profile-flag {
-	/* position: absolute; */
-	/* top: 0; */
-	/* right: 0; */
-	/* max-width: 100px; */
-	/* max-height: 100px; */
-	/* width: auto; */
-	/* height: auto; */
-	/* object-fit: cover; */
-	/* margin-right: 10px; */
-	/* flex-shrink: 0; */
-	margin: 0;
-	padding: 0;
-	width: 100px;
-	height: 100px;
-
-	/* style="width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; margin-left: auto;" */
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
 /* Path toggle styling */

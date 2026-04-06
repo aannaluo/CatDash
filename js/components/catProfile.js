@@ -109,7 +109,6 @@ container.innerHTML = `
           <li>Prey per Month: ${CatProfile.formatNumber(catData.prey_p_month)}</li>
           <li>Home Range: ${CatProfile.formatNumber(catData['home-range'])} km²</li>
           <li>Days Tracked: ${catData.days_tracked}</li>
-          <li> </li>
         </ul>
         </div>
         <div class="col">
