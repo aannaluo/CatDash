@@ -7,7 +7,7 @@ class LineChart {
     this.config = {
       parentElement: _config.parentElement,
       containerWidth: 400,
-      containerHeight: 200,
+      containerHeight: 230,
       margin: {
         top: 40,
         right: 20,
