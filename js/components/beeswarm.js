@@ -11,7 +11,7 @@ class Beeswarm {
       containerHeight: 550,
       tooltipPadding: 15,
       margin: {
-        top: 30, right: 20, bottom: 30, left: 70,
+        top: 80, right: 20, bottom: 30, left: 70,
       },
     };
     this.data = _data;
@@ -32,7 +32,8 @@ class Beeswarm {
     // Append svg
     vis.svg = d3.select(vis.config.parentElement).append('svg')
       .attr('width', vis.config.containerWidth)
-      .attr('height', vis.config.containerHeight);
+      .attr('height', vis.config.containerHeight)
+      .attr('class', 'line-chart');
 
     // Append chart container (svg size - margins)
     vis.chartArea = vis.svg.append('g')
@@ -96,8 +97,12 @@ class Beeswarm {
       .text('Age')
       .style('font-size', '12px')
       .style('font-weight', 'bold')
-      .attr('transform', `translate(${vis.config.margin.left - 50},30)`);
-    vis.shapeScale = d3.scaleOrdinal().domain(['Yes', 'No']).range(d3.symbols);
+      .attr('transform', `translate(${vis.config.margin.left - 50}, 70)`);
+
+    vis.getShape = d3.scaleOrdinal(
+      vis.data.map((d) => d.neutered),
+      d3.symbols.map((s) => d3.symbol().type(s)()),
+    );
   }
 
   /**
@@ -175,7 +180,7 @@ class Beeswarm {
       .classed('female', ((d) => d.sex === 'Female'))
       .classed('unk', ((d) => d.sex === 'Unk'))
       .attr('transform', (d) => `translate(${d.x},${d.y})`)
-      .attr('d', d3.symbol(d3.symbolCircle).size(50))
+      .attr('d', (d) => vis.getShape(d.neutered))
       .on('mouseover', function (event, d) {
         if (d3.select(this).classed('included')) {
           d3.select('#tooltip')

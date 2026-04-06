@@ -27,6 +27,7 @@ class CatMap {
     vis.map = L.map('map-container', {
       center: [0, 0],
       zoom: 2,
+      attributionControl: false
     });
 
     // Add recentre to layer button

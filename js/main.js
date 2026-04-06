@@ -3,6 +3,9 @@
 
 let catMap;
 
+renderGenderLegend();
+renderNeuterLegend();
+
 const title = new Title({
   parentElement: '#title',
 });
@@ -22,13 +25,13 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   // eslint-disable-next-line no-unused-vars, no-undef
 
   const dispatcher = d3.dispatch('selectedPreyCats', 'selectedCat', 'selectedAgeCat');
-  
+
   d3.select('#random-cat-btn')
     .on('click', () => {
       const index = Math.floor(Math.random() * data.length);
       const selectedCat = data[index];
       dispatcher.call('selectedCat', selectedCat, selectedCat['unique-id']);
-  });
+    });
 
   data.forEach((d) => {
     d.age = parseFloat(d.age);
@@ -48,7 +51,7 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   function getPreyCats(bins) {
     let allPreyCats = [];
     bins.forEach((b) => {
-      if (b[0] == 20) {
+      if (b[0] === 20) {
         allPreyCats = allPreyCats.concat(d3.range(b[0], b[1] + 1));
       } else {
         allPreyCats = allPreyCats.concat(d3.range(b[0], b[1]));
@@ -86,6 +89,16 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   );
 
   let heatMap;
+  let lineChart;
+
+  d3.csv('./data/line_graph.csv').then((lineData) => {
+    lineData.forEach((d) => {
+      d.timestamp = new Date(d.timestamp);
+    });
+
+    lineChart = new LineChart({ parentElement: '#line-chart' }, dispatcher, 'Abba_Pet Cats United Kingdom', lineData);
+    lineChart.updateVis();
+  });
 
   d3.csv('./data/Distance_radial.csv').then((radialData) => {
     radialData.forEach((d) => {
@@ -118,6 +131,8 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
       catProfile.updateVis();
       heatMap.selectedCat = 'Abba_Pet Cats United Kingdom';
       heatMap.updateVis();
+      lineChart.selectedCat = 'Abba_Pet Cats United Kingdom';
+      lineChart.updateVis();
     } else {
       catMap.selectedCat = selectedCat;
       catMap.updateVis();
@@ -127,6 +142,8 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
       beeAll.updateVis();
       heatMap.selectedCat = selectedCat;
       heatMap.updateVis();
+      lineChart.selectedCat = selectedCat;
+      lineChart.updateVis();
     }
   });
 

@@ -360,6 +360,35 @@ g.legend text {
 }
 
 
+#bee svg.line-chart {
+	/* transform: translate(0, -100px); */
+
+}
+
+#bee #legend {
+	fill: rgb(91, 91, 91);
+}
+
+#bee #legend text {
+	font-size: 0.6em;
+}
+
+/* #line-chart {
+	background-color: rgb(167, 132, 71);
+
+} */
+
+
+
+#bee #legend #info-tooltip {
+	position: absolute;
+	display: none;
+	background-color: white;
+	padding: 8px;
+	box-shadow: 1px 2px 4px #a09f9f;
+	border: 1px solid #c5c5c5;
+	/* ... other tooltip styles ... */
+}
 
 /* Cat Profile Styling */
 .profile-container {
@@ -511,6 +540,19 @@ g.legend text {
 	font-weight: 800;
 	color: #5D4A30;
 }
+
+#bee.panel {
+	overflow: hidden;
+	position: relative;  /* add this */
+  }
+  
+.legend {
+	fill: rgb(91, 91, 91);
+	position: absolute;  /* add this */
+	top: 0px;           /* adjust as needed */
+	left: 10px;          /* adjust as needed */
+	z-index: 10;
+  }
 
 
 
