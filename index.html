@@ -20,21 +20,40 @@
                 <button type="button" class="info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 i
                 </button>
-
+                <button id="random-cat-btn" class="random-cat-button">
+                    <img src="images/lucky_cat_colour.png" alt="shuffle" class="button-icon"> 
+                    Try your luck!
+                    <img src="images/lucky_cat_colour.png" alt="shuffle" class="button-icon">
+                </button>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+                        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome to CatDash!</h1> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="modal-dialog">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <div id="popup-welcome">Welcome to Cat Dash!</div>
+                        <div>Data</div>
+                        The data in this visualization comes from a study by R. Kays et al. that tracked 925 pet cats across 4 primary countries—the United States, United Kingdom, Australia, and New Zealand—for up to 98 days to find estimates of their home ranges.
+                        Owners were also surveyed on their cat’s demographic and behavioural characteristics including age, sex, neutered status, and prey caught per month. More information can be found in the associated research article linked <a href="https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/acv.12563">here</a>.
+                        As a result of cleaning the data, this visualisation contains the data of 747 cats from the original study.
+                        <br>
+                        <br>
+                        <div>Definitions</div>
+                        <ul>
+                            <li><b>Home Range: </b>The area in which an animal lives and concentrates their activities.</li>
+                            <li><b>Total Distance Travelled Per Day: </b>Haversian distance between each pair of consecutive sensor measurements in a day, summed across the entire day (km<sup>2</sup>).</li>
+                            <li><b>Prey Caught Per Month</b>: Number of prey caught by the cat each month as reported by their owner.</li>
+
+                        </ul>
+                        Datasets used:
+                        <ul>
+                            <li><a href="https://datarepository.movebank.org/entities/datapackage/c8aac319-de73-4298-b0db-5624557ffd1c">United States</a></li>
+                            <li><a href="https://datarepository.movebank.org/entities/datapackage/4ef43458-a0c0-4ff0-aed4-64b07cedf11c">United Kingdom</a></li>
+                            <li><a href="https://datarepository.movebank.org/entities/datapackage/0a9bcb2a-f031-42e7-8027-a87c09b30804">Australia</a></li>
+                            <li><a href="https://datarepository.movebank.org/entities/datapackage/75d6171c-d981-4bdf-bf23-bf2af17a7e47">New Zealand</a></li>
+                            <li>Home range estimates extracted from Table S3 of the supporting information in the associated research article linked <a href="https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/acv.12563">here</a></li>
+                        </ul>
                     </div>
                     </div>
                 </div>
@@ -60,6 +79,7 @@
         </section>
          <section id="heatmap">
             <p class="heatmap-title">Distance Travelled Per Day by Cat</p>
+            <p class="heatmap-subtitle">(Across the first 10 days tracked)</p>
             <div id="heatmap-controls">
                 <div id="heatmap-sort">
                     <label class="heatmap-sort-label" id="sort-select-label" for="sort-select-heatmap">Sort by: </label>

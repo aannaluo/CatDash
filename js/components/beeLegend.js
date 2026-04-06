@@ -8,7 +8,7 @@ function renderGenderLegend() {
   svg.append('rect')
     .attr('width', '100%')
     .attr('height', '100%')
-    .style('fill', 'white');
+    .style('fill', '#fffaef');
 
   svg.append('text')
     .text('Gender')
@@ -21,7 +21,7 @@ function renderGenderLegend() {
   female.append('rect')
     .attr('width', '7px')
     .attr('height', '7px')
-    .style('fill', '#bc86a1');
+    .style('fill', '#ed8ebe');
 
   female.append('text')
     .text('Female')
@@ -34,7 +34,7 @@ function renderGenderLegend() {
   male.append('rect')
     .attr('width', '7px')
     .attr('height', '7px')
-    .style('fill', '#4d859f');
+    .style('fill', '#65adcf');
 
   male.append('text')
     .text('Male')
@@ -47,7 +47,7 @@ function renderGenderLegend() {
   unk.append('rect')
     .attr('width', '7px')
     .attr('height', '7px')
-    .style('fill', 'rgb(191, 167, 230)');
+    .style('fill', 'rgb(197, 164, 251)');
 
   unk.append('text')
     .text('Unknown')
@@ -65,7 +65,7 @@ function renderNeuterLegend() {
   svg.append('rect')
     .attr('width', '100%')
     .attr('height', '100%')
-    .style('fill', 'white');
+    .style('fill', '#fffaef');
 
   svg.append('text')
     .text('Neutered Status')

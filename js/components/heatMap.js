@@ -41,14 +41,14 @@ class HeatMap {
       .style('overflow-y', 'scroll');
 
     vis.svg = vis.scrollContainer.append('svg')
-      .attr('width', vis.width + vis.config.margin.right)  // add right margin back
+      .attr('width', vis.width + vis.config.margin.right) // add right margin back
       .attr('height', svgHeight);
 
     vis.chartArea = vis.svg.append('g')
       .attr('transform', `translate(${vis.config.margin.left},${vis.config.margin.top})`);
 
     vis.xScale = d3.scaleBand()
-      .range([0, vis.width - vis.config.margin.right])  // subtract right margin
+      .range([0, vis.width - vis.config.margin.right]) // subtract right margin
       .domain(d3.range(1, 11))
       .padding(0.1);
 
@@ -56,7 +56,8 @@ class HeatMap {
       .range([0, vis.height])
       .padding(0.15);
 
-    vis.xAxis = d3.axisTop(vis.xScale);
+    vis.xAxis = d3.axisTop(vis.xScale)
+      .tickFormat((d, i) => ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7', 'Day 8', 'Day 9', 'Day 10'][i]);
 
     vis.xAxisG = vis.chartArea.append('g')
       .attr('class', 'heatmap-axis x-axis');
@@ -110,7 +111,7 @@ class HeatMap {
 
     const homeRangeMap = new Map(vis.catData.map((d) => [d['unique-id'], d['home-range']]));
 
-    const sortedIds = [...new Set(vis.data.map((d) => d.unique_id))]
+    const sortedIds = [...new Set(vis.data.map((d) => d.unique_id))];
 
     switch (vis.sortBy) {
       case 'tot-dist-dsc':
@@ -148,7 +149,7 @@ class HeatMap {
       'United Kingdom': 'UK',
     };
     // return d.replace(/_Pet Cats (\w+ ?\w+)/, (match, country) => ` ${countryMap[country] || country}`);
-    return d.replace(/_Pet Cats (\w+ ?\w+)/, "");
+    return d.replace(/_Pet Cats (\w+ ?\w+)/, '');
   }
 
   renderVis() {
@@ -206,13 +207,13 @@ class HeatMap {
       })
       .on('mouseout', () => {
         vis.chartArea.selectAll('rect')
-          .filter(function() { return !d3.select(this).classed('selected'); })
+          .filter(function () { return !d3.select(this).classed('selected'); })
           .classed('hovered', false)
           .style('stroke', 'none')
           .style('stroke-width', '0px');
         vis.tooltip.style('opacity', 0);
       })
-      .on('click', function(event, d) {
+      .on('click', function (event, d) {
         const isSelected = d3.select(this).classed('selected');
 
         vis.chartArea.selectAll('rect')

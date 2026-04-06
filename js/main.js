@@ -1,6 +1,9 @@
 /* global Scatterplot, CatMap, RadialChart, CatProfile, Title */
 /* eslint-disable no-param-reassign */
-
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+  modal.show();
+});
 let catMap;
 
 renderGenderLegend();
