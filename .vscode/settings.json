@@ -4,5 +4,6 @@
   },
   "eslint.validate": ["javascript"],
   "eslint.workingDirectories": [{ "mode": "auto" }],
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "liveServer.settings.port": 5501
 }
