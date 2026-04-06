@@ -266,8 +266,11 @@ g.legend text {
 }
 
 .button-icon {
-	width: 16px;
-	height: 16px;
+	width: 30px;
+	height: 30px;
+	/* height: 16px; */
+	padding:0px;
+	margin: -8px 0;
 	object-fit: contain;
 }
 
@@ -495,7 +498,7 @@ g.legend text {
 
 #heatmap-sort {
     padding-left: 20px;
-    padding-top: 6px;
+    padding-top: 0px;
 	padding-bottom: 12px;
     font-size: 12px;
     display: flex;
@@ -515,6 +518,9 @@ g.legend text {
 .heatmap-title {
 	padding-left: 20px;
 	padding-top: 12px;
+	padding-bottom: 0px;
+	font-size: 13px;
+	font-weight: bold;
 }
 
 #random-cat-btn {
@@ -572,8 +578,8 @@ g.legend text {
 #heatmap-legend-gradient {
   width: 70px;
   height: 12px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
+  /* border-radius: 0px; */
+  /* border: 1px solid #ccc; */
 }
 
 .heatmap-legend-label {

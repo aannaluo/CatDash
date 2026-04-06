@@ -41,14 +41,14 @@ class HeatMap {
       .style('overflow-y', 'scroll');
 
     vis.svg = vis.scrollContainer.append('svg')
-      .attr('width', vis.width)
+      .attr('width', vis.width + vis.config.margin.right)  // add right margin back
       .attr('height', svgHeight);
 
     vis.chartArea = vis.svg.append('g')
       .attr('transform', `translate(${vis.config.margin.left},${vis.config.margin.top})`);
 
     vis.xScale = d3.scaleBand()
-      .range([0, vis.width])
+      .range([0, vis.width - vis.config.margin.right])  // subtract right margin
       .domain(d3.range(1, 11))
       .padding(0.1);
 
@@ -85,8 +85,8 @@ class HeatMap {
     });
 
     const [minVal, maxVal] = d3.extent(vis.data, (d) => d.distance);
-    d3.select('#heatmap-legend-min').text(d3.format('.1f')(minVal));
-    d3.select('#heatmap-legend-max').text(d3.format('.1f')(maxVal));
+    d3.select('#heatmap-legend-min').text(d3.format('.0f')(minVal));
+    d3.select('#heatmap-legend-max').text(d3.format('.2f')(maxVal / 1000));
     d3.select('#heatmap-legend-gradient')
       .style('background', 'linear-gradient(to right, #FFF0DD, #854E06)');
 
