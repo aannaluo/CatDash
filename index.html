@@ -15,6 +15,10 @@
                 <!-- <h4 id="radial-title">Home Range (km^2) vs Age</h4> -->
                 <div class="vis">
                     <div id="legend">
+                        <!-- <div id="info">
+                            <button id="info-b">Hi</button>
+                            <div id="info-tooltip"></div>
+                        </div> -->
                         <!-- <div id="radio-buttons">
                             <div class="radio-button-group Male">
                                 <div class="radio-button Male"></div>
@@ -24,9 +28,9 @@
                                 <div class="radio-button Female"></div>
                                 <p class="radio-button-label Female">Female</p>
                             </div>
-                        </div> -->
-                        <!-- <div id="icons">
-                            <div class="icon-group Neutered">
+                        </div>  -->
+                        <div id="icons">
+                            <!-- <div class="icon-group Neutered">
                                 <div class="icon Neutered"></div>
                                 <p class="icon-label Neutered">Neutered</p>
                             </div>
@@ -34,7 +38,11 @@
                                 <div class="icon Not-Neutered"></div>
                                 <p class="icon-label Not-Neutered">Not Neutered</p>
                             </div>
-                        </div> -->
+                            <div class="icon-group Unk-Neutered">
+                                <div class="icon Unk-Neutered"></div>
+                                <p class="icon-label Unk-Neutered">Unknown Neutered Status</p>
+                            </div> -->
+                        </div>
                     </div>
                     <div id="bee1"></div>
                     <div id="bee2"></div>
@@ -50,6 +58,7 @@
             </section>
             <section id="histogram" class="panel vis">
                 <div id="barchart"></div>
+                <div id="line-chart"></div>
             </section>
         </section>
         <section id="individual-cat-data">
@@ -81,6 +90,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <!-- Dashboard components -->
+    <script src="js/components/beeLegend.js"></script>
+    <script src="js/components/lineChart.js"></script>
     <script src="js/components/beeswarm.js"></script>
     <script src="js/components/barchart.js"></script>
     <script src="js/components/catMap.js"></script>
