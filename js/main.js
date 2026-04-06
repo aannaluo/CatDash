@@ -43,7 +43,7 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   const initialCat = 'Abba_Pet Cats United Kingdom';
 
   const beeAll = new Beeswarm({
-    parentElement: '#bee1',
+    parentElement: '#bee-chart',
   }, allPreyGroups, dispatcher, initialCat, data);
 
   beeAll.updateVis();
@@ -96,7 +96,7 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
       d.timestamp = new Date(d.timestamp);
     });
 
-    lineChart = new LineChart({ parentElement: '#line-chart' }, dispatcher, 'Abba_Pet Cats United Kingdom', lineData);
+    lineChart = new LineChart({ parentElement: '#line-chart-container' }, dispatcher, 'Abba_Pet Cats United Kingdom', lineData);
     lineChart.updateVis();
   });
 

@@ -41,14 +41,14 @@ class HeatMap {
       .style('overflow-y', 'scroll');
 
     vis.svg = vis.scrollContainer.append('svg')
-      .attr('width', vis.width)
+      .attr('width', vis.width + vis.config.margin.right)  // add right margin back
       .attr('height', svgHeight);
 
     vis.chartArea = vis.svg.append('g')
       .attr('transform', `translate(${vis.config.margin.left},${vis.config.margin.top})`);
 
     vis.xScale = d3.scaleBand()
-      .range([0, vis.width])
+      .range([0, vis.width - vis.config.margin.right])  // subtract right margin
       .domain(d3.range(1, 11))
       .padding(0.1);
 
@@ -64,7 +64,7 @@ class HeatMap {
     vis.yAxisG = vis.chartArea.append('g');
 
     vis.colourScale = d3.scaleLinear()
-      .range(['#DEECFB', '#203451'])
+      .range(['#FFF0DD', '#854E06'])
       .domain(d3.extent(vis.data, (d) => d.distance));
 
     vis.tooltip = d3.select('body').append('div')
@@ -83,6 +83,12 @@ class HeatMap {
       vis.sortBy = this.value;
       vis.updateVis();
     });
+
+    const [minVal, maxVal] = d3.extent(vis.data, (d) => d.distance);
+    d3.select('#heatmap-legend-min').text(d3.format('.0f')(minVal));
+    d3.select('#heatmap-legend-max').text(d3.format('.2f')(maxVal / 1000));
+    d3.select('#heatmap-legend-gradient')
+      .style('background', 'linear-gradient(to right, #FFF0DD, #854E06)');
 
     vis.updateVis();
   }
@@ -103,12 +109,6 @@ class HeatMap {
     );
 
     const homeRangeMap = new Map(vis.catData.map((d) => [d['unique-id'], d['home-range']]));
-
-    const rangeDist = d3.rollup(
-      vis.data,
-      (v) => d3.max(v, (d) => d.distance) - d3.min(v, (d) => d.distance),
-      (d) => d.unique_id,
-    );
 
     const sortedIds = [...new Set(vis.data.map((d) => d.unique_id))]
 

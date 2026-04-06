@@ -17,7 +17,11 @@ class Title {
       .html(`
         <div class="title-content">
           <h1>Cat Dash</h1>
-          <button id="random-cat-btn" class="random-cat-button"><img src="images/shuffle-cat-logo.png" alt="shuffle" class="button-icon"> Try your luck!</button>
+          <button id="random-cat-btn" class="random-cat-button">
+            <img src="images/lucky_cat_colour.png" alt="shuffle" class="button-icon"> 
+            Try your luck!
+            <img src="images/lucky_cat_colour.png" alt="shuffle" class="button-icon">
+            </button>
         </div>
       `);
   }
