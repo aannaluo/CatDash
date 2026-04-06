@@ -12,7 +12,9 @@ class RadialChart {
     this.config = {
       parentElement: _config.parentElement,
       containerWidth: 200,
-      containerHeight: 220,
+      containerHeight: 240,
+      maxWidth: 200,
+      maxHeight: 240,
       margin: {
         top: 5, right: 5, bottom: 5, left: 5,
       },
@@ -27,19 +29,19 @@ class RadialChart {
 
     vis.width = vis.config.containerWidth - vis.config.margin.left - vis.config.margin.right;
     vis.height = vis.config.containerHeight - vis.config.margin.top - vis.config.margin.bottom;
-    vis.innerRadius = 40;
-    vis.outerRadius = Math.min(vis.width, vis.height) / 2;
+    vis.innerRadius = 30;
+    vis.outerRadius = Math.min(vis.config.containerWidth, vis.config.containerHeight) / 2;
     // vis.linearScale = d3.scaleLinear()
 
     vis.svg = d3.select(vis.config.parentElement).append('svg')
-    //   .attr('id', 'radial')
       .attr('width', vis.config.containerWidth)
       .attr('height', vis.config.containerHeight);
+      // .style('overflow', 'visible');
 
     vis.chartArea = vis.svg.append('g')
       .attr(
         'transform',
-        `translate(${vis.config.containerWidth / 2},${vis.config.containerHeight / 2 })`,
+        `translate(${vis.config.containerWidth / 2},${vis.config.containerHeight / 2})`,
       );
 
     vis.xScale = d3.scaleBand()
@@ -49,6 +51,12 @@ class RadialChart {
 
     vis.yScale = d3.scaleRadial()
       .range([vis.innerRadius, vis.outerRadius]);
+
+    vis.xAxisG = vis.chartArea.append('g')
+      .attr('class', 'radial-axis x-axis');
+    //   .attr('transform', `translate(0, 0)`);
+
+    vis.yAxisG = vis.chartArea.append('g');
 
     // vis.zScale = d3.scaleOrdinal()
     //   .domain(['0-2', '3-5', '5+'])
@@ -68,6 +76,8 @@ class RadialChart {
     // }
 
     vis.yScale.domain([0, d3.max(vis.data, (d) => d.distance)]);
+
+    // console.log("FIRST STRETCH: " + d3.max(d3.max(vis.data, (d) => d.distance)));
 
     vis.renderVis();
   }
@@ -106,27 +116,29 @@ class RadialChart {
       })
       .text((d) => d.curr_hour);
 
-    // vis.yTicks = vis.yScale.ticks(3);
+    // vis.xAxisG.call(vis.xAxis);
 
-    // vis.chartArea.selectAll('.y-grid')
-    //   .data(vis.yTicks)
-    //   .join('circle')
-    //   .attr('class', 'y-grid')
-    //   .attr('fill', 'none')
-    //   .attr('stroke', '#ccc')
-    // //   .attr('stroke-dasharray', '2,2')
-    //   .attr('r', (d) => vis.yScale(d));
+    vis.yTicks = vis.yScale.ticks(3);
 
-    // vis.chartArea.selectAll('.y-axis-label')
-    //   .data(vis.yTicks)
-    //   .join('text')
-    //   .attr('class', 'y-axis-label')
-    //   .attr('x', 0)
-    //   .attr('y', (d) => -vis.yScale(d))
-    //   .attr('dy', '-0.3em')
-    //   .attr('text-anchor', 'middle')
-    //   .attr('font-size', '12px')
-    //   .attr('font-weight', 'bold')
-    //   .text((d) => `${d}m`);
+    vis.chartArea.selectAll('.y-grid')
+      .data(vis.yTicks)
+      .join('circle')
+      .attr('class', 'y-grid')
+      .attr('fill', 'none')
+      .attr('stroke', '#ccc')
+    //   .attr('stroke-dasharray', '2,2')
+      .attr('r', (d) => vis.yScale(d));
+
+    vis.chartArea.selectAll('.y-axis-label')
+      .data(vis.yTicks)
+      .join('text')
+      .attr('class', 'y-axis-label')
+      .attr('x', 0)
+      .attr('y', (d) => -vis.yScale(d))
+      .attr('dy', '-0.3em')
+      .attr('text-anchor', 'middle')
+      .attr('font-size', '12px')
+      .attr('font-weight', 'bold')
+      .text((d) => `${d}m`);
   }
 }

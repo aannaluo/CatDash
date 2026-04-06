@@ -12,10 +12,12 @@ const title = new Title({
 
 d3.json('./data/cat_bubbles_all.geojson').then((data) => {
   d3.json('./data/cat_paths_all.geojson').then((pathsData) => {
-    // eslint-disable-next-line no-unused-vars, no-undef
-    catMap = new CatMap({
-      parentElement: '#cat-map',
-    }, data, pathsData);
+    d3.json('./data/cat_paths_10_days.geojson').then((paths10DayData) => {
+      // eslint-disable-next-line no-unused-vars, no-undef
+      catMap = new CatMap({
+        parentElement: '#cat-map',
+      }, data, pathsData, paths10DayData);
+    });
   });
 });
 
@@ -100,7 +102,7 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
 
   d3.csv('./data/Distance_radial.csv').then((radialData) => {
     radialData.forEach((d) => {
-      d.avg_distance = +d.avg_distance;
+      d.distance = +d.distance;
       d.curr_hour = +d.curr_hour;
     });
 
