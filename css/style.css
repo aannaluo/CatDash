@@ -3,17 +3,34 @@
 	src: url('../fonts/Cattie-Regular.ttf') format('truetype');
 }
 
+#popup-welcome {
+	font-family: 'Life Savers', cursive;
+	font-size: 1.5em;
+	color: #C88A38;
+	text-align: center;
+}
+
+
 html,
 body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 	font-family: Arial, sans-serif;
+	background-color: #fffaef;
 }
 
 .page-title {
 	margin: 5px 5px;
 	text-align: center;
+}
+
+.modal-dialog {
+    pointer-events: all !important;
+}
+
+.btn-close {
+	background-color: #C88A38;
 }
 
 .dashboard {
@@ -27,11 +44,15 @@ body {
 #interactive,
 #individual-cat-data {
 	min-height: 0;
+	background-color: #fffaef;
+
 }
 
 #heatmap {
     overflow: hidden;
     padding: 0;
+	background-color: #fffaef;
+
 }
 
 #interactive,
@@ -44,8 +65,10 @@ body {
 }
 
 #individual-cat-data {
-	grid-template-rows: 0.7fr 0.7fr 1.2fr 1fr 0.5fr;
+	grid-template-rows: 0.5fr 0.8fr 1.2fr 1fr 0.5fr;
 }
+
+
 
 #bee,
 #histogram,
@@ -70,6 +93,7 @@ body {
 	margin-left: 15px;
 	min-height: 0;
 	border: 1px solid #EEC084;
+	background-color: #fdfdfb;
 
 }
 
@@ -93,7 +117,7 @@ body {
 	box-sizing: border-box;
 	/* border: 1px solid #d9d9d9; */
 	/* border-radius: 8px; */
-	/* background-color: #f7f7f7; */
+	background-color: #fffaef;
 	overflow: auto;
 }
 
@@ -266,19 +290,20 @@ g.legend text {
 }
 
 .random-cat-button {
-	padding: 8px 16px;
+	padding: 4px 6px;
+	margin-left: 10px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	font-size: 0.9em;
+	font-size: 0.7em;
 	display: flex;
 	align-items: center;
 	gap: 6px;
 }
 
 .button-icon {
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 	/* height: 16px; */
 	padding:0px;
 	margin: -8px 0;
@@ -306,6 +331,13 @@ g.legend text {
 	stroke: rgb(227, 227, 227);
 }
 
+.y-axis .domain {
+	stroke: rgb(227, 227, 227);
+}
+
+.x-axis .domain {
+	stroke: rgb(191, 191, 191);
+}
 .tick line{
 	stroke: rgb(227, 227, 227);
 }
@@ -322,15 +354,15 @@ g.legend text {
 	stroke: none;
 }
 .point.included.female {
-	fill: #bc86a1;
+	fill: #ed8ebe;
 }
 
 .point.included.male{
-	fill: #4d859f;
+	fill: #65adcf;
 }
 
 .point.included.unk{
-	fill: rgb(191, 167, 230);
+	fill: rgb(197, 164, 251);
 }
 .point.included:hover {
   stroke-width: 0.5px;
@@ -421,7 +453,8 @@ g.legend text {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	font-size: 0.7em;
+	font-size: 0.75em;
+	font-weight: bold;
 	padding-left: 0px;
 }
 
@@ -500,16 +533,23 @@ g.legend text {
 	font-weight: bold;
 }
 
+
+.heatmap-subtitle {
+	margin-top: -12px;
+	padding-left: 20px;
+	padding-bottom: 0px;
+	font-size: 11px;
+}
+
+
 #random-cat-btn {
 	border-radius: 20px;
 	border: 1px solid #5D4A30;
 	background-color: #EEC084;
+	display: inline-block;
 }
 
-.button-icon {
-    width: 30px;
-    height: 20px;
-}
+
 
 .info-btn {
 	background-color: #EEC084;
@@ -522,6 +562,11 @@ g.legend text {
 	font-family: 'Life Savers';
 	font-weight: 800;
 	color: #5D4A30;
+}
+
+
+.modal-dialog {
+	padding: 30px;
 }
 
 #bee {
