@@ -3,6 +3,8 @@
 
 let catMap;
 
+renderGenderLegend();
+
 const title = new Title({
   parentElement: '#title',
 });

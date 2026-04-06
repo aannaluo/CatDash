@@ -1,8 +1,14 @@
-const svg = d3.select('#bee #legend')
+const svg = d3.select('#bee #neutered-legend')
   .append('svg')
   .attr('width', '150px')
   .attr('height', '100px')
-  .attr('transform', 'translate(520, 10)');
+  .attr('transform', 'translate(470, 400)');
+
+svg.append('rect')
+  .attr('width', '100%')
+  .attr('height', '100%')
+  .style('fill', '#f7f7f7')
+
 
 svg.append('text')
   .text('Neutered Status')

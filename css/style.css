@@ -320,7 +320,7 @@ g.legend text {
 
 
 #bee svg.line-chart {
-	transform: translate(0, -100px);
+	/* transform: translate(0, -100px); */
 
 }
 
@@ -427,3 +427,16 @@ g.legend text {
 	font-size: 12px;
 	padding-top: 6px;
 }
+
+#bee.panel {
+	overflow: hidden;
+	position: relative;  /* add this */
+  }
+  
+.legend {
+	fill: rgb(91, 91, 91);
+	position: absolute;  /* add this */
+	top: 0px;           /* adjust as needed */
+	left: 10px;          /* adjust as needed */
+	z-index: 10;
+  }
