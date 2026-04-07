@@ -106,12 +106,4 @@ function renderNeuterLegend() {
     .text('Unknown')
     .attr('font-size', '12px')
     .attr('transform', 'translate(10, 4)');
-
-  // d3.select('#info-b')
-  //   .on('click', (event) => {
-  //     d3.select('#info-tooltip')
-  //       .style('display', 'block')
-  //       .style('left', `${event.pageX + 20}px`)
-  //       .style('top', `${event.pageY + 20}px`);
-  //   });
 }

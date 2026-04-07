@@ -77,7 +77,6 @@ body {
 #radialChart,
 #cat-map {
 	min-height: 0;
-	/* border: 1px solid #d9d9d9; */
 	border-radius: 8px;
 }
 
@@ -118,8 +117,6 @@ body {
 
 .panel {
 	box-sizing: border-box;
-	/* border: 1px solid #d9d9d9; */
-	/* border-radius: 8px; */
 	background-color: #fffaef;
 	overflow: auto;
 }
@@ -305,7 +302,6 @@ g.legend text {
 .button-icon {
 	width: 20px;
 	height: 20px;
-	/* height: 16px; */
 	padding:0px;
 	margin: -8px 0;
 	object-fit: contain;
@@ -325,7 +321,6 @@ g.legend text {
 .cells path {
   fill: none;
   stroke: none;
-  /* pointer-events: all; */
 }
 
 .domain {
@@ -449,7 +444,6 @@ g.legend text {
 
 .profile-info h3 {
 	margin-top: 10px;
-	/* margin-bottom: 12px; */
 }
 
 .profile-info ul {
@@ -459,10 +453,6 @@ g.legend text {
 	font-size: 0.75em;
 	font-weight: bold;
 	padding-left: 0px;
-}
-
-.profile-info li {
-	/* margin-bottom: 2px; */
 }
 
 .profile-flag {
@@ -582,9 +572,9 @@ g.legend text {
   
 .legend {
 	fill: rgb(91, 91, 91);
-	position: absolute;  /* add this */
-	top: -60px;           /* adjust as needed */
-	left: -10px;          /* adjust as needed */
+	position: absolute; 
+	top: -60px;          
+	left: -10px;         
 	z-index: 10;
   }
 
@@ -606,8 +596,6 @@ g.legend text {
 #heatmap-legend-gradient {
   width: 70px;
   height: 12px;
-  /* border-radius: 0px; */
-  /* border: 1px solid #ccc; */
 }
 
 .heatmap-legend-label {

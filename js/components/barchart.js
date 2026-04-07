@@ -41,14 +41,6 @@ class BarChart {
     vis.yAxisG = vis.chartArea.append('g')
       .attr('class', 'axis y-axis');
 
-    // vis.title = vis.svg.append('text')
-    //   .style('text-anchor', 'start')
-    //   .attr('x', 5)
-    //   .attr('y', 10)
-    //   .attr('dy', '.71em')
-    //   .text('Prey per Month')
-    //   .style('font-weight', 'bold');
-
     vis.svg.append('text')
       .text('Prey caught per month')
       .style('font-size', '13px')

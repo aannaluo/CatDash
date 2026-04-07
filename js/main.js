@@ -65,7 +65,6 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
       beeAll.updateVis();
     } else {
       beeAll.selectedPreyCategories = getPreyCats(selectedPreyCategories);
-      console.log(beeAll.selectedPreyCategories);
       beeAll.updateVis();
     }
   });

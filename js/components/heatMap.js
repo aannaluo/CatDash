@@ -2,8 +2,6 @@ class HeatMap {
   constructor(_config, _data, _radialData, _catData, dispatcher, selectedCat) {
     this.config = {
       parentElement: _config.parentElement,
-      // containerWidth: 450,
-      // containerHeight: 700,
       margin: {
         top: 30, right: 20, bottom: 20, left: 20,
       },
@@ -29,11 +27,6 @@ class HeatMap {
     const svgHeight = numCats * rowHeight + vis.config.margin.top + vis.config.margin.bottom;
 
     vis.height = svgHeight - vis.config.margin.top - vis.config.margin.bottom;
-
-    // vis.scrollContainer = d3.select(vis.config.parentElement)
-    //   .append('div')
-    //   .style('height', `${height - 150}px`)
-    //   .style('overflow-y', 'scroll');
 
     vis.scrollContainer = d3.select(vis.config.parentElement)
       .append('div')
@@ -142,7 +135,6 @@ class HeatMap {
   }
 
   static reformatNames(d) {
-    // return d.replace(/_Pet Cats (\w+ ?\w+)/, (match, country) => {
     return d.replace(/_Pet Cats (\w+ ?\w+)/, '');
   }
 
@@ -177,7 +169,6 @@ class HeatMap {
             <strong style="display: block; padding: 2px 10px;">Total Distance Travelled Per Hour</strong>
            <div id="tooltip-radial"></div>
            <strong style="display: block; padding: 2px 10px;">${HeatMap.reformatNames(d.unique_id)}<strong>`);
-        // <h3>${HeatMap.reformatNames(d.unique_id)}</h3>
         // eslint-disable-next-line no-new
         new RadialChart(
           { parentElement: '#tooltip-radial' },
