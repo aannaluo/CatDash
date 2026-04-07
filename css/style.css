@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'Cattie';
-	src: url('../fonts/Cattie-Regular.ttf') format('truetype');
+	font-family: 'Meows';
+	src: url('../fonts/Meows.ttf') format('truetype');
 }
 
 #popup-welcome {
@@ -281,12 +281,10 @@ g.legend text {
 .title-content h1 {
 	margin: 0;
 	font-size: 64px;
-	/* font-family: 'Cattie', Arial, sans-serif; */
-	font-family: 'Life Savers', cursive;
+	font-family: 'Meows', Arial, sans-serif;
 	font-weight: bold;
 	color: #C88A38;
-	/* font-weight: normal; */
-
+	font-weight: normal;
 }
 
 .random-cat-button {
@@ -467,7 +465,7 @@ g.legend text {
   padding: 0;
   width: 80px;
   height: 80px;
-  object-fit: contain;
+	object-fit: contain;
 }
 
 /* Path toggle styling */
@@ -571,7 +569,7 @@ g.legend text {
 
 #bee {
 	position: relative;
-}
+  }
   
 .legend {
 	fill: rgb(91, 91, 91);
