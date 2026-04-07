@@ -97,7 +97,7 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
 
   d3.csv('./data/Distance_radial.csv').then((radialData) => {
     radialData.forEach((d) => {
-      d.distance = +d.distance;
+      d.distance_p_hour = +d.distance;
       d.curr_hour = +d.curr_hour;
     });
 
@@ -106,7 +106,7 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
     d3.csv('./data/Distance_heatmap.csv').then((heatmapData) => {
       heatmapData.forEach((d) => {
         d.day_number = +d.day_number;
-        d.distance = +d.distance;
+        d.distance_p_day = +d.distance;
       });
 
       const filteredTenDaysData = d3.filter(heatmapData, (d) => d.day_number <= 10);

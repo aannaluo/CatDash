@@ -49,7 +49,7 @@ class RadialChart {
 
   updateVis() {
     const vis = this;
-    vis.yScale.domain([0, d3.max(vis.data, (d) => d.distance)]);
+    vis.yScale.domain([0, d3.max(vis.data, (d) => d.distance_p_hour)]);
     vis.renderVis();
   }
 
@@ -64,7 +64,7 @@ class RadialChart {
       .attr('fill', '#EEC084')
       .attr('d', d3.arc()
         .innerRadius(vis.innerRadius)
-        .outerRadius((d) => vis.yScale(d.distance))
+        .outerRadius((d) => vis.yScale(d.distance_p_hour))
         .startAngle((d) => vis.xScale(d.curr_hour))
         .endAngle((d) => vis.xScale(d.curr_hour) + vis.xScale.bandwidth())
         .padAngle(0.01)

@@ -59,7 +59,7 @@ class HeatMap {
 
     vis.colourScale = d3.scaleLinear()
       .range(['#FFF0DD', '#854E06'])
-      .domain(d3.extent(vis.data, (d) => d.distance));
+      .domain(d3.extent(vis.data, (d) => d.distance_p_day));
 
     vis.tooltip = d3.select('body').append('div')
       .attr('class', 'tooltip')
@@ -78,7 +78,7 @@ class HeatMap {
       vis.updateVis();
     });
 
-    const [minVal, maxVal] = d3.extent(vis.data, (d) => d.distance);
+    const [minVal, maxVal] = d3.extent(vis.data, (d) => d.distance_p_day);
     d3.select('#heatmap-legend-min').text(d3.format('.0f')(minVal));
     d3.select('#heatmap-legend-max').text(d3.format('.2f')(maxVal / 1000));
     d3.select('#heatmap-legend-gradient')
@@ -92,13 +92,13 @@ class HeatMap {
 
     const totDist = d3.rollup(
       vis.data,
-      (v) => d3.sum(v, (d) => d.distance),
+      (v) => d3.sum(v, (d) => d.distance_p_day),
       (d) => d.unique_id,
     );
 
     const avgDist = d3.rollup(
       vis.data,
-      (v) => d3.mean(v, (d) => d.distance),
+      (v) => d3.mean(v, (d) => d.distance_p_day),
       (d) => d.unique_id,
     );
 
@@ -148,7 +148,7 @@ class HeatMap {
       .attr('y', (d) => vis.yScale(d.unique_id))
       .attr('width', vis.xScale.bandwidth())
       .attr('height', vis.yScale.bandwidth())
-      .style('fill', (d) => vis.colourScale(d.distance))
+      .style('fill', (d) => vis.colourScale(d.distance_p_day))
       .classed('selected', (d) => vis.selectedCat === d.unique_id)
       .style('stroke', (d) => (vis.selectedCat === d.unique_id ? 'black' : 'none'))
       .style('stroke-width', (d) => (vis.selectedCat === d.unique_id ? '2px' : '0px'))
