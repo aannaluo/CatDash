@@ -1,5 +1,3 @@
-/* global Scatterplot, CatMap, RadialChart, CatProfile, Title */
-/* eslint-disable no-param-reassign */
 document.addEventListener('DOMContentLoaded', () => {
   const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
   modal.show();
@@ -13,20 +11,15 @@ const title = new Title({
   parentElement: '#title',
 });
 
-d3.json('./data/cat_bubbles_all.geojson').then((data) => {
-  d3.json('./data/cat_paths_all.geojson').then((pathsData) => {
-    d3.json('./data/cat_paths_10_days.geojson').then((paths10DayData) => {
-      // eslint-disable-next-line no-unused-vars, no-undef
-      catMap = new CatMap({
-        parentElement: '#cat-map',
-      }, data, pathsData, paths10DayData);
-    });
+d3.json('./data/cat_paths_all.geojson').then((pathsData) => {
+  d3.json('./data/cat_paths_10_days.geojson').then((paths10DayData) => {
+    catMap = new CatMap({
+      parentElement: '#cat-map',
+    }, pathsData, paths10DayData);
   });
 });
 
 d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
-  // eslint-disable-next-line no-unused-vars, no-undef
-
   const dispatcher = d3.dispatch('selectedPreyCats', 'selectedCat', 'selectedAgeCat');
 
   d3.select('#random-cat-btn')
@@ -69,7 +62,6 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
       beeAll.updateVis();
     } else {
       beeAll.selectedPreyCategories = getPreyCats(selectedPreyCategories);
-      console.log(beeAll.selectedPreyCategories);
       beeAll.updateVis();
     }
   });
@@ -151,21 +143,17 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
   });
 
   dispatcher.on('selectedAgeCat', (selectedAgeCat) => {
-    if (!selectedAgeCat) {
-      barChart.data = binData(data);
-      barChart.updateVis();
-    } if (selectedAgeCat === 0) {
-      barChart.data = binData(data.filter((d) => d.age <= 2));
-      barChart.updateVis();
-    } if (selectedAgeCat === 3) {
-      barChart.data = binData(data.filter((d) => d.age > 2 && d.age <= 5));
-      barChart.updateVis();
-    } if (selectedAgeCat === 6) {
-      barChart.data = binData(data.filter((d) => d.age > 5 && d.age <= 8));
-      barChart.updateVis();
-    } if (selectedAgeCat === 9) {
-      barChart.data = binData(data.filter((d) => d.age > 8));
-      barChart.updateVis();
+    let filteredData = data;
+    if (selectedAgeCat === 0) {
+      filteredData = data.filter((d) => d.age <= 2);
+    } else if (selectedAgeCat === 3) {
+      filteredData = data.filter((d) => d.age > 2 && d.age <= 5);
+    } else if (selectedAgeCat === 6) {
+      filteredData = data.filter((d) => d.age > 5 && d.age <= 8);
+    } else if (selectedAgeCat === 9) {
+      filteredData = data.filter((d) => d.age > 8);
     }
+    barChart.data = binData(filteredData);
+    barChart.updateVis();
   });
 });

@@ -2,8 +2,6 @@ class HeatMap {
   constructor(_config, _data, _radialData, _catData, dispatcher, selectedCat) {
     this.config = {
       parentElement: _config.parentElement,
-      // containerWidth: 450,
-      // containerHeight: 700,
       margin: {
         top: 30, right: 20, bottom: 20, left: 20,
       },
@@ -20,7 +18,7 @@ class HeatMap {
     const vis = this;
 
     const parent = d3.select(vis.config.parentElement).node();
-    const { width, height } = parent.getBoundingClientRect();
+    const { width } = parent.getBoundingClientRect();
 
     vis.width = width - vis.config.margin.left - vis.config.margin.right;
 
@@ -29,11 +27,6 @@ class HeatMap {
     const svgHeight = numCats * rowHeight + vis.config.margin.top + vis.config.margin.bottom;
 
     vis.height = svgHeight - vis.config.margin.top - vis.config.margin.bottom;
-
-    // vis.scrollContainer = d3.select(vis.config.parentElement)
-    //   .append('div')
-    //   .style('height', `${height - 150}px`)
-    //   .style('overflow-y', 'scroll');
 
     vis.scrollContainer = d3.select(vis.config.parentElement)
       .append('div')
@@ -80,7 +73,7 @@ class HeatMap {
 
     vis.sortBy = d3.select('#sort-select-heatmap').property('value');
 
-    d3.select('#sort-select-heatmap').on('change', function () {
+    d3.select('#sort-select-heatmap').on('change', function handleSortChange() {
       vis.sortBy = this.value;
       vis.updateVis();
     });
@@ -141,14 +134,7 @@ class HeatMap {
     vis.renderVis();
   }
 
-  reformatNames(d) {
-    const countryMap = {
-      Australia: 'AU',
-      'New Zealand': 'NZ',
-      'United States': 'US',
-      'United Kingdom': 'UK',
-    };
-    // return d.replace(/_Pet Cats (\w+ ?\w+)/, (match, country) => ` ${countryMap[country] || country}`);
+  static reformatNames(d) {
     return d.replace(/_Pet Cats (\w+ ?\w+)/, '');
   }
 
@@ -182,9 +168,12 @@ class HeatMap {
           .html(`
             <strong style="display: block; padding: 2px 10px;">Total Distance Travelled Per Hour</strong>
            <div id="tooltip-radial"></div>
-           <strong style="display: block; padding: 2px 10px;">${vis.reformatNames(d.unique_id)}<strong>`);
-        // <h3>${vis.reformatNames(d.unique_id)}</h3>
-        new RadialChart({ parentElement: '#tooltip-radial' }, catData);
+           <strong style="display: block; padding: 2px 10px;">${HeatMap.reformatNames(d.unique_id)}<strong>`);
+
+        new RadialChart(
+          { parentElement: '#tooltip-radial' },
+          catData,
+        );
       })
       .on('mousemove', (event) => {
         const tooltipNode = vis.tooltip.node();
@@ -207,13 +196,13 @@ class HeatMap {
       })
       .on('mouseout', () => {
         vis.chartArea.selectAll('rect')
-          .filter(function () { return !d3.select(this).classed('selected'); })
+          .filter(function filterUnselected() { return !d3.select(this).classed('selected'); })
           .classed('hovered', false)
           .style('stroke', 'none')
           .style('stroke-width', '0px');
         vis.tooltip.style('opacity', 0);
       })
-      .on('click', function (event, d) {
+      .on('click', function handleRectClick(event, d) {
         const isSelected = d3.select(this).classed('selected');
 
         vis.chartArea.selectAll('rect')

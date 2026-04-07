@@ -1,12 +1,3 @@
-// function getPreyCategory(val) {
-//   let category;
-//   if (val >= 0 && val <= 4) category = '0-4';
-//   else if (val >= 5 && val <= 7) category = '5-7';
-//   else category = '8+';
-//   return category;
-// }
-
-// eslint-disable-next-line no-unused-vars
 class RadialChart {
   constructor(_config, _data) {
     this.config = {
@@ -20,7 +11,6 @@ class RadialChart {
       },
     };
     this.data = _data;
-    // this.selectedCat = 'Abba_Pet Cats United Kingdom';
     this.initVis();
   }
 
@@ -31,12 +21,10 @@ class RadialChart {
     vis.height = vis.config.containerHeight - vis.config.margin.top - vis.config.margin.bottom;
     vis.innerRadius = 30;
     vis.outerRadius = Math.min(vis.config.containerWidth, vis.config.containerHeight) / 2;
-    // vis.linearScale = d3.scaleLinear()
 
     vis.svg = d3.select(vis.config.parentElement).append('svg')
       .attr('width', vis.config.containerWidth)
       .attr('height', vis.config.containerHeight);
-    // .style('overflow', 'visible');
 
     vis.chartArea = vis.svg.append('g')
       .attr(
@@ -54,31 +42,14 @@ class RadialChart {
 
     vis.xAxisG = vis.chartArea.append('g')
       .attr('class', 'radial-axis x-axis');
-    //   .attr('transform', `translate(0, 0)`);
 
     vis.yAxisG = vis.chartArea.append('g');
-
-    // vis.zScale = d3.scaleOrdinal()
-    //   .domain(['0-2', '3-5', '5+'])
-    //   .range(['#ffd700', '#b060eb', '#5381ff']);
     vis.updateVis();
   }
 
   updateVis() {
     const vis = this;
-
-    // const catData = vis.data.filter((d) => d['unique_id'] === vis.selectedCat);
-
-    // if (!catData) {
-    //   console.warn(`Cat "${vis.selectedCat}" not found`);
-    //   console.log('catData sample:', catData.slice(0, 3));
-    //   return;
-    // }
-
     vis.yScale.domain([0, d3.max(vis.data, (d) => d.distance)]);
-
-    // console.log("FIRST STRETCH: " + d3.max(d3.max(vis.data, (d) => d.distance)));
-
     vis.renderVis();
   }
 
@@ -116,8 +87,6 @@ class RadialChart {
       })
       .text((d) => d.curr_hour);
 
-    // vis.xAxisG.call(vis.xAxis);
-
     vis.yTicks = vis.yScale.ticks(3);
 
     vis.chartArea.selectAll('.y-grid')
@@ -126,7 +95,6 @@ class RadialChart {
       .attr('class', 'y-grid')
       .attr('fill', 'none')
       .attr('stroke', '#ccc')
-    //   .attr('stroke-dasharray', '2,2')
       .attr('r', (d) => vis.yScale(d));
 
     vis.chartArea.selectAll('.y-axis-label')

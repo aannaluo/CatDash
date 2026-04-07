@@ -1,9 +1,4 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
-  "eslint.validate": ["javascript"],
-  "eslint.workingDirectories": [{ "mode": "auto" }],
   "files.eol": "\n",
   "liveServer.settings.port": 5501
 }

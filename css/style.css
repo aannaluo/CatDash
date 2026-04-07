@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'Cattie';
-	src: url('../fonts/Cattie-Regular.ttf') format('truetype');
+	font-family: 'Meows';
+	src: url('../fonts/Meows.ttf') format('truetype');
 }
 
 #popup-welcome {
@@ -31,6 +31,8 @@ body {
 
 .btn-close {
 	background-color: #C88A38;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
 .dashboard {
@@ -65,7 +67,7 @@ body {
 }
 
 #individual-cat-data {
-	grid-template-rows: 0.5fr 1.5fr 2.5fr 2fr 0.3fr;
+	grid-template-rows: 0.5fr 1.5fr 2.5fr 2fr 0.1fr;
 }
 
 
@@ -75,8 +77,7 @@ body {
 #radialChart,
 #cat-map {
 	min-height: 0;
-	/* border: 1px solid #d9d9d9; */
-	/* border-radius: 8px; */
+	border-radius: 8px;
 }
 
 #cat-map {
@@ -94,7 +95,8 @@ body {
 	min-height: 0;
 	border: 1px solid #EEC084;
 	background-color: #fdfdfb;
-
+	height: 100%;
+	border-radius: 8px;
 }
 
 #cat-profile {
@@ -115,8 +117,6 @@ body {
 
 .panel {
 	box-sizing: border-box;
-	/* border: 1px solid #d9d9d9; */
-	/* border-radius: 8px; */
 	background-color: #fffaef;
 	overflow: auto;
 }
@@ -281,12 +281,10 @@ g.legend text {
 .title-content h1 {
 	margin: 0;
 	font-size: 64px;
-	/* font-family: 'Cattie', Arial, sans-serif; */
-	font-family: 'Life Savers', cursive;
+	font-family: 'Meows', Arial, sans-serif;
 	font-weight: bold;
 	color: #C88A38;
-	/* font-weight: normal; */
-
+	font-weight: normal;
 }
 
 .random-cat-button {
@@ -304,7 +302,6 @@ g.legend text {
 .button-icon {
 	width: 20px;
 	height: 20px;
-	/* height: 16px; */
 	padding:0px;
 	margin: -8px 0;
 	object-fit: contain;
@@ -324,7 +321,6 @@ g.legend text {
 .cells path {
   fill: none;
   stroke: none;
-  /* pointer-events: all; */
 }
 
 .domain {
@@ -347,22 +343,26 @@ g.legend text {
 	caret-color: transparent;
 	cursor: default;
 }
-
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .point {
 	fill: rgb(223, 223, 223);
 	stroke: none;
 }
 .point.included.female {
-	fill: #ed8ebe;
+	fill: #ff99c1;
 }
 
 .point.included.male{
-	fill: #65adcf;
+	fill: #499fb8;
 }
 
 .point.included.unk{
-	fill: rgb(197, 164, 251);
+	fill: #bb97e9;
 }
 .point.included:hover {
   stroke-width: 0.5px;
@@ -400,6 +400,17 @@ g.legend text {
 	font-size: 0.6em;
 }
 
+#bee .tick.y-axis {
+	cursor: pointer;
+}
+
+#bee .tick.y-axis rect {
+	stroke: #EEC084;
+	stroke-width: 1;
+	rx: 4;
+	ry: 4;
+}
+
 
 #bee .tick.y-axis text:hover{
 	color: rgb(26, 25, 25);
@@ -410,6 +421,7 @@ g.legend text {
 #bee .tick.y-axis text.selected {
 	font-weight: bold;
 	cursor: pointer;
+	color: rgb(26, 25, 25);
 
 }
 
@@ -439,14 +451,11 @@ g.legend text {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	overflow-y: auto;
-	position: relative;
 	font-family: 'Life Savers', cursive;
 }
 
 .profile-info h3 {
 	margin-top: 10px;
-	/* margin-bottom: 12px; */
 }
 
 .profile-info ul {
@@ -458,16 +467,12 @@ g.legend text {
 	padding-left: 0px;
 }
 
-.profile-info li {
-	/* margin-bottom: 2px; */
-}
-
 .profile-flag {
   margin: 0;
   padding: 0;
   width: 80px;
   height: 80px;
-  object-fit: contain;
+	object-fit: contain;
 }
 
 /* Path toggle styling */
@@ -481,6 +486,8 @@ g.legend text {
 	cursor: pointer;
 	user-select: none;
 	border-radius: 4px;
+	color: #C88A38;
+	
 }
 
 .path-toggle-label input[type="checkbox"] {
@@ -567,17 +574,19 @@ g.legend text {
 
 .modal-dialog {
 	padding: 30px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
 }
 
 #bee {
 	position: relative;
-}
+  }
   
 .legend {
 	fill: rgb(91, 91, 91);
-	position: absolute;  /* add this */
-	top: -60px;           /* adjust as needed */
-	left: 10px;          /* adjust as needed */
+	position: absolute; 
+	top: -60px;          
+	left: -10px;         
 	z-index: 10;
   }
 
@@ -599,8 +608,6 @@ g.legend text {
 #heatmap-legend-gradient {
   width: 70px;
   height: 12px;
-  /* border-radius: 0px; */
-  /* border: 1px solid #ccc; */
 }
 
 .heatmap-legend-label {

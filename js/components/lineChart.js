@@ -52,7 +52,6 @@ class LineChart {
       .text('Date')
       .style('font-size', '12px')
       .style('font-weight', 'bold');
-    //   .attr('transform', `translate(${vis.width + 35}, ${vis.config.containerHeight-5})`);
 
     vis.svg.append('text')
       .text('Distance from start point (km)')
@@ -67,10 +66,10 @@ class LineChart {
     const vis = this;
 
     vis.selectedCatData = vis.data.filter((d) => d.unique_id === vis.selectedCat);
-    console.log(d3.max(vis.selectedCatData, (d) => parseFloat(d.dist_from_start)));
 
-    const uniqueDays = d3.timeDay.range(d3.extent(vis.selectedCatData, (d) => d.timestamp)[0], d3.extent(vis.selectedCatData, (d) => d.timestamp)[1]).length;
-    console.log(uniqueDays);
+    const timeDomain = d3.extent(vis.selectedCatData, (d) => d.timestamp);
+    const uniqueDays = d3.timeDay.range(timeDomain[0], timeDomain[1]).length;
+
     const tickInterval = () => {
       if (uniqueDays > 8 && uniqueDays <= 20) {
         return d3.timeDay.every(2);
@@ -115,24 +114,5 @@ class LineChart {
       .y((d) => vis.yScale(parseFloat(d.dist_from_start)));
 
     vis.line.attr('d', lineFunc(vis.selectedCatData));
-
-    // vis.chartArea.selectAll('.line-chart-point')
-    //   .data(vis.selectedCatData)
-    //   .join('circle')
-    //   .attr('class', 'line-chart-point')
-    //   .attr('cx', (d) => vis.xScale(d.timestamp))
-    //   .attr('cy', (d) => vis.yScale(parseFloat(d.dist_from_start)))
-    //   .style('fill', 'steelblue')
-    //   .attr('r', 2); // Radius of the point
-    // vis.chartArea.selectAll('.line')
-    //   .data(vis.selectedCatData)
-    //   .join('path')
-    //   .attr('class', 'line')
-    //   .attr('fill', 'none')
-    //   .attr('stroke', 'steelblue')
-    //   .attr('stroke-width', 1.5)
-    //   .attr('d', d3.line()
-    //     .x((d) => vis.xScale(d.timestamp))
-    //     .y((d) => vis.yScale(d.dist_from_start)));
   }
 }
