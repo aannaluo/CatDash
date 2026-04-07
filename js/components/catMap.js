@@ -1,12 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 class CatMap {
-  constructor(_config, _data, _pathsData, _paths10Data) {
+  constructor(_config, _pathsData, _paths10Data) {
     this.config = {
       parentElement: _config.parentElement,
       minRadius: 50, // meters
       maxRadius: 500, // meters
     };
-    this.data = _data;
     this.pathsData = _pathsData;
     this.paths10DayData = _paths10Data;
     this.selectedCat = 'Abba_Pet Cats United Kingdom';
@@ -27,7 +26,7 @@ class CatMap {
     vis.map = L.map('map-container', {
       center: [0, 0],
       zoom: 2,
-      attributionControl: false
+      attributionControl: false,
     });
 
     // Add recentre to layer button
@@ -90,7 +89,7 @@ class CatMap {
   updateVis() {
     const vis = this;
 
-    const homeRanges = vis.data.features.map((d) => d.properties.home_range);
+    const homeRanges = vis.paths10DayData.features.map((d) => d.properties.home_range);
     const minHomeRange = d3.min(homeRanges);
     const maxHomeRange = d3.max(homeRanges);
 
@@ -106,7 +105,7 @@ class CatMap {
     const vis = this;
 
     // Find the selected cat's feature
-    const selectedFeature = vis.data.features.find(
+    const selectedFeature = vis.paths10DayData.features.find(
       (feature) => feature.properties['unique-id'] === vis.selectedCat,
     );
 
@@ -123,6 +122,7 @@ class CatMap {
     });
 
     // Add the cat path if available
+    let pathCoords = null;
     if (vis.pathsData) {
       const pathDataToUse = vis.showFirst10Days ? vis.paths10DayData : vis.pathsData;
 
@@ -141,7 +141,7 @@ class CatMap {
           }).addTo(vis.map);
 
           // Calculate bounds from path coordinates
-          const pathCoords = selectedPath.geometry.coordinates;
+          pathCoords = selectedPath.geometry.coordinates;
           if (pathCoords.length > 0) {
             const bounds = L.latLngBounds(
               pathCoords.map((coord) => [coord[1], coord[0]]),
@@ -154,11 +154,11 @@ class CatMap {
 
     const { coordinates } = selectedFeature.geometry;
     const { home_range: homeRange } = selectedFeature.properties;
-    const lon = coordinates[0];
-    const lat = coordinates[1];
+    let circleCenter = [coordinates[1], coordinates[0]];
+    circleCenter = [pathCoords[0][1], pathCoords[0][0]];
     const radius = vis.radiusScale(homeRange);
 
-    L.circle([lat, lon], {
+    L.circle(circleCenter, {
       radius,
       color: '#b060eb',
       fillColor: '#b060eb',
@@ -168,10 +168,10 @@ class CatMap {
 
     // Calculate dynamic bounds for the circle and zoom to fit
     const latOffset = radius / 111000;
-    const lonOffset = radius / (111000 * Math.cos(lat * (Math.PI / 180)));
+    const lonOffset = radius / (111000 * Math.cos(circleCenter[0] * (Math.PI / 180)));
     const circleBounds = L.latLngBounds(
-      [lat - latOffset, lon - lonOffset],
-      [lat + latOffset, lon + lonOffset],
+      [circleCenter[0] - latOffset, circleCenter[1] - lonOffset],
+      [circleCenter[0] + latOffset, circleCenter[1] + lonOffset],
     );
 
     // Use path bounds if available, otherwise use circle bounds

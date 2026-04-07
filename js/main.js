@@ -13,14 +13,12 @@ const title = new Title({
   parentElement: '#title',
 });
 
-d3.json('./data/cat_bubbles_all.geojson').then((data) => {
-  d3.json('./data/cat_paths_all.geojson').then((pathsData) => {
-    d3.json('./data/cat_paths_10_days.geojson').then((paths10DayData) => {
-      // eslint-disable-next-line no-unused-vars, no-undef
-      catMap = new CatMap({
-        parentElement: '#cat-map',
-      }, data, pathsData, paths10DayData);
-    });
+d3.json('./data/cat_paths_all.geojson').then((pathsData) => {
+  d3.json('./data/cat_paths_10_days.geojson').then((paths10DayData) => {
+    // eslint-disable-next-line no-unused-vars, no-undef
+    catMap = new CatMap({
+      parentElement: '#cat-map',
+    }, pathsData, paths10DayData);
   });
 });
 
