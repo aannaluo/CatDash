@@ -76,7 +76,7 @@ class Beeswarm {
       .force('collide', d3.forceCollide(5))
       .stop();
 
-    for (let i = 0; i < vis.data.length; i++) {
+    for (let i = 0; i < vis.data.length; i += 1) {
       vis.simulation.tick();
     }
 
@@ -136,13 +136,13 @@ class Beeswarm {
     yAxisCall.selectAll('.tick').classed('y-axis', true);
 
     vis.yAxisG.selectAll('.tick text')
-      .on('click', function (d) {
+      .on('click', function handleClickTick() {
         const selected = d3.select(this).classed('selected');
         d3.selectAll('.tick text').classed('selected', false);
         d3.select(this).classed('selected', !selected);
         vis.selectedPreyCategories = vis.allPreyGroups;
         if (!selected) {
-          const bin = vis.getBinFromLabel(d.target.textContent);
+          const bin = vis.getBinFromLabel(this.textContent);
           vis.selectedBins = [bin];
           d3.selectAll('.point').classed('included', (d) => vis.getAgeBin(d.age) === bin);
           d3.selectAll('.point').classed('selected', (d) => {
@@ -162,41 +162,41 @@ class Beeswarm {
         }
       });
 
-    const cells = vis.chartArea.selectAll('.point')
+    vis.chartArea.selectAll('.point')
       .data(vis.data)
       .join('path')
       .classed('point', true)
-      .classed('included', (d) => vis.selectedPreyCategories.includes(d.prey_p_month) && vis.selectedBins.includes(vis.getAgeBin(d.age)))
-      .classed('selected', (d) => {
-        if (vis.selectedCat === d['unique-id'] && vis.selectedPreyCategories.includes(d.prey_p_month)) {
+      .classed('included', (dataPoint) => vis.selectedPreyCategories.includes(dataPoint.prey_p_month) && vis.selectedBins.includes(vis.getAgeBin(dataPoint.age)))
+      .classed('selected', (dataPoint) => {
+        if (vis.selectedCat === dataPoint['unique-id'] && vis.selectedPreyCategories.includes(dataPoint.prey_p_month)) {
           return true;
-        } if (vis.selectedCat === d['unique-id']) {
+        } if (vis.selectedCat === dataPoint['unique-id']) {
           vis.selectedCat = 'none';
           return false;
         }
         return false;
       })
-      .classed('male', ((d) => d.sex === 'Male'))
-      .classed('female', ((d) => d.sex === 'Female'))
-      .classed('unk', ((d) => d.sex === 'Unk'))
-      .attr('transform', (d) => `translate(${d.x},${d.y})`)
-      .attr('d', (d) => vis.getShape(d.neutered))
-      .on('mouseover', function (event, d) {
+      .classed('male', ((dataPoint) => dataPoint.sex === 'Male'))
+      .classed('female', ((dataPoint) => dataPoint.sex === 'Female'))
+      .classed('unk', ((dataPoint) => dataPoint.sex === 'Unk'))
+      .attr('transform', (dataPoint) => `translate(${dataPoint.x},${dataPoint.y})`)
+      .attr('d', (dataPoint) => vis.getShape(dataPoint.neutered))
+      .on('mouseover', function handleMouseover(event, dataPoint) {
         if (d3.select(this).classed('included')) {
           d3.select('#tooltip')
             .style('display', 'block')
             .style('left', `${event.pageX + vis.config.tooltipPadding}px`)
             .style('top', `${event.pageY + vis.config.tooltipPadding}px`)
-            .html(`<div class="tooltip-label"><div id='animal-name'>${d['animal-name']}</div>, ${d['study-site']}</div><div>Home Range: ${d['home-range']}km<sup>2</sup></div><div>Prey per month: ${d.prey_p_month}</div>`);
+            .html(`<div class="tooltip-label"><div id='animal-name'>${dataPoint['animal-name']}</div>, ${dataPoint['study-site']}</div><div>Home Range: ${dataPoint['home-range']}km<sup>2</sup></div><div>Prey per month: ${dataPoint.prey_p_month}</div>`);
         }
       })
-      .on('mouseout', function () {
+      .on('mouseout', function handleMouseout() {
         if (d3.select(this).classed('included')) {
           d3.select('#tooltip')
             .style('display', 'none');
         }
       })
-      .on('click', function () {
+      .on('click', function handlePointClick() {
         if (d3.select(this).classed('included')) {
           d3.selectAll('.point').classed('selected', false);
           d3.select(this).classed('selected', true);

@@ -69,7 +69,8 @@ class LineChart {
     vis.selectedCatData = vis.data.filter((d) => d.unique_id === vis.selectedCat);
     console.log(d3.max(vis.selectedCatData, (d) => parseFloat(d.dist_from_start)));
 
-    const uniqueDays = d3.timeDay.range(d3.extent(vis.selectedCatData, (d) => d.timestamp)[0], d3.extent(vis.selectedCatData, (d) => d.timestamp)[1]).length;
+    const timeDomain = d3.extent(vis.selectedCatData, (d) => d.timestamp);
+    const uniqueDays = d3.timeDay.range(timeDomain[0], timeDomain[1]).length;
     console.log(uniqueDays);
     const tickInterval = () => {
       if (uniqueDays > 8 && uniqueDays <= 20) {

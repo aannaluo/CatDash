@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 class CatMap {
   constructor(_config, _pathsData, _paths10Data) {
     this.config = {

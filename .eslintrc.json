@@ -10,9 +10,11 @@
   },
   "globals": {
     "d3": "readonly",
-    "L": "readonly"
+    "L": "readonly",
+    "RadialChart": "readonly"
   },
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "no-unused-vars": ["error", { "varsIgnorePattern": "^[A-Z]" }]
   }
 }

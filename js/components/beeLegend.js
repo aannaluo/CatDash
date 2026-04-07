@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 function renderGenderLegend() {
   const svg = d3.select('#bee #gender-legend')
     .append('svg')
@@ -55,6 +56,7 @@ function renderGenderLegend() {
     .attr('transform', 'translate(12, 7)');
 }
 
+// eslint-disable-next-line no-unused-vars
 function renderNeuterLegend() {
   const svg = d3.select('#bee #neutered-legend')
     .append('svg')

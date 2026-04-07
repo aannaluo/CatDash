@@ -53,8 +53,7 @@ class BarChart {
       .text('Prey caught per month')
       .style('font-size', '13px')
       .style('font-weight', 'bold')
-      .attr('transform', `translate(${vis.width/2-vis.config.margin.left+70}, 10)`);
-
+      .attr('transform', `translate(${vis.width / 2 - vis.config.margin.left + 70}, 10)`);
 
     vis.updateVis();
   }
@@ -85,15 +84,15 @@ class BarChart {
 
   renderVis() {
     const vis = this;
-     vis.xAxisG.call(vis.xAxis)
-    .select('.domain')
-    .style('stroke', 'rgb(208, 207, 207)');
+    vis.xAxisG.call(vis.xAxis)
+      .select('.domain')
+      .style('stroke', 'rgb(208, 207, 207)');
 
     vis.yAxisG.call(vis.yAxis)
       .select('.domain')
       .style('stroke', 'rgb(208, 207, 207)');
 
-    const bars = vis.chartArea.selectAll('.bar')
+    vis.chartArea.selectAll('.bar')
       .data(vis.data, (d) => d.x1)
       .join('rect')
       .attr('class', 'bar')
@@ -101,7 +100,7 @@ class BarChart {
       .attr('height', (d) => vis.height - vis.yScale(d.length))
       .attr('x', (d) => vis.xScale(d.x0))
       .attr('y', (d) => vis.yScale(d.length))
-      .on('click', function () {
+      .on('click', function handleBarClick() {
         const selected = d3.select(this).classed('selected');
         d3.select(this).classed('selected', !selected);
         const selectedPreyCategories = d3.selectAll('.bar.selected').data().map((d) => [d.x0, d.x1]);
