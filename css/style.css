@@ -31,6 +31,8 @@ body {
 
 .btn-close {
 	background-color: #C88A38;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
 .dashboard {
@@ -65,7 +67,7 @@ body {
 }
 
 #individual-cat-data {
-	grid-template-rows: 0.5fr 1.5fr 2.5fr 2fr 0.3fr;
+	grid-template-rows: 0.5fr 1.5fr 2.5fr 2fr 0.1fr;
 }
 
 
@@ -76,7 +78,7 @@ body {
 #cat-map {
 	min-height: 0;
 	/* border: 1px solid #d9d9d9; */
-	/* border-radius: 8px; */
+	border-radius: 8px;
 }
 
 #cat-map {
@@ -94,7 +96,8 @@ body {
 	min-height: 0;
 	border: 1px solid #EEC084;
 	background-color: #fdfdfb;
-
+	height: 100%;
+	border-radius: 8px;
 }
 
 #cat-profile {
@@ -345,7 +348,11 @@ g.legend text {
 	caret-color: transparent;
 	cursor: default;
 }
-
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .point {
 	fill: rgb(223, 223, 223);
@@ -437,8 +444,6 @@ g.legend text {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	overflow-y: auto;
-	position: relative;
 	font-family: 'Life Savers', cursive;
 }
 
@@ -479,6 +484,8 @@ g.legend text {
 	cursor: pointer;
 	user-select: none;
 	border-radius: 4px;
+	color: #C88A38;
+	
 }
 
 .path-toggle-label input[type="checkbox"] {
@@ -565,6 +572,8 @@ g.legend text {
 
 .modal-dialog {
 	padding: 30px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
 }
 
 #bee {
@@ -575,7 +584,7 @@ g.legend text {
 	fill: rgb(91, 91, 91);
 	position: absolute;  /* add this */
 	top: -60px;           /* adjust as needed */
-	left: 10px;          /* adjust as needed */
+	left: -10px;          /* adjust as needed */
 	z-index: 10;
   }
 
