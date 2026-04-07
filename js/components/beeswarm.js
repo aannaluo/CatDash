@@ -135,6 +135,20 @@ class Beeswarm {
     yAxisCall.select('.domain').attr('d', `M0.5,0.5V${(vis.height - 20).toString()}.5`);
     yAxisCall.selectAll('.tick').classed('y-axis', true);
 
+    vis.yAxisG.selectAll('.tick').each(function handleTickEach() {
+      const tickGroup = d3.select(this);
+      const textNode = tickGroup.select('text').node();
+      if (textNode) {
+        const bbox = textNode.getBBox();
+        tickGroup.insert('rect', 'text')
+          .attr('x', bbox.x - 15)
+          .attr('y', bbox.y - 3)
+          .attr('width', bbox.width + 12)
+          .attr('height', bbox.height + 6);
+        tickGroup.select('text').attr('transform', 'translate(-9, 0)');
+      }
+    });
+
     vis.yAxisG.selectAll('.tick text')
       .on('click', function handleClickTick() {
         const selected = d3.select(this).classed('selected');

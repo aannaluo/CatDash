@@ -354,15 +354,15 @@ g.legend text {
 	stroke: none;
 }
 .point.included.female {
-	fill: #ed8ebe;
+	fill: #ff99c1;
 }
 
 .point.included.male{
-	fill: #65adcf;
+	fill: #499fb8;
 }
 
 .point.included.unk{
-	fill: rgb(197, 164, 251);
+	fill: #bb97e9;
 }
 .point.included:hover {
   stroke-width: 0.5px;
@@ -400,6 +400,17 @@ g.legend text {
 	font-size: 0.6em;
 }
 
+#bee .tick.y-axis {
+	cursor: pointer;
+}
+
+#bee .tick.y-axis rect {
+	stroke: #EEC084;
+	stroke-width: 1;
+	rx: 4;
+	ry: 4;
+}
+
 
 #bee .tick.y-axis text:hover{
 	color: rgb(26, 25, 25);
@@ -410,6 +421,7 @@ g.legend text {
 #bee .tick.y-axis text.selected {
 	font-weight: bold;
 	cursor: pointer;
+	color: rgb(26, 25, 25);
 
 }
 

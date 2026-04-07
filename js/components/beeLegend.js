@@ -21,7 +21,7 @@ function renderGenderLegend() {
   female.append('rect')
     .attr('width', '7px')
     .attr('height', '7px')
-    .style('fill', '#ed8ebe');
+    .style('fill', '#ff99c1');
 
   female.append('text')
     .text('Female')
@@ -34,7 +34,7 @@ function renderGenderLegend() {
   male.append('rect')
     .attr('width', '7px')
     .attr('height', '7px')
-    .style('fill', '#65adcf');
+    .style('fill', '#499fb8');
 
   male.append('text')
     .text('Male')
@@ -47,7 +47,7 @@ function renderGenderLegend() {
   unk.append('rect')
     .attr('width', '7px')
     .attr('height', '7px')
-    .style('fill', 'rgb(197, 164, 251)');
+    .style('fill', '#bb97e9');
 
   unk.append('text')
     .text('Unknown')
