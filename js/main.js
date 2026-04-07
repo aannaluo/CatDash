@@ -1,4 +1,3 @@
-/* global CatMap, CatProfile, Title */
 document.addEventListener('DOMContentLoaded', () => {
   const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
   modal.show();
