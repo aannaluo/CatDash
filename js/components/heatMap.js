@@ -169,7 +169,7 @@ class HeatMap {
             <strong style="display: block; padding: 2px 10px;">Total Distance Travelled Per Hour</strong>
            <div id="tooltip-radial"></div>
            <strong style="display: block; padding: 2px 10px;">${HeatMap.reformatNames(d.unique_id)}<strong>`);
-        // eslint-disable-next-line no-new
+
         new RadialChart(
           { parentElement: '#tooltip-radial' },
           catData,

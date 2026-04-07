@@ -14,7 +14,6 @@ const title = new Title({
 
 d3.json('./data/cat_paths_all.geojson').then((pathsData) => {
   d3.json('./data/cat_paths_10_days.geojson').then((paths10DayData) => {
-    // eslint-disable-next-line no-unused-vars, no-undef
     catMap = new CatMap({
       parentElement: '#cat-map',
     }, pathsData, paths10DayData);
@@ -31,7 +30,6 @@ d3.csv('./data/Cleaned Cat Data.csv').then((data) => {
       dispatcher.call('selectedCat', selectedCat, selectedCat['unique-id']);
     });
 
-  // eslint-disable-next-line no-param-reassign
   data.forEach((d) => {
     d.age = parseFloat(d.age);
     d['home-range'] = parseFloat(d['home-range']);
